@@ -8,37 +8,28 @@
   "tier": "A",
   "website": "https://www.anantabd.net/",
   "verified": true,
-  "verified_at": "2026-08-27T08:19:06.821187+00:00",
+  "verified_at": "2026-08-27T08:31:16.845777+00:00",
   "lead_type": "client",
   "niche": "Event management company",
   "geography": "Dhaka, Bangladesh",
   "pain_signals": [
-    "Inquiry intake is phone/email only — no online inquiry form, no automated follow-up, no inquiry management system",
-    "High-ticket event packages, seasonal demand spikes — manual coordination during peaks, lost inquiries",
-    "No automated waitlist or inquiry management for 2026-2027 season and ongoing corporate bookings",
-    "Competitors with CRM-based inquiry management capture leads that phone-only intake misses"
+    "Award-winning event management company, 16 years experience — corporate events, conferences, weddings, brand activations",
+    "High-ticket packages booked via phone/email — no online inquiry management or automated follow-up",
+    "Seasonal demand spikes create enquiry overload with manual response",
+    "Publishes event-management packages but no automated package recommendation or quote generation",
+    "No automated post-event follow-up for repeat corporate business"
   ],
-  "offer_surface": "Autonomous AI agent deployment for Event management company — targeting: Inquiry intake is phone/email only — no online inquiry form, no automated follow-up, no inquiry management system; High-ticket event packages, seasonal demand spikes — manual coordination during peaks, lost inquiries; No automated waitlist or inquiry management for 2026-2027 season and ongoing corporate bookings",
+  "offer_surface": "Autonomous AI agent deployment for Event management company — targeting: Award-winning event management company, 16 years experience — corporate events, conferences, weddings, brand activations; High-ticket packages booked via phone/email — no online inquiry management or automated follow-up; Seasonal demand spikes create enquiry overload with manual response",
   "contact_paths": [
     {
-      "channel": "email",
-      "value": "info@anantabd.net",
-      "confidence": 90
+      "type": "phone",
+      "value": "via anantabd.net",
+      "source": "web_search"
     },
     {
-      "channel": "phone",
-      "value": "+8801813340400",
-      "confidence": 85
-    },
-    {
-      "channel": "phone",
-      "value": "+8801715049170",
-      "confidence": 85
-    },
-    {
-      "channel": "phone",
-      "value": "+8801613340400",
-      "confidence": 85
+      "type": "website",
+      "value": "https://www.anantabd.net/",
+      "source": "verified LIVE (HTTP 200)"
     }
   ],
   "evidence": [
@@ -49,5 +40,49 @@
       "confidence": 95
     }
   ],
-  "notes": ""
+  "notes": "",
+  "business_profile": {
+    "business_overview": "Ananta Events and Entertainment is an award-winning event management company in Dhaka with 16 years of experience, handling corporate events, conferences, seminars, exhibitions, exhibition stand fabrication, brand activations, ATL/BTL activities, product launches, concerts, fashion shows, and weddings. They publish event-management packages and rank among the top 10 event firms in Bangladesh. Booking is via phone/email with no online inquiry management.",
+    "offer_surface": "Autonomous AI agent deployment for Event management — targeting: Instant corporate/wedding enquiry acknowledgement and event-type qualification; Automated package recommendation and quote generation; Seasonal demand-spike handling; Post-event follow-up and repeat-client nurturing",
+    "website": "https://www.anantabd.net/",
+    "verified": true,
+    "verified_at": "2026-08-27T08:31:16.845777+00:00",
+    "pain_signals": [
+      "Award-winning event management company, 16 years experience — corporate events, conferences, weddings, brand activations",
+      "High-ticket packages booked via phone/email — no online inquiry management or automated follow-up",
+      "Seasonal demand spikes create enquiry overload with manual response",
+      "Publishes event-management packages but no automated package recommendation or quote generation",
+      "No automated post-event follow-up for repeat corporate business"
+    ],
+    "contact_paths": [
+      {
+        "type": "phone",
+        "value": "via anantabd.net",
+        "source": "web_search"
+      },
+      {
+        "type": "website",
+        "value": "https://www.anantabd.net/",
+        "source": "verified LIVE (HTTP 200)"
+      }
+    ],
+    "pricing_knowledge": {
+      "model": "Project-based event management packages (corporate, weddings, activations)",
+      "from_website": [
+        "16 years, award-winning, top-10 BD event firm",
+        "published packages page"
+      ],
+      "note": "High-ticket, seasonal. Fast acknowledgement + automated package quoting wins events. An AI agent that responds instantly and recommends packages sharpens their edge during peak season."
+    },
+    "operational_gaps": [
+      "Phone/email intake, no online inquiry management",
+      "Manual quote/package generation",
+      "Seasonal overload",
+      "No automated post-event follow-up"
+    ],
+    "competitive_position": "Ananta competes with Dhaka Event Planner, Look N Feel, and others for corporate + wedding events. Their edge is 16 years and award-winning breadth. But slow manual quoting during spikes loses events. An AI enquiry + package-quoting agent would win more on responsiveness.",
+    "opportunity_size": "High-ticket events and a repeat corporate base mean slow quote turnaround loses real revenue each quarter. An AI agent that acknowledges instantly and generates package quotes fast recovers this and lifts win-rate on the biggest accounts.",
+    "how_the_agent_helps": "1. AI enquiry agent acknowledging every request instantly and qualifying event type/scale.\n2. Package recommendation + quote generator.\n3. Seasonal spike handling.\n4. Post-event follow-up for repeat business.",
+    "demo_scenario": "A company enquires about a 300-person conference at 7pm. The AI acknowledges in seconds: 'Received! For a 300-guest conference, our Corporate package fits. I'll have a quote by 10am — quick questions: date, venue, AV needs?' A polished quote follows overnight; Ananta wins on responsiveness."
+  }
 }

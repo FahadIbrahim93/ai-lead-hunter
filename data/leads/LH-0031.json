@@ -8,7 +8,7 @@
   "tier": "A",
   "website": "https://littlearabia.com.bd/",
   "verified": true,
-  "verified_at": "2026-08-27T08:19:19.200466+00:00",
+  "verified_at": "2026-08-27T08:31:16.845777+00:00",
   "lead_type": "client",
   "niche": "Restaurant and food delivery",
   "geography": "Dhaka, Bangladesh (Shantinagar)",
@@ -22,39 +22,19 @@
   "offer_surface": "Autonomous AI agent deployment for Restaurant and food delivery — targeting: Arabian restaurant in Shantinagar with FREE home delivery across Dhaka city — own delivery fleet, not just aggregator-dependent; Orders taken via phone/website — no WhatsApp ordering bot despite WhatsApp being Bangladesh's dominant messaging platform; No visible online menu ordering system — customers must call to place orders, creating friction during peak meal hours",
   "contact_paths": [
     {
-      "channel": "email",
-      "value": "support@gmail.com",
-      "confidence": 90
+      "type": "phone",
+      "value": "via littlearabia.com.bd",
+      "source": "web_extract"
     },
     {
-      "channel": "email",
-      "value": "mostafiz31@live.com",
-      "confidence": 90
-    },
-    {
-      "channel": "email",
+      "type": "email",
       "value": "info@littlearabia.com.bd",
-      "confidence": 90
+      "source": "web_extract"
     },
     {
-      "channel": "phone",
-      "value": "+8801713222677",
-      "confidence": 85
-    },
-    {
-      "channel": "phone",
-      "value": "+8801626113676",
-      "confidence": 85
-    },
-    {
-      "channel": "phone",
-      "value": "+8801713222688",
-      "confidence": 85
-    },
-    {
-      "channel": "phone",
-      "value": "+8801745760675",
-      "confidence": 85
+      "type": "website",
+      "value": "https://littlearabia.com.bd/",
+      "source": "verified LIVE (HTTP 200)"
     }
   ],
   "evidence": [
@@ -71,5 +51,55 @@
       "confidence": 95
     }
   ],
-  "notes": "Arabian restaurant in Shantinagar, Dhaka with free home delivery across the city. Own delivery service (not just foodpanda). Menu-driven ordering. No visible online ordering system or WhatsApp order bot. Competitors with online ordering capture delivery customers that phone-only intake misses. AI-agent fit: WhatsApp order bot, menu recommendation, delivery tracking, repeat customer engagement."
+  "notes": "Arabian restaurant in Shantinagar, Dhaka with free home delivery across the city. Own delivery service (not just foodpanda). Menu-driven ordering. No visible online ordering system or WhatsApp order bot. Competitors with online ordering capture delivery customers that phone-only intake misses. AI-agent fit: WhatsApp order bot, menu recommendation, delivery tracking, repeat customer engagement.",
+  "business_profile": {
+    "business_overview": "Little Arabia Restaurant is an Arabian restaurant in Shantinagar, Dhaka (141 Shantinagar, Dhaka-1217) offering free home delivery across the city with its own delivery service. They operate an official website for ordering. Orders are taken via phone/website with no WhatsApp ordering bot, despite WhatsApp being Bangladesh's dominant messaging platform.",
+    "offer_surface": "Autonomous AI agent deployment for Restaurant with home delivery — targeting: WhatsApp order bot that takes orders, confirms menu items, and provides delivery ETA; Automated order-status updates eliminating inbound status calls; Repeat-customer engagement with personalized offers and re-order prompts; Peak-hour order management to prevent missed calls during lunch/dinner rush",
+    "website": "https://littlearabia.com.bd/",
+    "verified": true,
+    "verified_at": "2026-08-27T08:31:16.845777+00:00",
+    "pain_signals": [
+      "Arabian restaurant in Shantinagar with FREE home delivery across Dhaka city — own delivery fleet, not just aggregator-dependent",
+      "Orders taken via phone/website — no WhatsApp ordering bot despite WhatsApp being Bangladesh's dominant messaging platform",
+      "No visible online menu ordering system — customers must call to place orders, creating friction during peak meal hours",
+      "No automated repeat-customer engagement — no loyalty program, no re-order reminders, no personalized offers",
+      "Delivery tracking is manual — customers call to check order status, staff time spent on status enquiries instead of new orders"
+    ],
+    "contact_paths": [
+      {
+        "type": "phone",
+        "value": "via littlearabia.com.bd",
+        "source": "web_extract"
+      },
+      {
+        "type": "email",
+        "value": "info@littlearabia.com.bd",
+        "source": "web_extract"
+      },
+      {
+        "type": "website",
+        "value": "https://littlearabia.com.bd/",
+        "source": "verified LIVE (HTTP 200)"
+      }
+    ],
+    "pricing_knowledge": {
+      "model": "Restaurant menu + free home delivery (own fleet)",
+      "from_website": [
+        "141 Shantinagar, Dhaka-1217",
+        "free home delivery in city",
+        "official ordering website"
+      ],
+      "note": "Own delivery fleet means they keep margin but bear order-intake load. A WhatsApp order bot + status updates would cut phone friction during peak hours and drive repeat orders — high-leverage for a delivery restaurant."
+    },
+    "operational_gaps": [
+      "No WhatsApp ordering bot",
+      "Phone-based ordering creates peak-hour friction",
+      "Manual delivery status tracking",
+      "No repeat-customer engagement/loyalty"
+    ],
+    "competitive_position": "Little Arabia competes with other Dhaka restaurants and aggregators. Their edge is free home delivery with their own fleet. But phone-only ordering loses customers to restaurants with smoother ordering. A WhatsApp order bot would make ordering frictionless and drive repeat business.",
+    "opportunity_size": "With free city-wide delivery and an own fleet, order volume is significant. If phone-only ordering loses customers during peak hours and there's no repeat-order engagement, that's lost revenue on both acquisition and retention. A WhatsApp order + status + re-order agent recovers this.",
+    "how_the_agent_helps": "1. WhatsApp order bot taking orders, confirming items, giving delivery ETA.\n2. Automated order-status updates eliminating inbound calls.\n3. Repeat-customer engagement with personalized offers.\n4. Peak-hour order management.",
+    "demo_scenario": "A customer messages Little Arabia on WhatsApp at 8pm dinner rush: '2 chicken biryani + 1 khabab to Dhanmondi.' The AI confirms the order, gives a 40-min ETA, and sends a status update when it's out for delivery. The customer re-orders the next week via a personalized prompt. Little Arabia handled a peak-hour order and drove a repeat — zero phone calls."
+  }
 }

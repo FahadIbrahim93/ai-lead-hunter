@@ -1,0 +1,10 @@
+{
+  "evidence_id": "E-0363",
+  "lead_id": "LH-0014",
+  "kind": "operational",
+  "found_at": "2026-08-27T08:31:20.864543+00:00",
+  "source_url": "",
+  "summary": "7 branches means enquiry routing is manual — a student may get info for the wrong branch",
+  "confidence": 75,
+  "raw": ""
+}

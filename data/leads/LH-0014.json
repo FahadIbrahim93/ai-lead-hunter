@@ -8,37 +8,28 @@
   "tier": "A",
   "website": "https://mieenglishacademy.com/bangladesh/",
   "verified": true,
-  "verified_at": "2026-08-27T08:18:58.924082+00:00",
+  "verified_at": "2026-08-27T08:31:16.845777+00:00",
   "lead_type": "client",
   "niche": "Education / IELTS & English coaching",
   "geography": "Dhaka, Bangladesh (7 branches)",
   "pain_signals": [
-    "7 Dhaka branches generate high admission-enquiry volume, handled via a single 'Enroll Now' form",
-    "No automated batch scheduling or free-class booking visible",
-    "Lead nurturing (follow-up after enquiry) appears manual",
-    "Heavy investment in video testimonials but no conversational funnel to convert viewers"
+    "IELTS + spoken English coaching across 7 Dhaka branches — high enquiry volume funneled through an 'Enroll Now' form with no instant response",
+    "No AI qualification of student level, target score, or timeline before admission staff engage",
+    "No visible batch schedule or seat availability before a student enquires",
+    "Heavy investment in video testimonials/success stories but no automated lead nurturing leveraging them",
+    "7 branches means enquiry routing is manual — a student may get info for the wrong branch"
   ],
-  "offer_surface": "Autonomous AI agent deployment for Education / IELTS & English coaching — targeting: 7 Dhaka branches generate high admission-enquiry volume, handled via a single 'Enroll Now' form; No automated batch scheduling or free-class booking visible; Lead nurturing (follow-up after enquiry) appears manual",
+  "offer_surface": "Autonomous AI agent deployment for Education / IELTS & English coaching — targeting: IELTS + spoken English coaching across 7 Dhaka branches — high enquiry volume funneled through an 'Enroll Now' form with no instant response; No AI qualification of student level, target score, or timeline before admission staff engage; No visible batch schedule or seat availability before a student enquires",
   "contact_paths": [
     {
-      "channel": "email",
-      "value": "info@mieenglishacademy.com",
-      "confidence": 90
+      "type": "website_form",
+      "value": "mieenglishacademy.com Enroll Now",
+      "source": "web_extract"
     },
     {
-      "channel": "email",
-      "value": "sales@mieenglishacademy.com",
-      "confidence": 90
-    },
-    {
-      "channel": "phone",
-      "value": "+8801329668459",
-      "confidence": 85
-    },
-    {
-      "channel": "phone",
-      "value": "+8801332505927",
-      "confidence": 85
+      "type": "website",
+      "value": "https://mieenglishacademy.com/bangladesh/",
+      "source": "verified LIVE (HTTP 200)"
     }
   ],
   "evidence": [
@@ -55,5 +46,50 @@
       "confidence": 95
     }
   ],
-  "notes": "Live website verified. IELTS + spoken English coaching, 7 Dhaka branches, heavy on video testimonials. Admission funnel is 'Enroll Now' form. Multi-branch = high enquiry volume. AI-agent fit: admission enquiry bot, batch scheduling, free-class booking, lead nurturing."
+  "notes": "Live website verified. IELTS + spoken English coaching, 7 Dhaka branches, heavy on video testimonials. Admission funnel is 'Enroll Now' form. Multi-branch = high enquiry volume. AI-agent fit: admission enquiry bot, batch scheduling, free-class booking, lead nurturing.",
+  "business_profile": {
+    "business_overview": "MIE English Academy Bangladesh is an IELTS and spoken-English coaching institute with 7 Dhaka branches, heavy on video testimonials and success stories. Their admission funnel is an 'Enroll Now' form. Multi-branch operation means high enquiry volume, and they compete in the crowded Dhaka IELTS market against Enhance English, Mentors', Saifur's, and the British Council.",
+    "offer_surface": "Autonomous AI agent deployment for IELTS & English coaching — targeting: Admission enquiry bot answering course/batch/fee questions instantly across 7 branches; Batch scheduling and seat availability visibility; Free-class booking with automated reminders; Lead nurturing from enquiry to enrollment using success stories; Multi-branch routing to the nearest center",
+    "website": "https://mieenglishacademy.com/bangladesh/",
+    "verified": true,
+    "verified_at": "2026-08-27T08:31:16.845777+00:00",
+    "pain_signals": [
+      "IELTS + spoken English coaching across 7 Dhaka branches — high enquiry volume funneled through an 'Enroll Now' form with no instant response",
+      "No AI qualification of student level, target score, or timeline before admission staff engage",
+      "No visible batch schedule or seat availability before a student enquires",
+      "Heavy investment in video testimonials/success stories but no automated lead nurturing leveraging them",
+      "7 branches means enquiry routing is manual — a student may get info for the wrong branch"
+    ],
+    "contact_paths": [
+      {
+        "type": "website_form",
+        "value": "mieenglishacademy.com Enroll Now",
+        "source": "web_extract"
+      },
+      {
+        "type": "website",
+        "value": "https://mieenglishacademy.com/bangladesh/",
+        "source": "verified LIVE (HTTP 200)"
+      }
+    ],
+    "pricing_knowledge": {
+      "model": "Course-based IELTS + spoken English coaching",
+      "from_website": [
+        "7 Dhaka branches",
+        "Enroll Now form funnel",
+        "video testimonials"
+      ],
+      "note": "High-volume aspirational market. Students compare several institutes and enroll where they get the fastest, most helpful answer. Instant qualification + free-class booking is the conversion lever across 7 branches."
+    },
+    "operational_gaps": [
+      "Form-based intake, no instant response",
+      "No batch/seat visibility",
+      "Manual 7-branch routing",
+      "No automated lead nurturing"
+    ],
+    "competitive_position": "MIE competes in a crowded IELTS market. Their edge is 7-branch reach and strong testimonials. But students message multiple institutes at once; the one that responds instantly and books a free class first wins. An AI admission agent across 7 branches would convert more enquiries.",
+    "opportunity_size": "Across 7 branches, enquiry volume is high and each enrollment is meaningful course revenue. If form-based intake and manual routing lose a fraction of enquiries to faster competitors — especially at admission peaks — that's substantial lost enrollment. An AI admission agent recovers this and fills batches faster.",
+    "how_the_agent_helps": "1. AI admission agent answering every enquiry instantly, recommending the right course.\n2. Batch schedule + seat availability agent.\n3. Free-class booking with reminders.\n4. Multi-branch routing + success-story lead nurturing.",
+    "demo_scenario": "A student messages MIE at 8pm: 'IELTS batch in Dhanmondi, need 7.0?' The AI replies instantly: 'For 7.0, our IELTS Advanced fits. Dhanmondi branch next batch starts [date], 4 seats left. Want a free diagnostic class?' The student books; MIE converted an enquiry overnight across its 7-branch network with zero staff effort."
+  }
 }

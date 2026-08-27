@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-1569",
+  "lead_id": "LH-0030",
+  "occurred_at": "2026-08-27T08:31:22.357646+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0380.json",
+  "detail": "Evidence: operational — Mobile-first 'Tap to Call' CTA — no online appointment booking system, patients "
+}

@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-1564",
+  "lead_id": "LH-0029",
+  "occurred_at": "2026-08-27T08:31:22.000333+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0377.json",
+  "detail": "Evidence: operational — Blog content (IELTS tips, mock tests) drives traffic but no automated conversion"
+}

@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-1541",
+  "lead_id": "LH-0014",
+  "occurred_at": "2026-08-27T08:31:20.763999+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0360.json",
+  "detail": "Evidence: operational — No AI qualification of student level, target score, or timeline before admission"
+}

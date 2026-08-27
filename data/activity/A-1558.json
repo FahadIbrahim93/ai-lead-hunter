@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-1558",
+  "lead_id": "LH-0021",
+  "occurred_at": "2026-08-27T08:31:21.649063+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0373.json",
+  "detail": "Evidence: operational — No automated post-event follow-up or referral nurturing"
+}

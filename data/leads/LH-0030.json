@@ -8,33 +8,33 @@
   "tier": "A",
   "website": "https://laserdentalbd.com/",
   "verified": true,
-  "verified_at": "2026-08-27T08:19:18.117406+00:00",
+  "verified_at": "2026-08-27T08:31:16.845777+00:00",
   "lead_type": "client",
   "niche": "Dental clinic",
   "geography": "Dhaka, Bangladesh (Banani & Uttara)",
   "pain_signals": [
-    "Premium dental clinic in Banani & Uttara specializing in cosmetic dentistry, Invisalign, and laser treatments — high-value procedures (BDT 50K-1.8L)",
+    "Premium dental clinic in Banani & Uttara specializing in cosmetic dentistry, Invisalign, and laser treatments — high-value procedures",
     "Mobile-first 'Tap to Call' CTA — no online appointment booking system, patients must call during office hours",
-    "No visible treatment cost estimator — patients with cosmetic enquiries (veneers, whitening, Invisalign) can't get price guidance before calling",
+    "No visible treatment cost estimator — patients with cosmetic enquiries can't get price guidance before calling",
     "No automated follow-up for high-value treatment plans — Invisalign and implant patients need multi-visit scheduling",
     "Two locations (Banani & Uttara) with no visible online scheduling to route patients to correct branch"
   ],
-  "offer_surface": "Autonomous AI agent deployment for Dental clinic — targeting: Premium dental clinic in Banani & Uttara specializing in cosmetic dentistry, Invisalign, and laser treatments — high-value procedures (BDT 50K-1.8L); Mobile-first 'Tap to Call' CTA — no online appointment booking system, patients must call during office hours; No visible treatment cost estimator — patients with cosmetic enquiries (veneers, whitening, Invisalign) can't get price guidance before calling",
+  "offer_surface": "Autonomous AI agent deployment for Dental clinic — targeting: Premium dental clinic in Banani & Uttara specializing in cosmetic dentistry, Invisalign, and laser treatments — high-value procedures; Mobile-first 'Tap to Call' CTA — no online appointment booking system, patients must call during office hours; No visible treatment cost estimator — patients with cosmetic enquiries can't get price guidance before calling",
   "contact_paths": [
     {
-      "channel": "email",
+      "type": "email",
       "value": "info@laserdentalbd.com",
-      "confidence": 90
+      "source": "web_extract"
     },
     {
-      "channel": "phone",
-      "value": "+8801787660055",
-      "confidence": 85
+      "type": "phone",
+      "value": "tap-to-call on laserdentalbd.com",
+      "source": "web_extract"
     },
     {
-      "channel": "phone",
-      "value": "+8801770000007",
-      "confidence": 85
+      "type": "website",
+      "value": "https://laserdentalbd.com/",
+      "source": "verified LIVE (HTTP 200)"
     }
   ],
   "evidence": [
@@ -51,5 +51,55 @@
       "confidence": 95
     }
   ],
-  "notes": "Premium dental clinic in Banani & Uttara. Services: laser dentistry, cosmetic dentistry, Invisalign, dental implants, teeth whitening, digital smile design. 'Tap to Call' mobile-first CTA. No visible online appointment booking system. High-value cosmetic procedures. AI-agent fit: appointment booking with treatment-specific routing, cost estimation bot, treatment enquiry qualification, follow-up automation."
+  "notes": "Premium dental clinic in Banani & Uttara. Services: laser dentistry, cosmetic dentistry, Invisalign, dental implants, teeth whitening, digital smile design. 'Tap to Call' mobile-first CTA. No visible online appointment booking system. High-value cosmetic procedures. AI-agent fit: appointment booking with treatment-specific routing, cost estimation bot, treatment enquiry qualification, follow-up automation.",
+  "business_profile": {
+    "business_overview": "Laser Dental BD is a premium dental clinic in Banani & Uttara, Dhaka, specializing in laser dentistry, cosmetic dentistry, Invisalign, dental implants, teeth whitening, and digital smile design. Their mobile-first site uses 'Tap to Call' CTAs. They offer high-value cosmetic procedures and maintain a gallery, blog, and patient-education videos. There is no online appointment booking system.",
+    "offer_surface": "Autonomous AI agent deployment for Premium dental clinic — targeting: Online appointment booking with treatment-specific routing (cosmetic vs general vs orthodontic); Treatment cost estimation for high-value enquiries (Invisalign, implants, veneers); Multi-visit treatment-plan scheduling and reminder automation; Two-branch patient routing and availability management",
+    "website": "https://laserdentalbd.com/",
+    "verified": true,
+    "verified_at": "2026-08-27T08:31:16.845777+00:00",
+    "pain_signals": [
+      "Premium dental clinic in Banani & Uttara specializing in cosmetic dentistry, Invisalign, and laser treatments — high-value procedures",
+      "Mobile-first 'Tap to Call' CTA — no online appointment booking system, patients must call during office hours",
+      "No visible treatment cost estimator — patients with cosmetic enquiries can't get price guidance before calling",
+      "No automated follow-up for high-value treatment plans — Invisalign and implant patients need multi-visit scheduling",
+      "Two locations (Banani & Uttara) with no visible online scheduling to route patients to correct branch"
+    ],
+    "contact_paths": [
+      {
+        "type": "email",
+        "value": "info@laserdentalbd.com",
+        "source": "web_extract"
+      },
+      {
+        "type": "phone",
+        "value": "tap-to-call on laserdentalbd.com",
+        "source": "web_extract"
+      },
+      {
+        "type": "website",
+        "value": "https://laserdentalbd.com/",
+        "source": "verified LIVE (HTTP 200)"
+      }
+    ],
+    "pricing_knowledge": {
+      "model": "Fee-for-service premium/cosmetic dental",
+      "from_website": [
+        "Invisalign, implants, veneers, whitening, digital smile design",
+        "Banani + Uttara",
+        "gallery/blog/videos"
+      ],
+      "note": "High-value cosmetic procedures. Patients researching Invisalign/implants want price guidance and easy booking. An AI cost-estimator + booking agent captures high-ticket cosmetic enquiries that a tap-to-call-only flow loses."
+    },
+    "operational_gaps": [
+      "No online booking — tap-to-call only",
+      "No treatment cost estimator",
+      "No multi-visit treatment-plan follow-up",
+      "Manual two-branch routing"
+    ],
+    "competitive_position": "Laser Dental competes with Tech Dental Care and other premium Dhaka clinics. Their edge is cosmetic/laser specialization. But tap-to-call-only intake loses patients to clinics with online booking. An AI cost-estimator + booking agent would win high-ticket cosmetic enquiries.",
+    "opportunity_size": "Cosmetic procedures (Invisalign, implants) are high-ticket. If tap-to-call-only intake and no cost guidance lose even a fraction of cosmetic enquiries — and multi-visit patients aren't followed up automatically — that's substantial lost high-margin revenue. An AI agent recovers this.",
+    "how_the_agent_helps": "1. AI booking agent with treatment-specific routing.\n2. Treatment cost estimator for high-value enquiries.\n3. Multi-visit treatment-plan scheduling + reminders.\n4. Two-branch routing + availability management.",
+    "demo_scenario": "A patient researching Invisalign visits Laser Dental's site at 11pm and wants a price. Instead of only a tap-to-call, the AI replies: 'Invisalign typically ranges ৳X-Y depending on case. I can book a consultation at Banani or Uttara — which is closer?' The patient books Banani for Saturday. Laser Dental captured a high-ticket cosmetic lead overnight."
+  }
 }

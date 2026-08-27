@@ -1,0 +1,10 @@
+{
+  "evidence_id": "E-0378",
+  "lead_id": "LH-0029",
+  "kind": "operational",
+  "found_at": "2026-08-27T08:31:22.020337+00:00",
+  "source_url": "",
+  "summary": "Course catalog with multiple levels but no recommendation engine to match student to right course",
+  "confidence": 75,
+  "raw": ""
+}

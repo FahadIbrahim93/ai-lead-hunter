@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-1549",
+  "lead_id": "LH-0019",
+  "occurred_at": "2026-08-27T08:31:21.190940+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0366.json",
+  "detail": "Evidence: operational — Seasonal demand spikes create enquiry overload with manual response"
+}

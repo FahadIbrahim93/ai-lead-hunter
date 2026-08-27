@@ -8,7 +8,7 @@
   "tier": "A",
   "website": "https://manchesterenglishacademy.com/",
   "verified": true,
-  "verified_at": "2026-08-27T08:19:16.932827+00:00",
+  "verified_at": "2026-08-27T08:31:16.845777+00:00",
   "lead_type": "client",
   "niche": "Education / English & IELTS coaching",
   "geography": "Dhaka, Bangladesh",
@@ -17,19 +17,19 @@
     "Enquiry form on website but no instant response — prospective students get no immediate course guidance",
     "No visible AI-powered level assessment — students can't self-assess before choosing a course",
     "Blog content (IELTS tips, mock tests) drives traffic but no automated conversion from reader to enrolled student",
-    "Course catalog with multiple levels (beginner to IELTS) but no recommendation engine to match student to right course"
+    "Course catalog with multiple levels but no recommendation engine to match student to right course"
   ],
   "offer_surface": "Autonomous AI agent deployment for Education / English & IELTS coaching — targeting: English academy with online course platform (LMS) — courses priced BDT 12,000-15,000 with visible enrollment; Enquiry form on website but no instant response — prospective students get no immediate course guidance; No visible AI-powered level assessment — students can't self-assess before choosing a course",
   "contact_paths": [
     {
-      "channel": "phone",
-      "value": "+8801582706670",
-      "confidence": 85
+      "type": "website_form",
+      "value": "manchesterenglishacademy.com enquiry form",
+      "source": "web_extract"
     },
     {
-      "channel": "phone",
-      "value": "+8801773744422",
-      "confidence": 85
+      "type": "website",
+      "value": "https://manchesterenglishacademy.com/",
+      "source": "verified LIVE (HTTP 200)"
     }
   ],
   "evidence": [
@@ -46,5 +46,50 @@
       "confidence": 95
     }
   ],
-  "notes": "English language academy with online course platform. Courses: Spoken English, IELTS preparation, beginner to advanced. Course prices visible (BDT 12,000-15,000). Student login/registration system. Blog with IELTS tips. No visible AI-powered admission bot or automated course recommendation. High enquiry volume from prospective students. AI-agent fit: admission enquiry bot, course recommendation based on level assessment, batch scheduling, payment follow-up."
+  "notes": "English language academy with online course platform. Courses: Spoken English, IELTS preparation, beginner to advanced. Course prices visible (BDT 12,000-15,000). Student login/registration system. Blog with IELTS tips. No visible AI-powered admission bot or automated course recommendation. High enquiry volume from prospective students. AI-agent fit: admission enquiry bot, course recommendation based on level assessment, batch scheduling, payment follow-up.",
+  "business_profile": {
+    "business_overview": "Manchester English Academy is an English language academy in Dhaka with an online course platform (LMS). Courses span Spoken English, IELTS preparation, and beginner-to-advanced levels, with visible pricing (BDT 12,000-15,000) and a student login/registration system. They publish IELTS blog content (tips, mock tests with band-9 answers). Intake is via an enquiry form.",
+    "offer_surface": "Autonomous AI agent deployment for English coaching academy — targeting: Instant admission enquiry response with course recommendation based on current level and goals; Automated level-assessment quiz to recommend the right course tier; Blog-to-enrollment conversion engaging content readers; Payment follow-up and batch reminders for enrolled students",
+    "website": "https://manchesterenglishacademy.com/",
+    "verified": true,
+    "verified_at": "2026-08-27T08:31:16.845777+00:00",
+    "pain_signals": [
+      "English academy with online course platform (LMS) — courses priced BDT 12,000-15,000 with visible enrollment",
+      "Enquiry form on website but no instant response — prospective students get no immediate course guidance",
+      "No visible AI-powered level assessment — students can't self-assess before choosing a course",
+      "Blog content (IELTS tips, mock tests) drives traffic but no automated conversion from reader to enrolled student",
+      "Course catalog with multiple levels but no recommendation engine to match student to right course"
+    ],
+    "contact_paths": [
+      {
+        "type": "website_form",
+        "value": "manchesterenglishacademy.com enquiry form",
+        "source": "web_extract"
+      },
+      {
+        "type": "website",
+        "value": "https://manchesterenglishacademy.com/",
+        "source": "verified LIVE (HTTP 200)"
+      }
+    ],
+    "pricing_knowledge": {
+      "model": "Course-based — Spoken English, IELTS, beginner to advanced (BDT 12,000-15,000)",
+      "from_website": [
+        "LMS with student login",
+        "visible course pricing",
+        "IELTS blog content"
+      ],
+      "note": "They already have an LMS and published pricing — automation-receptive. An AI agent that recommends the right course from a level assessment and converts blog readers is a natural, high-leverage fit."
+    },
+    "operational_gaps": [
+      "Form intake, no instant response",
+      "No level-assessment recommendation",
+      "Blog traffic not converted automatically",
+      "No payment/batch follow-up automation"
+    ],
+    "competitive_position": "Manchester competes with MIE, Enhance, and many IELTS centers. Their edge is an existing LMS and published pricing. But form-based intake with no instant guidance loses students. An AI admission + level-assessment agent would convert more of their blog and course-page traffic.",
+    "opportunity_size": "With published course fees and an LMS, each enrollment is clear revenue. If form intake and no instant guidance lose a fraction of enquirers — plus blog readers who never convert — that's lost enrollment. An AI agent recovers this and fills batches.",
+    "how_the_agent_helps": "1. AI admission agent answering enquiries instantly and recommending courses.\n2. Level-assessment quiz to place students in the right tier.\n3. Blog-to-enrollment conversion agent.\n4. Payment follow-up + batch reminders.",
+    "demo_scenario": "A reader of Manchester's 'IELTS mock test with band-9 answers' blog clicks to enquire at 9pm. The AI replies instantly: 'Great — want a quick 2-min level check to find your best course?' The student takes it, gets placed into IELTS Prep, and books enrollment. Manchester converted a blog reader into a paying student overnight."
+  }
 }

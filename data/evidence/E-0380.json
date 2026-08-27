@@ -1,0 +1,10 @@
+{
+  "evidence_id": "E-0380",
+  "lead_id": "LH-0030",
+  "kind": "operational",
+  "found_at": "2026-08-27T08:31:22.336641+00:00",
+  "source_url": "",
+  "summary": "Mobile-first 'Tap to Call' CTA — no online appointment booking system, patients must call during office hours",
+  "confidence": 75,
+  "raw": ""
+}

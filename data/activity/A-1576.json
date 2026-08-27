@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-1576",
+  "lead_id": "LH-0031",
+  "occurred_at": "2026-08-27T08:31:22.772310+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0385.json",
+  "detail": "Evidence: operational — Orders taken via phone/website — no WhatsApp ordering bot despite WhatsApp being"
+}
