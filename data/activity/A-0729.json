@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-0729",
+  "lead_id": "LH-0023",
+  "occurred_at": "2026-08-27T04:19:32.914695+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0196.json",
+  "detail": "Evidence: operational — No automated waitlist for peak times — walk-in clients turned away during busy p"
+}

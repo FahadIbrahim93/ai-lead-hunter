@@ -1,0 +1,10 @@
+{
+  "evidence_id": "E-0200",
+  "lead_id": "LH-0024",
+  "kind": "operational",
+  "found_at": "2026-08-27T04:19:33.125234+00:00",
+  "source_url": "",
+  "summary": "No automated order tracking or project status updates for B2B clients",
+  "confidence": 75,
+  "raw": ""
+}

@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-0733",
+  "lead_id": "LH-0024",
+  "occurred_at": "2026-08-27T04:19:33.109320+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0199.json",
+  "detail": "Evidence: operational — High-volume orders (BDT25K+ average) — manual quote process is slow, every delay"
+}

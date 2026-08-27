@@ -1,0 +1,10 @@
+{
+  "evidence_id": "E-0183",
+  "lead_id": "LH-0024",
+  "kind": "operational",
+  "found_at": "2026-08-27T04:19:32.038131+00:00",
+  "source_url": "",
+  "summary": "High-volume orders (BDT25K+ average) — manual quote process is slow, every delayed quote risks losing the order to a faster competitor",
+  "confidence": 75,
+  "raw": ""
+}

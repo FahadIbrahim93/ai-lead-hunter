@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-0710",
+  "lead_id": "LH-0024",
+  "occurred_at": "2026-08-27T04:19:32.023007+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0182.json",
+  "detail": "Evidence: operational — Quote requests via phone/email only — no online quote form, no automated lead qu"
+}

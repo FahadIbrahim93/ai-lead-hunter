@@ -1,0 +1,10 @@
+{
+  "evidence_id": "E-0178",
+  "lead_id": "LH-0023",
+  "kind": "operational",
+  "found_at": "2026-08-27T04:19:31.784144+00:00",
+  "source_url": "",
+  "summary": "Booking is phone-only — no online booking system, no automated appointment reminders",
+  "confidence": 75,
+  "raw": ""
+}

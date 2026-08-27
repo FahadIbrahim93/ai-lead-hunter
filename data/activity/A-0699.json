@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-0699",
+  "lead_id": "LH-0022",
+  "occurred_at": "2026-08-27T04:19:31.579485+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0175.json",
+  "detail": "Evidence: operational — Delivers via foodpanda — no direct ordering or automated order tracking for cust"
+}

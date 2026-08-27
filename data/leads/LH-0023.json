@@ -3,17 +3,22 @@
   "business_name": "Rejuvenate Salon & Spa",
   "discovered_at": "2026-08-27T03:43:55.668219+00:00",
   "source": "research",
-  "lifecycle_status": "DISCOVERED",
-  "score": 0,
-  "tier": "C",
+  "lifecycle_status": "QUALIFIED",
+  "score": 85,
+  "tier": "A",
   "website": "https://rejuvenatebd.com/",
   "verified": true,
   "verified_at": "2026-08-27T04:04:24.262912+00:00",
   "lead_type": "client",
   "niche": "Luxury salon and spa",
   "geography": "Dhaka, Bangladesh (Uttara, Unimart Centrepoint)",
-  "pain_signals": [],
-  "offer_surface": "",
+  "pain_signals": [
+    "Bangladesh premier luxury salon (3+ branches, 4.9 rating) — appointment-driven, high-ticket services",
+    "Booking is phone-only — no online booking system, no automated appointment reminders",
+    "High margin services (hair spa BDT2,600+, facial BDT3,500+, bridal prep) — every missed appointment is significant revenue",
+    "No automated waitlist for peak times — walk-in clients turned away during busy periods"
+  ],
+  "offer_surface": "Autonomous AI agent deployment for Luxury salon and spa — targeting: Bangladesh premier luxury salon (3+ branches, 4.9 rating) — appointment-driven, high-ticket services; Booking is phone-only — no online booking system, no automated appointment reminders; High margin services (hair spa BDT2,600+, facial BDT3,500+, bridal prep) — every missed appointment is significant revenue",
   "contact_paths": [
     {
       "channel": "phone",

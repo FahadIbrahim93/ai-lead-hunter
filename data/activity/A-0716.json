@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-0716",
+  "lead_id": "LH-0025",
+  "occurred_at": "2026-08-27T04:19:32.246475+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0186.json",
+  "detail": "Evidence: operational — Booking via phone/email/walk-in — no AI-powered booking assistant to handle volu"
+}

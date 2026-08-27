@@ -1,0 +1,10 @@
+{
+  "evidence_id": "E-0187",
+  "lead_id": "LH-0025",
+  "kind": "operational",
+  "found_at": "2026-08-27T04:19:32.260398+00:00",
+  "source_url": "",
+  "summary": "No automated shipment status updates via SMS/email for customers — manual follow-up on each shipment",
+  "confidence": 75,
+  "raw": ""
+}

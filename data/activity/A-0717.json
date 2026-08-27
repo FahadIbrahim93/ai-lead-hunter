@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-0717",
+  "lead_id": "LH-0025",
+  "occurred_at": "2026-08-27T04:19:32.269400+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0187.json",
+  "detail": "Evidence: operational — No automated shipment status updates via SMS/email for customers — manual follow"
+}

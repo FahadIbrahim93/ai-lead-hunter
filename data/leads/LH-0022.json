@@ -3,17 +3,22 @@
   "business_name": "Cooper's Bakery Bangladesh",
   "discovered_at": "2026-08-27T03:43:55.658370+00:00",
   "source": "research",
-  "lifecycle_status": "DISCOVERED",
-  "score": 0,
-  "tier": "C",
+  "lifecycle_status": "QUALIFIED",
+  "score": 85,
+  "tier": "A",
   "website": "https://coopersbakery.com/",
   "verified": true,
   "verified_at": "2026-08-27T04:04:24.025451+00:00",
   "lead_type": "client",
   "niche": "Bakery and custom cakes",
   "geography": "Dhaka, Bangladesh (Old Airport Road)",
-  "pain_signals": [],
-  "offer_surface": "",
+  "pain_signals": [
+    "Custom wedding cakes and pastries — high-ticket, seasonal demand spikes (wedding season +150%)",
+    "Orders come via phone/Instagram/WhatsApp — no online order form to capture custom cake requests automatically",
+    "Delivers via foodpanda — no direct ordering or automated order tracking for custom orders",
+    "Competitors without online booking or automated order intake lose custom cake orders during peak wedding season"
+  ],
+  "offer_surface": "Autonomous AI agent deployment for Bakery and custom cakes — targeting: Custom wedding cakes and pastries — high-ticket, seasonal demand spikes (wedding season +150%); Orders come via phone/Instagram/WhatsApp — no online order form to capture custom cake requests automatically; Delivers via foodpanda — no direct ordering or automated order tracking for custom orders",
   "contact_paths": [
     {
       "channel": "phone",

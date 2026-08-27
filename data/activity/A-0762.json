@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-0762",
+  "lead_id": "SYSTEM",
+  "occurred_at": "2026-08-27T04:26:47.191181+00:00",
+  "actor": "hermes",
+  "action": "duplicate_skipped",
+  "resource": "ingest",
+  "detail": "Duplicate skipped: Gold's Gym Bangladesh"
+}

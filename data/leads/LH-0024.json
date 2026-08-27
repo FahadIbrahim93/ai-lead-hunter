@@ -3,17 +3,22 @@
   "business_name": "JobaidaPack Packaging Ltd",
   "discovered_at": "2026-08-27T03:43:55.676257+00:00",
   "source": "research",
-  "lifecycle_status": "DISCOVERED",
-  "score": 0,
-  "tier": "C",
+  "lifecycle_status": "QUALIFIED",
+  "score": 90,
+  "tier": "A",
   "website": "https://www.jobaidapack.com/",
   "verified": true,
   "verified_at": "2026-08-27T04:04:25.190585+00:00",
   "lead_type": "client",
   "niche": "Packaging and corrugated box manufacturing",
   "geography": "Dhaka, Bangladesh",
-  "pain_signals": [],
-  "offer_surface": "",
+  "pain_signals": [
+    "Leading packaging manufacturer (since 1996) — custom corrugated boxes, mailer boxes, rigid boxes, offset printing",
+    "Quote requests via phone/email only — no online quote form, no automated lead qualification for B2B inquiries",
+    "High-volume orders (BDT25K+ average) — manual quote process is slow, every delayed quote risks losing the order to a faster competitor",
+    "No automated order tracking or project status updates for B2B clients"
+  ],
+  "offer_surface": "Autonomous AI agent deployment for Packaging and corrugated box manufacturing — targeting: Leading packaging manufacturer (since 1996) — custom corrugated boxes, mailer boxes, rigid boxes, offset printing; Quote requests via phone/email only — no online quote form, no automated lead qualification for B2B inquiries; High-volume orders (BDT25K+ average) — manual quote process is slow, every delayed quote risks losing the order to a faster competitor",
   "contact_paths": [
     {
       "channel": "phone",

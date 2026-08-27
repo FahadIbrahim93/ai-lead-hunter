@@ -1,0 +1,10 @@
+{
+  "evidence_id": "E-0186",
+  "lead_id": "LH-0025",
+  "kind": "operational",
+  "found_at": "2026-08-27T04:19:32.237632+00:00",
+  "source_url": "",
+  "summary": "Booking via phone/email/walk-in — no AI-powered booking assistant to handle volume spikes",
+  "confidence": 75,
+  "raw": ""
+}

@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-0656",
+  "lead_id": "SYSTEM",
+  "occurred_at": "2026-08-27T04:11:56.951669+00:00",
+  "actor": "hermes",
+  "action": "duplicate_skipped",
+  "resource": "ingest",
+  "detail": "Duplicate skipped: Fastexpress BD"
+}

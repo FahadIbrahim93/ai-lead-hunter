@@ -3,17 +3,22 @@
   "business_name": "Fastexpress BD",
   "discovered_at": "2026-08-27T03:43:55.688017+00:00",
   "source": "research",
-  "lifecycle_status": "DISCOVERED",
-  "score": 0,
-  "tier": "C",
+  "lifecycle_status": "QUALIFIED",
+  "score": 85,
+  "tier": "A",
   "website": "https://fastexpressbd.com/",
   "verified": true,
   "verified_at": "2026-08-27T04:04:25.531443+00:00",
   "lead_type": "client",
   "niche": "Courier and logistics",
   "geography": "Dhaka, Bangladesh",
-  "pain_signals": [],
-  "offer_surface": "",
+  "pain_signals": [
+    "Courier and logistics service with shipment tracking on website — but no automated booking form",
+    "Booking via phone/email/walk-in — no AI-powered booking assistant to handle volume spikes",
+    "No automated shipment status updates via SMS/email for customers — manual follow-up on each shipment",
+    "High-volume B2B and personal shipments — manual booking process creates bottlenecks during peak seasons"
+  ],
+  "offer_surface": "Autonomous AI agent deployment for Courier and logistics — targeting: Courier and logistics service with shipment tracking on website — but no automated booking form; Booking via phone/email/walk-in — no AI-powered booking assistant to handle volume spikes; No automated shipment status updates via SMS/email for customers — manual follow-up on each shipment",
   "contact_paths": [
     {
       "channel": "email",
