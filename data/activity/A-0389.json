@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-0389",
+  "lead_id": "LH-0020",
+  "occurred_at": "2026-08-27T03:07:50.776931+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0159.json",
+  "detail": "Evidence: operational — 1200+ clients served indicates strong inbound pipeline but manual conversion bot"
+}

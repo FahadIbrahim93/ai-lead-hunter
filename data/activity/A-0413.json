@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-0413",
+  "lead_id": "SYSTEM",
+  "occurred_at": "2026-08-27T03:08:30.235434+00:00",
+  "actor": "hermes",
+  "action": "duplicate_skipped",
+  "resource": "ingest",
+  "detail": "Duplicate skipped: Fara IT Limited"
+}

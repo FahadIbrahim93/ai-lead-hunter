@@ -322,6 +322,7 @@
   <button class="tab active" data-tab="leads" onclick="switchTab('leads')">📇 Leads</button>
   <button class="tab" data-tab="outreach" onclick="switchTab('outreach')">✉️ Outreach Drafts</button>
   <button class="tab" data-tab="activity" onclick="switchTab('activity')">📜 Activity Log</button>
+  <button class="tab" data-tab="pipeline" onclick="switchTab('pipeline')">📊 Pipeline Board</button>
 </div>
 
 <div id="panel-leads" class="tab-panel active">
@@ -345,6 +346,14 @@
 <div id="panel-activity" class="tab-panel">
   <h2>Recent Activity <span class="count" id="activity-count"></span></h2>
   <div class="activity-feed" id="activity-list"><div class="loading">Loading activity…</div></div>
+</div>
+
+<div id="panel-pipeline" class="tab-panel">
+  <h2>Pipeline Board</h2>
+  <p style="font-size:13px;color:var(--muted);margin-bottom:14px;">
+    Leads by lifecycle stage. Click a card to see details.
+  </p>
+  <div id="pipeline-columns" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;"></div>
 </div>
 
 <div id="toast"></div>
@@ -374,6 +383,39 @@ function scoreColor(score) {
   return "var(--muted)";
 }
 
+// Pipeline board: render lifecycle stage columns
+function renderPipeline() {
+  const stages = ["DISCOVERED","AUDITED","QUALIFIED","CONTACTED","IN_CONVERSATION","WON","LOST"];
+  const stageColors = {
+    "DISCOVERED":"var(--muted)",
+    "AUDITED":"var(--accent)",
+    "QUALIFIED":"var(--green)",
+    "CONTACTED":"var(--amber)",
+    "IN_CONVERSATION":"var(--purple)",
+    "WON":"var(--green)",
+    "LOST":"var(--red)"
+  };
+  const col = document.getElementById("pipeline-columns");
+  if (!STATE) return;
+  const all = allLeads();
+  col.innerHTML = stages.map(stage => {
+    const leads = all.filter(l => l.lifecycle_status === stage);
+    return `
+      <div style="background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:12px 12px 14px;">
+        <div style="font-size:11px;text-transform:uppercase;color:${stageColors[stage] || "var(--muted)"};margin-bottom:10px;letter-spacing:.5px;font-weight:600;">${stage} (${leads.length})</div>
+        <div style="display:flex;flex-direction:column;gap:6px;max-height:360px;overflow-y:auto;">
+          ${leads.map(l => `
+            <div style="background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:8px;cursor:pointer;" title="${esc(JSON.stringify({id:l.lead_id, name:l.business_name, score:l.score, tier:l.tier, status:l.lifecycle_status}))}">
+              <div style="font-size:12px;font-weight:600;margin-bottom:2px;">${esc(l.business_name)}</div>
+              <div style="font-size:10px;color:var(--muted);">${esc(l.lead_id)} · ${l.score} · ${l.tier}</div>
+            </div>
+          `).join("")}
+          ${leads.length === 0 ? '<div style="font-size:11px;color:var(--muted);padding:8px;text-align:center;">empty</div>' : ""}
+        </div>
+      </div>`;
+  }).join("");
+}
+
 function switchTab(name) {
   document.querySelectorAll(".tab").forEach(t => t.classList.toggle("active", t.dataset.tab === name));
   document.querySelectorAll(".tab-panel").forEach(p => p.classList.toggle("active", p.id === "panel-" + name));
@@ -395,6 +437,7 @@ async function loadState() {
     renderLeads();
     renderOutreach();
     renderActivity();
+    renderPipeline();
   } catch (e) {
     document.getElementById("leads-list").innerHTML = '<div class="empty">Failed to load data. Is the server running?</div>';
   }

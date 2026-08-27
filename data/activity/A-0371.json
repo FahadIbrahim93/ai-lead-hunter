@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-0371",
+  "lead_id": "LH-0018",
+  "occurred_at": "2026-08-27T03:04:37.674959+00:00",
+  "actor": "hermes",
+  "action": "verified",
+  "resource": "https://ngital.com/",
+  "detail": "Live HTTP 200 — website confirmed up"
+}

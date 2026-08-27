@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-0404",
+  "lead_id": "SYSTEM",
+  "occurred_at": "2026-08-27T03:08:30.185805+00:00",
+  "actor": "hermes",
+  "action": "duplicate_skipped",
+  "resource": "ingest",
+  "detail": "Duplicate skipped: Kazi Law Chamber"
+}

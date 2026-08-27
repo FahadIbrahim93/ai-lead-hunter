@@ -1,0 +1,10 @@
+{
+  "evidence_id": "E-0149",
+  "lead_id": "LH-0018",
+  "kind": "operational",
+  "found_at": "2026-08-27T03:07:50.225026+00:00",
+  "source_url": "",
+  "summary": "Inbound lead intake is manual — web form submissions + phone calls with no automated qualification or routing",
+  "confidence": 75,
+  "raw": ""
+}

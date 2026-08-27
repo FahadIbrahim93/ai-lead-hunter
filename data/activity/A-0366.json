@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-0366",
+  "lead_id": "LH-0020",
+  "occurred_at": "2026-08-27T03:03:21.396857+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0147.json",
+  "detail": "Evidence: website — Website live (HTTP 200) at https://faraitltd.com/"
+}

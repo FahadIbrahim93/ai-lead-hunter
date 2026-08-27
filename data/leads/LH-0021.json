@@ -1,0 +1,43 @@
+{
+  "lead_id": "LH-0021",
+  "business_name": "Look N Feel Event Solutions",
+  "discovered_at": "2026-08-27T03:02:59.942572+00:00",
+  "source": "research",
+  "lifecycle_status": "QUALIFIED",
+  "score": 85,
+  "tier": "A",
+  "website": "https://looknfeelevent.com/",
+  "verified": true,
+  "verified_at": "2026-08-27T03:04:41.860113+00:00",
+  "lead_type": "client",
+  "niche": "Event management and wedding planning",
+  "geography": "Dhaka, Bangladesh",
+  "pain_signals": [
+    "Booking is phone/WhatsApp only — no online inquiry form, no package comparison tool, no automated follow-up",
+    "800+ events since 2016 — strong pipeline but inquiry handling is entirely manual",
+    "Wedding + corporate seasonality creates demand spikes and coordination overhead — inquiries can be missed during peaks",
+    "Competitors with online inquiry forms and automated follow-up capture leads that phone-only intake misses"
+  ],
+  "offer_surface": "Autonomous AI agent deployment for Event management and wedding planning — targeting: Booking is phone/WhatsApp only — no online inquiry form, no package comparison tool, no automated follow-up; 800+ events since 2016 — strong pipeline but inquiry handling is entirely manual; Wedding + corporate seasonality creates demand spikes and coordination overhead — inquiries can be missed during peaks",
+  "contact_paths": [
+    {
+      "channel": "email",
+      "value": "looknfeelevent@gmail.com",
+      "confidence": 90
+    },
+    {
+      "channel": "phone",
+      "value": "+8801674851180",
+      "confidence": 85
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "E-0148",
+      "kind": "website",
+      "summary": "Website live (HTTP 200) at https://looknfeelevent.com/",
+      "confidence": 95
+    }
+  ],
+  "notes": ""
+}

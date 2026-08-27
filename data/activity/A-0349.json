@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-0349",
+  "lead_id": "LH-0020",
+  "occurred_at": "2026-08-27T03:02:59.937982+00:00",
+  "actor": "hermes",
+  "action": "ingested",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\leads\\LH-0020.json",
+  "detail": "Ingested from research inbox: Fara IT Limited"
+}

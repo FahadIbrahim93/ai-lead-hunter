@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Agent ROI Calculator — Look N Feel Event Solutions</title>
+<style>
+  :root {
+    --bg:#0b0f14; --surface:#11161d; --surface2:#161d26; --border:#242e3a;
+    --text:#e8eef5; --muted:#8b98a9; --accent:#3fb950; --accent2:#58a6ff;
+    --warn:#f85149; --orange:#d29922;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;min-height:100vh}
+  .wrap{max-width:920px;margin:0 auto;padding:24px 16px 60px}
+  header{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 18px;background:var(--surface);border:1px solid var(--border);border-radius:14px 14px 0 0}
+  .brand{display:flex;align-items:center;gap:12px}
+  .logo{width:42px;height:42px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:flex;align-items:center;justify-content:center;font-weight:800;font-size:16px;color:#fff}
+  .brand h1{font-size:15px}
+  .brand .sub{font-size:11px;color:var(--muted)}
+  .tag{font-size:11px;color:var(--accent);border:1px solid var(--accent);padding:3px 10px;border-radius:20px}
+  .grid{display:grid;grid-template-columns:1.3fr 1fr;gap:0;background:var(--surface);border:1px solid var(--border);border-top:none}
+  @media(max-width:720px){.grid{grid-template-columns:1fr}}
+  .calc{padding:20px;display:flex;flex-direction:column;gap:16px}
+  .field{display:flex;flex-direction:column;gap:6px}
+  .field .label{display:flex;justify-content:space-between;font-size:13px}
+  .field .label span:last-child{font-weight:600;color:var(--accent2);font-family:ui-monospace,monospace}
+  input[type=range]{width:100%;accent-color:var(--accent);height:6px;background:var(--surface2);border-radius:3px;-webkit-appearance:none}
+  input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:18px;height:18px;border-radius:50%;background:var(--accent);cursor:pointer;border:2px solid var(--bg)}
+  .input-num{background:var(--surface2);border:1px solid var(--border);color:var(--text);border-radius:8px;padding:8px 12px;font-family:ui-monospace,monospace;font-size:14px;width:100%;outline:none}
+  .input-num:focus{border-color:var(--accent2)}
+  .breakdown{display:flex;flex-direction:column;gap:10px}
+  .row{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px dashed var(--border);font-size:13px}
+  .row:last-child{border:none}
+  .row .k{color:var(--muted)}
+  .row .v{font-weight:600;text-align:right;font-family:ui-monospace,monospace}
+  .total{background:var(--surface2);border:1px solid var(--border);border-radius:10px;padding:14px;margin-top:8px;display:flex;justify-content:space-between;align-items:center}
+  .total .k{font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px}
+  .total .v{font-size:28px;font-weight:800;color:var(--accent);font-family:ui-monospace,monospace}
+  .verdict{margin-top:12px;padding:14px;border-radius:10px;font-size:13px;line-height:1.5}
+  .verdict.good{background:rgba(63,185,80,0.1);border:1px solid var(--accent);color:var(--accent)}
+  .verdict.warn{background:rgba(210,153,34,0.1);border:1px solid var(--orange);color:var(--orange)}
+  .side{padding:20px;display:flex;flex-direction:column;gap:16px}
+  .side h2{font-size:12px;text-transform:uppercase;letter-spacing:1px;color:var(--muted)}
+  .pain-card{background:var(--surface2);border:1px solid var(--border);border-radius:10px;padding:12px;font-size:12px}
+  .pain-card .title{font-size:11px;color:var(--accent);text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px}
+  .pain-card ul{list-style:none;padding:0}
+  .pain-card li{padding:5px 0;border-bottom:1px dashed var(--border);color:var(--muted)}
+  .pain-card li:last-child{border:none}
+  .gains-card{background:var(--surface2);border:1px solid var(--accent);border-radius:10px;padding:12px;font-size:12px}
+  .gains-card .title{font-size:11px;color:var(--accent);text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px}
+  .gains-card ul{list-style:none;padding:0}
+  .gains-card li{padding:5px 0;color:var(--text)}
+  .gains-card li:before{content:"✓ ";color:var(--accent)}
+  footer{margin-top:16px;text-align:center;font-size:11px;color:var(--muted)}
+  footer b{color:var(--accent2)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand">
+      <div class="logo" id="logo">ROI</div>
+      <div>
+        <h1 id="bizname">Look N Feel Event Solutions</h1>
+        <div class="sub">ROI Calculator · see what an AI agent saves you</div>
+      </div>
+    </div>
+    <span class="tag">💰 CALCULATOR</span>
+  </header>
+
+  <div class="grid">
+    <div class="calc">
+      <div class="field">
+        <div class="label"><span>Monthly enquiries / leads</span><span id="v-enq">30 / month</span></div>
+        <input type="range" id="enq" min="10" max="500" step="10" value="30">
+      </div>
+      <div class="field">
+        <div class="label"><span>% enquiries you miss or lose</span><span id="v-miss">35%</span></div>
+        <input type="range" id="miss" min="10" max="60" step="5" value="35">
+      </div>
+      <div class="field">
+        <div class="label"><span>Avg. customer value (BDT)</span><span id="v-value">100000</span></div>
+        <input type="range" id="value" min="10000" max="500000" step="10000" value="100000">
+      </div>
+      <div class="field">
+        <div class="label"><span>Staff cost per hour (BDT)</span><span id="v-staff">500</span></div>
+        <input type="range" id="staff" min="100" max="1500" step="50" value="500">
+      </div>
+      <div class="field">
+        <div class="label"><span>Hours spent on enquiries / month</span><span id="v-hours">60 hrs</span></div>
+        <input type="range" id="hours" min="10" max="200" step="10" value="60">
+      </div>
+
+      <div class="breakdown">
+        <div class="row"><span class="k">Enquiries you capture today</span><span class="v" id="r-capture">—</span></div>
+        <div class="row"><span class="k">Enquiries you miss — and their value</span><span class="v" id="r-missed">—</span></div>
+        <div class="row"><span class="k">Staff hours spent on enquiries / month</span><span class="v" id="r-hours">—</span></div>
+        <div class="row"><span class="k">Cost of staff time on enquiries</span><span class="v" id="r-cost">—</span></div>
+      </div>
+
+      <div class="total">
+        <span class="k">Your monthly cost of missed leads</span>
+        <span class="v" id="r-total">—</span>
+      </div>
+
+      <div class="verdict" id="r-verdict"></div>
+      <div class="verdict good" style="margin-top:8px" id="r-savings"></div>
+    </div>
+
+    <div class="side">
+      <div>
+        <h2>Your challenges today</h2>
+        <div class="pain-card">
+          <div class="title">Pain points</div>
+          <ul id="pains-list"></ul>
+        </div>
+      </div>
+      <div>
+        <h2>With the agent</h2>
+        <div class="gains-card">
+          <div class="title">What changes</div>
+          <ul>
+            <li>Enquiries answered instantly, 24/7</li>
+            <li>Zero missed leads</li>
+            <li>Leads qualified automatically</li>
+            <li>Zero staff time on routine enquiries</li>
+            <li>Every enquiry logged for follow-up</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <h2>Full ROI picture (year)</h2>
+        <div class="pain-card">
+          <div class="row"><span class="k">Annual cost of missed leads</span><span class="v" id="r-annual">—</span></div>
+          <div class="row"><span class="k">Annual staff time saved</span><span class="v" id="r-annually">—</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    Calculator based on <b>Look N Feel Event Solutions</b>'s niche (<b>Event management and wedding planning</b>). Adjust the sliders to match your actual numbers. Built by Fahad Ibrahim · Hope Theory.
+  </footer>
+</div>
+
+<script>
+// Inputs
+const el = {
+  enq: document.getElementById("enq"),
+  miss: document.getElementById("miss"),
+  value: document.getElementById("value"),
+  staff: document.getElementById("staff"),
+  hours: document.getElementById("hours"),
+};
+
+function fmt(n){return n.toLocaleString("en-BD");}
+function updateLabel(id, val, suffix){document.getElementById(id).textContent = val + suffix;}
+
+function recalc(){
+  const enq = parseInt(el.enq.value);
+  const missPct = parseInt(el.miss.value)/100;
+  const value = parseInt(el.value.value);
+  const staff = parseInt(el.staff.value);
+  const hours = parseInt(el.hours.value);
+
+  updateLabel("v-enq", enq, " / month");
+  updateLabel("v-miss", missPct*100, "%");
+  updateLabel("v-value", fmt(value), "");
+  updateLabel("v-staff", fmt(staff), "");
+  updateLabel("v-hours", hours, " hrs");
+
+  const captured = enq * (1 - missPct);
+  const missed = enq * missPct;
+  const missedValue = missed * value;
+  const cost = hours * staff;
+  const totalCost = missedValue + cost;
+
+  document.getElementById("r-capture").textContent = captured.toLocaleString("en-BD") + " / month";
+  document.getElementById("r-missed").textContent = fmt(missed) + " · BDT " + fmt(missedValue);
+  document.getElementById("r-hours").textContent = hours + " hrs / month";
+  document.getElementById("r-cost").textContent = "BDT " + fmt(cost);
+  document.getElementById("r-total").textContent = "BDT " + fmt(totalCost) + "/mo";
+
+  document.getElementById("r-annual").textContent = "BDT " + fmt(totalCost * 12);
+  document.getElementById("r-annually").textContent = (hours * 12) + " hrs / year";
+
+  const verdict = document.getElementById("r-verdict");
+  const savings = document.getElementById("r-savings");
+  if (totalCost > value * enq * 0.05) {
+    verdict.innerHTML = `<b>You're losing ~${fmt(totalCost)} / month</b> on missed leads and staff time. That's BDT ${fmt(totalCost*12)} / year — real money going out the door.`;
+    savings.innerHTML = `<b>An AI agent would capture those ${fmt(missed)} missed enquiries</b> and handle the enquiry workload automatically — saving BDT ${fmt(totalCost)}/month in staff time and recovering the revenue from missed leads.`;
+    verdict.className = "verdict warn";
+    savings.className = "verdict good";
+  } else {
+    verdict.innerHTML = `You're capturing most enquiries (${captured.toLocaleString("en-BD")}/mo), so the pain is smaller — but staff time (${hours}hrs/mo) still adds up to BDT ${fmt(cost)}/mo.`;
+    savings.innerHTML = `An agent would take over the ${hours}hrs/mo of enquiry handling — freeing your team for higher-value work.`;
+    verdict.className = "verdict good";
+    savings.className = "verdict warn";
+  }
+}
+
+el.enq.oninput = recalc;
+el.miss.oninput = recalc;
+el.value.oninput = recalc;
+el.staff.oninput = recalc;
+el.hours.oninput = recalc;
+
+// Pains
+document.getElementById("pains-list").innerHTML =
+  (["Booking is phone/WhatsApp only — no online inquiry form, no package comparison tool, no automated follow-up", "800+ events since 2016 — strong pipeline but inquiry handling is entirely manual", "Wedding + corporate seasonality creates demand spikes and coordination overhead — inquiries can be missed during peaks", "Competitors with online inquiry forms and automated follow-up capture leads that phone-only intake misses"] || []).map(p => `<li>${esc(p.split("—")[0].trim())}</li>`).join("");
+
+function esc(s){const d=document.createElement("div");d.textContent=s;return d.innerHTML}
+
+recalc();
+</script>
+</body>
+</html>

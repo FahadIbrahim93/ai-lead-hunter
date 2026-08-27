@@ -1218,6 +1218,78 @@ def cmd_mark_lost(outreach_id: str) -> None:
     print(f"📉 {outreach_id} — lead {rec['lead_id']} LOST")
 
 
+# ─── Live calculator generator ──────────────────────────────────────────────
+
+
+def build_calculator_config(lead: dict) -> dict:
+    """Derive calculator defaults from lead data (niche-specific presets)."""
+    niche = lead.get("niche", "").lower()
+    name = lead["business_name"]
+
+    preset_map = {
+        "interior":        dict(enq=40, miss=25, value=400000, staff=500, hours=80),
+        "real estate":     dict(enq=60, miss=30, value=500000, staff=500, hours=120),
+        "legal":           dict(enq=30, miss=35, value=300000, staff=600, hours=60),
+        "health":          dict(enq=120, miss=20, value=20000, staff=300, hours=100),
+        "travel":          dict(enq=50, miss=25, value=80000, staff=400, hours=70),
+        "ielts":           dict(enq=80, miss=30, value=30000, staff=350, hours=90),
+        "education":       dict(enq=80, miss=30, value=30000, staff=350, hours=90),
+        "jewelry":         dict(enq=25, miss=30, value=150000, staff=500, hours=50),
+        "diagnostic":      dict(enq=120, miss=20, value=20000, staff=300, hours=100),
+        "fitness":         dict(enq=60, miss=25, value=30000, staff=400, hours=80),
+        "photography":     dict(enq=30, miss=35, value=100000, staff=500, hours=60),
+        "gym":             dict(enq=60, miss=25, value=30000, staff=400, hours=80),
+        "wedding":         dict(enq=30, miss=35, value=100000, staff=500, hours=60),
+        "food":            dict(enq=150, miss=15, value=1500, staff=250, hours=60),
+        "gym":             dict(enq=60, miss=25, value=30000, staff=400, hours=80),
+    }
+    default = preset_map.get("default", dict(enq=50, miss=30, value=50000, staff=350, hours=70))
+    preset = dict(enq=50, miss=30, value=50000, staff=350, hours=70)
+    for key, opts in preset_map.items():
+        if key in niche:
+            preset = opts
+            break
+
+    return {
+        "business_name": name,
+        "niche": lead.get("niche", ""),
+        "pain_signals": lead.get("pain_signals", []),
+        "enq": preset["enq"],
+        "miss": preset["miss"],
+        "value": preset["value"],
+        "staff": preset["staff"],
+        "hours": preset["hours"],
+    }
+
+
+def cmd_calculator_live(lead_id: str) -> None:
+    lead = load_lead(lead_id)
+    tpl_path = REPO / "templates" / "calculator_template.html"
+    if not tpl_path.exists():
+        print("Missing templates/calculator_template.html", file=sys.stderr)
+        sys.exit(1)
+
+    cfg = build_calculator_config(lead)
+    tpl = tpl_path.read_text(encoding="utf-8")
+    html = tpl.replace("__BUSINESS_NAME__", lead["business_name"])
+    html = html.replace("__NICHE__", lead.get("niche", "")).replace("__NICHE__", "")
+    html = html.replace("__DEFAULT_ENQ__", str(cfg["enq"]))
+    html = html.replace("__DEFAULT_MISS__", str(cfg["miss"]))
+    html = html.replace("__DEFAULT_VALUE__", str(cfg["value"]))
+    html = html.replace("__DEFAULT_STAFF__", str(cfg["staff"]))
+    html = html.replace("__DEFAULT_HOURS__", str(cfg["hours"]))
+    html = html.replace("__PAINS__", json.dumps(cfg["pain_signals"], ensure_ascii=False))
+
+    calc_dir = ARTIFACTS / "calculators-live"
+    calc_dir.mkdir(parents=True, exist_ok=True)
+    out = calc_dir / f"{lead_id}-calculator-live.html"
+    out.write_text(html, encoding="utf-8")
+
+    write_activity("demo_built", lead_id, "hermes", resource=str(out), detail=f"ROI calculator rendered: {out.name}")
+    print(f"✅ ROI calculator: {out}")
+    print(f"   Open in browser — sliders let the lead see their own savings.")
+
+
 # ─── CLI ───────────────────────────────────────────────────────────────────
 
 CMD_MAP = {
@@ -1234,6 +1306,7 @@ CMD_MAP = {
     "outreach": cmd_outreach,
     "demo": cmd_demo,
     "demo-live": cmd_demo_live,
+    "calculator-live": cmd_calculator_live,
     "sent": cmd_mark_sent,
     "reply": cmd_mark_reply,
     "won": cmd_mark_won,
@@ -1274,8 +1347,8 @@ def main() -> None:
     if cmd == "demo-live" and not arg:
         print("Usage: python engine.py demo-live <lead_id>", file=sys.stderr)
         sys.exit(1)
-    if cmd == "sent" and not arg:
-        print("Usage: python engine.py sent <outreach_id>", file=sys.stderr)
+    if cmd == "calculator-live" and not arg:
+        print("Usage: python engine.py calculator-live <lead_id>", file=sys.stderr)
         sys.exit(1)
     if cmd == "won" and not arg:
         print("Usage: python engine.py won <outreach_id>", file=sys.stderr)

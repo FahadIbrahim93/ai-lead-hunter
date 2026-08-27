@@ -1,0 +1,43 @@
+{
+  "lead_id": "LH-0018",
+  "business_name": "Ngital Digital Marketing",
+  "discovered_at": "2026-08-27T03:02:59.913109+00:00",
+  "source": "research",
+  "lifecycle_status": "QUALIFIED",
+  "score": 85,
+  "tier": "A",
+  "website": "https://ngital.com/",
+  "verified": true,
+  "verified_at": "2026-08-27T03:04:37.666957+00:00",
+  "lead_type": "client",
+  "niche": "Digital marketing agency",
+  "geography": "Dhaka, Bangladesh",
+  "pain_signals": [
+    "Inbound lead intake is manual — web form submissions + phone calls with no automated qualification or routing",
+    "Proposals and retainer onboarding (BDT50K/month+) are hand-crafted — slow close, inconsistent pricing",
+    "No automated follow-up on inbound leads — responsive prospects can go cold before a human replies",
+    "Competitors with automated lead triage and proposal routing capture leads that manual intake misses"
+  ],
+  "offer_surface": "Autonomous AI agent deployment for Digital marketing agency — targeting: Inbound lead intake is manual — web form submissions + phone calls with no automated qualification or routing; Proposals and retainer onboarding (BDT50K/month+) are hand-crafted — slow close, inconsistent pricing; No automated follow-up on inbound leads — responsive prospects can go cold before a human replies",
+  "contact_paths": [
+    {
+      "channel": "email",
+      "value": "enquiry@ngital.com",
+      "confidence": 90
+    },
+    {
+      "channel": "phone",
+      "value": "+8801601654800",
+      "confidence": 85
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "E-0145",
+      "kind": "website",
+      "summary": "Website live (HTTP 200) at https://ngital.com/",
+      "confidence": 95
+    }
+  ],
+  "notes": ""
+}

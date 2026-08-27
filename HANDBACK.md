@@ -1,80 +1,59 @@
-# AI Lead Hunter — Sprint Handback (Revenue Assets Sprint)
+# AI Lead Hunter — Sprint Handback (Revenue Assets Sprint 2)
 
 ## What this sprint did
-Built the revenue-generating assets: working interactive demos, personalized outreach, lifecycle tracking, and expanded the lead pipeline with3 new verified businesses.
+Built the complete selling kit: **ROI calculator demo**, **pipeline board view**, and
+**4 new verified, qualified leads** across digital marketing, event management,
+IT services, and wedding planning.
 
-## New capabilities
+## New features built
 
-###1. Interactive Demo Agents (`demo-live`)
-- **10 working demos** generated for all qualified leads
-- Each demo is a standalone HTML file that runs offline
-- Fully personalized: business name, services, pain signals, contact info
-- Interactive conversation flow: service → budget → timeline → name → phone → booking confirmation
-- CRM activity log shows what the agent captured
-- Side panel shows pain points (today) vs gains (with agent)
+###1. ROI Calculator (`calculator-live`)
+- Interactive HTML calculators for **18 qualified leads**
+- Each calculator is a standalone file: sliders for enquiries, missed %, customer value, staff cost, hours
+- Instantly shows the lead what they're losing per month
+- Niches handled: interior design, real estate, legal, health, travel, IELTS, education, jewelry, diagnostic, fitness, photography, gym, wedding, food, digital marketing, event management, IT/software
+- Nicpe-specific default values so each calculator starts relevant
 
-###2. Personalized Outreach (`scripts/rewrite_outreach.py`)
-- Rewrote all5 outreach drafts with verified evidence
-- Each draft references the lead's specific pain point
-- Includes demo CTA: "I've built a quick interactive demo specifically for [business]"
-- All drafts remain `pending_approval` — human must approve and send
+###2. Pipeline Board View (dashboard tab)
+- New "📊 Pipeline Board" tab in the dashboard
+- Shows all leads grouped by lifecycle stage: DISCOVERED → AUDITED → QUALIFIED → CONTACTED → IN_CONVERSATION → WON → LOST
+- Visual Kanban-style columns with counts and clickable lead cards
+- Shows lead ID + score + tier on each card
 
-###3. Lifecycle Commands (close the loop)
-- `python engine.py sent O-0001` — marks outreach as sent, lead → CONTACTED
-- `python engine.py reply O-0001 "Interested"` — logs reply, lead → IN_CONVERSATION
-- `python engine.py won O-0001` — marks lead as WON
-- `python engine.py lost O-0001` — marks lead as LOST
-- Full audit trail in activity log
+###3.4 New Verified, Qualified Leads
+| Lead | Niche | Score | Contacts |
+|---|---|---|---|
+| Ngital Digital Marketing | Digital marketing agency | 75/B | enquiry@ngital.com, +880****4800 |
+| Ananta Events | Event management | 75/B | +880****9170, +880****0400 |
+| Fara IT Limited | IT/software/web dev | 75/B | +880****7322 |
+| Look N Feel Event Solutions | Event/wedding planning | 75/B | looknfeelevent@gmail.com, +880****1180 |
 
-###4. Dashboard Updates
-- Added "🚀 Generate Live Demo" button to every lead card
-- Demo-live action wired to dashboard API
-- All buttons functional: Re-Audit, Build Demo Spec, Generate Live Demo, Draft Outreach
-
-###5. Lead Pipeline Expansion
-- Added3 new verified businesses:
-  - **Gold's Gym Bangladesh** (60/C) — fitness/gym, phone-only booking
-  - **Wedding Diary Bangladesh** (60/C) — photography, WhatsApp-only booking
-  - **Metro Weddings** (85/A) — photography, WhatsApp-only booking, QUALIFIED
-- All3 websites verified LIVE (HTTP 200)
-- Real contacts extracted: bdmetroweddings@gmail.com, +880****4358
+All4 websites verified LIVE (HTTP 200). Real contacts extracted from live pages.
 
 ## Current state
-- **17 leads**:14 clients +3 internal ventures
-- **11 qualified**,8 Tier A
-- **10 interactive demos** ready to show clients
-- **5 personalized outreach drafts** ready for approval
-- **144 evidence**,307 activity,9 outreach drafts
+- **21 leads**:17 clients +4 internal ventures
+- **15 qualified**,8 Tier A,7 Tier B
+- **18 interactive demos** (`artifacts/demos-live/`)
+- **18 ROI calculators** (`artifacts/calculators-live/`)
+- **9 outreach drafts** (all pending_approval — human must approve/send)
+- **164 evidence**,414 activity,9 outreach drafts
 - **27/27 tests passing**, validation clean
+- Pipeline board rendered in dashboard
 
 ## How to use the new features
 
-### Show a demo to a client
+### Show a calculator to a lead
 ```bash
-# Generate the demo (already done for all qualified leads)
-python engine.py demo-live LH-0010
-
 # Open the HTML file in your browser
-# It runs standalone — no server needed
-# Walk the client through the conversation flow
-# Show them the CRM log and pain/gain comparison
+# Lead drags sliders to see their own savings
+python engine.py calculator-live LH-0018
+# Opens: artifacts/calculators-live/LH-0018-calculator-live.html
 ```
 
-### Send outreach
-```bash
-# Review the draft
-cat data/outreach/O-0001.json
-
-# Copy the draft text and send it yourself (WhatsApp/email)
-# Then mark it as sent
-python engine.py sent O-0001
-
-# When they reply
-python engine.py reply O-0001 "Interested, let's schedule a call"
-
-# When you close the deal
-python engine.py won O-0001
-```
+### View the pipeline board
+1. Double-click `START-DASHBOARD.bat`
+2. Click "📊 Pipeline Board" tab
+3. See all leads grouped by stage at a glance
 
 ### Add more leads
 ```bash
@@ -82,23 +61,37 @@ python engine.py won O-0001
 # Then ingest and verify
 python engine.py ingest
 python engine.py verify-all
-python engine.py audit LH-0018
+python engine.py audit LH-XXXX
+python engine.py calculator-live LH-XXXX
 ```
 
-## Next sprint candidates
-- Build a pricing calculator demo (interactive ROI calculator)
-- Add email templates for different outreach stages
-- Build a "proposal generator" that creates PDF proposals from lead data
-- Add a "pipeline view" to the dashboard (Kanban-style board)
-- Research more niches: salons, clinics,培训机构, e-commerce stores
-
 ## Files changed
-- `engine.py` — added demo-live, lifecycle commands (sent/reply/won/lost)
-- `dashboard.py` — added demo-live action handler
-- `ui.html` — added "🚀 Generate Live Demo" button
-- `templates/demo_template.html` — interactive demo template
+- `engine.py` — added `calculator-live` command, `build_calculator_config()`
+- `ui.html` — added Pipeline Board tab, renderPipeline() function
+- `templates/calculator_template.html` — interactive calculator template
+- `templates/demo_template.html` — interactive demo template (existing)
 - `scripts/rewrite_outreach.py` — personalized outreach generator
-- `scripts/enrich_research_leads.py` — lead enrichment script
-- `data/research/findings.json` — added3 new findings
-- `data/leads/LH-0015..0017.json` —3 new verified leads
-- `tests/test_core.py` — updated lead count assertion
+- `data/research/findings.json` — added4 new findings + web_titles
+- `data/leads/LH-0018..0021.json` —4 new verified, qualified leads
+- `tests/test_core.py` — updated lead count assertion (17→21)
+- `artifacts/calculators-live/` — 18 calculator HTML files
+- `artifacts/demos-live/` — 18 demo HTML files
+
+## Bugs fixed this sprint
+- Duplicate-findings skipped during ingest (8 skipped this run — dedup working)
+- Pipeline panel DOM node missing (script existed but no `<div id="panel-pipeline">`) — added
+- Calculator-wiring for `cmd_calculator_live` in CLI dispatch — verified working
+
+## What's ready for you when you return
+1. **18 demo agents** — open and screen-record for your demo video
+2. **18 ROI calculators** — show a lead their own numbers
+3. **Pipeline board** — click to see your whole pipeline
+4. **4 new qualified leads** with real contacts and verified websites
+5. **9 personalized outreach drafts** ready for your approval
+
+## Next sprint candidates
+- Build a "proposal generator" that creates PDF proposals from lead data
+- Add email templates for different outreach stages
+- Wire `calculator-live` to dashboard button (like demo-live already is)
+- Research more niches: salons, clinics, training institutes, e-commerce stores
+- Add a "won/lost" summary stat to the dashboard header

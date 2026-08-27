@@ -1,0 +1,53 @@
+{
+  "lead_id": "LH-0019",
+  "business_name": "Ananta Events and Entertainment",
+  "discovered_at": "2026-08-27T03:02:59.923231+00:00",
+  "source": "research",
+  "lifecycle_status": "QUALIFIED",
+  "score": 85,
+  "tier": "A",
+  "website": "https://www.anantabd.net/",
+  "verified": true,
+  "verified_at": "2026-08-27T03:04:40.108957+00:00",
+  "lead_type": "client",
+  "niche": "Event management company",
+  "geography": "Dhaka, Bangladesh",
+  "pain_signals": [
+    "Inquiry intake is phone/email only — no online inquiry form, no automated follow-up, no inquiry management system",
+    "High-ticket event packages, seasonal demand spikes — manual coordination during peaks, lost inquiries",
+    "No automated waitlist or inquiry management for 2026-2027 season and ongoing corporate bookings",
+    "Competitors with CRM-based inquiry management capture leads that phone-only intake misses"
+  ],
+  "offer_surface": "Autonomous AI agent deployment for Event management company — targeting: Inquiry intake is phone/email only — no online inquiry form, no automated follow-up, no inquiry management system; High-ticket event packages, seasonal demand spikes — manual coordination during peaks, lost inquiries; No automated waitlist or inquiry management for 2026-2027 season and ongoing corporate bookings",
+  "contact_paths": [
+    {
+      "channel": "email",
+      "value": "info@anantabd.net",
+      "confidence": 90
+    },
+    {
+      "channel": "phone",
+      "value": "+8801813340400",
+      "confidence": 85
+    },
+    {
+      "channel": "phone",
+      "value": "+8801715049170",
+      "confidence": 85
+    },
+    {
+      "channel": "phone",
+      "value": "+8801613340400",
+      "confidence": 85
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "E-0146",
+      "kind": "website",
+      "summary": "Website live (HTTP 200) at https://www.anantabd.net/",
+      "confidence": 95
+    }
+  ],
+  "notes": ""
+}

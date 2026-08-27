@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-0348",
+  "lead_id": "LH-0019",
+  "occurred_at": "2026-08-27T03:02:59.927865+00:00",
+  "actor": "hermes",
+  "action": "ingested",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\leads\\LH-0019.json",
+  "detail": "Ingested from research inbox: Ananta Events and Entertainment"
+}
