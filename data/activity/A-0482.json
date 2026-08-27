@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-0482",
+  "lead_id": "LH-0023",
+  "occurred_at": "2026-08-27T03:44:14.446564+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0166.json",
+  "detail": "Evidence: website — Website live (HTTP 200) at https://rejuvenatebd.com/"
+}

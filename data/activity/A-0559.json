@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-0559",
+  "lead_id": "SYSTEM",
+  "occurred_at": "2026-08-27T03:52:26.218646+00:00",
+  "actor": "hermes",
+  "action": "duplicate_skipped",
+  "resource": "ingest",
+  "detail": "Duplicate skipped: JobaidaPack Packaging Ltd"
+}

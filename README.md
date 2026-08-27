@@ -1,95 +1,140 @@
 # AI Lead Hunter — Revenue Acquisition OS
 
-A local-first lead machine for selling AI agents to Bangladesh businesses.
-Discovers real companies, verifies them live, audits their pain, scores them,
-builds demo specs, and drafts outreach — with a human approval gate on every send.
+A local-first lead machine that discovers real Bangladesh businesses, verifies them live,
+audits their pain, scores them, builds interactive demos and ROI calculators, and
+generates personalized outreach drafts — all auditable, all local, nothing sent automatically.
 
-## The pipeline
+## What it does
 
 ```
-RESEARCH INBOX ──ingest──▶ LEADS ──verify──▶ VERIFIED ──audit──▶ QUALIFIED
-   (findings.json)         (dedup)  (live HTTP)  (score)          │
-                                                                   ▼
-                                              DEMO SPEC ──▶ OUTREACH DRAFT
-                                                              (human approves)
+Research Inbox → Ingest (dedup) → Verify (live HTTP) → Audit → Score → Demo/Calculator → Outreach
+                                                                  ↓
+                                                         Pipeline Board (Kanban)
 ```
-
-1. **Research** — real findings (business name + website + niche) go into
-   `data/research/findings.json`.
-2. **Ingest** — `python engine.py ingest` converts findings to leads,
-   deduplicating by normalized name AND domain.
-3. **Verify** — `python engine.py verify <id>` (or `verify-all`) does a live
-   HTTP check of the website and extracts real phone numbers / emails from the page.
-4. **Audit** — `python engine.py audit <id>` attaches pain signals, evidence,
-   scores the lead, and qualifies it (score ≥ 70).
-5. **Demo** — `python engine.py demo <id>` writes a demo spec.
-6. **Outreach** — `python engine.py outreach <id>` drafts a message.
-   **Nothing is ever sent automatically — a human approves and sends.**
 
 ## Quick start
 
 ```bash
 cd ~/ai-lead-hunter
-python engine.py status          # system state + validation
-python engine.py leads           # list all leads
-python engine.py research        # show the research inbox
-python engine.py ingest          # ingest findings (dedup-safe)
-python engine.py verify-all      # live-verify every client website
-python engine.py audit LH-0010   # deep audit one lead
-python engine.py demo LH-0010    # build a demo spec
-python engine.py outreach LH-0010  # draft outreach
-python engine.py validate        # schema integrity check
-python -m pytest tests/ -q       # run the test suite (27 tests)
+python engine.py status          # health check + counts
+python engine.py leads           # list all leads with scores
+python engine.py research        # show research inbox
 ```
 
-## Visual dashboard (no coding needed)
+### Full pipeline (per lead)
 
-Double-click `START-DASHBOARD.bat` (or run `python dashboard.py`).
-A browser opens at `http://localhost:8765` showing:
+```bash
+python engine.py verify-all      # check all websites live (HTTP 200)
+python engine.py audit LH-0001   # audit + score a lead
+python engine.py demo-live LH-0001    # build interactive demo
+python engine.py calculator-live LH-0001  # build ROI calculator
+python engine.py outreach LH-0001     # draft personalized outreach
+```
 
-- **Stats** — client leads, qualified, Tier A, verified-live, awaiting approval
-- **Client Leads** — score, tier, pain signals, real contacts, ✓ VERIFIED badge
-- **My Ventures** — Fahad's own businesses (portfolio, not for sale)
-- **Outreach Drafts** — copy-to-clipboard, human sends manually
-- **Activity Log** — every action the system has taken
+### Lifecycle (close the loop)
 
-Buttons on the dashboard run the engine under the hood:
-Discover, Ingest Research, Verify Websites, Validate, Re-Audit, Demo, Outreach.
+```bash
+python engine.py sent O-0001            # mark outreach as sent
+python engine.py reply O-0001 "..."    # log a reply
+python engine.py won O-0001            # mark deal won
+python engine.py lost O-0001           # mark deal lost
+```
 
-## Data model
+### Dashboard
 
-| Store | Path | Purpose |
-|---|---|---|
-| Leads | `data/leads/` | One JSON per lead (score, tier, pain, contacts, verified) |
-| Evidence | `data/evidence/` | Append-only proof per lead |
-| Activity | `data/activity/` | Append-only audit log of every action |
-| Outreach | `data/outreach/` | Drafts, all `pending_approval` until a human acts |
-| Research | `data/research/findings.json` | Candidate businesses awaiting ingest |
-| Schemas | `data/schemas/` | JSON schemas — every record validates |
-| Demos | `artifacts/demos/` | Demo spec per qualified lead |
+```bash
+python dashboard.py          # opens http://localhost:8765
+# Or double-click START-DASHBOARD.bat (Windows)
+```
 
-Lead types: `client` (external business to sell to) vs `internal_venture`
-(Fahad's own businesses — built with AI agents, used as portfolio demos).
+The dashboard has tabs: **Leads** (with Re-Audit/Demo/Calculator/Outreach buttons), **Outreach Drafts**, **Activity Log**, and **Pipeline Board** (Kanban by lifecycle stage).
 
-## Scoring
+## Architecture
 
-0–100 composite: pain intensity (≤40) + offer clarity (20) + contact
-accessibility (≤25) + niche commercial intensity (15).
-Tier A ≥ 85, Tier B ≥ 70, Tier C ≥ 50. Qualification threshold: 70.
+```
+data/
+  leads/        JSON records (LH-0001..NNNN.json) — canonical
+  evidence/     JSON records (E-0001..NNNN.json) — append-only
+  activity/     JSON records (A-0001..NNNN.json) — append-only log
+  outreach/     JSON records (O-0001..NNNN.json) — drafts, pending_approval
+  research/     findings.json — research inbox (before ingest)
+  schemas/      4 JSON schemas (lead, evidence, activity, outreach)
 
-## Human approval gate
+artifacts/
+  demos-live/       standalone interactive HTML demos (per lead)
+  calculators-live/ standalone ROI calculator HTML (per lead)
+  demos/            legacy markdown demo specs
 
-No external outreach leaves this system without explicit human approval.
-Agents draft; only the owner approves and sends. This is enforced by design —
-there is no send mechanism in the codebase at all.
+scripts/
+  enrich_research_leads.py   attach pain signals + offer surfaces to research leads
+  rewrite_outreach.py        personalize outreach from verified evidence
+  inject_outreach_links.py   inject demo/calc HTML paths into drafts
+  add_calc_links.py          add calculator links to outreach drafts
+  fix_calculator_button.py   ensure exactly one calculator-live button in UI
 
-## Docs
+templates/
+  demo_template.html         interactive demo template
+  calculator_template.html   interactive ROI calculator template
 
-- `AGENTS.md` — how an autonomous agent runs the system
-- `HERMES.md` — control plane summary
-- `SYSTEM_SPEC.md` — full specification
-- `RUNBOOK.md` — day-to-day operations
+engine.py            CLI orchestrator (discover, research, ingest, verify, audit, score,
+                     demo, demo-live, calculator-live, outreach, sent, reply, won, lost, validate, status, leads)
+dashboard.py         zero-dependency local web server (port 8765)
+ui.html              dashboard UI (XSS-safe via esc())
+START-DASHBOARD.bat  Windows double-click launcher
+.github/workflows/ci.yml  GitHub Actions CI (status + pytest on push/PR)
+tests/test_core.py   27 acceptance tests
+tests/test_v2.py     v2 architecture tests (research inbox, dedup, verify, idempotency)
+```
 
-## License
+## Key features
 
-Internal — Hope Theory.
+- **Research inbox** — `data/research/findings.json` is the queue; `ingest` deduplicates by name + domain and converts findings to leads
+- **Live verification** — `verify` does real HTTP GETs, confirms 200, extracts real phone/email from the page, saves verified_at
+- **Scoring** — composite 0-100 from pain signals, contact paths, evidence, operational gaps, scale, decision-maker access, fit
+- **Tier bands** — A (85-100 act today), B (70-84 worth building), C (50-69 monitor)
+- **Lifecycle** — DISCOVERED → AUDITED → QUALIFIED → OUTREACH_READY → CONTACTED → IN_CONVERSATION → WON/LOST
+- **Interactive demos** — standalone HTML, double-click to open, fully personalized (business name, services, pains, contacts), walks user through intake flow
+- **ROI calculators** — standalone HTML, sliders for enquiries/missed%/value/staff cost/hours, shows monthly loss + annual savings
+- **No automatic sending** — outreach drafts are `pending_approval`; you review, copy, paste, send yourself
+- **Append-only audit trail** — every action logs an A-NNNN activity record
+- **JSON Schema validation** — all 4 record types validated on every run
+- **GitHub Actions CI** — on push/PR to main: `python engine.py status` + `pytest -q`
+
+## Adding a lead
+
+1. Research a real business (web_search), find its website
+2. Add to `data/research/findings.json`
+3. `python engine.py ingest` (dedups, converts to lead, logs activity)
+4. `python engine.py verify <lead_id>` (live HTTP check + contact extraction)
+5. `python engine.py audit <lead_id>` (audit + score + qualify if score >= 70)
+6. `python engine.py demo-live <lead_id>` (build interactive demo)
+7. `python engine.py calculator-live <lead_id>` (build ROI calculator)
+8. `python engine.py outreach <lead_id>` (draft personalized outreach)
+
+## Current state
+
+| Metric | Count |
+|---|---|
+| Leads | 25 (17 clients + 4 ventures + 4 new) |
+| Verified live | 16 |
+| Qualified | 15 |
+| Tier A | 8 |
+| Tier B | 7 |
+| Evidence | 168 |
+| Activity log | 544 records |
+| Outreach drafts | 9 (all pending_approval) |
+| Interactive demos | 14 |
+| ROI calculators | 22 |
+| Tests | 27/27 passing |
+
+## Repositories
+
+- Code: https://github.com/FahadIbrahim93/ai-lead-hunter
+- Live dashboard: http://localhost:8765 (when server running)
+
+## Rules
+
+- Nothing gets sent automatically — only drafts, you pull the trigger
+- No API keys or credentials in the codebase
+- All data is local JSON — auditable, git-versioned
+- Human approval gate: no external outreach leaves the system without a human-approved outreach record

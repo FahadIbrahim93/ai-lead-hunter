@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-0480",
+  "lead_id": "LH-0022",
+  "occurred_at": "2026-08-27T03:44:14.181547+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0165.json",
+  "detail": "Evidence: website — Website live (HTTP 200) at https://coopersbakery.com/"
+}

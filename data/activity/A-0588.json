@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-0588",
+  "lead_id": "SYSTEM",
+  "occurred_at": "2026-08-27T03:53:01.764510+00:00",
+  "actor": "hermes",
+  "action": "duplicate_skipped",
+  "resource": "ingest",
+  "detail": "Duplicate skipped: Look N Feel Event Solutions"
+}

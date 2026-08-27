@@ -1,0 +1,40 @@
+{
+  "lead_id": "LH-0022",
+  "business_name": "Cooper's Bakery Bangladesh",
+  "discovered_at": "2026-08-27T03:43:55.658370+00:00",
+  "source": "research",
+  "lifecycle_status": "DISCOVERED",
+  "score": 0,
+  "tier": "C",
+  "website": "https://coopersbakery.com/",
+  "verified": true,
+  "verified_at": "2026-08-27T04:04:24.025451+00:00",
+  "lead_type": "client",
+  "niche": "Bakery and custom cakes",
+  "geography": "Dhaka, Bangladesh (Old Airport Road)",
+  "pain_signals": [],
+  "offer_surface": "",
+  "contact_paths": [
+    {
+      "channel": "phone",
+      "value": "+880-2-5566 (Old Airport Road)",
+      "confidence": 80,
+      "source": "TripAdvisor/Facebook"
+    },
+    {
+      "channel": "instagram",
+      "handle": "coopersbakerybd",
+      "confidence": 90,
+      "source": "Instagram"
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "E-0165",
+      "kind": "website",
+      "summary": "Website live (HTTP 200) at https://coopersbakery.com/",
+      "confidence": 95
+    }
+  ],
+  "notes": ""
+}

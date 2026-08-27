@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-0573",
+  "lead_id": "SYSTEM",
+  "occurred_at": "2026-08-27T03:52:53.282808+00:00",
+  "actor": "hermes",
+  "action": "duplicate_skipped",
+  "resource": "ingest",
+  "detail": "Duplicate skipped: Cooper's Bakery Bangladesh"
+}

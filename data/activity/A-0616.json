@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-0616",
+  "lead_id": "LH-0017",
+  "occurred_at": "2026-08-27T04:04:16.527962+00:00",
+  "actor": "hermes",
+  "action": "verified",
+  "resource": "https://bdmetroweddings.com/",
+  "detail": "Live HTTP 200 — website confirmed up"
+}

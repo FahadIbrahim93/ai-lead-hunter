@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-0479",
+  "lead_id": "LH-0022",
+  "occurred_at": "2026-08-27T03:44:14.162033+00:00",
+  "actor": "hermes",
+  "action": "verified",
+  "resource": "https://coopersbakery.com/",
+  "detail": "Live HTTP 200 — website confirmed up"
+}

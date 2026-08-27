@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-0483",
+  "lead_id": "LH-0024",
+  "occurred_at": "2026-08-27T03:44:15.368679+00:00",
+  "actor": "hermes",
+  "action": "verified",
+  "resource": "https://www.jobaidapack.com/",
+  "detail": "Live HTTP 200 — website confirmed up"
+}

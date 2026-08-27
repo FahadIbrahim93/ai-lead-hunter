@@ -156,26 +156,9 @@ class Handler(BaseHTTPRequestHandler):
         action = body.get("action", "")
         lead_id = body.get("lead_id", "")
 
-        if action == "audit":
-            result = run_engine(["audit", lead_id])
-        elif action == "demo":
-            result = run_engine(["demo", lead_id])
-        elif action == "demo-live":
-            result = run_engine(["demo-live", lead_id])
-        elif action == "outreach":
-            result = run_engine(["outreach", lead_id])
-        elif action == "discover":
-            result = run_engine(["discover"])
-        elif action == "ingest":
-            result = run_engine(["ingest"])
-        elif action == "verify-all":
-            result = run_engine(["verify-all"])
-        elif action == "verify":
-            result = run_engine(["verify", lead_id])
-        elif action == "validate":
-            result = run_engine(["validate"])
-        elif action == "status":
-            result = run_engine(["status"])
+        run = {"audit", "demo", "demo-live", "calculator-live", "outreach", "verify", "validate", "status", "discover", "ingest", "verify-all"}
+        if action in run:
+            result = run_engine([action] + ([lead_id] if lead_id and action in {"audit","demo","demo-live","calculator-live","outreach","verify","verify"} else []))
         else:
             result = {"ok": False, "stdout": "", "stderr": f"Unknown action: {action}", "returncode": -1}
 

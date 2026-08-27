@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-0521",
+  "lead_id": "LH-0022",
+  "occurred_at": "2026-08-27T03:49:23.723155+00:00",
+  "actor": "hermes",
+  "action": "demo_built",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\artifacts\\demos-live\\LH-0022-demo-live.html",
+  "detail": "Interactive demo agent rendered: LH-0022-demo-live.html"
+}

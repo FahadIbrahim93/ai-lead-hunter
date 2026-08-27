@@ -1,0 +1,43 @@
+{
+  "lead_id": "LH-0025",
+  "business_name": "Fastexpress BD",
+  "discovered_at": "2026-08-27T03:43:55.688017+00:00",
+  "source": "research",
+  "lifecycle_status": "DISCOVERED",
+  "score": 0,
+  "tier": "C",
+  "website": "https://fastexpressbd.com/",
+  "verified": true,
+  "verified_at": "2026-08-27T04:04:25.531443+00:00",
+  "lead_type": "client",
+  "niche": "Courier and logistics",
+  "geography": "Dhaka, Bangladesh",
+  "pain_signals": [],
+  "offer_surface": "",
+  "contact_paths": [
+    {
+      "channel": "email",
+      "value": "info@fastexpressbd.com",
+      "confidence": 90
+    },
+    {
+      "channel": "email",
+      "value": "nazrul_islam7178@yahoo.com",
+      "confidence": 90
+    },
+    {
+      "channel": "phone",
+      "value": "+8801715408293",
+      "confidence": 85
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "E-0168",
+      "kind": "website",
+      "summary": "Website live (HTTP 200) at https://fastexpressbd.com/",
+      "confidence": 95
+    }
+  ],
+  "notes": ""
+}

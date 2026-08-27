@@ -122,6 +122,61 @@
       "research_notes": "Event management + wedding planning, 800+ events since 2016. Weddings (Gaye Holud, Nikah, Reception, Walima) + corporate events (product launches, conferences, inaugurations). High-ticket packages. Booking via phone/WhatsApp. No online booking or inquiry management system. Seasonal demand. Competitors with online inquiry forms capture leads that phone-only intake misses.",
       "source": "web_search",
       "web_title": "Look N Feel: Best Event Planner/Management in Dhaka, BD"
+    },
+    {
+      "business_name": "Cooper's Bakery Bangladesh",
+      "website": "https://coopersbakery.com/",
+      "niche": "Bakery and custom cakes",
+      "geography": "Dhaka, Bangladesh (Old Airport Road)",
+      "source_url": "https://coopersbakery.com/",
+      "contact_hints": [
+        "+880-2-5566",
+        "info@coopersbakery.com",
+        "coopersbakerybd on Instagram"
+      ],
+      "research_notes": "Established 1984 bakery in Old Airport Road, Dhaka. Custom wedding cakes, pastries, sandwiches, breads. Orders via phone/Instagram/WhatsApp. No online order form or automated booking. Delivery via foodpanda. Competitors: other bakeries without online booking lose custom cake orders during peak wedding season.",
+      "source": "web_search"
+    },
+    {
+      "business_name": "Rejuvenate Salon & Spa",
+      "website": "https://rejuvenatebd.com/",
+      "niche": "Luxury salon and spa",
+      "geography": "Dhaka, Bangladesh (Uttara, Unimart Centrepoint)",
+      "source_url": "https://rejuvenatebd.com/",
+      "contact_hints": [
+        "+880 1886-123770",
+        "+8801406699612",
+        "rejuvenatebd on Instagram"
+      ],
+      "research_notes": "Bangladesh premier luxury salon, 3+ branches, 4.9 star rating. Book via phone only — no online booking system. Services: hair, facial, spa, bridal prep. High-ticket, appointment-driven. Competitors: salons with online booking capture appointments that phone-only intake misses during peak times.",
+      "source": "web_search"
+    },
+    {
+      "business_name": "JobaidaPack Packaging Ltd",
+      "website": "https://www.jobaidapack.com/",
+      "niche": "Packaging and corrugated box manufacturing",
+      "geography": "Dhaka, Bangladesh",
+      "source_url": "https://www.jobaidapack.com/",
+      "contact_hints": [
+        "01568316131",
+        "sales@jobaidapack.com"
+      ],
+      "research_notes": "Leading corrugated box and packaging manufacturer since 1996. Custom boxes, mailer boxes, rigid boxes, offset printing. Quote requests via phone/email. No online quote form or automated lead qualification. High-volume B2B orders. Competitors: packaging suppliers with online quote forms and automated lead routing capture leads that manual intake misses.",
+      "source": "web_search"
+    },
+    {
+      "business_name": "Fastexpress BD",
+      "website": "https://fastexpressbd.com/",
+      "niche": "Courier and logistics",
+      "geography": "Dhaka, Bangladesh",
+      "source_url": "https://fastexpressbd.com/",
+      "contact_hints": [
+        "+88 01680-030 830-1",
+        "+88 01841-208",
+        "info@fastexpressbd.com"
+      ],
+      "research_notes": "Courier service with shipment tracking on website. Booking via phone/email or walk-in. No automated shipment booking form or AI-powered tracking updates for customers. High-volume B2B and personal shipments. Competitors: courier companies with AI-powered booking and automated tracking SMS/email capture customers that manual booking misses.",
+      "source": "web_search"
     }
   ]
 }

@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-0466",
+  "lead_id": "LH-0025",
+  "occurred_at": "2026-08-27T03:43:55.694026+00:00",
+  "actor": "hermes",
+  "action": "ingested",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\leads\\LH-0025.json",
+  "detail": "Ingested from research inbox: Fastexpress BD"
+}

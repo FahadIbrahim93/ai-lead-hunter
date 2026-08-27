@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-0485",
+  "lead_id": "LH-0024",
+  "occurred_at": "2026-08-27T03:44:15.425757+00:00",
+  "actor": "hermes",
+  "action": "verified",
+  "resource": "https://www.jobaidapack.com/",
+  "detail": "Extracted 1 contact path(s) from live page"
+}
