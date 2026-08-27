@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-1063",
+  "lead_id": "LH-0029",
+  "occurred_at": "2026-08-27T08:13:42.243557+00:00",
+  "actor": "hermes",
+  "action": "ingested",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\leads\\LH-0029.json",
+  "detail": "Ingested from research inbox: Manchester English Academy"
+}

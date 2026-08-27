@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-1115",
+  "lead_id": "LH-0028",
+  "occurred_at": "2026-08-27T08:15:18.227098+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0259.json",
+  "detail": "Evidence: operational — No visible automated proposal generation — each event quote requires manual scop"
+}

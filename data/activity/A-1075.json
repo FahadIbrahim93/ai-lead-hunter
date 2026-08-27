@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-1075",
+  "lead_id": "LH-0028",
+  "occurred_at": "2026-08-27T08:14:06.821312+00:00",
+  "actor": "hermes",
+  "action": "verified",
+  "resource": "https://dhakaeventplanner.com/",
+  "detail": "Live HTTP 200 — website confirmed up"
+}

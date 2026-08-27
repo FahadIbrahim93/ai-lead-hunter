@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-1102",
+  "lead_id": "LH-0026",
+  "occurred_at": "2026-08-27T08:15:17.567006+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0250.json",
+  "detail": "Evidence: operational — No visible patient follow-up automation — post-treatment check-ins, recall remin"
+}

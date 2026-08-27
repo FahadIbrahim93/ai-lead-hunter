@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-1148",
+  "lead_id": "LH-0028",
+  "occurred_at": "2026-08-27T08:15:33.310815+00:00",
+  "actor": "hermes",
+  "action": "demo_built",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\artifacts\\calculators-live\\LH-0028-calculator-live.html",
+  "detail": "ROI calculator rendered: LH-0028-calculator-live.html"
+}

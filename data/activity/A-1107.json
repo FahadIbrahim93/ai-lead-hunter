@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-1107",
+  "lead_id": "LH-0027",
+  "occurred_at": "2026-08-27T08:15:17.858376+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0253.json",
+  "detail": "Evidence: operational — Registration is a web form with course selection — no instant response, no AI qu"
+}

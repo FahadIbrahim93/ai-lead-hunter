@@ -1,0 +1,10 @@
+{
+  "evidence_id": "E-0251",
+  "lead_id": "LH-0026",
+  "kind": "operational",
+  "found_at": "2026-08-27T08:15:17.587014+00:00",
+  "source_url": "",
+  "summary": "Multi-branch routing is manual — patient calls one number, staff must route to correct branch and doctor",
+  "confidence": 75,
+  "raw": ""
+}

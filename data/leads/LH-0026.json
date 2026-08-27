@@ -1,0 +1,60 @@
+{
+  "lead_id": "LH-0026",
+  "business_name": "Tech Dental Care",
+  "discovered_at": "2026-08-27T08:13:42.087016+00:00",
+  "source": "research",
+  "lifecycle_status": "QUALIFIED",
+  "score": 85,
+  "tier": "A",
+  "website": "https://techdentalcare.com/",
+  "verified": true,
+  "verified_at": "2026-08-27T08:14:02.409958+00:00",
+  "lead_type": "client",
+  "niche": "Dental clinic chain",
+  "geography": "Dhaka, Bangladesh (4 branches: Mirpur, Uttara, Badda, Jatrabari)",
+  "pain_signals": [
+    "Bangladesh's largest dental chain with 4 branches (Mirpur, Uttara, Badda, Jatrabari) — high patient volume across locations with no unified booking system",
+    "Appointment intake is 'Request a Free Callback' form + phone (09638-000505) — no real-time slot confirmation, patients wait for callback",
+    "Treatment price calculator exists on site but doesn't connect to booking — patients get a price estimate then must call separately to book",
+    "No visible patient follow-up automation — post-treatment check-ins, recall reminders for scaling/checkups are manual",
+    "Multi-branch routing is manual — patient calls one number, staff must route to correct branch and doctor"
+  ],
+  "offer_surface": "Autonomous AI agent deployment for Dental clinic chain — targeting: Bangladesh's largest dental chain with 4 branches (Mirpur, Uttara, Badda, Jatrabari) — high patient volume across locations with no unified booking system; Appointment intake is 'Request a Free Callback' form + phone (09638-000505) — no real-time slot confirmation, patients wait for callback; Treatment price calculator exists on site but doesn't connect to booking — patients get a price estimate then must call separately to book",
+  "contact_paths": [
+    {
+      "channel": "phone",
+      "value": "+8801961501791",
+      "confidence": 85
+    },
+    {
+      "channel": "phone",
+      "value": "+8801961502121",
+      "confidence": 85
+    },
+    {
+      "channel": "phone",
+      "value": "+8801678291968",
+      "confidence": 85
+    },
+    {
+      "channel": "phone",
+      "value": "+8801400786162",
+      "confidence": 85
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "E-0229",
+      "kind": "website",
+      "summary": "Bangladesh's largest dental chain, 4 branches. Online 'Request a Free Callback' form + WhatsApp link. Treatment price calculator on site. High patient volume across 4 locations. No visible AI-powered appointment scheduling or patient follow-up system. AI-agent fit: appointment booking with real-time",
+      "confidence": 80
+    },
+    {
+      "evidence_id": "E-0235",
+      "kind": "website",
+      "summary": "Website live (HTTP 200) at https://techdentalcare.com/",
+      "confidence": 95
+    }
+  ],
+  "notes": "Bangladesh's largest dental chain, 4 branches. Online 'Request a Free Callback' form + WhatsApp link. Treatment price calculator on site. High patient volume across 4 locations. No visible AI-powered appointment scheduling or patient follow-up system. AI-agent fit: appointment booking with real-time slot confirmation, treatment enquiry bot, patient follow-up automation, multi-branch routing."
+}

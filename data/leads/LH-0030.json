@@ -1,0 +1,55 @@
+{
+  "lead_id": "LH-0030",
+  "business_name": "Laser Dental BD",
+  "discovered_at": "2026-08-27T08:13:42.279565+00:00",
+  "source": "research",
+  "lifecycle_status": "QUALIFIED",
+  "score": 85,
+  "tier": "A",
+  "website": "https://laserdentalbd.com/",
+  "verified": true,
+  "verified_at": "2026-08-27T08:14:26.607645+00:00",
+  "lead_type": "client",
+  "niche": "Dental clinic",
+  "geography": "Dhaka, Bangladesh (Banani & Uttara)",
+  "pain_signals": [
+    "Premium dental clinic in Banani & Uttara specializing in cosmetic dentistry, Invisalign, and laser treatments — high-value procedures (BDT 50K-1.8L)",
+    "Mobile-first 'Tap to Call' CTA — no online appointment booking system, patients must call during office hours",
+    "No visible treatment cost estimator — patients with cosmetic enquiries (veneers, whitening, Invisalign) can't get price guidance before calling",
+    "No automated follow-up for high-value treatment plans — Invisalign and implant patients need multi-visit scheduling",
+    "Two locations (Banani & Uttara) with no visible online scheduling to route patients to correct branch"
+  ],
+  "offer_surface": "Autonomous AI agent deployment for Dental clinic — targeting: Premium dental clinic in Banani & Uttara specializing in cosmetic dentistry, Invisalign, and laser treatments — high-value procedures (BDT 50K-1.8L); Mobile-first 'Tap to Call' CTA — no online appointment booking system, patients must call during office hours; No visible treatment cost estimator — patients with cosmetic enquiries (veneers, whitening, Invisalign) can't get price guidance before calling",
+  "contact_paths": [
+    {
+      "channel": "email",
+      "value": "info@laserdentalbd.com",
+      "confidence": 90
+    },
+    {
+      "channel": "phone",
+      "value": "+8801787660055",
+      "confidence": 85
+    },
+    {
+      "channel": "phone",
+      "value": "+8801770000007",
+      "confidence": 85
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "E-0233",
+      "kind": "website",
+      "summary": "Premium dental clinic in Banani & Uttara. Services: laser dentistry, cosmetic dentistry, Invisalign, dental implants, teeth whitening, digital smile design. 'Tap to Call' mobile-first CTA. No visible online appointment booking system. High-value cosmetic procedures. AI-agent fit: appointment booking",
+      "confidence": 80
+    },
+    {
+      "evidence_id": "E-0239",
+      "kind": "website",
+      "summary": "Website live (HTTP 200) at https://laserdentalbd.com/",
+      "confidence": 95
+    }
+  ],
+  "notes": "Premium dental clinic in Banani & Uttara. Services: laser dentistry, cosmetic dentistry, Invisalign, dental implants, teeth whitening, digital smile design. 'Tap to Call' mobile-first CTA. No visible online appointment booking system. High-value cosmetic procedures. AI-agent fit: appointment booking with treatment-specific routing, cost estimation bot, treatment enquiry qualification, follow-up automation."
+}

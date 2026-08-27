@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-1057",
+  "lead_id": "LH-0026",
+  "occurred_at": "2026-08-27T08:13:42.101019+00:00",
+  "actor": "hermes",
+  "action": "ingested",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\leads\\LH-0026.json",
+  "detail": "Ingested from research inbox: Tech Dental Care"
+}

@@ -1,0 +1,50 @@
+{
+  "lead_id": "LH-0029",
+  "business_name": "Manchester English Academy",
+  "discovered_at": "2026-08-27T08:13:42.232050+00:00",
+  "source": "research",
+  "lifecycle_status": "QUALIFIED",
+  "score": 85,
+  "tier": "A",
+  "website": "https://manchesterenglishacademy.com/",
+  "verified": true,
+  "verified_at": "2026-08-27T08:14:25.149036+00:00",
+  "lead_type": "client",
+  "niche": "Education / English & IELTS coaching",
+  "geography": "Dhaka, Bangladesh",
+  "pain_signals": [
+    "English academy with online course platform (LMS) — courses priced BDT 12,000-15,000 with visible enrollment",
+    "Enquiry form on website but no instant response — prospective students get no immediate course guidance",
+    "No visible AI-powered level assessment — students can't self-assess before choosing a course",
+    "Blog content (IELTS tips, mock tests) drives traffic but no automated conversion from reader to enrolled student",
+    "Course catalog with multiple levels (beginner to IELTS) but no recommendation engine to match student to right course"
+  ],
+  "offer_surface": "Autonomous AI agent deployment for Education / English & IELTS coaching — targeting: English academy with online course platform (LMS) — courses priced BDT 12,000-15,000 with visible enrollment; Enquiry form on website but no instant response — prospective students get no immediate course guidance; No visible AI-powered level assessment — students can't self-assess before choosing a course",
+  "contact_paths": [
+    {
+      "channel": "phone",
+      "value": "+8801582706670",
+      "confidence": 85
+    },
+    {
+      "channel": "phone",
+      "value": "+8801773744422",
+      "confidence": 85
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "E-0232",
+      "kind": "website",
+      "summary": "English language academy with online course platform. Courses: Spoken English, IELTS preparation, beginner to advanced. Course prices visible (BDT 12,000-15,000). Student login/registration system. Blog with IELTS tips. No visible AI-powered admission bot or automated course recommendation. High enq",
+      "confidence": 80
+    },
+    {
+      "evidence_id": "E-0238",
+      "kind": "website",
+      "summary": "Website live (HTTP 200) at https://manchesterenglishacademy.com/",
+      "confidence": 95
+    }
+  ],
+  "notes": "English language academy with online course platform. Courses: Spoken English, IELTS preparation, beginner to advanced. Course prices visible (BDT 12,000-15,000). Student login/registration system. Blog with IELTS tips. No visible AI-powered admission bot or automated course recommendation. High enquiry volume from prospective students. AI-agent fit: admission enquiry bot, course recommendation based on level assessment, batch scheduling, payment follow-up."
+}

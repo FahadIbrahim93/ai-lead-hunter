@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-1076",
+  "lead_id": "LH-0028",
+  "occurred_at": "2026-08-27T08:14:06.856606+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0237.json",
+  "detail": "Evidence: website — Website live (HTTP 200) at https://dhakaeventplanner.com/"
+}

@@ -1,0 +1,50 @@
+{
+  "lead_id": "LH-0027",
+  "business_name": "Enhance English BD",
+  "discovered_at": "2026-08-27T08:13:42.138027+00:00",
+  "source": "research",
+  "lifecycle_status": "QUALIFIED",
+  "score": 85,
+  "tier": "A",
+  "website": "https://enhanceenglishbd.com/",
+  "verified": true,
+  "verified_at": "2026-08-27T08:14:03.662188+00:00",
+  "lead_type": "client",
+  "niche": "Education / IELTS & PTE coaching",
+  "geography": "Dhaka, Bangladesh (3 centers: Dhanmondi 27, Banani 11, Chattogram)",
+  "pain_signals": [
+    "British Council & Pearson certified institute with 5000+ students — high enquiry volume across 3 centers (Dhanmondi, Banani, Chattogram)",
+    "Registration is a web form with course selection — no instant response, no AI qualification of student level or goals",
+    "No visible batch scheduling visibility — students can't see upcoming batch dates/times before registering",
+    "700+ IELTS and 650+ PTE success stories used in marketing but no automated lead nurturing from success stories",
+    "3 physical centers means enquiry routing is manual — student in Dhanmondi might get response meant for Banani center"
+  ],
+  "offer_surface": "Autonomous AI agent deployment for Education / IELTS & PTE coaching — targeting: British Council & Pearson certified institute with 5000+ students — high enquiry volume across 3 centers (Dhanmondi, Banani, Chattogram); Registration is a web form with course selection — no instant response, no AI qualification of student level or goals; No visible batch scheduling visibility — students can't see upcoming batch dates/times before registering",
+  "contact_paths": [
+    {
+      "channel": "phone",
+      "value": "+8801958665618",
+      "confidence": 85
+    },
+    {
+      "channel": "phone",
+      "value": "+8801542921712",
+      "confidence": 85
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "E-0230",
+      "kind": "website",
+      "summary": "British Council & Pearson certified. 5000+ students trained, 10+ certified instructors, 700+ IELTS successes, 650+ PTE successes. Registration form with course selection + center preference. No visible AI-powered lead qualification or batch scheduling. High enquiry volume across 3 centers. AI-agent ",
+      "confidence": 80
+    },
+    {
+      "evidence_id": "E-0236",
+      "kind": "website",
+      "summary": "Website live (HTTP 200) at https://enhanceenglishbd.com/",
+      "confidence": 95
+    }
+  ],
+  "notes": "British Council & Pearson certified. 5000+ students trained, 10+ certified instructors, 700+ IELTS successes, 650+ PTE successes. Registration form with course selection + center preference. No visible AI-powered lead qualification or batch scheduling. High enquiry volume across 3 centers. AI-agent fit: admission enquiry bot, course recommendation engine, batch scheduling, free trial booking, lead nurturing."
+}

@@ -1,0 +1,10 @@
+{
+  "evidence_id": "E-0273",
+  "lead_id": "LH-0031",
+  "kind": "operational",
+  "found_at": "2026-08-27T08:15:19.207000+00:00",
+  "source_url": "",
+  "summary": "Orders taken via phone/website — no WhatsApp ordering bot despite WhatsApp being Bangladesh's dominant messaging platform",
+  "confidence": 75,
+  "raw": ""
+}

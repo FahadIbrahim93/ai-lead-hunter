@@ -1,0 +1,65 @@
+{
+  "lead_id": "LH-0028",
+  "business_name": "Dhaka Event Planner",
+  "discovered_at": "2026-08-27T08:13:42.186038+00:00",
+  "source": "research",
+  "lifecycle_status": "QUALIFIED",
+  "score": 85,
+  "tier": "A",
+  "website": "https://dhakaeventplanner.com/",
+  "verified": true,
+  "verified_at": "2026-08-27T08:14:06.806308+00:00",
+  "lead_type": "client",
+  "niche": "Event management and production",
+  "geography": "Dhaka, Bangladesh",
+  "pain_signals": [
+    "Premier event production company serving corporate giants (Robi, Unilever, bKash, Grameenphone, BRAC, Walton) — high-ticket B2B enquiries",
+    "Quote request form on site but no instant response — corporate clients expect same-day acknowledgement",
+    "No visible automated proposal generation — each event quote requires manual scoping, pricing, and PDF creation",
+    "Seasonal demand spikes (year-end corporate events, product launches) create enquiry overload with manual response",
+    "AV production, LED walls, staging — complex multi-vendor coordination with no visible project management automation"
+  ],
+  "offer_surface": "Autonomous AI agent deployment for Event management and production — targeting: Premier event production company serving corporate giants (Robi, Unilever, bKash, Grameenphone, BRAC, Walton) — high-ticket B2B enquiries; Quote request form on site but no instant response — corporate clients expect same-day acknowledgement; No visible automated proposal generation — each event quote requires manual scoping, pricing, and PDF creation",
+  "contact_paths": [
+    {
+      "channel": "email",
+      "value": "hello@dhakaeventplanner.com",
+      "confidence": 90
+    },
+    {
+      "channel": "phone",
+      "value": "+8801961501791",
+      "confidence": 85
+    },
+    {
+      "channel": "phone",
+      "value": "+8801961502121",
+      "confidence": 85
+    },
+    {
+      "channel": "phone",
+      "value": "+8801678291968",
+      "confidence": 85
+    },
+    {
+      "channel": "phone",
+      "value": "+8801777044241",
+      "confidence": 85
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "E-0231",
+      "kind": "website",
+      "summary": "Bangladesh's premier event production company. Corporate clients: Robi, Square, Unilever, University of Dhaka, Walton, bKash, BRAC, Grameenphone. Services: corporate conferences, trade shows, weddings, concerts, brand activations, AV production, LED video walls. Quote request form on site. No visibl",
+      "confidence": 80
+    },
+    {
+      "evidence_id": "E-0237",
+      "kind": "website",
+      "summary": "Website live (HTTP 200) at https://dhakaeventplanner.com/",
+      "confidence": 95
+    }
+  ],
+  "notes": "Bangladesh's premier event production company. Corporate clients: Robi, Square, Unilever, University of Dhaka, Walton, bKash, BRAC, Grameenphone. Services: corporate conferences, trade shows, weddings, concerts, brand activations, AV production, LED video walls. Quote request form on site. No visible AI-powered enquiry management or automated proposal workflow. High-ticket corporate events. AI-agent fit: corporate enquiry qualification, event proposal automation, vendor coordination, timeline management."
+}

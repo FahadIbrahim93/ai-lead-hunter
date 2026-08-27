@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-1112",
+  "lead_id": "LH-0027",
+  "occurred_at": "2026-08-27T08:15:18.001173+00:00",
+  "actor": "hermes",
+  "action": "status_changed",
+  "resource": "lifecycle",
+  "detail": "DISCOVERED → QUALIFIED"
+}

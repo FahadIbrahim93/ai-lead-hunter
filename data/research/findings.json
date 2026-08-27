@@ -177,6 +177,79 @@
       ],
       "research_notes": "Courier service with shipment tracking on website. Booking via phone/email or walk-in. No automated shipment booking form or AI-powered tracking updates for customers. High-volume B2B and personal shipments. Competitors: courier companies with AI-powered booking and automated tracking SMS/email capture customers that manual booking misses.",
       "source": "web_search"
+    },
+    {
+      "business_name": "Tech Dental Care",
+      "website": "https://techdentalcare.com/",
+      "niche": "Dental clinic chain",
+      "geography": "Dhaka, Bangladesh (4 branches: Mirpur, Uttara, Badda, Jatrabari)",
+      "source_url": "https://techdentalcare.com/",
+      "contact_hints": [
+        "phone 09638-000505",
+        "whatsapp wa.me/+8801400786162"
+      ],
+      "notes": "Bangladesh's largest dental chain, 4 branches. Online 'Request a Free Callback' form + WhatsApp link. Treatment price calculator on site. High patient volume across 4 locations. No visible AI-powered appointment scheduling or patient follow-up system. AI-agent fit: appointment booking with real-time slot confirmation, treatment enquiry bot, patient follow-up automation, multi-branch routing.",
+      "found_at": "2026-08-27T12:00:00+06:00"
+    },
+    {
+      "business_name": "Enhance English BD",
+      "website": "https://enhanceenglishbd.com/",
+      "niche": "Education / IELTS & PTE coaching",
+      "geography": "Dhaka, Bangladesh (3 centers: Dhanmondi 27, Banani 11, Chattogram)",
+      "source_url": "https://enhanceenglishbd.com/",
+      "contact_hints": [
+        "registration form on website"
+      ],
+      "notes": "British Council & Pearson certified. 5000+ students trained, 10+ certified instructors, 700+ IELTS successes, 650+ PTE successes. Registration form with course selection + center preference. No visible AI-powered lead qualification or batch scheduling. High enquiry volume across 3 centers. AI-agent fit: admission enquiry bot, course recommendation engine, batch scheduling, free trial booking, lead nurturing.",
+      "found_at": "2026-08-27T12:00:00+06:00"
+    },
+    {
+      "business_name": "Dhaka Event Planner",
+      "website": "https://dhakaeventplanner.com/",
+      "niche": "Event management and production",
+      "geography": "Dhaka, Bangladesh",
+      "source_url": "https://dhakaeventplanner.com/",
+      "contact_hints": [
+        "phone 01777044241"
+      ],
+      "notes": "Bangladesh's premier event production company. Corporate clients: Robi, Square, Unilever, University of Dhaka, Walton, bKash, BRAC, Grameenphone. Services: corporate conferences, trade shows, weddings, concerts, brand activations, AV production, LED video walls. Quote request form on site. No visible AI-powered enquiry management or automated proposal workflow. High-ticket corporate events. AI-agent fit: corporate enquiry qualification, event proposal automation, vendor coordination, timeline management.",
+      "found_at": "2026-08-27T12:00:00+06:00"
+    },
+    {
+      "business_name": "Manchester English Academy",
+      "website": "https://manchesterenglishacademy.com/",
+      "niche": "Education / English & IELTS coaching",
+      "geography": "Dhaka, Bangladesh",
+      "source_url": "https://manchesterenglishacademy.com/",
+      "contact_hints": [
+        "enquiry form on website"
+      ],
+      "notes": "English language academy with online course platform. Courses: Spoken English, IELTS preparation, beginner to advanced. Course prices visible (BDT 12,000-15,000). Student login/registration system. Blog with IELTS tips. No visible AI-powered admission bot or automated course recommendation. High enquiry volume from prospective students. AI-agent fit: admission enquiry bot, course recommendation based on level assessment, batch scheduling, payment follow-up.",
+      "found_at": "2026-08-27T12:00:00+06:00"
+    },
+    {
+      "business_name": "Laser Dental BD",
+      "website": "https://laserdentalbd.com/",
+      "niche": "Dental clinic",
+      "geography": "Dhaka, Bangladesh (Banani & Uttara)",
+      "source_url": "https://laserdentalbd.com/",
+      "contact_hints": [
+        "tap to call on website"
+      ],
+      "notes": "Premium dental clinic in Banani & Uttara. Services: laser dentistry, cosmetic dentistry, Invisalign, dental implants, teeth whitening, digital smile design. 'Tap to Call' mobile-first CTA. No visible online appointment booking system. High-value cosmetic procedures. AI-agent fit: appointment booking with treatment-specific routing, cost estimation bot, treatment enquiry qualification, follow-up automation.",
+      "found_at": "2026-08-27T12:00:00+06:00"
+    },
+    {
+      "business_name": "Little Arabia Restaurant",
+      "website": "https://littlearabia.com.bd/",
+      "niche": "Restaurant and food delivery",
+      "geography": "Dhaka, Bangladesh (Shantinagar)",
+      "source_url": "https://littlearabia.com.bd/",
+      "contact_hints": [
+        "phone on website"
+      ],
+      "notes": "Arabian restaurant in Shantinagar, Dhaka with free home delivery across the city. Own delivery service (not just foodpanda). Menu-driven ordering. No visible online ordering system or WhatsApp order bot. Competitors with online ordering capture delivery customers that phone-only intake misses. AI-agent fit: WhatsApp order bot, menu recommendation, delivery tracking, repeat customer engagement.",
+      "found_at": "2026-08-27T12:00:00+06:00"
     }
   ]
 }

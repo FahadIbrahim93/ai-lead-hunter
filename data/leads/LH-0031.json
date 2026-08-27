@@ -1,0 +1,75 @@
+{
+  "lead_id": "LH-0031",
+  "business_name": "Little Arabia Restaurant",
+  "discovered_at": "2026-08-27T08:13:42.326576+00:00",
+  "source": "research",
+  "lifecycle_status": "QUALIFIED",
+  "score": 85,
+  "tier": "A",
+  "website": "https://littlearabia.com.bd/",
+  "verified": true,
+  "verified_at": "2026-08-27T08:14:29.248618+00:00",
+  "lead_type": "client",
+  "niche": "Restaurant and food delivery",
+  "geography": "Dhaka, Bangladesh (Shantinagar)",
+  "pain_signals": [
+    "Arabian restaurant in Shantinagar with FREE home delivery across Dhaka city — own delivery fleet, not just aggregator-dependent",
+    "Orders taken via phone/website — no WhatsApp ordering bot despite WhatsApp being Bangladesh's dominant messaging platform",
+    "No visible online menu ordering system — customers must call to place orders, creating friction during peak meal hours",
+    "No automated repeat-customer engagement — no loyalty program, no re-order reminders, no personalized offers",
+    "Delivery tracking is manual — customers call to check order status, staff time spent on status enquiries instead of new orders"
+  ],
+  "offer_surface": "Autonomous AI agent deployment for Restaurant and food delivery — targeting: Arabian restaurant in Shantinagar with FREE home delivery across Dhaka city — own delivery fleet, not just aggregator-dependent; Orders taken via phone/website — no WhatsApp ordering bot despite WhatsApp being Bangladesh's dominant messaging platform; No visible online menu ordering system — customers must call to place orders, creating friction during peak meal hours",
+  "contact_paths": [
+    {
+      "channel": "email",
+      "value": "support@gmail.com",
+      "confidence": 90
+    },
+    {
+      "channel": "email",
+      "value": "mostafiz31@live.com",
+      "confidence": 90
+    },
+    {
+      "channel": "email",
+      "value": "info@littlearabia.com.bd",
+      "confidence": 90
+    },
+    {
+      "channel": "phone",
+      "value": "+8801713222677",
+      "confidence": 85
+    },
+    {
+      "channel": "phone",
+      "value": "+8801626113676",
+      "confidence": 85
+    },
+    {
+      "channel": "phone",
+      "value": "+8801713222688",
+      "confidence": 85
+    },
+    {
+      "channel": "phone",
+      "value": "+8801745760675",
+      "confidence": 85
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "E-0234",
+      "kind": "website",
+      "summary": "Arabian restaurant in Shantinagar, Dhaka with free home delivery across the city. Own delivery service (not just foodpanda). Menu-driven ordering. No visible online ordering system or WhatsApp order bot. Competitors with online ordering capture delivery customers that phone-only intake misses. AI-ag",
+      "confidence": 80
+    },
+    {
+      "evidence_id": "E-0240",
+      "kind": "website",
+      "summary": "Website live (HTTP 200) at https://littlearabia.com.bd/",
+      "confidence": 95
+    }
+  ],
+  "notes": "Arabian restaurant in Shantinagar, Dhaka with free home delivery across the city. Own delivery service (not just foodpanda). Menu-driven ordering. No visible online ordering system or WhatsApp order bot. Competitors with online ordering capture delivery customers that phone-only intake misses. AI-agent fit: WhatsApp order bot, menu recommendation, delivery tracking, repeat customer engagement."
+}
