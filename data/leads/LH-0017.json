@@ -8,27 +8,33 @@
   "tier": "A",
   "website": "https://bdmetroweddings.com/",
   "verified": true,
-  "verified_at": "2026-08-27T08:19:04.242553+00:00",
+  "verified_at": "2026-08-27T08:30:02.215222+00:00",
   "lead_type": "client",
   "niche": "Wedding photography and films",
   "geography": "Dhaka, Bangladesh",
   "pain_signals": [
-    "Booking is WhatsApp only (+8801626474358) — no online booking or availability calendar",
-    "Currently booking2026-2027 season but no automated waitlist or inquiry management",
-    "High-ticket packages with manual follow-up and no CRM",
-    "Competitors with online booking systems capture leads that WhatsApp-only intake misses"
+    "Booking via WhatsApp (+8801626474358) and email with an explicit 'we'll write back within a day' promise — couples get no instant availability answer",
+    "No online booking or availability calendar for the 2026-2027 season — couples can't check if their date is free without messaging",
+    "High-ticket packages with manual enquiry handling — every couple requires a human back-and-forth before seeing pricing/availability",
+    "Couples typically contact 3-5 studios at once; a 'within a day' reply window loses bookings to studios that answer instantly",
+    "Destination + nationwide weddings mean complex date/venue logistics coordinated manually"
   ],
-  "offer_surface": "Autonomous AI agent deployment for Wedding photography and films — targeting: Booking is WhatsApp only (+8801626474358) — no online booking or availability calendar; Currently booking2026-2027 season but no automated waitlist or inquiry management; High-ticket packages with manual follow-up and no CRM",
+  "offer_surface": "Autonomous AI agent deployment for Wedding photography and films — targeting: Booking via WhatsApp (+8801626474358) and email with an explicit 'we'll write back within a day' promise — couples get no instant availability answer; No online booking or availability calendar for the 2026-2027 season — couples can't check if their date is free without messaging; High-ticket packages with manual enquiry handling — every couple requires a human back-and-forth before seeing pricing/availability",
   "contact_paths": [
     {
-      "channel": "email",
-      "value": "bdmetroweddings@gmail.com",
-      "confidence": 90
+      "type": "whatsapp",
+      "value": "+8801626474358",
+      "source": "web_extract: bdmetroweddings.com"
     },
     {
-      "channel": "phone",
-      "value": "+8801626474358",
-      "confidence": 85
+      "type": "email",
+      "value": "bdmetroweddings@gmail.com",
+      "source": "web_extract: bdmetroweddings.com"
+    },
+    {
+      "type": "website",
+      "value": "https://bdmetroweddings.com/",
+      "source": "verified LIVE (HTTP 200)"
     }
   ],
   "evidence": [
@@ -39,5 +45,56 @@
       "confidence": 95
     }
   ],
-  "notes": ""
+  "notes": "",
+  "business_profile": {
+    "business_overview": "Metro Weddings is a boutique wedding photography & films studio in Bangladesh, operating since 2012 — fourteen years of weddings across Bangladesh and destination weddings worldwide. They position on an artisanal, documentary style ('Kept. Not just remembered'), hand-grading every photograph individually with no templating. They are currently booking the 2026-2027 wedding season. Intake is WhatsApp (+8801626474358) and email (bdmetroweddings@gmail.com), with a packages page showing pricing. A small, senior team that promises to 'write back within a day' — which is exactly the response-speed gap an AI agent fixes.",
+    "offer_surface": "Autonomous AI agent deployment for Wedding photography and films — targeting: Booking via WhatsApp/email with a 'write back within a day' promise — no instant availability check; No online booking or availability calendar for the 2026-2027 season; High-ticket packages with manual enquiry handling; Couples contacting multiple studios at once — slow replies lose bookings to faster studios",
+    "website": "https://bdmetroweddings.com/",
+    "verified": true,
+    "verified_at": "2026-08-27T08:30:02.215222+00:00",
+    "pain_signals": [
+      "Booking via WhatsApp (+8801626474358) and email with an explicit 'we'll write back within a day' promise — couples get no instant availability answer",
+      "No online booking or availability calendar for the 2026-2027 season — couples can't check if their date is free without messaging",
+      "High-ticket packages with manual enquiry handling — every couple requires a human back-and-forth before seeing pricing/availability",
+      "Couples typically contact 3-5 studios at once; a 'within a day' reply window loses bookings to studios that answer instantly",
+      "Destination + nationwide weddings mean complex date/venue logistics coordinated manually"
+    ],
+    "contact_paths": [
+      {
+        "type": "whatsapp",
+        "value": "+8801626474358",
+        "source": "web_extract: bdmetroweddings.com"
+      },
+      {
+        "type": "email",
+        "value": "bdmetroweddings@gmail.com",
+        "source": "web_extract: bdmetroweddings.com"
+      },
+      {
+        "type": "website",
+        "value": "https://bdmetroweddings.com/",
+        "source": "verified LIVE (HTTP 200)"
+      }
+    ],
+    "pricing_knowledge": {
+      "model": "High-ticket wedding photography + films packages",
+      "from_website": [
+        "Since 2012, 14 years, Bangladesh + destination weddings",
+        "Packages page with pricing published",
+        "Currently booking 2026-2027 season",
+        "Hand-graded, non-templated artisanal positioning"
+      ],
+      "note": "Premium, date-constrained business. Each wedding is a high-ticket booking and dates are finite inventory. Instant availability checks + booking capture are the highest-leverage automations — every date that goes to a faster-responding studio is unrecoverable."
+    },
+    "operational_gaps": [
+      "No instant availability check — couples wait up to a day",
+      "No online booking or calendar",
+      "Manual enquiry handling for high-ticket packages",
+      "Manual date/venue logistics for destination weddings"
+    ],
+    "competitive_position": "Metro Weddings competes with Wedding Diary and other premium Dhaka wedding studios. Their edge is a 14-year artisanal reputation and hand-crafted grading. But premium couples still message multiple studios and book the one that confirms availability fastest. An AI agent that checks date availability instantly and captures bookings would protect their finite date inventory without compromising their boutique, unhurried brand.",
+    "opportunity_size": "With high-ticket packages and finite 2026-2027 dates, every booking lost to a faster-responding studio is unrecoverable revenue. If a 'within a day' reply window loses even a handful of weddings per season, that's lakhs in lost bookings. An AI availability + booking agent that answers instantly recovers this and fills the season calendar faster.",
+    "how_the_agent_helps": "1. AI availability agent that checks the couple's date against the studio calendar instantly and confirms or offers alternatives.\n2. Package recommendation agent that matches the couple's needs to the right package and shares pricing.\n3. Booking capture agent that locks in the date with a deposit prompt and sends confirmations.\n4. Pre-wedding logistics agent that collects venue, timeline, and shot-list details before the shoot.",
+    "demo_scenario": "A couple planning a March 2027 wedding messages Metro Weddings on WhatsApp at 11pm: 'Is March 14 available?' Instead of waiting a day, the AI replies in seconds: 'March 14, 2027 is available! For a full-day wedding, most couples choose our [Package]. Want me to hold the date with a booking deposit?' The couple says yes; the date is locked with a deposit and a confirmation — before any competing studio has replied."
+  }
 }

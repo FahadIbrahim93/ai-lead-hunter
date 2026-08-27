@@ -8,35 +8,33 @@
   "tier": "A",
   "website": "https://rejuvenatebd.com/",
   "verified": true,
-  "verified_at": "2026-08-27T08:19:09.120525+00:00",
+  "verified_at": "2026-08-27T08:30:02.215222+00:00",
   "lead_type": "client",
   "niche": "Luxury salon and spa",
   "geography": "Dhaka, Bangladesh (Uttara, Unimart Centrepoint)",
   "pain_signals": [
-    "Bangladesh premier luxury salon (3+ branches, 4.9 rating) — appointment-driven, high-ticket services",
-    "Booking is phone-only — no online booking system, no automated appointment reminders",
-    "High margin services (hair spa BDT2,600+, facial BDT3,500+, bridal prep) — every missed appointment is significant revenue",
-    "No automated waitlist for peak times — walk-in clients turned away during busy periods"
+    "Bangladesh premier luxury salon, 3+ branches, 4.9 star rating — high-ticket, appointment-driven",
+    "Book via phone only — no online booking system, so appointments depend on a staffed phone line",
+    "No visible real-time stylist/therapist availability — clients can't see or book open slots",
+    "No automated pre-visit reminders — no-shows cost revenue on high-margin treatments",
+    "Bridal prep packages (high-ticket) handled via manual consultation with no booking automation"
   ],
-  "offer_surface": "Autonomous AI agent deployment for Luxury salon and spa — targeting: Bangladesh premier luxury salon (3+ branches, 4.9 rating) — appointment-driven, high-ticket services; Booking is phone-only — no online booking system, no automated appointment reminders; High margin services (hair spa BDT2,600+, facial BDT3,500+, bridal prep) — every missed appointment is significant revenue",
+  "offer_surface": "Autonomous AI agent deployment for Luxury salon and spa — targeting: Bangladesh premier luxury salon, 3+ branches, 4.9 star rating — high-ticket, appointment-driven; Book via phone only — no online booking system, so appointments depend on a staffed phone line; No visible real-time stylist/therapist availability — clients can't see or book open slots",
   "contact_paths": [
     {
-      "channel": "phone",
+      "type": "phone",
       "value": "+880 1886-123770",
-      "confidence": 95,
-      "source": "rejuvenatebd.com"
+      "source": "web_search"
     },
     {
-      "channel": "phone",
-      "value": "+8801406699612",
-      "confidence": 95,
-      "source": "rejuvenatebd.com"
-    },
-    {
-      "channel": "instagram",
-      "handle": "rejuvenatebd",
-      "confidence": 85,
+      "type": "instagram",
+      "value": "rejuvenatebd",
       "source": "Instagram"
+    },
+    {
+      "type": "website",
+      "value": "https://rejuvenatebd.com/",
+      "source": "verified LIVE (HTTP 200)"
     }
   ],
   "evidence": [
@@ -47,5 +45,56 @@
       "confidence": 95
     }
   ],
-  "notes": ""
+  "notes": "",
+  "business_profile": {
+    "business_overview": "Rejuvenate Salon & Spa is a premier luxury salon and spa in Dhaka, located in Uttara (Unimart Centrepoint) with 3+ branches and a 4.9-star rating. Services span hair, facials, spa treatments, and bridal preparation. Appointments are booked by phone only — there is no online booking system. High-ticket, appointment-driven services with a strong reputation but manual intake.",
+    "offer_surface": "Autonomous AI agent deployment for Luxury salon and spa — targeting: Online appointment booking into stylists'/therapists' real-time availability; Service and pricing enquiry handling; Pre-visit reminders to cut no-shows; Bridal package consultation booking; Multi-branch routing across 3+ locations",
+    "website": "https://rejuvenatebd.com/",
+    "verified": true,
+    "verified_at": "2026-08-27T08:30:02.215222+00:00",
+    "pain_signals": [
+      "Bangladesh premier luxury salon, 3+ branches, 4.9 star rating — high-ticket, appointment-driven",
+      "Book via phone only — no online booking system, so appointments depend on a staffed phone line",
+      "No visible real-time stylist/therapist availability — clients can't see or book open slots",
+      "No automated pre-visit reminders — no-shows cost revenue on high-margin treatments",
+      "Bridal prep packages (high-ticket) handled via manual consultation with no booking automation"
+    ],
+    "contact_paths": [
+      {
+        "type": "phone",
+        "value": "+880 1886-123770",
+        "source": "web_search"
+      },
+      {
+        "type": "instagram",
+        "value": "rejuvenatebd",
+        "source": "Instagram"
+      },
+      {
+        "type": "website",
+        "value": "https://rejuvenatebd.com/",
+        "source": "verified LIVE (HTTP 200)"
+      }
+    ],
+    "pricing_knowledge": {
+      "model": "High-ticket salon & spa services — hair, facial, spa, bridal prep",
+      "from_website": [
+        "Premier luxury salon, 3+ branches, 4.9-star rating",
+        "Uttara (Unimart Centrepoint) flagship",
+        "Phone-only booking"
+      ],
+      "note": "Appointment-driven, high-margin services. No-shows and missed phone bookings directly cut revenue. Online booking with real-time availability + automated reminders is the highest-leverage automation for a luxury salon."
+    },
+    "operational_gaps": [
+      "Phone-only booking — no online system",
+      "No real-time availability visibility",
+      "No automated reminders (no-show risk)",
+      "Manual bridal consultation booking",
+      "Multi-branch routing manual"
+    ],
+    "competitive_position": "Rejuvenate competes with other premium Dhaka salons. Their edge is a 4.9-star luxury reputation and multiple branches. But phone-only booking is a friction point that loses appointments to salons offering online booking. An AI booking agent with real-time availability and reminders would match their luxury positioning with a frictionless booking experience.",
+    "opportunity_size": "With high-ticket services and 3+ branches, appointment volume is significant. If phone-only booking misses after-hours calls and no-shows eat into high-margin treatments, that's real recurring leakage. An AI booking + reminder agent fills slots, cuts no-shows, and captures after-hours booking demand.",
+    "how_the_agent_helps": "1. AI booking agent that shows real-time stylist/therapist availability and books instantly.\n2. Service + pricing enquiry agent answering treatment questions.\n3. Pre-visit reminder agent cutting no-shows.\n4. Bridal package consultation booking + multi-branch routing.",
+    "demo_scenario": "A client wants a facial before a Friday event and messages Rejuvenate at 10pm: 'Any slots for a gold facial Thursday?' The AI replies instantly: 'Yes — Thursday we have 2pm or 5pm with [therapist] at our Uttara branch. The gold facial is ৳X. Shall I book 5pm?' The client books; a reminder is set for Wednesday. Rejuvenate captured an after-hours appointment it would have missed on a phone line."
+  }
 }

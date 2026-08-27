@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-1490",
+  "lead_id": "LH-0018",
+  "occurred_at": "2026-08-27T08:30:06.125111+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0339.json",
+  "detail": "Evidence: operational — Lead generation depends on inbound forms + a 'Free 30-Min Strategy Audit' offer "
+}

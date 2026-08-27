@@ -8,32 +8,33 @@
   "tier": "A",
   "website": "https://fastexpressbd.com/",
   "verified": true,
-  "verified_at": "2026-08-27T08:19:10.998484+00:00",
+  "verified_at": "2026-08-27T08:30:02.215222+00:00",
   "lead_type": "client",
   "niche": "Courier and logistics",
   "geography": "Dhaka, Bangladesh",
   "pain_signals": [
-    "Courier and logistics service with shipment tracking on website — but no automated booking form",
-    "Booking via phone/email/walk-in — no AI-powered booking assistant to handle volume spikes",
-    "No automated shipment status updates via SMS/email for customers — manual follow-up on each shipment",
-    "High-volume B2B and personal shipments — manual booking process creates bottlenecks during peak seasons"
+    "Courier service with shipment tracking on website — but customers still call/email for status instead of self-serving",
+    "Booking via phone/email or walk-in — no automated shipment booking form or WhatsApp booking",
+    "No automated shipment booking confirmation or tracking updates pushed to customers",
+    "High-volume B2B and personal shipments — repetitive 'where is my parcel?' calls consume staff time",
+    "Competitors with AI-powered booking and automated tracking SMS/email capture customers that manual booking misses"
   ],
-  "offer_surface": "Autonomous AI agent deployment for Courier and logistics — targeting: Courier and logistics service with shipment tracking on website — but no automated booking form; Booking via phone/email/walk-in — no AI-powered booking assistant to handle volume spikes; No automated shipment status updates via SMS/email for customers — manual follow-up on each shipment",
+  "offer_surface": "Autonomous AI agent deployment for Courier and logistics — targeting: Courier service with shipment tracking on website — but customers still call/email for status instead of self-serving; Booking via phone/email or walk-in — no automated shipment booking form or WhatsApp booking; No automated shipment booking confirmation or tracking updates pushed to customers",
   "contact_paths": [
     {
-      "channel": "email",
+      "type": "phone",
+      "value": "+88 01680-030830-1",
+      "source": "web_search"
+    },
+    {
+      "type": "email",
       "value": "info@fastexpressbd.com",
-      "confidence": 90
+      "source": "web_search"
     },
     {
-      "channel": "email",
-      "value": "nazrul_islam7178@yahoo.com",
-      "confidence": 90
-    },
-    {
-      "channel": "phone",
-      "value": "+8801715408293",
-      "confidence": 85
+      "type": "website",
+      "value": "https://fastexpressbd.com/",
+      "source": "verified LIVE (HTTP 200)"
     }
   ],
   "evidence": [
@@ -44,5 +45,55 @@
       "confidence": 95
     }
   ],
-  "notes": ""
+  "notes": "",
+  "business_profile": {
+    "business_overview": "Fastexpress BD is a courier and logistics service in Dhaka handling B2B and personal shipments. They offer shipment tracking on their website and take bookings via phone, email, or walk-in. Contact lines include +88 01680-030830-1 and +88 01841-208, with info@fastexpressbd.com. High shipment volume with manual booking and customer status queries handled by staff.",
+    "offer_surface": "Autonomous AI agent deployment for Courier and logistics — targeting: Automated 'where is my parcel?' tracking responses 24/7; New shipment booking over WhatsApp; Delivery confirmations and exception notifications; B2B account shipment reporting; Frees staff from repetitive status calls to focus on operations",
+    "website": "https://fastexpressbd.com/",
+    "verified": true,
+    "verified_at": "2026-08-27T08:30:02.215222+00:00",
+    "pain_signals": [
+      "Courier service with shipment tracking on website — but customers still call/email for status instead of self-serving",
+      "Booking via phone/email or walk-in — no automated shipment booking form or WhatsApp booking",
+      "No automated shipment booking confirmation or tracking updates pushed to customers",
+      "High-volume B2B and personal shipments — repetitive 'where is my parcel?' calls consume staff time",
+      "Competitors with AI-powered booking and automated tracking SMS/email capture customers that manual booking misses"
+    ],
+    "contact_paths": [
+      {
+        "type": "phone",
+        "value": "+88 01680-030830-1",
+        "source": "web_search"
+      },
+      {
+        "type": "email",
+        "value": "info@fastexpressbd.com",
+        "source": "web_search"
+      },
+      {
+        "type": "website",
+        "value": "https://fastexpressbd.com/",
+        "source": "verified LIVE (HTTP 200)"
+      }
+    ],
+    "pricing_knowledge": {
+      "model": "Courier/logistics — per-shipment fees, B2B accounts + personal parcels",
+      "from_website": [
+        "Website shipment tracking",
+        "Booking via phone/email/walk-in",
+        "B2B and personal shipments"
+      ],
+      "note": "High-volume, low-touch-per-shipment business. Status queries are the #1 staff time sink. An AI tracking agent answering 'where is my parcel?' 24/7 and booking shipments over WhatsApp frees capacity and improves the customer experience that wins B2B accounts."
+    },
+    "operational_gaps": [
+      "Status queries handled manually despite a tracking page",
+      "No WhatsApp/automated shipment booking",
+      "No proactive tracking updates pushed to customers",
+      "No automated B2B shipment reporting"
+    ],
+    "competitive_position": "Fastexpress competes with other Dhaka couriers where service responsiveness wins B2B accounts. Their edge is an existing tracking capability. But customers still call for status, and booking is manual. An AI agent that answers tracking queries instantly and books shipments over WhatsApp would make them the most responsive courier — a concrete differentiator for winning e-commerce and B2B accounts.",
+    "opportunity_size": "With high shipment volume, status-query handling consumes significant staff hours daily. An AI tracking agent eliminates most of that load 24/7, and WhatsApp booking captures shipments that phone-only intake misses. The combined effect is lower support cost + more bookings — directly improving margin on a volume business.",
+    "how_the_agent_helps": "1. AI tracking agent that answers 'where is my parcel?' automatically 24/7 from tracking data.\n2. WhatsApp shipment-booking agent that captures pickup/drop details and confirms.\n3. Proactive update agent that pushes delivery confirmations and exception alerts.\n4. B2B reporting agent that sends account-level shipment summaries.",
+    "demo_scenario": "An e-commerce seller messages Fastexpress at 11pm: 'Where's parcel FE12345?' The AI replies in seconds: 'FE12345 is out for delivery in Dhanmondi, ETA tomorrow 2-4pm.' The seller then books 3 new pickups over WhatsApp in the same thread. Fastexpress answered a status query and won new bookings at midnight with zero staff involved."
+  }
 }

@@ -1,0 +1,10 @@
+{
+  "evidence_id": "E-0346",
+  "lead_id": "LH-0022",
+  "kind": "operational",
+  "found_at": "2026-08-27T08:30:06.552318+00:00",
+  "source_url": "",
+  "summary": "Delivers via foodpanda — no direct ordering or automated order tracking for custom orders",
+  "confidence": 75,
+  "raw": ""
+}

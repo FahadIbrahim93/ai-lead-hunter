@@ -1,0 +1,10 @@
+{
+  "evidence_id": "E-0356",
+  "lead_id": "LH-0025",
+  "kind": "operational",
+  "found_at": "2026-08-27T08:30:07.340665+00:00",
+  "source_url": "",
+  "summary": "No automated shipment booking confirmation or tracking updates pushed to customers",
+  "confidence": 75,
+  "raw": ""
+}

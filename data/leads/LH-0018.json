@@ -8,27 +8,28 @@
   "tier": "A",
   "website": "https://ngital.com/",
   "verified": true,
-  "verified_at": "2026-08-27T08:19:05.010800+00:00",
+  "verified_at": "2026-08-27T08:30:02.215222+00:00",
   "lead_type": "client",
   "niche": "Digital marketing agency",
   "geography": "Dhaka, Bangladesh",
   "pain_signals": [
-    "Inbound lead intake is manual — web form submissions + phone calls with no automated qualification or routing",
-    "Proposals and retainer onboarding (BDT50K/month+) are hand-crafted — slow close, inconsistent pricing",
-    "No automated follow-up on inbound leads — responsive prospects can go cold before a human replies",
-    "Competitors with automated lead triage and proposal routing capture leads that manual intake misses"
+    "Lead generation depends on inbound forms + a 'Free 30-Min Strategy Audit' offer with a 'reply within 1 business day' promise — no instant qualification of audit requests",
+    "Senior strategists spend time on unqualified audit calls that don't convert — no pre-call qualification filter",
+    "No visible automated proposal or onboarding workflow for converting audits into retainer clients",
+    "200+ brands served means a large past-client base that is never systematically re-engaged for upsells",
+    "An agency selling digital growth and WhatsApp marketing should itself run AI-powered intake — currently it doesn't, which is both a gap and a credibility opportunity"
   ],
-  "offer_surface": "Autonomous AI agent deployment for Digital marketing agency — targeting: Inbound lead intake is manual — web form submissions + phone calls with no automated qualification or routing; Proposals and retainer onboarding (BDT50K/month+) are hand-crafted — slow close, inconsistent pricing; No automated follow-up on inbound leads — responsive prospects can go cold before a human replies",
+  "offer_surface": "Autonomous AI agent deployment for Digital marketing agency — targeting: Lead generation depends on inbound forms + a 'Free 30-Min Strategy Audit' offer with a 'reply within 1 business day' promise — no instant qualification of audit requests; Senior strategists spend time on unqualified audit calls that don't convert — no pre-call qualification filter; No visible automated proposal or onboarding workflow for converting audits into retainer clients",
   "contact_paths": [
     {
-      "channel": "email",
-      "value": "enquiry@ngital.com",
-      "confidence": 90
+      "type": "website_form",
+      "value": "ngital.com/contact (Free Audit)",
+      "source": "web_extract"
     },
     {
-      "channel": "phone",
-      "value": "+8801601654800",
-      "confidence": 85
+      "type": "website",
+      "value": "https://ngital.com/",
+      "source": "verified LIVE (HTTP 200)"
     }
   ],
   "evidence": [
@@ -39,5 +40,51 @@
       "confidence": 95
     }
   ],
-  "notes": ""
+  "notes": "",
+  "business_profile": {
+    "business_overview": "Ngital is a results-driven digital marketing agency in Dhaka, founded in 2020 by Tajul Islam, serving 200+ brands with senior-led pods and weekly delivery. Services span SEO, performance marketing, social media, content, creative production, web development, Shopify ecommerce, and WhatsApp marketing. They offer a 'Free 30-Min Strategy Audit' as their lead magnet, promising a reply within 1 business day and a senior strategist on the call. They partner with founders, marketing leaders, and global teams. Retainer-based clients (BDT 50K+/month typical for agencies). Their own intake depends on inbound forms + the audit offer.",
+    "offer_surface": "Autonomous AI agent deployment for Digital marketing agency — targeting: Lead qualification of inbound audit requests so senior strategists only talk to serious prospects; Automated audit scheduling and reminder workflow; Proposal/onboarding automation for retainer clients; Practices what it preaches — an agency selling digital growth should run AI-powered intake itself",
+    "website": "https://ngital.com/",
+    "verified": true,
+    "verified_at": "2026-08-27T08:30:02.215222+00:00",
+    "pain_signals": [
+      "Lead generation depends on inbound forms + a 'Free 30-Min Strategy Audit' offer with a 'reply within 1 business day' promise — no instant qualification of audit requests",
+      "Senior strategists spend time on unqualified audit calls that don't convert — no pre-call qualification filter",
+      "No visible automated proposal or onboarding workflow for converting audits into retainer clients",
+      "200+ brands served means a large past-client base that is never systematically re-engaged for upsells",
+      "An agency selling digital growth and WhatsApp marketing should itself run AI-powered intake — currently it doesn't, which is both a gap and a credibility opportunity"
+    ],
+    "contact_paths": [
+      {
+        "type": "website_form",
+        "value": "ngital.com/contact (Free Audit)",
+        "source": "web_extract"
+      },
+      {
+        "type": "website",
+        "value": "https://ngital.com/",
+        "source": "verified LIVE (HTTP 200)"
+      }
+    ],
+    "pricing_knowledge": {
+      "model": "Retainer-based digital marketing (SEO, performance, social, content, web/Shopify)",
+      "from_website": [
+        "200+ brands, senior-led pods, weekly delivery",
+        "Free 30-min strategy audit lead magnet",
+        "Reply within 1 business day promise",
+        "Founded 2020 by Tajul Islam"
+      ],
+      "note": "Retainer business (BDT 50K+/month typical). The audit is the top of funnel; qualifying audit requests and converting them to retainers faster is the revenue lever. As a digital agency, adopting AI intake is also a credibility play they can resell to clients."
+    },
+    "operational_gaps": [
+      "No instant qualification of inbound audit requests",
+      "Senior time spent on unqualified calls",
+      "No automated proposal/onboarding workflow",
+      "No systematic past-client re-engagement"
+    ],
+    "competitive_position": "Ngital competes with other Dhaka digital agencies for retainer clients. Their edge is senior-led pods and measurable performance marketing. But their own intake (1-business-day reply, manual audit qualification) lags the AI-powered experience they could offer. Adopting an AI intake agent would both win them more retainers AND become a case study they sell to clients.",
+    "opportunity_size": "With 200+ brands and retainer pricing, each converted audit is recurring monthly revenue. If slow/manual audit qualification loses even a few retainer clients per quarter — and senior time is burned on unqualified calls — that's meaningful lost MRR plus wasted capacity. An AI qualification + scheduling agent recovers this and frees senior strategists for closing.",
+    "how_the_agent_helps": "1. AI audit-qualification agent that scores each inbound request by budget, goals, and fit before a strategist is involved.\n2. Audit scheduling agent that books qualified prospects into strategist calendars with reminders.\n3. Proposal + onboarding automation that turns closed audits into retainers faster.\n4. Past-client re-engagement agent that surfaces upsell opportunities across the 200+ brand base.",
+    "demo_scenario": "A founder submits a Free Audit request at 10pm. In seconds the AI replies: 'Thanks! To match you with the right senior strategist: what's your monthly ad budget, and is your goal leads, sales, or brand?' The founder answers; the AI scores them as high-fit and books a 30-min audit for tomorrow 2pm with a prep brief already sent. The strategist walks in prepared, and Ngital responded instantly — practicing the AI-powered growth it sells."
+  }
 }

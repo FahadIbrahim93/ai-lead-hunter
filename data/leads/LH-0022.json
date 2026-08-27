@@ -8,7 +8,7 @@
   "tier": "A",
   "website": "https://coopersbakery.com/",
   "verified": true,
-  "verified_at": "2026-08-27T08:19:09.032947+00:00",
+  "verified_at": "2026-08-27T08:30:02.215222+00:00",
   "lead_type": "client",
   "niche": "Bakery and custom cakes",
   "geography": "Dhaka, Bangladesh (Old Airport Road)",
@@ -16,21 +16,25 @@
     "Custom wedding cakes and pastries — high-ticket, seasonal demand spikes (wedding season +150%)",
     "Orders come via phone/Instagram/WhatsApp — no online order form to capture custom cake requests automatically",
     "Delivers via foodpanda — no direct ordering or automated order tracking for custom orders",
+    "Has a B2B/Corporate page but no automated corporate order intake or quote workflow",
     "Competitors without online booking or automated order intake lose custom cake orders during peak wedding season"
   ],
   "offer_surface": "Autonomous AI agent deployment for Bakery and custom cakes — targeting: Custom wedding cakes and pastries — high-ticket, seasonal demand spikes (wedding season +150%); Orders come via phone/Instagram/WhatsApp — no online order form to capture custom cake requests automatically; Delivers via foodpanda — no direct ordering or automated order tracking for custom orders",
   "contact_paths": [
     {
-      "channel": "phone",
+      "type": "phone",
       "value": "+880-2-5566 (Old Airport Road)",
-      "confidence": 80,
       "source": "TripAdvisor/Facebook"
     },
     {
-      "channel": "instagram",
-      "handle": "coopersbakerybd",
-      "confidence": 90,
+      "type": "instagram",
+      "value": "coopersbakerybd",
       "source": "Instagram"
+    },
+    {
+      "type": "website",
+      "value": "https://coopersbakery.com/",
+      "source": "verified LIVE (HTTP 200)"
     }
   ],
   "evidence": [
@@ -41,5 +45,57 @@
       "confidence": 95
     }
   ],
-  "notes": ""
+  "notes": "",
+  "business_profile": {
+    "business_overview": "Cooper's Bakery is an established bakery in Dhaka (Old Airport Road) known for custom wedding cakes, pastries, sandwiches, and breads. They operate a website with Menu, Locations, a dedicated B2B/Corporate page, Feedbacks, and Recruitment sections, plus social presence on Facebook, Instagram, and LinkedIn, and a food-ordering app (Gwee Barra Ltd food ordering app on Play Store). Orders come via phone, Instagram, WhatsApp, and delivery aggregators like foodpanda. Custom cake orders — the highest-margin product — are handled manually with no online custom-order form.",
+    "offer_surface": "Autonomous AI agent deployment for Bakery and custom cakes — targeting: Custom wedding-cake order capture over WhatsApp with design details, tiers, and delivery dates; Instant pricing confirmation for custom orders; Order-status updates eliminating inbound status calls; B2B/corporate order intake automation; Peak-season (wedding season) order management to prevent missed custom-cake requests",
+    "website": "https://coopersbakery.com/",
+    "verified": true,
+    "verified_at": "2026-08-27T08:30:02.215222+00:00",
+    "pain_signals": [
+      "Custom wedding cakes and pastries — high-ticket, seasonal demand spikes (wedding season +150%)",
+      "Orders come via phone/Instagram/WhatsApp — no online order form to capture custom cake requests automatically",
+      "Delivers via foodpanda — no direct ordering or automated order tracking for custom orders",
+      "Has a B2B/Corporate page but no automated corporate order intake or quote workflow",
+      "Competitors without online booking or automated order intake lose custom cake orders during peak wedding season"
+    ],
+    "contact_paths": [
+      {
+        "type": "phone",
+        "value": "+880-2-5566 (Old Airport Road)",
+        "source": "TripAdvisor/Facebook"
+      },
+      {
+        "type": "instagram",
+        "value": "coopersbakerybd",
+        "source": "Instagram"
+      },
+      {
+        "type": "website",
+        "value": "https://coopersbakery.com/",
+        "source": "verified LIVE (HTTP 200)"
+      }
+    ],
+    "pricing_knowledge": {
+      "model": "Retail bakery + custom wedding cakes + B2B/corporate supply",
+      "from_website": [
+        "Menu, Locations, B2B/Corporate, Feedbacks, Recruitment sections",
+        "Food-ordering app on Play Store (Gwee Barra Ltd)",
+        "Facebook, Instagram, LinkedIn presence",
+        "Custom wedding cakes are the high-margin product"
+      ],
+      "note": "Custom wedding cakes are the highest-margin, most enquiry-intensive product — each requires design, tiers, date, and delivery coordination. An AI agent that captures custom-cake specs over WhatsApp and confirms pricing instantly is the highest-leverage automation, especially in peak wedding season."
+    },
+    "operational_gaps": [
+      "No online custom-cake order form",
+      "Custom orders handled manually via phone/IG/WhatsApp",
+      "No automated order tracking for custom orders",
+      "B2B/corporate intake not automated",
+      "Peak-season order overload risk"
+    ],
+    "competitive_position": "Cooper's competes with other Dhaka bakeries for custom wedding cakes and corporate orders. Their edge is an established brand and a real web/app presence. But custom-cake intake is manual, and in peak wedding season every missed or slow-handled enquiry goes to a competitor. An AI custom-order agent would make them the most responsive bakery for high-margin cakes.",
+    "opportunity_size": "Custom wedding cakes command premium prices and peak-season demand spikes ~150%. If manual intake loses even a fraction of custom-cake enquiries during wedding season — plus corporate orders that aren't captured automatically — that's substantial lost high-margin revenue. An AI order agent recovers this and smooths peak-season capacity.",
+    "how_the_agent_helps": "1. AI custom-cake agent that captures design, tiers, servings, and delivery date over WhatsApp and confirms pricing instantly.\n2. Order-status agent that sends updates and eliminates inbound status calls.\n3. B2B/corporate intake agent that handles bulk order quotes.\n4. Peak-season management agent that tracks order capacity and prevents overbooking.",
+    "demo_scenario": "A bride messages Cooper's on Instagram at 9pm: 'I need a 3-tier wedding cake for December 12, white with gold accents.' The AI replies instantly: 'Beautiful! For a 3-tier cake serving ~150, our custom wedding cakes start at ৳X. December 12 is available — want me to book a tasting and hold the date?' The bride books; Cooper's captured a high-margin custom order overnight with zero staff effort."
+  }
 }

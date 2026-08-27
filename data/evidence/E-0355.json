@@ -1,0 +1,10 @@
+{
+  "evidence_id": "E-0355",
+  "lead_id": "LH-0025",
+  "kind": "operational",
+  "found_at": "2026-08-27T08:30:07.303076+00:00",
+  "source_url": "",
+  "summary": "Booking via phone/email or walk-in — no automated shipment booking form or WhatsApp booking",
+  "confidence": 75,
+  "raw": ""
+}

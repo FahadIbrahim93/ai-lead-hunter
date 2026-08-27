@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-1500",
+  "lead_id": "LH-0022",
+  "occurred_at": "2026-08-27T08:30:06.607331+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0347.json",
+  "detail": "Evidence: operational — Has a B2B/Corporate page but no automated corporate order intake or quote workfl"
+}

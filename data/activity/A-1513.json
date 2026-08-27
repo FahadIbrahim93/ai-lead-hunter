@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-1513",
+  "lead_id": "LH-0025",
+  "occurred_at": "2026-08-27T08:30:07.356719+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0356.json",
+  "detail": "Evidence: operational — No automated shipment booking confirmation or tracking updates pushed to custome"
+}

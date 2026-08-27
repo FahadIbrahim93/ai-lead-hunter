@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-1505",
+  "lead_id": "LH-0023",
+  "occurred_at": "2026-08-27T08:30:06.933581+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0350.json",
+  "detail": "Evidence: operational — Book via phone only — no online booking system, so appointments depend on a staf"
+}

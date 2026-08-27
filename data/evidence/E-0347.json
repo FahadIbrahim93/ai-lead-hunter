@@ -1,0 +1,10 @@
+{
+  "evidence_id": "E-0347",
+  "lead_id": "LH-0022",
+  "kind": "operational",
+  "found_at": "2026-08-27T08:30:06.590326+00:00",
+  "source_url": "",
+  "summary": "Has a B2B/Corporate page but no automated corporate order intake or quote workflow",
+  "confidence": 75,
+  "raw": ""
+}
