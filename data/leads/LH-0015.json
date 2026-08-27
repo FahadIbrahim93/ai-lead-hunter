@@ -8,35 +8,37 @@
   "tier": "A",
   "website": "https://goldsgym.com.bd/",
   "verified": true,
-  "verified_at": "2026-08-27T08:19:00.774513+00:00",
+  "verified_at": "2026-08-27T08:22:25.478962+00:00",
   "lead_type": "client",
   "niche": "Fitness and gym",
   "geography": "Dhaka, Bangladesh",
   "pain_signals": [
-    "Membership booking is phone-only (+8801969-900555) — no online class scheduling or membership management",
+    "Membership booking is phone-only (+8801713-399399) — no online class scheduling or membership management",
     "No visible app or portal for members to book classes, track progress, or manage accounts",
-    "High-ticket packages (BDT35K-2.5L/year) with manual follow-up and no automated renewal reminders",
+    "High-ticket packages (BDT 35K–2.5L/year) with manual follow-up and no automated renewal reminders",
     "Competitors with app-based booking capture leads that phone-only intake misses"
   ],
-  "offer_surface": "Autonomous AI agent deployment for Fitness and gym — targeting: Membership booking is phone-only (+8801969-900555) — no online class scheduling or membership management; No visible app or portal for members to book classes, track progress, or manage accounts; High-ticket packages (BDT35K-2.5L/year) with manual follow-up and no automated renewal reminders",
+  "offer_surface": "Autonomous AI agent deployment for Fitness and gym — targeting: Membership booking is phone-only (+8801713-399399) — no online class scheduling or membership management; No visible app or portal for members to book classes, track progress, or manage accounts; High-ticket packages (BDT 35K–2.5L/year) with manual follow-up and no automated renewal reminders",
   "contact_paths": [
     {
-      "channel": "corporate",
-      "type": "parent_org",
-      "values": [
-        "Bashundhara Group (corporate parent)"
-      ],
-      "source": "web_extract: goldsgym.com.bd — Gold's Gym Bangladesh powered by Bashundhara Group",
-      "added_at": "2026-08-28T00:00:00+06:00"
+      "type": "phone",
+      "value": "+8801713399399",
+      "source": "web_search + web_extract"
     },
     {
-      "channel": "website",
-      "type": "packages_page",
-      "values": [
-        "https://goldsgym.com.bd/packages/"
-      ],
-      "source": "web_extract: goldsgym.com.bd — membership packages page (Silver ৳99K/yr, Gold ৳137.5K/yr)",
-      "added_at": "2026-08-28T00:00:00+06:00"
+      "type": "website",
+      "value": "https://goldsgym.com.bd/",
+      "source": "verified"
+    },
+    {
+      "type": "instagram",
+      "value": "@goldsgym_bangladesh",
+      "source": "web_search"
+    },
+    {
+      "type": "corporate",
+      "value": "Bashundhara Group (parent)",
+      "source": "web_extract"
     }
   ],
   "evidence": [
@@ -47,5 +49,60 @@
       "confidence": 95
     }
   ],
-  "notes": ""
+  "notes": "",
+  "business_profile": {
+    "business_overview": "Gold's Gym Bangladesh is the local franchise of the world's most iconic fitness brand (founded 1965 in Venice Beach, CA). Operated by Bashundhara Group — one of Bangladesh's largest conglomerates — it runs premium fitness facilities in Dhaka with world-class Technogym equipment, certified trainers, a women-only floor, spa & pool, and membership packages from BDT 99,000 to 2,50,000/year. Target audience: urban upper-middle-class fitness-conscious Bangladeshis willing to pay premium prices for a branded, full-service gym experience.",
+    "offer_surface": "Autonomous AI agent deployment for Fitness and gym operations — targeting: Membership booking is phone-only (+8801713-399399) — no online class scheduling or membership management; No visible app or portal for members to book classes, track progress, or manage accounts; High-ticket packages (BDT 35K–2.5L/year) with manual follow-up and no automated renewal reminders; Competitors with app-based booking capture leads that phone-only intake misses",
+    "website": "https://goldsgym.com.bd/",
+    "verified": true,
+    "verified_at": "2026-08-27T08:22:25.478962+00:00",
+    "pain_signals": [
+      "Membership booking is phone-only (+8801713-399399) — no online class scheduling or membership management",
+      "No visible app or portal for members to book classes, track progress, or manage accounts",
+      "High-ticket packages (BDT 35K–2.5L/year) with manual follow-up and no automated renewal reminders",
+      "Competitors with app-based booking capture leads that phone-only intake misses"
+    ],
+    "contact_paths": [
+      {
+        "type": "phone",
+        "value": "+8801713399399",
+        "source": "web_search + web_extract"
+      },
+      {
+        "type": "website",
+        "value": "https://goldsgym.com.bd/",
+        "source": "verified"
+      },
+      {
+        "type": "instagram",
+        "value": "@goldsgym_bangladesh",
+        "source": "web_search"
+      },
+      {
+        "type": "corporate",
+        "value": "Bashundhara Group (parent)",
+        "source": "web_extract"
+      }
+    ],
+    "pricing_knowledge": {
+      "model": "Annual membership packages (Silver/Gold/Pool & Spa) with monthly options",
+      "from_website": [
+        "Silver: BDT 99,000/year (was 180,000) — gym access only",
+        "Gold: BDT 137,500/year (was 250,000) — gym, spa & pool access",
+        "Pool & Spa: BDT 75,000/year — spa & pool access only",
+        "1/3/6-month membership options available"
+      ],
+      "note": "Premium pricing signals high customer lifetime value — even a 2% retention improvement via automated follow-ups is worth ~BDT 2,750/yr per Gold member."
+    },
+    "operational_gaps": [
+      "No online booking or class scheduling — all sign-ups via phone (+8801713-399399)",
+      "No membership portal or app — members can't manage accounts, book classes, or track progress online",
+      "No automated renewal reminders for high-ticket annual packages",
+      "Lead intake is phone-only — no form, no chatbot, no automated qualification"
+    ],
+    "competitive_position": "Gold's Gym Bangladesh sits at the premium end of the Dhaka fitness market. Direct competitors include other branded gyms (Everyday Gym, Axiom, Fitness Foundation) and boutique studios. The key differentiator is brand prestige + Bashundhara Group backing. However, without a digital booking/intake flow, they're leaving leads to competitors who offer online scheduling — especially younger, tech-comfortable customers who won't call a gym to ask about packages.",
+    "opportunity_size": "With premium packages at BDT 99K–250K/year and likely hundreds of members across two Dhaka locations, the gym probably serves 500–1500+ members. Even capturing 5% more leads via an AI intake agent (WeChat/WhatsApp/Instagram auto-reply + qualification + booking) at BDT 100K avg package = BDT 250K–750K in additional annual revenue. Retention automation (renewal reminders, progress check-ins) adds further value.",
+    "how_the_agent_helps": "1. AI enquiry agent on Instagram/WhatsApp/website that replies instantly to prospective members, qualifies budget + goals, and books a free trial session into the calendar — 24/7, no missed leads.\n2. Membership renewal agent that sends personalized renewal reminders 30/15/7 days before package expiry, handles upgrade/downgrade queries, and flags at-risk members for trainer follow-up.\n3. Class booking assistant that lets members browse available classes, check instructor profiles, and reserve slots — replacing the phone-only bottleneck.",
+    "demo_scenario": "A prospective member messages Gold's Gym Bangladesh on Instagram at 11pm asking about membership prices and women-only classes. The AI agent instantly replies with package options (Silver BDT 99K/yr, Gold BDT 137.5K/yr with spa & pool), answers questions about the women-only floor, qualifies the member's goals (weight loss vs strength training), and books a free trial session for the next morning — all without a human touching it. The next morning the gym owner gets a notification: '3 qualified leads booked trials today, 1 upgrade inquiry from an existing Gold member.'"
+  }
 }

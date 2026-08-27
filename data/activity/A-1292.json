@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-1292",
+  "lead_id": "LH-0015",
+  "occurred_at": "2026-08-27T08:22:25.623147+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0277.json",
+  "detail": "Evidence: operational — Membership booking is phone-only (+8801713-399399) — no online class scheduling "
+}

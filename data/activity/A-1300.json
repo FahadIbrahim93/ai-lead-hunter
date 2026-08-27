@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-1300",
+  "lead_id": "LH-0016",
+  "occurred_at": "2026-08-27T08:22:33.538822+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0283.json",
+  "detail": "Evidence: operational — High-ticket packages (BDT 50K–2.5L) with manual follow-up and no CRM"
+}

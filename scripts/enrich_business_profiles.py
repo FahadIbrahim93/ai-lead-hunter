@@ -18,7 +18,7 @@ from pathlib import Path
 
 from hermes_tools import web_extract, web_search
 
-REPO = Path(__file__).resolve().parent
+REPO = Path(__file__).resolve().parent.parent
 LEADS_DIR = REPO / "data" / "leads"
 
 

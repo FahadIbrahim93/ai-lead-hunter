@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-1295",
+  "lead_id": "LH-0015",
+  "occurred_at": "2026-08-27T08:22:25.724780+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0280.json",
+  "detail": "Evidence: operational — Competitors with app-based booking capture leads that phone-only intake misses"
+}

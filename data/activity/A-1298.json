@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-1298",
+  "lead_id": "LH-0016",
+  "occurred_at": "2026-08-27T08:22:33.470240+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0281.json",
+  "detail": "Evidence: operational — Booking is phone/WhatsApp only (+8801975556633, +8801711293153) — no online book"
+}
