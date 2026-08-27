@@ -1,0 +1,45 @@
+{
+  "lead_id": "LH-0006",
+  "business_name": "Notun Thikana Properties Ltd.",
+  "discovered_at": "2026-08-27T00:21:57.064094+00:00",
+  "source": "discovery",
+  "lifecycle_status": "QUALIFIED",
+  "score": 100,
+  "tier": "A",
+  "niche": "Real estate portal and development",
+  "geography": "Bangladesh",
+  "pain_signals": [
+    "Property portal connects buyers/sellers but likely lacks automated buyer status updates",
+    "No visible buyer payment milestone tracking or construction progress dashboard",
+    "High-value transactions with manual coordination risk leads falling through",
+    "Competitor BengalTech advertises real estate ERP — gap exists for buyer-facing automation"
+  ],
+  "offer_surface": "Autonomous AI agent deployment for Real estate portal and development — targeting: Property portal connects buyers/sellers but likely lacks automated buyer status updates; No visible buyer payment milestone tracking or construction progress dashboard; High-value transactions with manual coordination risk leads falling through",
+  "contact_paths": [
+    {
+      "channel": "website",
+      "url": "https://www.notunthikana.com/",
+      "confidence": 80
+    },
+    {
+      "channel": "linkedin",
+      "handle": "notun-thikana-properties",
+      "confidence": 65
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "E-0044",
+      "kind": "website",
+      "summary": "Real estate portal with buyer-seller matching but no visible buyer portal or milestone tracking",
+      "confidence": 80
+    },
+    {
+      "evidence_id": "E-0045",
+      "kind": "competitive",
+      "summary": "BengalTech and E-Hishabi offer real estate ERP with buyer portals — Bangladeshi developers lag",
+      "confidence": 75
+    }
+  ],
+  "notes": "Auto-discovered from live market research + referral signals."
+}

@@ -1,0 +1,10 @@
+{
+  "evidence_id": "E-0058",
+  "lead_id": "LH-0006",
+  "kind": "operational",
+  "found_at": "2026-08-27T00:22:27.587034+00:00",
+  "source_url": "",
+  "summary": "High-value transactions with manual coordination risk leads falling through",
+  "confidence": 75,
+  "raw": ""
+}

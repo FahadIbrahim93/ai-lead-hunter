@@ -1,0 +1,10 @@
+{
+  "evidence_id": "E-0069",
+  "lead_id": "LH-0009",
+  "kind": "operational",
+  "found_at": "2026-08-27T00:22:28.179747+00:00",
+  "source_url": "",
+  "summary": "Customer support and order state changes are manual — slow at scale",
+  "confidence": 75,
+  "raw": ""
+}

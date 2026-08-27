@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-0099",
+  "lead_id": "LH-0006",
+  "occurred_at": "2026-08-27T01:25:31.705681+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0076.json",
+  "detail": "Evidence: operational — Property portal connects buyers/sellers but likely lacks automated buyer status "
+}

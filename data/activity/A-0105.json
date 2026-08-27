@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-0105",
+  "lead_id": "LH-0007",
+  "occurred_at": "2026-08-27T01:25:31.963419+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0081.json",
+  "detail": "Evidence: operational — Inventory management for high-value stock requires precision — manual tracking i"
+}

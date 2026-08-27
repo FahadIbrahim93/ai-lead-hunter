@@ -1,0 +1,45 @@
+{
+  "lead_id": "LH-0007",
+  "business_name": "MARJAHANS Jewelers (expanded opportunity)",
+  "discovered_at": "2026-08-27T00:21:57.092245+00:00",
+  "source": "referral",
+  "lifecycle_status": "QUALIFIED",
+  "score": 100,
+  "tier": "A",
+  "niche": "Jewelry retail and wholesale",
+  "geography": "Bangladesh",
+  "pain_signals": [
+    "Jewelry retail depends on customer retention but manual follow-up is common without CRM",
+    "Inventory management for high-value stock requires precision — manual tracking is error-prone",
+    "No visible automated appointment scheduling for consultations or fittings",
+    "Industry-wide gap: most jewelry stores lack AI-driven customer engagement"
+  ],
+  "offer_surface": "Autonomous AI agent deployment for Jewelry retail and wholesale — targeting: Jewelry retail depends on customer retention but manual follow-up is common without CRM; Inventory management for high-value stock requires precision — manual tracking is error-prone; No visible automated appointment scheduling for consultations or fittings",
+  "contact_paths": [
+    {
+      "channel": "whatsapp",
+      "value": "+8801870489448",
+      "confidence": 95
+    },
+    {
+      "channel": "owner",
+      "value": "Fahad Ibrahim (owner)",
+      "confidence": 100
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "E-0046",
+      "kind": "operational",
+      "summary": "Jewelry retail in Bangladesh commonly relies on manual inventory and customer follow-up without CRM automation",
+      "confidence": 80
+    },
+    {
+      "evidence_id": "E-0047",
+      "kind": "competitive",
+      "summary": "Luxare and Jewel360 automate follow-ups and inventory; local stores generally lack these tools",
+      "confidence": 75
+    }
+  ],
+  "notes": "Auto-discovered from live market research + referral signals."
+}

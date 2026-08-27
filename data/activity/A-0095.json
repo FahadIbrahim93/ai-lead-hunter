@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-0095",
+  "lead_id": "LH-0005",
+  "occurred_at": "2026-08-27T01:25:31.502766+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0073.json",
+  "detail": "Evidence: operational — Portfolio is website-only — no WhatsApp Business integration, no automated lead "
+}

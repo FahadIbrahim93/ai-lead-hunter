@@ -1,0 +1,10 @@
+{
+  "evidence_id": "E-0050",
+  "lead_id": "LH-0009",
+  "kind": "operational",
+  "found_at": "2026-08-27T00:21:57.163644+00:00",
+  "source_url": "https://waplify.io/grocery-shopping-on-whatsapp-2026-waplify/",
+  "summary": "WhatsApp-only grocery ordering lacks tracking, scheduling, and inventory automation",
+  "confidence": 85,
+  "raw": "WhatsApp-only grocery ordering lacks tracking, scheduling, and inventory automation"
+}

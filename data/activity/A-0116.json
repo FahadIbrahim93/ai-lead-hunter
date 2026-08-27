@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-0116",
+  "lead_id": "LH-0009",
+  "occurred_at": "2026-08-27T01:25:32.414307+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0090.json",
+  "detail": "Evidence: operational — No visible inventory sync or stock-out alerts for customers"
+}

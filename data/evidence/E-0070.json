@@ -1,0 +1,10 @@
+{
+  "evidence_id": "E-0070",
+  "lead_id": "LH-0009",
+  "kind": "operational",
+  "found_at": "2026-08-27T00:22:28.193781+00:00",
+  "source_url": "",
+  "summary": "No visible inventory sync or stock-out alerts for customers",
+  "confidence": 75,
+  "raw": ""
+}

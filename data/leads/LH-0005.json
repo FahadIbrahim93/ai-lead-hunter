@@ -1,0 +1,45 @@
+{
+  "lead_id": "LH-0005",
+  "business_name": "BD INTERIOR",
+  "discovered_at": "2026-08-27T00:21:57.032462+00:00",
+  "source": "discovery",
+  "lifecycle_status": "QUALIFIED",
+  "score": 100,
+  "tier": "A",
+  "niche": "Interior design and decor",
+  "geography": "Bangladesh",
+  "pain_signals": [
+    "Award-winning interior firm with 15+ years experience but no public online booking or enquiry flow",
+    "Portfolio is website-only — no WhatsApp Business integration, no automated lead qualification",
+    "High-ticket projects (BDT 500K+) with likely manual follow-up and no CRM",
+    "Competitors with online consultation booking capture leads BD INTERIOR misses"
+  ],
+  "offer_surface": "Autonomous AI agent deployment for Interior design and decor — targeting: Award-winning interior firm with 15+ years experience but no public online booking or enquiry flow; Portfolio is website-only — no WhatsApp Business integration, no automated lead qualification; High-ticket projects (BDT 500K+) with likely manual follow-up and no CRM",
+  "contact_paths": [
+    {
+      "channel": "website",
+      "url": "https://bdinterior.com/",
+      "confidence": 90
+    },
+    {
+      "channel": "phone",
+      "value": "+880-1XXX-XXXXXX",
+      "confidence": 60
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "E-0042",
+      "kind": "website",
+      "summary": "Website exists but no booking/enquiry form detected",
+      "confidence": 90
+    },
+    {
+      "evidence_id": "E-0043",
+      "kind": "competitive",
+      "summary": "Competitors with online consultation booking outperform website-only firms",
+      "confidence": 75
+    }
+  ],
+  "notes": "Auto-discovered from live market research + referral signals."
+}

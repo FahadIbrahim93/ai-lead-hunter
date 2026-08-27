@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-0065",
+  "lead_id": "LH-0006",
+  "occurred_at": "2026-08-27T00:22:27.585031+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0057.json",
+  "detail": "Evidence: operational — No visible buyer payment milestone tracking or construction progress dashboard"
+}

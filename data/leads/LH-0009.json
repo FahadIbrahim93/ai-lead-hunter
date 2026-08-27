@@ -1,0 +1,45 @@
+{
+  "lead_id": "LH-0009",
+  "business_name": "JG Mart (expanded opportunity)",
+  "discovered_at": "2026-08-27T00:21:57.157630+00:00",
+  "source": "referral",
+  "lifecycle_status": "QUALIFIED",
+  "score": 85,
+  "tier": "A",
+  "niche": "Hyperlocal grocery delivery",
+  "geography": "Bangladesh",
+  "pain_signals": [
+    "Hyperlocal grocery delivery operates via WhatsApp — no order tracking or automated delivery scheduling",
+    "Customer support and order state changes are manual — slow at scale",
+    "No visible inventory sync or stock-out alerts for customers",
+    "Daraz and SmartPik show live order tracking is table stakes — WhatsApp-only operators are falling behind"
+  ],
+  "offer_surface": "Autonomous AI agent deployment for Hyperlocal grocery delivery — targeting: Hyperlocal grocery delivery operates via WhatsApp — no order tracking or automated delivery scheduling; Customer support and order state changes are manual — slow at scale; No visible inventory sync or stock-out alerts for customers",
+  "contact_paths": [
+    {
+      "channel": "whatsapp",
+      "value": "+8801870489448",
+      "confidence": 100
+    },
+    {
+      "channel": "owner",
+      "value": "Fahad Ibrahim (owner)",
+      "confidence": 100
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "E-0050",
+      "kind": "operational",
+      "summary": "WhatsApp-only grocery ordering lacks tracking, scheduling, and inventory automation",
+      "confidence": 85
+    },
+    {
+      "evidence_id": "E-0051",
+      "kind": "competitive",
+      "summary": "Daraz and SmartPik offer live tracking; WhatsApp-only operators lose visibility and customer trust",
+      "confidence": 80
+    }
+  ],
+  "notes": "Auto-discovered from live market research + referral signals."
+}

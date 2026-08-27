@@ -1,0 +1,10 @@
+{
+  "evidence_id": "E-0042",
+  "lead_id": "LH-0005",
+  "kind": "website",
+  "found_at": "2026-08-27T00:21:57.037464+00:00",
+  "source_url": "https://bdinterior.com/",
+  "summary": "Website exists but no booking/enquiry form detected",
+  "confidence": 90,
+  "raw": "Website exists but no booking/enquiry form detected"
+}

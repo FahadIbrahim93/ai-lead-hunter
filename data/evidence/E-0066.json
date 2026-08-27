@@ -1,0 +1,10 @@
+{
+  "evidence_id": "E-0066",
+  "lead_id": "LH-0008",
+  "kind": "operational",
+  "found_at": "2026-08-27T00:22:27.986585+00:00",
+  "source_url": "",
+  "summary": "Inventory and order reconciliation likely manual across platforms",
+  "confidence": 75,
+  "raw": ""
+}

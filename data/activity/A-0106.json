@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-0106",
+  "lead_id": "LH-0007",
+  "occurred_at": "2026-08-27T01:25:31.983663+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0082.json",
+  "detail": "Evidence: operational — No visible automated appointment scheduling for consultations or fittings"
+}

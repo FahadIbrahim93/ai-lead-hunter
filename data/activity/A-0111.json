@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-0111",
+  "lead_id": "LH-0008",
+  "occurred_at": "2026-08-27T01:25:32.198224+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0086.json",
+  "detail": "Evidence: operational — Inventory and order reconciliation likely manual across platforms"
+}

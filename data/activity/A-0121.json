@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-0121",
+  "lead_id": "LH-0006",
+  "occurred_at": "2026-08-27T01:25:39.333811+00:00",
+  "actor": "hermes",
+  "action": "demo_built",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\artifacts\\demos\\LH-0006-demo.md",
+  "detail": "Demo spec written"
+}

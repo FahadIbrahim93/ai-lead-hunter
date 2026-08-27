@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-0079",
+  "lead_id": "LH-0009",
+  "occurred_at": "2026-08-27T00:22:28.176002+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0068.json",
+  "detail": "Evidence: operational — Hyperlocal grocery delivery operates via WhatsApp — no order tracking or automat"
+}
