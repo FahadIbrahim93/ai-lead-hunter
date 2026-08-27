@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-1442",
+  "lead_id": "LH-0026",
+  "occurred_at": "2026-08-27T08:28:21.997455+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0321.json",
+  "detail": "Evidence: operational — Treatment price calculator exists on site but doesn't connect to booking — patie"
+}

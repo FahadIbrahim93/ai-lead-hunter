@@ -1,0 +1,10 @@
+{
+  "evidence_id": "E-0320",
+  "lead_id": "LH-0026",
+  "kind": "operational",
+  "found_at": "2026-08-27T08:28:21.941817+00:00",
+  "source_url": "",
+  "summary": "Appointment intake is 'Request a Free Callback' form + phone (09638-000505) — no real-time slot confirmation, patients wait for callback",
+  "confidence": 75,
+  "raw": ""
+}

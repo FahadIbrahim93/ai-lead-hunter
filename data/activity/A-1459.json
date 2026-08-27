@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-1459",
+  "lead_id": "LH-0028",
+  "occurred_at": "2026-08-27T08:28:22.841964+00:00",
+  "actor": "hermes",
+  "action": "scored",
+  "resource": "score_engine",
+  "detail": "Score: 85 → Tier A"
+}

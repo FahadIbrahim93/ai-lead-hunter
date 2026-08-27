@@ -8,7 +8,7 @@
   "tier": "A",
   "website": "https://techdentalcare.com/",
   "verified": true,
-  "verified_at": "2026-08-27T08:19:11.462314+00:00",
+  "verified_at": "2026-08-27T08:28:17.710606+00:00",
   "lead_type": "client",
   "niche": "Dental clinic chain",
   "geography": "Dhaka, Bangladesh (4 branches: Mirpur, Uttara, Badda, Jatrabari)",
@@ -22,24 +22,19 @@
   "offer_surface": "Autonomous AI agent deployment for Dental clinic chain — targeting: Bangladesh's largest dental chain with 4 branches (Mirpur, Uttara, Badda, Jatrabari) — high patient volume across locations with no unified booking system; Appointment intake is 'Request a Free Callback' form + phone (09638-000505) — no real-time slot confirmation, patients wait for callback; Treatment price calculator exists on site but doesn't connect to booking — patients get a price estimate then must call separately to book",
   "contact_paths": [
     {
-      "channel": "phone",
-      "value": "+8801961501791",
-      "confidence": 85
+      "type": "phone",
+      "value": "09638-000505",
+      "source": "web_extract: techdentalcare.com"
     },
     {
-      "channel": "phone",
-      "value": "+8801961502121",
-      "confidence": 85
-    },
-    {
-      "channel": "phone",
-      "value": "+8801678291968",
-      "confidence": 85
-    },
-    {
-      "channel": "phone",
+      "type": "whatsapp",
       "value": "+8801400786162",
-      "confidence": 85
+      "source": "web_extract: techdentalcare.com"
+    },
+    {
+      "type": "website",
+      "value": "https://techdentalcare.com/",
+      "source": "verified LIVE (HTTP 200)"
     }
   ],
   "evidence": [
@@ -56,5 +51,57 @@
       "confidence": 95
     }
   ],
-  "notes": "Bangladesh's largest dental chain, 4 branches. Online 'Request a Free Callback' form + WhatsApp link. Treatment price calculator on site. High patient volume across 4 locations. No visible AI-powered appointment scheduling or patient follow-up system. AI-agent fit: appointment booking with real-time slot confirmation, treatment enquiry bot, patient follow-up automation, multi-branch routing."
+  "notes": "Bangladesh's largest dental chain, 4 branches. Online 'Request a Free Callback' form + WhatsApp link. Treatment price calculator on site. High patient volume across 4 locations. No visible AI-powered appointment scheduling or patient follow-up system. AI-agent fit: appointment booking with real-time slot confirmation, treatment enquiry bot, patient follow-up automation, multi-branch routing.",
+  "business_profile": {
+    "business_overview": "Tech Dental Care is Bangladesh's largest dental chain, operating 4 branches in Dhaka (Mirpur, Uttara, Badda, Jatrabari) with advanced technology — painless dentistry, intraoral cameras, RVG digital imaging. They offer the full spectrum from scaling (৳1,990) and fillings (৳3,000) to root canals (৳8,000), braces (৳50,000+), implants (৳60,000-80,000), Invisalign (৳180,000), and digital smile design. They already run a 'Treatment Price Calculator' and a 'Request a Free Callback' form on their site, plus a WhatsApp line (+8801400786162) and hotline (09638-000505). High patient volume across 4 locations with intake that still depends on callbacks.",
+    "offer_surface": "Autonomous AI agent deployment for Dental clinic chain — targeting: Multi-branch appointment booking with real-time slot confirmation and doctor routing; Treatment enquiry qualification (implants vs braces vs cosmetic) with instant price guidance; Patient follow-up and recall automation (6-month checkup reminders, post-op check-ins); Callback-to-booking conversion agent that eliminates the wait-for-callback gap",
+    "website": "https://techdentalcare.com/",
+    "verified": true,
+    "verified_at": "2026-08-27T08:28:17.710606+00:00",
+    "pain_signals": [
+      "Bangladesh's largest dental chain with 4 branches (Mirpur, Uttara, Badda, Jatrabari) — high patient volume across locations with no unified booking system",
+      "Appointment intake is 'Request a Free Callback' form + phone (09638-000505) — no real-time slot confirmation, patients wait for callback",
+      "Treatment price calculator exists on site but doesn't connect to booking — patients get a price estimate then must call separately to book",
+      "No visible patient follow-up automation — post-treatment check-ins, recall reminders for scaling/checkups are manual",
+      "Multi-branch routing is manual — patient calls one number, staff must route to correct branch and doctor"
+    ],
+    "contact_paths": [
+      {
+        "type": "phone",
+        "value": "09638-000505",
+        "source": "web_extract: techdentalcare.com"
+      },
+      {
+        "type": "whatsapp",
+        "value": "+8801400786162",
+        "source": "web_extract: techdentalcare.com"
+      },
+      {
+        "type": "website",
+        "value": "https://techdentalcare.com/",
+        "source": "verified LIVE (HTTP 200)"
+      }
+    ],
+    "pricing_knowledge": {
+      "model": "Fee-for-service dental — transparent published prices",
+      "from_website": [
+        "Teeth scaling ৳1,990; composite filling ৳3,000; root canal ৳8,000",
+        "Braces from ৳50,000; implants ৳60,000-80,000; Invisalign ৳180,000",
+        "Digital smile design from ৳20,000; laser whitening ৳15,000",
+        "Treatment Price Calculator + Request a Free Callback on site"
+      ],
+      "note": "High-value treatments (implants, Invisalign) with transparent pricing already published. The gap is converting price-calculator interest into booked appointments instantly, and automating recall for the large existing patient base."
+    },
+    "operational_gaps": [
+      "Callback-based booking — patients wait for a return call instead of getting real-time slots",
+      "Price calculator not connected to booking",
+      "No automated recall/follow-up for the large patient base",
+      "Manual multi-branch routing",
+      "No 24/7 enquiry handling for after-hours patients"
+    ],
+    "competitive_position": "Tech Dental is the market leader by scale (largest chain, 4 branches, advanced tech). Their vulnerability is intake friction: a callback model in an era where patients expect instant booking. Competitors like Laser Dental (Banani/Uttara) compete on premium cosmetic positioning. An AI agent that books real-time slots, connects the price calculator to appointments, and automates recall would make the largest chain also the most responsive — defending its lead.",
+    "opportunity_size": "Across 4 branches with treatments from ৳1,990 to ৳180,000, patient volume is high and lifetime value is significant (recurring scaling, checkups, staged treatments). If the callback model and manual routing lose even a fraction of enquiries — and if the large existing patient base isn't recalled automatically — that's substantial recurring revenue leakage. An AI booking + recall agent recovers new-patient leakage AND reactivates dormant patients.",
+    "how_the_agent_helps": "1. AI booking agent that offers real-time slots at the right branch and books instantly — no callback wait.\n2. Price-calculator-to-booking agent that follows up every treatment-price estimate with an instant booking option.\n3. Recall agent that sends 6-month checkup and post-op follow-up reminders automatically.\n4. Multi-branch routing agent that directs each patient to the correct location and specialist.",
+    "demo_scenario": "A patient in Uttara uses Tech Dental's Treatment Price Calculator at 10pm for a root canal (৳8,000). In seconds the AI replies: 'A root canal starts at ৳8,000. I can book you at our Uttara branch — Dr. [X] has slots tomorrow at 11am or 4pm. Which works?' The patient picks 11am; it's booked with a reminder set. No callback wait, and a 6-month recall is already scheduled. Tech Dental converted a price lookup into a booked patient while they slept."
+  }
 }

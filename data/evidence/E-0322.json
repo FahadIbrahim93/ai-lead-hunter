@@ -1,0 +1,10 @@
+{
+  "evidence_id": "E-0322",
+  "lead_id": "LH-0026",
+  "kind": "operational",
+  "found_at": "2026-08-27T08:28:22.017459+00:00",
+  "source_url": "",
+  "summary": "No visible patient follow-up automation — post-treatment check-ins, recall reminders for scaling/checkups are manual",
+  "confidence": 75,
+  "raw": ""
+}

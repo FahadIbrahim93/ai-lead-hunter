@@ -8,32 +8,43 @@
   "tier": "A",
   "website": "https://www.kazilawchamber.com/",
   "verified": true,
-  "verified_at": "2026-08-27T08:18:56.452679+00:00",
+  "verified_at": "2026-08-27T08:28:17.710606+00:00",
   "lead_type": "client",
   "niche": "Legal services / law firm",
   "geography": "Dhaka, Bangladesh",
   "pain_signals": [
-    "Client intake routes through a raw WhatsApp wa.me link and a basic enquiry form — no triage or scheduling intelligence",
-    "International clientele (UK/USA/Canada/etc) across time zones, but no automated after-hours intake",
-    "High-value corporate/maritime/tax matters require document collection — currently manual back-and-forth",
-    "Three decades of practice and global awards, yet appointment booking is not systematized"
+    "Booking is a raw WhatsApp wa.me link + basic enquiry form — no client intake triage, no case-type qualification before a lawyer's time is spent",
+    "International clientele across UK/USA/Canada/China/EU/ASEAN enquires across timezones — manual response means overseas clients wait and may go to a faster firm",
+    "Document-heavy cross-border matters (corporate, immigration, commercial) with no automated document-request or checklist workflow — every matter starts with manual back-and-forth",
+    "Three decades of prestige, global awards, and a Supreme Court presence, but the intake flow (a wa.me link) doesn't match the brand's stature",
+    "No automated consultation scheduling or conflict-check intake across three offices (corporate, Supreme Court, Jamalpur)"
   ],
-  "offer_surface": "Autonomous AI agent deployment for Legal services / law firm — targeting: Client intake routes through a raw WhatsApp wa.me link and a basic enquiry form — no triage or scheduling intelligence; International clientele (UK/USA/Canada/etc) across time zones, but no automated after-hours intake; High-value corporate/maritime/tax matters require document collection — currently manual back-and-forth",
+  "offer_surface": "Autonomous AI agent deployment for Legal services / law firm — targeting: Booking is a raw WhatsApp wa.me link + basic enquiry form — no client intake triage, no case-type qualification before a lawyer's time is spent; International clientele across UK/USA/Canada/China/EU/ASEAN enquires across timezones — manual response means overseas clients wait and may go to a faster firm; Document-heavy cross-border matters (corporate, immigration, commercial) with no automated document-request or checklist workflow — every matter starts with manual back-and-forth",
   "contact_paths": [
     {
-      "channel": "email",
+      "type": "whatsapp",
+      "value": "wa.me/message/B4F3CA7SMJRLI1",
+      "source": "web_extract: kazilawchamber.com"
+    },
+    {
+      "type": "phone",
+      "value": "+880 1748 848487",
+      "source": "web_extract: kazilawchamber.com"
+    },
+    {
+      "type": "phone",
+      "value": "+880 1711 540084",
+      "source": "web_extract: kazilawchamber.com"
+    },
+    {
+      "type": "email",
       "value": "info@kazilawchamber.com",
-      "confidence": 90
+      "source": "web_extract: kazilawchamber.com"
     },
     {
-      "channel": "phone",
-      "value": "+8801748848487",
-      "confidence": 85
-    },
-    {
-      "channel": "phone",
-      "value": "+8801711540084",
-      "confidence": 85
+      "type": "website",
+      "value": "https://www.kazilawchamber.com/",
+      "source": "verified LIVE (HTTP 200)"
     }
   ],
   "evidence": [
@@ -50,5 +61,67 @@
       "confidence": 95
     }
   ],
-  "notes": "Live website verified. Full-service firm since 1995, international clientele (UK/USA/Canada etc). Booking is a raw WhatsApp wa.me link + enquiry form. High-value clients but manual intake. AI-agent fit: client intake triage, appointment scheduling, document-request automation."
+  "notes": "Live website verified. Full-service firm since 1995, international clientele (UK/USA/Canada etc). Booking is a raw WhatsApp wa.me link + enquiry form. High-value clients but manual intake. AI-agent fit: client intake triage, appointment scheduling, document-request automation.",
+  "business_profile": {
+    "business_overview": "Kazi Law Chamber is a full-service international law firm in Dhaka established in 1995 by Senior Advocate Barrister Md. Bodruddoza — three decades of practice, thousands of individual clients and hundreds of companies, in and out of the courtroom. They hold global awards (2024) and serve an international clientele across UK, USA, Canada, China, France, Italy, Greece, Finland, Malaysia, Singapore, Denmark, and Bangladesh. They operate from a corporate office (Meherba Plaza, Topkhana Road), a Supreme Court Bar Association chamber, and a Jamalpur chamber. Their booking is a raw WhatsApp wa.me link plus an enquiry form, and they maintain YouTube, LinkedIn, and Facebook presence. High-value, document-heavy, cross-border legal work with manual intake.",
+    "offer_surface": "Autonomous AI agent deployment for Legal services / law firm — targeting: Booking is a raw WhatsApp wa.me link + enquiry form — no client intake triage or case qualification; International clientele (UK/USA/Canada/China/EU) across timezones with manual response; Document-heavy cross-border matters with no automated document-request/checklist workflow; Three decades of prestige with an intake flow that doesn't match the brand",
+    "website": "https://www.kazilawchamber.com/",
+    "verified": true,
+    "verified_at": "2026-08-27T08:28:17.710606+00:00",
+    "pain_signals": [
+      "Booking is a raw WhatsApp wa.me link + basic enquiry form — no client intake triage, no case-type qualification before a lawyer's time is spent",
+      "International clientele across UK/USA/Canada/China/EU/ASEAN enquires across timezones — manual response means overseas clients wait and may go to a faster firm",
+      "Document-heavy cross-border matters (corporate, immigration, commercial) with no automated document-request or checklist workflow — every matter starts with manual back-and-forth",
+      "Three decades of prestige, global awards, and a Supreme Court presence, but the intake flow (a wa.me link) doesn't match the brand's stature",
+      "No automated consultation scheduling or conflict-check intake across three offices (corporate, Supreme Court, Jamalpur)"
+    ],
+    "contact_paths": [
+      {
+        "type": "whatsapp",
+        "value": "wa.me/message/B4F3CA7SMJRLI1",
+        "source": "web_extract: kazilawchamber.com"
+      },
+      {
+        "type": "phone",
+        "value": "+880 1748 848487",
+        "source": "web_extract: kazilawchamber.com"
+      },
+      {
+        "type": "phone",
+        "value": "+880 1711 540084",
+        "source": "web_extract: kazilawchamber.com"
+      },
+      {
+        "type": "email",
+        "value": "info@kazilawchamber.com",
+        "source": "web_extract: kazilawchamber.com"
+      },
+      {
+        "type": "website",
+        "value": "https://www.kazilawchamber.com/",
+        "source": "verified LIVE (HTTP 200)"
+      }
+    ],
+    "pricing_knowledge": {
+      "model": "Full-service legal — corporate, commercial, civil, criminal, cross-border; consultation + retainer + per-matter fees",
+      "from_website": [
+        "Established 1995, 30+ years, thousands of individuals + hundreds of companies",
+        "Global clientele: UK, USA, Canada, China, France, Italy, Greece, Finland, Malaysia, Singapore, Denmark",
+        "Global awards 2024",
+        "3 offices: corporate (Topkhana Rd), Supreme Court Bar, Jamalpur"
+      ],
+      "note": "High-value, high-trust matters. Every unqualified enquiry that consumes a senior lawyer's time, and every overseas client lost to slow response, is expensive. Intake triage + timezone-independent response is the highest-leverage automation."
+    },
+    "operational_gaps": [
+      "Raw WhatsApp wa.me link + basic form for all intake — no case-type triage or qualification",
+      "No automated document-request/checklist workflow for document-heavy matters",
+      "International clients across timezones get manual, delayed responses",
+      "No automated consultation scheduling or conflict-check intake",
+      "Three offices with no unified intake routing"
+    ],
+    "competitive_position": "Kazi Law Chamber is one of Dhaka's most established firms — 30 years, global awards, Supreme Court presence, and a genuinely international client base. Their reputation is elite. The gap is intake: a wa.me link and a form. International clients comparing firms expect instant, professional, structured intake. An AI agent that triages every enquiry, collects matter details and documents before the first meeting, and responds across timezones would make their intake match their stature — and win cross-border matters that go to faster-responding firms.",
+    "opportunity_size": "With hundreds of corporate clients and an international roster, each matter is high-value. If slow/manual intake loses even a few cross-border or corporate matters per quarter to faster-responding firms, that's lakhs in lost fees. An AI intake agent that triages, collects documents, and books consultations — 24/7 across timezones — recovers this AND frees senior lawyers from unqualified enquiries.",
+    "how_the_agent_helps": "1. AI intake agent on WhatsApp + website that triages every enquiry by matter type (corporate, civil, criminal, immigration, commercial), collects key facts, and routes to the right lawyer.\n2. Document-request agent that sends the correct checklist for each matter type before the first meeting, eliminating manual back-and-forth.\n3. Timezone agent that answers international clients (UK/USA/Canada/EU/ASEAN) instantly, any hour.\n4. Consultation scheduler that books appointments across the three offices with conflict-check intake and automated reminders.",
+    "demo_scenario": "A Bangladeshi entrepreneur in London needs a corporate matter handled in Dhaka and messages the WhatsApp line at 11pm UK time. In seconds the AI replies: 'Thank you for contacting Kazi Law Chamber. To route you to the right advocate, is this corporate/commercial, civil, or immigration? Please share a 2-line summary.' The client answers; the agent sends the relevant document checklist and books a consultation for 10am Dhaka time with a structured brief already on the lawyer's desk. The client never waited, and the lawyer starts prepared."
+  }
 }

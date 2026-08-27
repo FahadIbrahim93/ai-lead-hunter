@@ -1,0 +1,10 @@
+{
+  "evidence_id": "E-0314",
+  "lead_id": "LH-0011",
+  "kind": "operational",
+  "found_at": "2026-08-27T08:28:21.545591+00:00",
+  "source_url": "",
+  "summary": "Booking is a raw WhatsApp wa.me link + basic enquiry form — no client intake triage, no case-type qualification before a lawyer's time is spent",
+  "confidence": 75,
+  "raw": ""
+}

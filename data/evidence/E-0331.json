@@ -1,0 +1,10 @@
+{
+  "evidence_id": "E-0331",
+  "lead_id": "LH-0028",
+  "kind": "operational",
+  "found_at": "2026-08-27T08:28:22.721358+00:00",
+  "source_url": "",
+  "summary": "No visible automated proposal generation — each event quote requires manual scoping, pricing, and PDF creation",
+  "confidence": 75,
+  "raw": ""
+}

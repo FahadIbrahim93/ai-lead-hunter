@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-1449",
+  "lead_id": "LH-0027",
+  "occurred_at": "2026-08-27T08:28:22.377769+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0326.json",
+  "detail": "Evidence: operational — No visible batch scheduling visibility — students can't see upcoming batch dates"
+}

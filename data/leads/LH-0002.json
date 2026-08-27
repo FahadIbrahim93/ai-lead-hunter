@@ -4,27 +4,33 @@
   "discovered_at": "2026-08-27T00:00:00+06:00",
   "source": "slack",
   "lifecycle_status": "QUALIFIED",
-  "score": 85,
+  "score": 100,
   "tier": "A",
   "niche": "Real estate development",
   "geography": "Bangladesh",
   "pain_signals": [
-    "Project updates likely manual — buyers and investors want status, photos, payment milestones",
-    "Sales enquiries across phone/visit/WhatsApp with no unified tracking",
-    "High-value transaction volume means every lost lead is a significant revenue miss",
-    "No public project dashboard or digital buyer portal — opacity costs trust and repeat referrals"
+    "High-ticket luxury apartments (2850 SFT, 4-bed, 30% down payment) sold via a single phone/WhatsApp line (01979-600600) — no automated buyer qualification or instant response",
+    "No visible buyer payment-milestone tracking or construction-progress dashboard — off-plan purchasers get manual updates on the biggest purchase of their lives",
+    "'Limited units — book now' pre-handover urgency, but follow-up is manual — every slow reply risks losing a buyer to a competing Jolshiri project",
+    "19+ projects and a Dubai-credibility founder story, but no AI layer matching the premium positioning — intake feels like a small developer, not a luxury brand",
+    "Buyers enquiring from abroad (NRBs) need instant, timezone-independent answers that a single phone line can't provide"
   ],
-  "offer_surface": "Autonomous AI agent deployment for Real estate development — targeting: Project updates likely manual — buyers and investors want status, photos, payment milestones; Sales enquiries across phone/visit/WhatsApp with no unified tracking; High-value transaction volume means every lost lead is a significant revenue miss",
+  "offer_surface": "Autonomous AI agent deployment for Real estate development — targeting: High-ticket luxury apartments (2850 SFT, 4-bed, 30% down payment) sold via a single phone/WhatsApp line (01979-600600) — no automated buyer qualification or instant response; No visible buyer payment-milestone tracking or construction-progress dashboard — off-plan purchasers get manual updates on the biggest purchase of their lives; 'Limited units — book now' pre-handover urgency, but follow-up is manual — every slow reply risks losing a buyer to a competing Jolshiri project",
   "contact_paths": [
     {
-      "channel": "website",
-      "url": "akdevelopments.com.bd",
-      "confidence": 80
+      "type": "phone",
+      "value": "+8801979600600",
+      "source": "web_extract: akdevelopmentsltd.com"
     },
     {
-      "channel": "phone",
-      "value": "+880XXXXXXXXXX",
-      "confidence": 70
+      "type": "whatsapp",
+      "value": "wa.me/+8801979600600",
+      "source": "web_extract: akdevelopmentsltd.com"
+    },
+    {
+      "type": "website",
+      "value": "https://akdevelopmentsltd.com/",
+      "source": "verified LIVE (HTTP 200)"
     }
   ],
   "evidence": [
@@ -42,5 +48,60 @@
     }
   ],
   "notes": "Score 85/A. Real estate is high-value niche. Pain: manual communication and no digital buyer engagement. Offer: autonomous buyer-engagement agent. Second priority for audit + demo.",
-  "lead_type": "client"
+  "lead_type": "client",
+  "business_profile": {
+    "business_overview": "A.K. Developments Ltd. is a premium & luxury residential property developer in Dhaka, founded by Engr. Kamruzzaman Mia — a Civil Engineer (B.Sc., MIEB) who served as Chief Engineer on Dubai's Palm Jumeirah. The company has completed and handed over 8 residential buildings across Bashundhara R/A, Baridhara DOHS, Lalbagh, and Hemayetpur (Savar), and is currently constructing 3 projects in Jolshiri Abashon smart city (AK Red Rose, AK Barakah, AK Lakeview). They sell 2850 SFT, 4-bed luxury apartments with 30% down payment and flexible schedules, positioning on 100% legal compliance, RCC frame construction, and guaranteed on-time delivery. 19+ total projects, 5+ prime locations. Their sales intake is a single phone/WhatsApp line (01979-600600).",
+    "offer_surface": "Autonomous AI agent deployment for Real estate development — targeting: High-ticket luxury apartments (2850 SFT, 30% down) sold via a single phone/WhatsApp line with no automated buyer qualification; No visible buyer payment-milestone tracking or construction-progress dashboard for off-plan purchasers; Pre-handover 'limited units' urgency with manual follow-up — every slow reply risks losing a buyer; International/Dubai-credibility brand with no AI layer matching its premium positioning",
+    "website": "https://akdevelopmentsltd.com/",
+    "verified": true,
+    "verified_at": "2026-08-27T08:28:17.710606+00:00",
+    "pain_signals": [
+      "High-ticket luxury apartments (2850 SFT, 4-bed, 30% down payment) sold via a single phone/WhatsApp line (01979-600600) — no automated buyer qualification or instant response",
+      "No visible buyer payment-milestone tracking or construction-progress dashboard — off-plan purchasers get manual updates on the biggest purchase of their lives",
+      "'Limited units — book now' pre-handover urgency, but follow-up is manual — every slow reply risks losing a buyer to a competing Jolshiri project",
+      "19+ projects and a Dubai-credibility founder story, but no AI layer matching the premium positioning — intake feels like a small developer, not a luxury brand",
+      "Buyers enquiring from abroad (NRBs) need instant, timezone-independent answers that a single phone line can't provide"
+    ],
+    "contact_paths": [
+      {
+        "type": "phone",
+        "value": "+8801979600600",
+        "source": "web_extract: akdevelopmentsltd.com"
+      },
+      {
+        "type": "whatsapp",
+        "value": "wa.me/+8801979600600",
+        "source": "web_extract: akdevelopmentsltd.com"
+      },
+      {
+        "type": "website",
+        "value": "https://akdevelopmentsltd.com/",
+        "source": "verified LIVE (HTTP 200)"
+      }
+    ],
+    "pricing_knowledge": {
+      "model": "Off-plan luxury apartment sales — 30% down payment, flexible schedule",
+      "from_website": [
+        "2850 SFT, 4 bed, 5 bath, 5 veranda, single unit per floor",
+        "30% down payment, flexible payment schedule",
+        "Pre-handover pricing, limited units",
+        "8 buildings completed, 3 under construction in Jolshiri Abashon"
+      ],
+      "note": "Multi-crore transactions. A single lost buyer = lakhs in lost commission/margin. Buyer response speed and payment-milestone transparency are the two highest-leverage automations for an off-plan luxury developer."
+    },
+    "operational_gaps": [
+      "Single phone/WhatsApp line for all buyer enquiries — no instant automated qualification",
+      "No buyer payment-milestone tracking or construction-progress dashboard",
+      "Manual follow-up on 'limited units' urgency leads",
+      "No NRB/international buyer timezone coverage",
+      "No automated site-visit booking for prospective buyers"
+    ],
+    "competitive_position": "A.K. Developments competes in Jolshiri Abashon against other luxury developers (SEL, Ananta, etc.) all targeting the same affluent buyer pool. Their edge is the founder's Palm Jumeirah credibility and a 100% on-time delivery record. But buyers message multiple developers at once; the one that responds instantly, shows construction progress transparently, and books the site visit first wins. Without an AI buyer agent, A.K. loses the speed-and-transparency race on exactly the multi-crore units where margin is highest.",
+    "opportunity_size": "With 2850 SFT luxury units at premium Jolshiri prices and 30% down payments, each sale is a multi-crore transaction. If slow/manual enquiry handling loses even 1-2 serious buyers per month to faster-responding competitors, that's crores in lost sales value annually. An AI buyer agent that answers instantly, qualifies budget, shows construction progress, and books site visits would directly recover this — and reassure off-plan buyers with automated milestone updates that reduce cancellations.",
+    "how_the_agent_helps": "1. AI buyer-response agent on WhatsApp + website that answers every enquiry in seconds, qualifies budget and timeline, and explains the 30% down-payment schedule.\n2. Construction-progress agent that sends automated photo/video milestone updates to off-plan buyers, building trust and reducing cancellation risk.\n3. Site-visit scheduler that offers available slots and books viewings with reminders.\n4. NRB buyer agent that handles international enquiries across timezones and coordinates remote booking/documentation.",
+    "demo_scenario": "An NRB engineer in Dubai sees A.K. Developments' Palm Jumeirah-founder story and messages the WhatsApp line at 2am Gulf time: 'Is AK Red Rose still available? What's the payment plan?' In seconds the AI replies: 'Yes — 2850 SFT, 4-bed, single unit per floor. 30% down, then flexible milestones. Here's the current construction progress [photos]. Want a video walkthrough or a site visit when you're in Dhaka?' The buyer books a video call. A.K. wakes up to a qualified international buyer they'd have missed overnight — on a multi-crore unit."
+  },
+  "verified": true,
+  "verified_at": "2026-08-27T08:28:17.710606+00:00",
+  "website": "https://akdevelopmentsltd.com/"
 }

@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-1455",
+  "lead_id": "LH-0028",
+  "occurred_at": "2026-08-27T08:28:22.702305+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0330.json",
+  "detail": "Evidence: operational — Quote request form on site but no instant response — corporate clients expect sa"
+}

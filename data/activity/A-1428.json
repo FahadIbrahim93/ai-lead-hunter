@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-1428",
+  "lead_id": "LH-0002",
+  "occurred_at": "2026-08-27T08:28:21.268148+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0311.json",
+  "detail": "Evidence: operational — 'Limited units — book now' pre-handover urgency, but follow-up is manual — every"
+}

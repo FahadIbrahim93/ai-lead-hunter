@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-1433",
+  "lead_id": "LH-0011",
+  "occurred_at": "2026-08-27T08:28:21.562150+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0314.json",
+  "detail": "Evidence: operational — Booking is a raw WhatsApp wa.me link + basic enquiry form — no client intake tri"
+}

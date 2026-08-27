@@ -8,7 +8,7 @@
   "tier": "A",
   "website": "https://dhakaeventplanner.com/",
   "verified": true,
-  "verified_at": "2026-08-27T08:19:14.507847+00:00",
+  "verified_at": "2026-08-27T08:28:17.710606+00:00",
   "lead_type": "client",
   "niche": "Event management and production",
   "geography": "Dhaka, Bangladesh",
@@ -22,29 +22,19 @@
   "offer_surface": "Autonomous AI agent deployment for Event management and production — targeting: Premier event production company serving corporate giants (Robi, Unilever, bKash, Grameenphone, BRAC, Walton) — high-ticket B2B enquiries; Quote request form on site but no instant response — corporate clients expect same-day acknowledgement; No visible automated proposal generation — each event quote requires manual scoping, pricing, and PDF creation",
   "contact_paths": [
     {
-      "channel": "email",
-      "value": "hello@dhakaeventplanner.com",
-      "confidence": 90
-    },
-    {
-      "channel": "phone",
-      "value": "+8801961501791",
-      "confidence": 85
-    },
-    {
-      "channel": "phone",
-      "value": "+8801961502121",
-      "confidence": 85
-    },
-    {
-      "channel": "phone",
-      "value": "+8801678291968",
-      "confidence": 85
-    },
-    {
-      "channel": "phone",
+      "type": "phone",
       "value": "+8801777044241",
-      "confidence": 85
+      "source": "web_extract: dhakaeventplanner.com"
+    },
+    {
+      "type": "website_form",
+      "value": "dhakaeventplanner.com/request-quote/",
+      "source": "web_extract"
+    },
+    {
+      "type": "website",
+      "value": "https://dhakaeventplanner.com/",
+      "source": "verified LIVE (HTTP 200)"
     }
   ],
   "evidence": [
@@ -61,5 +51,56 @@
       "confidence": 95
     }
   ],
-  "notes": "Bangladesh's premier event production company. Corporate clients: Robi, Square, Unilever, University of Dhaka, Walton, bKash, BRAC, Grameenphone. Services: corporate conferences, trade shows, weddings, concerts, brand activations, AV production, LED video walls. Quote request form on site. No visible AI-powered enquiry management or automated proposal workflow. High-ticket corporate events. AI-agent fit: corporate enquiry qualification, event proposal automation, vendor coordination, timeline management."
+  "notes": "Bangladesh's premier event production company. Corporate clients: Robi, Square, Unilever, University of Dhaka, Walton, bKash, BRAC, Grameenphone. Services: corporate conferences, trade shows, weddings, concerts, brand activations, AV production, LED video walls. Quote request form on site. No visible AI-powered enquiry management or automated proposal workflow. High-ticket corporate events. AI-agent fit: corporate enquiry qualification, event proposal automation, vendor coordination, timeline management.",
+  "business_profile": {
+    "business_overview": "Dhaka Event Planner is a premier event production & management company in Bangladesh handling corporate conferences, trade shows, weddings, concerts, and brand activations, with full AV production, LED video walls, and staging. Their client roster includes Robi, Square Group, Unilever, University of Dhaka, Walton, bKash, BRAC, and Grameenphone. They serve corporate, government, military, financial, and technology sectors. Intake is a 'Request a Quote' form and a phone line (01777044241). High-ticket B2B events with manual quote turnaround.",
+    "offer_surface": "Autonomous AI agent deployment for Corporate event production — targeting: Instant corporate enquiry acknowledgement with event type qualification (conference vs activation vs wedding); Automated proposal and quote generation based on event parameters; Vendor coordination and timeline management agent; Post-event follow-up and repeat-client nurturing for corporate accounts",
+    "website": "https://dhakaeventplanner.com/",
+    "verified": true,
+    "verified_at": "2026-08-27T08:28:17.710606+00:00",
+    "pain_signals": [
+      "Premier event production company serving corporate giants (Robi, Unilever, bKash, Grameenphone, BRAC, Walton) — high-ticket B2B enquiries",
+      "Quote request form on site but no instant response — corporate clients expect same-day acknowledgement",
+      "No visible automated proposal generation — each event quote requires manual scoping, pricing, and PDF creation",
+      "Seasonal demand spikes (year-end corporate events, product launches) create enquiry overload with manual response",
+      "AV production, LED walls, staging — complex multi-vendor coordination with no visible project management automation"
+    ],
+    "contact_paths": [
+      {
+        "type": "phone",
+        "value": "+8801777044241",
+        "source": "web_extract: dhakaeventplanner.com"
+      },
+      {
+        "type": "website_form",
+        "value": "dhakaeventplanner.com/request-quote/",
+        "source": "web_extract"
+      },
+      {
+        "type": "website",
+        "value": "https://dhakaeventplanner.com/",
+        "source": "verified LIVE (HTTP 200)"
+      }
+    ],
+    "pricing_knowledge": {
+      "model": "Project-based event production — corporate conferences, activations, weddings, AV/LED/staging",
+      "from_website": [
+        "Clients: Robi, Square, Unilever, DU, Walton, bKash, BRAC, Grameenphone",
+        "Sectors: corporate, government, military, financial, technology",
+        "Services: event planning, AV production, LED video walls, staging, hybrid broadcasting"
+      ],
+      "note": "High-ticket B2B. Corporate clients expect fast, professional quote turnaround. Slow manual quoting during seasonal spikes loses events to faster competitors. Instant acknowledgement + automated proposal generation is the lever."
+    },
+    "operational_gaps": [
+      "Quote form with no instant acknowledgement",
+      "Manual proposal/quote generation per event",
+      "Seasonal enquiry overload with manual response",
+      "Complex multi-vendor coordination without automation",
+      "No automated post-event follow-up for repeat corporate business"
+    ],
+    "competitive_position": "Dhaka Event Planner competes with Ananta Events, Look N Feel, and other top BD event firms for the same corporate accounts. Their edge is full production capability (AV, LED, staging) and a blue-chip client roster. But corporate procurement moves fast; the firm that acknowledges instantly and delivers a polished proposal first wins. An AI agent for instant acknowledgement + proposal generation would sharpen their competitive edge during peak season.",
+    "opportunity_size": "Corporate events are high-value, and the client roster (Robi, bKash, Unilever) implies repeat business. If slow quote turnaround during seasonal spikes loses even a few events per quarter, that's lakhs in lost revenue. An AI agent that acknowledges every enquiry instantly, generates scoped proposals fast, and nurtures repeat corporate clients recovers this and increases win-rate on the biggest accounts.",
+    "how_the_agent_helps": "1. AI enquiry agent that acknowledges every corporate request within seconds and qualifies event type, scale, and budget.\n2. Proposal generator that produces a scoped quote from event parameters, cutting turnaround from days to hours.\n3. Vendor coordination + timeline management agent for production logistics.\n4. Post-event follow-up agent that nurtures corporate accounts for repeat business.",
+    "demo_scenario": "A bKash procurement lead submits a 'Request a Quote' for a 500-person product launch at 6pm. In seconds the AI acknowledges: 'Received! For a 500-guest launch with LED wall + staging, I'll have a scoped proposal to you by 10am. Quick questions: venue confirmed? Date? AV needs?' The answers flow in; a polished proposal is generated overnight. bKash gets same-hour acknowledgement and a fast quote — and Dhaka Event Planner wins the event on responsiveness."
+  }
 }
