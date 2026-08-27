@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-1235",
+  "lead_id": "LH-0020",
+  "occurred_at": "2026-08-27T08:18:36.377463+00:00",
+  "actor": "hermes",
+  "action": "verified",
+  "resource": "https://faraitltd.com/",
+  "detail": "Live HTTP 200 — website confirmed up"
+}

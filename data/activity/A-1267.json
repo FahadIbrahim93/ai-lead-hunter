@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-1267",
+  "lead_id": "LH-0029",
+  "occurred_at": "2026-08-27T08:19:16.949887+00:00",
+  "actor": "hermes",
+  "action": "verified",
+  "resource": "https://manchesterenglishacademy.com/",
+  "detail": "Live HTTP 200 — website confirmed up"
+}

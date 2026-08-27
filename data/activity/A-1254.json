@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-1254",
+  "lead_id": "LH-0016",
+  "occurred_at": "2026-08-27T08:19:04.125922+00:00",
+  "actor": "hermes",
+  "action": "verified",
+  "resource": "https://weddingdiary.com.bd/",
+  "detail": "Live HTTP 200 — website confirmed up"
+}

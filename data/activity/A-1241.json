@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-1241",
+  "lead_id": "LH-0025",
+  "occurred_at": "2026-08-27T08:18:42.647523+00:00",
+  "actor": "hermes",
+  "action": "verified",
+  "resource": "https://fastexpressbd.com/",
+  "detail": "Live HTTP 200 — website confirmed up"
+}

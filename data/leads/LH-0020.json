@@ -8,7 +8,7 @@
   "tier": "B",
   "website": "https://faraitltd.com/",
   "verified": true,
-  "verified_at": "2026-08-27T04:04:21.666789+00:00",
+  "verified_at": "2026-08-27T08:19:07.072672+00:00",
   "lead_type": "client",
   "niche": "IT software and web development company",
   "geography": "Dhaka, Bangladesh",
@@ -24,6 +24,11 @@
       "channel": "phone",
       "value": "+8801762767322",
       "confidence": 85
+    },
+    {
+      "channel": "email",
+      "value": "prioislam7@gmail.com",
+      "confidence": 90
     }
   ],
   "evidence": [
