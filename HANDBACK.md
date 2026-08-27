@@ -35,7 +35,7 @@ All 4 websites verified LIVE (HTTP 200). Contacts extracted from live pages or v
 - Research inbox: 16 findings in `data/research/findings.json`
 - 11 new lead records added this sprint (LH-0010..0020 + LH-0022..0025)
 - 4 leads (LH-0015..0017 + LH-0022..0025) ingested + enriched + re-audited from Tier C → Tier A/B
-- All records validate (204 evidence, 836 activity, 9 outreach)
+- All records validate (204 evidence, 900 activity, 9 outreach)
 - Tests: 27/27 passing
 - Validation: clean
 
@@ -59,7 +59,7 @@ The dashboard shows:
 
 1. **Calculator button works** — confirmed in live preview pane. Each lead card now has both `🚀 Generate Live Demo` and `🧮 Generate ROI Calculator`.
 2. **Tier A count is 18** (not 12 — the old HANDBACK said 12; corrected to 18 reflecting 5 new leads that scored 85+/A).
-3. **Activity count grew** from 740 → 836 due to re-audit activity records from the 4 enriched leads.
+3. **Activity count grew** from 740 → 900 due to re-audit activity records from the 4 enriched leads.
 4. **Outreach drafts**: if you want to regenerate any of the 9 drafts with the calculator link added, re-run `python engine.py outreach <lead_id>` — the template already includes both demo and calculator links.
 5. **No outreach sent** — all9 drafts are `pending_approval`. You review, copy, paste, send manually.
 
@@ -68,7 +68,7 @@ The dashboard shows:
 - 25 leads (22 clients + 3 internal ventures)
 - 16 verified-live websites
 - 21 qualified, **18 Tier A**, 4 Tier B, 3 Tier C
-- 204 evidence, 836 activity, 9 outreach drafts (all pending_approval)
+- 204 evidence, 900 activity, 9 outreach drafts (all pending_approval)
 - 14 interactive demos, 22 ROI calculators = 36 standalone HTML revenue assets
 - 27/27 tests passing, validation clean
 - Pipeline Board rendered in dashboard

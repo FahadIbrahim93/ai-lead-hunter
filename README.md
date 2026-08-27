@@ -122,7 +122,7 @@ tests/test_v2.py     v2 architecture tests (research inbox, dedup, verify, idemp
 || Tier B | 4 |
 || Tier C | 3 |
 || Evidence | 204 |
-|| Activity log | 772 |
+|| Activity log | 900 |
 || Outreach drafts | 9 (all pending_approval) |
 || Interactive demos | 14 |
 || ROI calculators | 22 |
