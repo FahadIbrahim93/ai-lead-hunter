@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-0952",
+  "lead_id": "LH-0015",
+  "occurred_at": "2026-08-27T05:49:00.123314+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0222.json",
+  "detail": "Evidence: operational — No visible app or portal for members to book classes, track progress, or manage "
+}

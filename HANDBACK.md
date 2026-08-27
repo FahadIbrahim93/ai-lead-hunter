@@ -35,7 +35,7 @@ All 4 websites verified LIVE (HTTP 200). Contacts extracted from live pages or v
 - Research inbox: 16 findings in `data/research/findings.json`
 - 11 new lead records added this sprint (LH-0010..0020 + LH-0022..0025)
 - 4 leads (LH-0015..0017 + LH-0022..0025) ingested + enriched + re-audited from Tier C → Tier A/B
-- All records validate (204 evidence, 900 activity, 9 outreach)
+- All records validate (228 evidence, 962 activity, 9 outreach)
 - Tests: 27/27 passing
 - Validation: clean
 
@@ -48,7 +48,7 @@ python dashboard.py          # opens http://localhost:8765
 ```
 
 The dashboard shows:
-- **Stats bar**: 22 client leads · 18 qualified · 15 Tier A · 16 verified live · 9 awaiting approval · 3 my ventures
+- **Stats bar**: 22 client leads · 23 qualified · 20 Tier A · 16 verified live · 9 awaiting approval · 3 my ventures
 - **Leads tab**: cards with score, tier, pain points, contact info, buttons (Re-Audit, Build Demo Spec, Draft Outreach, Generate Live Demo, Generate ROI Calculator)
 - **Outreach Drafts tab**:9 drafts, copy-to-clipboard
 - **Activity Log tab**: full audit trail

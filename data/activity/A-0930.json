@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-0930",
+  "lead_id": "SYSTEM",
+  "occurred_at": "2026-08-27T05:20:40.473033+00:00",
+  "actor": "hermes",
+  "action": "duplicate_skipped",
+  "resource": "ingest",
+  "detail": "Duplicate skipped: Rejuvenate Salon & Spa"
+}

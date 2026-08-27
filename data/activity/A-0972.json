@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-0972",
+  "lead_id": "SYSTEM",
+  "occurred_at": "2026-08-27T05:56:17.228950+00:00",
+  "actor": "hermes",
+  "action": "duplicate_skipped",
+  "resource": "ingest",
+  "detail": "Duplicate skipped: Ananta Events and Entertainment"
+}

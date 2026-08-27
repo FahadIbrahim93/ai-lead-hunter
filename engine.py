@@ -414,6 +414,8 @@ def cmd_audit(lead_id: str) -> None:
     lead["pain_signals"] = [p["summary"] for p in pain_signals]
     lead["contact_paths"] = contacts
     lead["offer_surface"] = build_offer_surface(lead, pain_signals)
+    # Reset cached score so compute_score re-evaluates with the new data.
+    lead["score"] = 0
     save_lead(lead)
 
     # Score and qualify

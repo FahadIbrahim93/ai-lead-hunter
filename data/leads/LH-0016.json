@@ -3,12 +3,12 @@
   "business_name": "Wedding Diary Bangladesh",
   "discovered_at": "2026-08-27T02:47:03.984025+00:00",
   "source": "research",
-  "lifecycle_status": "DISCOVERED",
-  "score": 60,
-  "tier": "C",
+  "lifecycle_status": "QUALIFIED",
+  "score": 85,
+  "tier": "A",
   "website": "https://weddingdiary.com.bd/",
   "verified": true,
-  "verified_at": "2026-08-27T04:04:16.299453+00:00",
+  "verified_at": "2026-08-28T00:00:00+06:00",
   "lead_type": "client",
   "niche": "Wedding photography and cinematography",
   "geography": "Dhaka, Bangladesh",
@@ -19,7 +19,28 @@
     "Competitors with online booking systems capture leads that DM-only intake misses"
   ],
   "offer_surface": "Autonomous AI agent deployment for Wedding photography and cinematography — targeting: Booking is phone/WhatsApp only (+8801975556633) — no online booking system or package comparison tool; Instagram-heavy marketing but no owned lead capture — discovery depends on algorithmic reach; High-ticket packages (BDT50K-2.5L) with manual follow-up and no CRM",
-  "contact_paths": [],
+  "contact_paths": [
+    {
+      "channel": "phone",
+      "type": "mobile",
+      "values": [
+        "+8801975556633",
+        "01975556633"
+      ],
+      "source": "web_extract: weddingdiary.com.bd WhatsApp button + Instagram posts",
+      "added_at": "2026-08-28T00:00:00+06:00"
+    },
+    {
+      "channel": "phone",
+      "type": "mobile",
+      "values": [
+        "+8801711293153",
+        "01711293153"
+      ],
+      "source": "web_extract: weddingdiary.com.bd Instagram posts (sajibpaulll booking)",
+      "added_at": "2026-08-28T00:00:00+06:00"
+    }
+  ],
   "evidence": [
     {
       "evidence_id": "E-0128",

@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-0971",
+  "lead_id": "SYSTEM",
+  "occurred_at": "2026-08-27T05:56:17.216779+00:00",
+  "actor": "hermes",
+  "action": "duplicate_skipped",
+  "resource": "ingest",
+  "detail": "Duplicate skipped: Ngital Digital Marketing"
+}

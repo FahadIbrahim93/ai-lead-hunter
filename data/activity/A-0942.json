@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-0942",
+  "lead_id": "LH-0016",
+  "occurred_at": "2026-08-27T05:36:55.568340+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0212.json",
+  "detail": "Evidence: operational — Competitors with online booking systems capture leads that DM-only intake misses"
+}
