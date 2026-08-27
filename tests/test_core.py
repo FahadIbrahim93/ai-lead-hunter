@@ -27,7 +27,7 @@ def run_cmd(*args: str) -> subprocess.CompletedProcess:
 class TestStatus:
     def test_status_counts(self):
         result = run_cmd("status")
-        assert "Leads:     9" in result.stdout
+        assert "Leads:     14" in result.stdout
         assert "Evidence:" in result.stdout
         assert "Activity:" in result.stdout
         assert "Outreach:" in result.stdout

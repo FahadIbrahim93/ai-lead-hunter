@@ -1,0 +1,44 @@
+{
+  "lead_id": "LH-0012",
+  "business_name": "Padma Diagnostic Centre Ltd",
+  "discovered_at": "2026-08-27T02:08:21.872150+00:00",
+  "source": "research",
+  "lifecycle_status": "QUALIFIED",
+  "score": 75,
+  "tier": "B",
+  "website": "https://padma-bd.com/",
+  "verified": true,
+  "verified_at": "2026-08-27T02:08:28.766186+00:00",
+  "lead_type": "client",
+  "niche": "Healthcare / diagnostic centre",
+  "geography": "Dhaka, Bangladesh",
+  "pain_signals": [
+    "Online appointment form is a basic 'Send Request' — no instant confirmation or real-time slot selection",
+    "No automated report-delivery notification; patients must check a separate portal",
+    "Hotline runs 7am-11pm but booking outside those hours is unattended",
+    "No patient follow-up or recall automation for repeat tests"
+  ],
+  "offer_surface": "Autonomous AI agent deployment for Healthcare / diagnostic centre — targeting: Online appointment form is a basic 'Send Request' — no instant confirmation or real-time slot selection; No automated report-delivery notification; patients must check a separate portal; Hotline runs 7am-11pm but booking outside those hours is unattended",
+  "contact_paths": [
+    {
+      "channel": "email",
+      "value": "info@padma-bd.com",
+      "confidence": 90
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "E-0094",
+      "kind": "website",
+      "summary": "Live website verified. Has an online appointment form but it is a basic 'Send Request' (no instant confirmation, no scheduling intelligence). Hotline 7am-11pm. AI-agent fit: appointment booking with real-time confirmation, report-delivery notifications, patient follow-up.",
+      "confidence": 80
+    },
+    {
+      "evidence_id": "E-0099",
+      "kind": "website",
+      "summary": "Website live (HTTP 200) at https://padma-bd.com/",
+      "confidence": 95
+    }
+  ],
+  "notes": "Live website verified. Has an online appointment form but it is a basic 'Send Request' (no instant confirmation, no scheduling intelligence). Hotline 7am-11pm. AI-agent fit: appointment booking with real-time confirmation, report-delivery notifications, patient follow-up."
+}

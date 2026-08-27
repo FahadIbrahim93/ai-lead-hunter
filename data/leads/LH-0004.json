@@ -41,5 +41,6 @@
       "confidence": 70
     }
   ],
-  "notes": "Score 78/B — borderline. IT services is a natural fit for AI agent productization, but pain observability is lower than LH-0001/0002. Monitor and audit before investing demo effort."
+  "notes": "Score 78/B — borderline. IT services is a natural fit for AI agent productization, but pain observability is lower than LH-0001/0002. Monitor and audit before investing demo effort.",
+  "lead_type": "client"
 }

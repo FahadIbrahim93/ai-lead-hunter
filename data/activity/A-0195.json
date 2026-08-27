@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-0195",
+  "lead_id": "LH-0013",
+  "occurred_at": "2026-08-27T02:10:08.029561+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0122.json",
+  "detail": "Evidence: operational — Large site with many destinations but no self-service document checklist or stat"
+}

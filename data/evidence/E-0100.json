@@ -1,0 +1,10 @@
+{
+  "evidence_id": "E-0100",
+  "lead_id": "LH-0013",
+  "kind": "website",
+  "found_at": "2026-08-27T02:08:29.182053+00:00",
+  "source_url": "https://www.obokash.com/",
+  "summary": "Website live (HTTP 200) at https://www.obokash.com/",
+  "confidence": 95,
+  "raw": ""
+}

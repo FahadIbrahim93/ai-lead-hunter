@@ -9,12 +9,12 @@
       "pattern": "^A-\\d{4}$",
       "description": "Immutable activity identifier."
     },
-    "lead_id": { "type": "string", "pattern": "^LH-\\d{4}$" },
+    "lead_id": { "type": "string", "pattern": "^(LH-\\d{4}|SYSTEM)$", "description": "Lead id, or SYSTEM for pipeline-level events (e.g. duplicate_skipped)." },
     "occurred_at": { "type": "string", "format": "date-time" },
     "actor": { "type": "string", "enum": ["hermes", "human"] },
     "action": {
       "type": "string",
-      "enum": ["discovered", "audited", "scored", "qualified", "demo_built", "outreach_drafted", "outreach_approved", "outreach_sent", "reply_received", "status_changed", "retry_scheduled", "failed"]
+      "enum": ["discovered", "ingested", "verified", "duplicate_skipped", "audited", "scored", "qualified", "demo_built", "outreach_drafted", "outreach_approved", "outreach_sent", "reply_received", "status_changed", "retry_scheduled", "failed"]
     },
     "resource": { "type": "string" },
     "detail": { "type": "string" },

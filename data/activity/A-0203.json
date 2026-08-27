@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-0203",
+  "lead_id": "SYSTEM",
+  "occurred_at": "2026-08-27T02:14:20.017392+00:00",
+  "actor": "hermes",
+  "action": "duplicate_skipped",
+  "resource": "ingest",
+  "detail": "Duplicate skipped: Padma Diagnostic Centre Ltd"
+}

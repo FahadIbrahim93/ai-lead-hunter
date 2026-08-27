@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-0190",
+  "lead_id": "LH-0012",
+  "occurred_at": "2026-08-27T02:10:07.820630+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0118.json",
+  "detail": "Evidence: operational — No patient follow-up or recall automation for repeat tests"
+}

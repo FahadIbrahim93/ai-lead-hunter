@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-0178",
+  "lead_id": "LH-0010",
+  "occurred_at": "2026-08-27T02:10:07.319494+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0108.json",
+  "detail": "Evidence: operational — No visible CRM or lead-tracking; enquiries depend on a single phone line being a"
+}

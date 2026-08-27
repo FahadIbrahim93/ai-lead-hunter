@@ -1,0 +1,10 @@
+{
+  "evidence_id": "E-0119",
+  "lead_id": "LH-0013",
+  "kind": "operational",
+  "found_at": "2026-08-27T02:10:07.968513+00:00",
+  "source_url": "",
+  "summary": "Visa processing is document-heavy and status-query-driven — applicants repeatedly ask 'what's my status?'",
+  "confidence": 75,
+  "raw": ""
+}

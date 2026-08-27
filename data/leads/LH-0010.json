@@ -1,0 +1,44 @@
+{
+  "lead_id": "LH-0010",
+  "business_name": "Rongin Interior Solution",
+  "discovered_at": "2026-08-27T02:08:21.816354+00:00",
+  "source": "research",
+  "lifecycle_status": "QUALIFIED",
+  "score": 90,
+  "tier": "A",
+  "website": "https://www.rongininterior.com/",
+  "verified": true,
+  "verified_at": "2026-08-27T02:08:26.925843+00:00",
+  "lead_type": "client",
+  "niche": "Interior design and decoration",
+  "geography": "Dhaka, Bangladesh",
+  "pain_signals": [
+    "Intake is phone-only ('Call now for free consultation') — no online booking or quote-request form",
+    "No visible CRM or lead-tracking; enquiries depend on a single phone line being answered",
+    "Serves residential + commercial + hospitality across all of Bangladesh — high enquiry volume, manual triage",
+    "Competitors with online consultation booking capture leads that phone-only intake misses"
+  ],
+  "offer_surface": "Autonomous AI agent deployment for Interior design and decoration — targeting: Intake is phone-only ('Call now for free consultation') — no online booking or quote-request form; No visible CRM or lead-tracking; enquiries depend on a single phone line being answered; Serves residential + commercial + hospitality across all of Bangladesh — high enquiry volume, manual triage",
+  "contact_paths": [
+    {
+      "channel": "phone",
+      "value": "+8801677139529",
+      "confidence": 85
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "E-0092",
+      "kind": "website",
+      "summary": "Live website verified. One-stop interior firm (homes, offices, showrooms, restaurants). Site pushes 'Call now for free consultation' — intake is phone-based, no visible online booking/quote form or CRM. Strong AI-agent fit: enquiry intake + quote scheduling.",
+      "confidence": 80
+    },
+    {
+      "evidence_id": "E-0097",
+      "kind": "website",
+      "summary": "Website live (HTTP 200) at https://www.rongininterior.com/",
+      "confidence": 95
+    }
+  ],
+  "notes": "Live website verified. One-stop interior firm (homes, offices, showrooms, restaurants). Site pushes 'Call now for free consultation' — intake is phone-based, no visible online booking/quote form or CRM. Strong AI-agent fit: enquiry intake + quote scheduling."
+}

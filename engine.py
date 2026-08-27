@@ -5,10 +5,15 @@ ai-lead-hunter — Hermes Control Plane v2 (local implementation)
 Usage:
   python engine.py status
   python engine.py leads
+  python engine.py research          # show the research inbox
+  python engine.py ingest            # ingest findings -> leads (dedup-safe)
+  python engine.py verify LH-0010    # live HTTP check + contact extraction
+  python engine.py verify-all        # verify every client website
   python engine.py discover
-  python engine.py audit LH-0001
-  python engine.py score LH-0001
-  python engine.py outreach LH-0001
+  python engine.py audit LH-0010
+  python engine.py score LH-0010
+  python engine.py demo LH-0010
+  python engine.py outreach LH-0010
   python engine.py validate
 """
 
@@ -27,12 +32,35 @@ LEADS = DATA / "leads"
 EVIDENCE = DATA / "evidence"
 ACTIVITY = DATA / "activity"
 OUTREACH = DATA / "outreach"
+RESEARCH = DATA / "research"
 ARTIFACTS = REPO / "artifacts"
 SCHEMAS = DATA / "schemas"
 
 
 def now_iso() -> str:
     return datetime.now(timezone.utc).isoformat()
+
+
+def norm_name(name: str) -> str:
+    """Normalize a business name for dedup comparison."""
+    n = name.strip().lower()
+    # strip common suffixes and parenthetical notes
+    n = re.sub(r"\(.*?\)", "", n)
+    for suffix in (" ltd", " limited", " l.l.c", " llc", " inc", " group of companies", " company", " co."):
+        if n.endswith(suffix):
+            n = n[: -len(suffix)]
+    return re.sub(r"\s+", " ", n).strip(" .,-")
+
+
+def norm_domain(url: str) -> str:
+    """Extract a bare registrable-ish domain from a URL for dedup."""
+    if not url:
+        return ""
+    u = url.strip().lower()
+    u = re.sub(r"^https?://", "", u)
+    u = u.split("/")[0].split("?")[0]
+    u = re.sub(r"^www\.", "", u)
+    return u
 
 
 def load_json(path: Path) -> Any:
@@ -159,14 +187,15 @@ def cmd_leads() -> None:
     if not rows:
         print("No leads yet.")
         return
-    print(f"{'ID':<10} {'Business':<28} {'Score':<6} {'Tier':<5} {'Status':<20} {'Niche'}")
-    print("-" * 85)
+    print(f"{'ID':<10} {'Business':<28} {'Score':<6} {'Tier':<5} {'Type':<10} {'Status':<20} {'Niche'}")
+    print("-" * 95)
     for r in rows:
         score = r.get("score", "-")
         tier = r.get("tier", "-")
         status = r.get("lifecycle_status", "-")
         niche = r.get("niche", "-")
-        print(f"{r['lead_id']:<10} {r['business_name'][:27]:<28} {str(score):<6} {tier:<5} {status:<20} {niche}")
+        ltype = "internal" if r.get("lead_type") == "internal_venture" else "client"
+        print(f"{r['lead_id']:<10} {r['business_name'][:27]:<28} {str(score):<6} {tier:<5} {ltype:<10} {status:<20} {niche}")
 
 
 def cmd_add_lead() -> None:
@@ -300,6 +329,15 @@ def add_evidence(
     confidence: int = 80,
     raw: str = "",
 ) -> str:
+    """Add an evidence record. Idempotent: if the lead already has evidence
+    with the same (kind, summary), returns the existing id without writing
+    any new file or activity entry."""
+    # Check for an existing duplicate BEFORE writing anything.
+    lead = load_lead(lead_id)
+    for e in lead.get("evidence", []):
+        if e.get("kind") == kind and e.get("summary") == summary:
+            return e.get("evidence_id", "")
+
     eid = next_id("E")
     record = {
         "evidence_id": eid,
@@ -314,14 +352,6 @@ def add_evidence(
     path = EVIDENCE / f"{eid}.json"
     write_json(path, record)
 
-    # Append reference to the lead — skip if an evidence record with the
-    # same summary + kind already exists (idempotent re-runs).
-    lead = load_lead(lead_id)
-    existing = {(e.get("kind"), e.get("summary")) for e in lead.get("evidence", [])}
-    if (kind, summary) in existing:
-        # Already recorded — don't create a duplicate evidence file or write
-        # a new activity entry for it.
-        return eid
     lead["evidence"] = lead.get("evidence", [])
     lead["evidence"].append({
         "evidence_id": eid,
@@ -483,27 +513,54 @@ def cmd_outreach(lead_id: str) -> None:
     print(f"\nDraft:\n{draft}")
 
 
+NICHE_OFFERS = [
+    (("interior", "decor", "furniture", "design studio"),
+     "an AI enquiry agent that replies to WhatsApp/Instagram messages instantly, qualifies each client's budget and style, and books consultations straight into your calendar"),
+    (("real estate", "property", "properties", "developer", "realtor"),
+     "an AI buyer-follow-up agent that answers listing questions, tracks every buyer's status, and sends payment-milestone and construction updates automatically"),
+    (("import", "export", "trading", "logistics", "shipping"),
+     "an AI operations agent that tracks shipments, chases documents, and keeps every client updated without any manual follow-up"),
+    (("jewelry", "jewellery", "jewelers"),
+     "an AI customer-care agent that handles price enquiries, tracks high-value orders, and sends after-sales follow-ups so no customer is ever forgotten"),
+    (("streetwear", "fashion", "clothing", "apparel"),
+     "an AI order agent that answers DMs, confirms orders, and sends tracking updates automatically"),
+    (("grocery", "supermarket", "mart", "delivery"),
+     "an AI order agent that takes orders over WhatsApp, confirms stock, and schedules deliveries"),
+    (("it ", "software", "tech", "agency", "studio"),
+     "an AI intake agent that qualifies leads, schedules discovery calls, and follows up automatically so nothing falls through"),
+]
+
+
+def offer_for_niche(niche: str) -> str:
+    """Map a lead's niche to a concrete, human-readable agent offer."""
+    n = (niche or "").lower()
+    for keywords, offer in NICHE_OFFERS:
+        if any(k in n for k in keywords):
+            return offer
+    return "an AI agent that handles your customer enquiries and follow-ups automatically, 24/7"
+
+
 def draft_outreach(lead: dict) -> str:
-    """Build a human-ready outreach draft."""
+    """Build a human-ready outreach draft that reads like a person wrote it."""
     name = lead["business_name"]
     pains = lead.get("pain_signals", [])
+    niche = lead.get("niche", "")
 
-    # Use the first 1-2 pain signals as the hook
-    pain_line = ""
-    if pains:
-        pain_line = pains[0]
-        if len(pains) > 1 and len(pain_line) < 120:
-            pain_line += f" and {pains[1]}"
+    # Hook: the two strongest pain signals as clean bullets, verbatim.
+    hooks = [p.strip() for p in pains[:2] if p.strip()]
+    if hooks:
+        hook_block = "\n".join(f"• {h}" for h in hooks)
+        opening = f"While researching {name}, a few things stood out to me:\n{hook_block}"
+    else:
+        opening = f"I've been researching {name} and I think there's an easy win you're leaving on the table."
 
-    # Extract a clean offer headline from the offer_surface
-    offer_surface = lead.get("offer_surface", "")
-    offer_headline = extract_offer_headline(offer_surface)
+    offer = offer_for_niche(niche)
 
     return (
         f"Hi, this is Fahad from Hope Theory.\n\n"
-        f"I noticed {pain_line.lower()} — I build autonomous AI agents that handle exactly that kind of workload.\n\n"
-        f"For {name}, I'd suggest starting with a focused agent that {offer_headline}.\n\n"
-        f"Happy to walk you through a 15-minute demo at your convenience. No commitment — just show you what it does.\n\n"
+        f"{opening}\n\n"
+        f"I build AI agents that fix exactly this. For a business like yours, I'd start with {offer}.\n\n"
+        f"I've already built a working demo — happy to show you in 15 minutes. No commitment, just want to show you what it does.\n\n"
         f"Best,\nFahad"
     )
 
@@ -830,6 +887,218 @@ def write_file_str(path: Path, content: str) -> None:
         f.write(content)
 
 
+# ─── Research inbox & ingest ───────────────────────────────────────────────
+
+
+def load_research_inbox() -> list[dict]:
+    """Load findings from data/research/findings.json."""
+    path = RESEARCH / "findings.json"
+    if not path.exists():
+        return []
+    try:
+        data = load_json(path)
+        return data.get("findings", [])
+    except Exception:
+        return []
+
+
+def existing_lead_index() -> tuple[set, set]:
+    """Return (normalized names, normalized domains) of all existing leads."""
+    names: set = set()
+    domains: set = set()
+    if LEADS.exists():
+        for f in sorted(LEADS.glob("*.json")):
+            try:
+                d = load_json(f)
+                names.add(norm_name(d.get("business_name", "")))
+                dom = norm_domain(d.get("website", ""))
+                if dom:
+                    domains.add(dom)
+            except Exception:
+                continue
+    return names, domains
+
+
+def cmd_research() -> None:
+    """Show the research inbox (findings not yet ingested)."""
+    findings = load_research_inbox()
+    if not findings:
+        print("Research inbox is empty. Add findings to data/research/findings.json")
+        return
+    names, domains = existing_lead_index()
+    print(f"Research inbox — {len(findings)} finding(s):")
+    print("-" * 70)
+    for f in findings:
+        name = f.get("business_name", "?")
+        dup = norm_name(name) in names or (norm_domain(f.get("website", "")) and norm_domain(f.get("website", "")) in domains)
+        flag = " [DUPLICATE — will skip]" if dup else ""
+        print(f"  • {name} — {f.get('niche', '?')}{flag}")
+        if f.get("website"):
+            print(f"    {f['website']}")
+
+
+def cmd_ingest() -> None:
+    """Ingest findings from the research inbox into leads, with dedup."""
+    findings = load_research_inbox()
+    if not findings:
+        print("Research inbox is empty — nothing to ingest.")
+        return
+
+    names, domains = existing_lead_index()
+    added = 0
+    skipped = 0
+
+    for f in findings:
+        name = f.get("business_name", "").strip()
+        if not name:
+            continue
+        nname = norm_name(name)
+        ndom = norm_domain(f.get("website", ""))
+        if nname in names or (ndom and ndom in domains):
+            skipped += 1
+            write_activity("duplicate_skipped", "SYSTEM", "hermes", resource="ingest", detail=f"Duplicate skipped: {name}")
+            continue
+
+        lead_id = next_id("LH")
+        record = {
+            "lead_id": lead_id,
+            "business_name": name,
+            "discovered_at": now_iso(),
+            "source": "research",
+            "lifecycle_status": "DISCOVERED",
+            "score": 0,
+            "tier": "C",
+            "website": f.get("website", ""),
+            "verified": False,
+            "verified_at": "",
+            "lead_type": "client",
+            "niche": f.get("niche", "unclassified"),
+            "geography": f.get("geography", "Bangladesh"),
+            "pain_signals": [],
+            "offer_surface": "",
+            "contact_paths": [],
+            "evidence": [],
+            "notes": f.get("notes", ""),
+        }
+        path = LEADS / f"{lead_id}.json"
+        write_json(path, record)
+        write_activity("ingested", lead_id, "hermes", resource=str(path), detail=f"Ingested from research inbox: {name}")
+
+        # Seed evidence from the finding's notes + source
+        if f.get("notes"):
+            add_evidence(lead_id, "website", f["notes"][:300], f.get("source_url", ""), 80)
+
+        names.add(nname)
+        if ndom:
+            domains.add(ndom)
+        added += 1
+
+    print(f"Ingest complete: {added} added, {skipped} duplicate(s) skipped.")
+    print(f"Total leads: {len(list(LEADS.glob('*.json')))}")
+    if added:
+        print("Next: python engine.py verify <lead_id>  (live website check)")
+
+
+# ─── Live verification ─────────────────────────────────────────────────────
+
+
+def http_check(url: str, timeout: int = 15) -> tuple[bool, int, str]:
+    """Live HTTP check. Returns (ok, status_code, body_text)."""
+    import urllib.request
+    import urllib.error
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (lead-hunter verify)"})
+        with urllib.request.urlopen(req, timeout=timeout) as resp:
+            body = resp.read(200_000).decode("utf-8", errors="ignore")
+            return True, resp.status, body
+    except urllib.error.HTTPError as e:
+        return False, e.code, ""
+    except Exception:
+        return False, 0, ""
+
+
+def extract_contacts(body: str) -> list[dict]:
+    """Extract phone numbers and emails from page HTML/text."""
+    contacts = []
+    seen = set()
+    # Emails
+    for m in re.finditer(r"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}", body):
+        val = m.group(0).lower()
+        if val in seen or val.endswith((".png", ".jpg", ".webp", ".gif", ".svg")):
+            continue
+        # Skip placeholder/example addresses from form templates
+        if "example." in val or val.startswith(("noreply@", "no-reply@", "name@", "email@", "user@")):
+            continue
+        seen.add(val)
+        contacts.append({"channel": "email", "value": val, "confidence": 90})
+    # BD phone numbers: +880 or 01 mobile patterns (allow spaces/dashes)
+    for m in re.finditer(r"(?:\+?88[\s\-]?)?0[\s\-]?1[3-9](?:[\s\-]?\d){8}", body):
+        digits = re.sub(r"\D", "", m.group(0))
+        d = digits
+        if d.startswith("880"):
+            d = d[3:]
+        d = d.lstrip("0")
+        val = "+880" + d
+        if len(val) == 14 and val not in seen:
+            seen.add(val)
+            contacts.append({"channel": "phone", "value": val, "confidence": 85})
+    return contacts[:8]
+
+
+def cmd_verify(lead_id: str) -> None:
+    """Live-verify a lead's website and extract real contact paths."""
+    lead = load_lead(lead_id)
+    url = lead.get("website", "")
+    if not url:
+        print(f"{lead_id}: no website on record — cannot verify.")
+        return
+
+    print(f"🔎 Verifying {lead_id} — {lead['business_name']}")
+    print(f"   GET {url}")
+    ok, status, body = http_check(url)
+
+    if ok:
+        lead["verified"] = True
+        lead["verified_at"] = now_iso()
+        save_lead(lead)
+        write_activity("verified", lead_id, "hermes", resource=url, detail=f"Live HTTP {status} — website confirmed up")
+        add_evidence(lead_id, "website", f"Website live (HTTP {status}) at {url}", url, 95)
+
+        contacts = extract_contacts(body)
+        if contacts:
+            existing_vals = {c.get("value") for c in lead.get("contact_paths", [])}
+            new = [c for c in contacts if c["value"] not in existing_vals]
+            if new:
+                lead = load_lead(lead_id)
+                lead["contact_paths"] = lead.get("contact_paths", []) + new
+                save_lead(lead)
+                write_activity("verified", lead_id, "hermes", resource=url, detail=f"Extracted {len(new)} contact path(s) from live page")
+            print(f"   ✓ LIVE (HTTP {status}) — extracted {len(contacts)} contact path(s)")
+            for c in contacts:
+                print(f"     {c['channel']}: {c['value']}")
+        else:
+            print(f"   ✓ LIVE (HTTP {status}) — no phone/email found on page")
+    else:
+        lead["verified"] = False
+        save_lead(lead)
+        write_activity("failed", lead_id, "hermes", resource=url, detail=f"Website check failed (HTTP {status})")
+        print(f"   ✗ FAILED (HTTP {status}) — website not reachable")
+
+
+def cmd_verify_all() -> None:
+    """Verify every client lead that has a website."""
+    for f in sorted(LEADS.glob("*.json")):
+        try:
+            d = load_json(f)
+        except Exception:
+            continue
+        if d.get("lead_type") == "internal_venture":
+            continue
+        if d.get("website"):
+            cmd_verify(d["lead_id"])
+            print()
+
+
 # ─── CLI ───────────────────────────────────────────────────────────────────
 
 CMD_MAP = {
@@ -837,6 +1106,10 @@ CMD_MAP = {
     "leads": cmd_leads,
     "add": cmd_add_lead,
     "discover": cmd_discover,
+    "research": cmd_research,
+    "ingest": cmd_ingest,
+    "verify": cmd_verify,
+    "verify-all": cmd_verify_all,
     "audit": cmd_audit,
     "score": cmd_score,
     "outreach": cmd_outreach,
@@ -870,7 +1143,7 @@ def main() -> None:
         print("Usage: python engine.py demo <lead_id>", file=sys.stderr)
         sys.exit(1)
 
-    if cmd in ("status", "leads", "validate", "discover"):
+    if cmd in ("status", "leads", "validate", "discover", "research", "ingest", "verify-all"):
         CMD_MAP[cmd]()
     else:
         if not arg:

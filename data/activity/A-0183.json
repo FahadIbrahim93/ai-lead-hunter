@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-0183",
+  "lead_id": "LH-0011",
+  "occurred_at": "2026-08-27T02:10:07.564569+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0112.json",
+  "detail": "Evidence: operational — International clientele (UK/USA/Canada/etc) across time zones, but no automated "
+}

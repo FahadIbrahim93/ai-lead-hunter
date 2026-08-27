@@ -1,71 +1,45 @@
-# RUNBOOK.md — AI Lead Hunter Day-to-Day Operations
+# RUNBOOK — Day-to-Day Operations
 
-## Quick start
+## Daily loop (5 minutes)
 
 ```bash
 cd ~/ai-lead-hunter
-python engine.py status       # system state
-python engine.py leads        # list leads
-python engine.py validate     # check integrity
+python engine.py status        # health check — must say "✓ All records validate"
+python engine.py leads         # see the board
 ```
 
-## Daily flow
+Or just double-click `START-DASHBOARD.bat` and look at the dashboard.
 
-1. **Check status.** `python engine.py status`. Look for pending approvals (outreach with status `pending_approval`).
-2. **Review any pending outreach.** Open the draft in `data/outreach/`, approve or revise.
-3. **Process new leads.** If discovery found new leads, add them and run `audit`.
-4. **Build demos + outreach for qualified leads.** For each QUALIFIED lead without an outreach draft: `demo <id>` then `outreach <id>`.
-5. **Validate.** Always `python engine.py validate` before ending the session.
+## Adding new leads
 
-## Per-lead deep dive
+1. Research a business (web search). You need: **name, live website, niche**.
+2. Add it to `data/research/findings.json` under `findings` (copy an existing entry).
+3. Run `python engine.py ingest` — dedup is automatic (name + domain).
+4. Run `python engine.py verify <lead_id>` — confirms the website is live and
+   pulls real phone/email from the page.
+5. Run `python engine.py audit <lead_id>` — scores and qualifies.
+
+## Working a qualified lead
 
 ```bash
-# Audit a lead
-python engine.py audit LH-0001
-
-# Re-score
-python engine.py score LH-0001
-
-# Build demo spec
-python engine.py demo LH-0001
-
-# Draft outreach
-python engine.py outreach LH-0001
-
-# Review
-cat data/outreach/O-0002.json
-cat artifacts/demos/LH-0001-demo.md
+python engine.py demo LH-0010       # write the demo spec
+python engine.py outreach LH-0010   # draft the message
 ```
 
-## Adding a lead manually
+Then: open the dashboard → Outreach Drafts → **Copy to Clipboard** → paste into
+WhatsApp/email → **you send it**. Log the outcome by editing the outreach record's
+`status` field (`pending_approval` → `approved` → `sent`).
 
-Edit or create `data/leads/LH-NNNN.json` with required fields, then run `audit`.
+## Weekly maintenance
 
-Required fields: `lead_id`, `business_name`, `discovered_at`, `source`, `lifecycle_status`, `score`.
+- `python engine.py verify-all` — re-check all client websites are still live.
+- `python -m pytest tests/ -q` — confirm the system is healthy (27 tests).
+- `git add -A && git commit -m "..." && git push` — keep the repo current.
 
-## Approving an outreach
+## Rules
 
-1. Open the outreach JSON in `data/outreach/`.
-2. Set `status` to `approved`.
-3. Set `human_approved_at` to the current ISO timestamp.
-4. Send via the channel in the record.
-5. After sending, set `status` to `sent` and `sent_at`.
-
-Do NOT send without this approval step.
-
-## Handling failures
-
-- **Validation fails:** read the error, fix the offending record or flag it. Do not proceed with outbound actions until clean.
-- **Audit produces no pain signals:** lead stays DISCOVERED. Add manual evidence or park.
-- **Low-confidence evidence (< 60):** flag in the lead notes. Do not build a high-stakes demo on shaky evidence.
-- **Missing contact path:** outreach draft uses a placeholder. Verify the contact path before approving.
-
-## Cron / scheduled work (future)
-
-Discovery jobs can run on a schedule to find new leads. Audit and outreach jobs run per-lead after human triage.
-
-## Emergency rollback
-
-Data is append-only. To reverse a bad decision:
-- Set lifecycle status to a prior stage (e.g., QUALIFIED → DISCOVERED).
-- Do NOT delete records. Append a note activity explaining the change.
+- **Never send outreach without human approval.** Drafts only.
+- **Never fabricate evidence.** Every pain signal must trace to a real source.
+- **Internal ventures** (MARJAHANS, SNAPTRAP, JG Mart) are portfolio pieces —
+  build them up, don't sell to them.
+- If `validate` fails, fix the data before doing anything else.

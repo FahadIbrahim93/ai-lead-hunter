@@ -18,6 +18,14 @@
     },
     "score": { "type": "integer", "minimum": 0, "maximum": 100 },
     "tier": { "type": "string", "enum": ["A", "B", "C"] },
+    "website": { "type": "string", "description": "Primary website URL, if known." },
+    "verified": { "type": "boolean", "description": "True once the website passed a live HTTP check." },
+    "verified_at": { "type": "string" },
+    "lead_type": {
+      "type": "string",
+      "enum": ["client", "internal_venture"],
+      "description": "client = external business to sell to. internal_venture = Fahad's own venture being built up with AI agents."
+    },
     "niche": { "type": "string" },
     "geography": { "type": "string" },
     "pain_signals": { "type": "array", "items": { "type": "string" } },

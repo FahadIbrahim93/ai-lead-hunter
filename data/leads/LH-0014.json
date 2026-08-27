@@ -1,0 +1,59 @@
+{
+  "lead_id": "LH-0014",
+  "business_name": "MIE English Academy Bangladesh",
+  "discovered_at": "2026-08-27T02:08:21.928454+00:00",
+  "source": "research",
+  "lifecycle_status": "QUALIFIED",
+  "score": 85,
+  "tier": "A",
+  "website": "https://mieenglishacademy.com/bangladesh/",
+  "verified": true,
+  "verified_at": "2026-08-27T02:08:30.944934+00:00",
+  "lead_type": "client",
+  "niche": "Education / IELTS & English coaching",
+  "geography": "Dhaka, Bangladesh (7 branches)",
+  "pain_signals": [
+    "7 Dhaka branches generate high admission-enquiry volume, handled via a single 'Enroll Now' form",
+    "No automated batch scheduling or free-class booking visible",
+    "Lead nurturing (follow-up after enquiry) appears manual",
+    "Heavy investment in video testimonials but no conversational funnel to convert viewers"
+  ],
+  "offer_surface": "Autonomous AI agent deployment for Education / IELTS & English coaching — targeting: 7 Dhaka branches generate high admission-enquiry volume, handled via a single 'Enroll Now' form; No automated batch scheduling or free-class booking visible; Lead nurturing (follow-up after enquiry) appears manual",
+  "contact_paths": [
+    {
+      "channel": "email",
+      "value": "info@mieenglishacademy.com",
+      "confidence": 90
+    },
+    {
+      "channel": "email",
+      "value": "sales@mieenglishacademy.com",
+      "confidence": 90
+    },
+    {
+      "channel": "phone",
+      "value": "+8801329668459",
+      "confidence": 85
+    },
+    {
+      "channel": "phone",
+      "value": "+8801332505927",
+      "confidence": 85
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "E-0096",
+      "kind": "website",
+      "summary": "Live website verified. IELTS + spoken English coaching, 7 Dhaka branches, heavy on video testimonials. Admission funnel is 'Enroll Now' form. Multi-branch = high enquiry volume. AI-agent fit: admission enquiry bot, batch scheduling, free-class booking, lead nurturing.",
+      "confidence": 80
+    },
+    {
+      "evidence_id": "E-0101",
+      "kind": "website",
+      "summary": "Website live (HTTP 200) at https://mieenglishacademy.com/bangladesh/",
+      "confidence": 95
+    }
+  ],
+  "notes": "Live website verified. IELTS + spoken English coaching, 7 Dhaka branches, heavy on video testimonials. Admission funnel is 'Enroll Now' form. Multi-branch = high enquiry volume. AI-agent fit: admission enquiry bot, batch scheduling, free-class booking, lead nurturing."
+}

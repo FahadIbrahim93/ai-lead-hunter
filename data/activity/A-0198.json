@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-0198",
+  "lead_id": "LH-0014",
+  "occurred_at": "2026-08-27T02:10:08.228885+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0125.json",
+  "detail": "Evidence: operational — Lead nurturing (follow-up after enquiry) appears manual"
+}

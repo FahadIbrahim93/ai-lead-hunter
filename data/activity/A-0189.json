@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-0189",
+  "lead_id": "LH-0012",
+  "occurred_at": "2026-08-27T02:10:07.801072+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0117.json",
+  "detail": "Evidence: operational — Hotline runs 7am-11pm but booking outside those hours is unattended"
+}

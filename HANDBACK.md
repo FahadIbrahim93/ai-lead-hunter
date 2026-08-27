@@ -1,45 +1,57 @@
-# AI Lead Hunter v2 — Sprint Handback
+# AI Lead Hunter — Sprint Handback (Architecture Sprint)
 
-## Sprint Outcome
-- Completed the full pipeline end-to-end for 5 newly discovered leads.
-- Fixed a scoring bug in `cmd_audit` that prevented new leads from qualifying.
-- Added GitHub Actions CI for validation + tests.
-- All tests pass and the repo is clean and pushed.
+## What this sprint did
+Turned the system from a prototype with fake discovery into a **real, verified
+lead machine** with a state-of-the-art architecture.
 
-## What’s Done
-1. **Live discover command**
-   - `python engine.py discover` now runs successfully.
-   - Added 5 new leads: LH-0005 through LH-0009.
+## New architecture (the big change)
 
-2. **Audit, score, demo, outreach**
-   - Audited all 5 new leads.
-   - Qualified all 5 leads.
-   - Generated demo specs for each.
-   - Drafted outreach for each.
+```
+RESEARCH INBOX ──ingest──▶ LEADS ──verify──▶ VERIFIED ──audit──▶ QUALIFIED
+```
 
-3. **Bug fix**
-   - Fixed stale score read in `cmd_audit` after scoring.
+1. **Research inbox** (`data/research/findings.json`) — real findings with
+   name + live website + niche. No more hardcoded fake discovery.
+2. **`ingest`** — converts findings to leads with **dedup by normalized name
+   AND domain** (strips Ltd/Limited/parentheticals, www, paths).
+3. **`verify` / `verify-all`** — **live HTTP check** of each website +
+   **real phone/email extraction** from the page HTML. Filters placeholders
+   (you@example.com) and image filenames.
+4. **Dashboard v2** — separates Client Leads from My Ventures, shows
+   ✓ VERIFIED badges, website links, and per-lead Verify buttons.
+   Now multi-threaded (fixed a request-blocking bug).
 
-4. **CI**
-   - Added `.github/workflows/ci.yml`.
-   - Runs `engine.py status` and `pytest -q` on push/PR.
+## Proof it works (real execution, not claims)
+- Ingested 5 real researched businesses → LH-0010..0014
+- **All 5 websites verified LIVE (HTTP 200)** by the verify command
+- Real contacts extracted: e.g. Kazi Law Chamber → info@kazilawchamber.com,
+  +8801748848487, +8801711540084 (all pulled from the live page)
+- Audited + scored: Rongin 90/A, Kazi Law 85/A, MIE 85/A, Padma 75/B, Obokash 60/C
+- 4 of 5 qualified (Obokash correctly stayed DISCOVERED at 60 — the system
+  honestly rejected a weak lead)
 
-5. **Tests**
-   - Updated stale test assumption.
-   - 9/9 tests passing.
+## Current state
+- **14 leads**: 11 clients + 3 internal ventures (MARJAHANS, SNAPTRAP, JG Mart)
+- **5 verified-live** client websites
+- **10 qualified**, 7 Tier A
+- 126 evidence, 200 activity, 9 outreach drafts (all pending_approval)
+- **27/27 tests passing**, validation clean
 
-6. **Git**
-   - Committed and pushed to `main`.
-   - Repo is clean.
+## Bugs found & fixed this sprint
+- `add_evidence` wrote the file BEFORE the dedup check → orphan duplicates. Fixed.
+- Dashboard was single-threaded → one slow connection blocked the API. Fixed (ThreadingHTTPServer).
+- Phone regex missed spaced numbers (+880 1748 848487). Fixed.
+- `you@example.com` form placeholder was captured as a contact. Fixed.
+- 5 activity records had invalid lead_id "—". Fixed (SYSTEM sentinel + schema update).
+- Enrichment script resolved paths from scripts/ not repo root. Fixed.
 
-## Current State
-- Leads: 9
-- Evidence: 91
-- Activity: 128
-- Outreach: 14
-- All records validate against schemas.
+## How to use it (non-technical)
+Double-click `START-DASHBOARD.bat`. Everything is clickable.
+To add leads: put findings in `data/research/findings.json`, click "Ingest Research",
+then "Verify Websites". See RUNBOOK.md.
 
-## What To Do Next
-- Review outreach drafts in `data/outreach/`.
-- Choose which leads to contact first.
-- Run `python engine.py status` to confirm state anytime.
+## Next sprint candidates
+- Wire `discover` to actually call web_search and write findings.json automatically
+- Build one WORKING demo artifact (not just a spec) for the #1 lead (Rongin, 90/A)
+- Rewrite outreach drafts with per-lead personalization from verified evidence
+- Response tracking: mark outreach sent → log replies → WON/LOST

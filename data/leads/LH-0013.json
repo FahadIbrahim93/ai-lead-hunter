@@ -1,0 +1,38 @@
+{
+  "lead_id": "LH-0013",
+  "business_name": "Obokash Travel",
+  "discovered_at": "2026-08-27T02:08:21.899493+00:00",
+  "source": "research",
+  "lifecycle_status": "DISCOVERED",
+  "score": 60,
+  "tier": "C",
+  "website": "https://www.obokash.com/",
+  "verified": true,
+  "verified_at": "2026-08-27T02:08:29.163269+00:00",
+  "lead_type": "client",
+  "niche": "Travel agency / Hajj & Umrah / visa processing",
+  "geography": "Dhaka, Bangladesh",
+  "pain_signals": [
+    "Visa processing is document-heavy and status-query-driven — applicants repeatedly ask 'what's my status?'",
+    "Live chat is a manually staffed tawk.to widget — no 24/7 automated responses",
+    "Hajj/Umrah + tour packages require quotation back-and-forth that is not automated",
+    "Large site with many destinations but no self-service document checklist or status bot"
+  ],
+  "offer_surface": "Autonomous AI agent deployment for Travel agency / Hajj & Umrah / visa processing — targeting: Visa processing is document-heavy and status-query-driven — applicants repeatedly ask 'what's my status?'; Live chat is a manually staffed tawk.to widget — no 24/7 automated responses; Hajj/Umrah + tour packages require quotation back-and-forth that is not automated",
+  "contact_paths": [],
+  "evidence": [
+    {
+      "evidence_id": "E-0095",
+      "kind": "website",
+      "summary": "Live website verified. Hajj/Umrah + visa + tour operator. Large site with a tawk.to live-chat widget (manual staffing). Visa processing is document-heavy and status-quiry-driven. AI-agent fit: visa application status bot, document checklist automation, package quotation agent.",
+      "confidence": 80
+    },
+    {
+      "evidence_id": "E-0100",
+      "kind": "website",
+      "summary": "Website live (HTTP 200) at https://www.obokash.com/",
+      "confidence": 95
+    }
+  ],
+  "notes": "Live website verified. Hajj/Umrah + visa + tour operator. Large site with a tawk.to live-chat widget (manual staffing). Visa processing is document-heavy and status-quiry-driven. AI-agent fit: visa application status bot, document checklist automation, package quotation agent."
+}

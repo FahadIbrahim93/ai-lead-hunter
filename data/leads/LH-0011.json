@@ -1,0 +1,54 @@
+{
+  "lead_id": "LH-0011",
+  "business_name": "Kazi Law Chamber",
+  "discovered_at": "2026-08-27T02:08:21.843093+00:00",
+  "source": "research",
+  "lifecycle_status": "QUALIFIED",
+  "score": 85,
+  "tier": "A",
+  "website": "https://www.kazilawchamber.com/",
+  "verified": true,
+  "verified_at": "2026-08-27T02:08:28.476229+00:00",
+  "lead_type": "client",
+  "niche": "Legal services / law firm",
+  "geography": "Dhaka, Bangladesh",
+  "pain_signals": [
+    "Client intake routes through a raw WhatsApp wa.me link and a basic enquiry form — no triage or scheduling intelligence",
+    "International clientele (UK/USA/Canada/etc) across time zones, but no automated after-hours intake",
+    "High-value corporate/maritime/tax matters require document collection — currently manual back-and-forth",
+    "Three decades of practice and global awards, yet appointment booking is not systematized"
+  ],
+  "offer_surface": "Autonomous AI agent deployment for Legal services / law firm — targeting: Client intake routes through a raw WhatsApp wa.me link and a basic enquiry form — no triage or scheduling intelligence; International clientele (UK/USA/Canada/etc) across time zones, but no automated after-hours intake; High-value corporate/maritime/tax matters require document collection — currently manual back-and-forth",
+  "contact_paths": [
+    {
+      "channel": "email",
+      "value": "info@kazilawchamber.com",
+      "confidence": 90
+    },
+    {
+      "channel": "phone",
+      "value": "+8801748848487",
+      "confidence": 85
+    },
+    {
+      "channel": "phone",
+      "value": "+8801711540084",
+      "confidence": 85
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "E-0093",
+      "kind": "website",
+      "summary": "Live website verified. Full-service firm since 1995, international clientele (UK/USA/Canada etc). Booking is a raw WhatsApp wa.me link + enquiry form. High-value clients but manual intake. AI-agent fit: client intake triage, appointment scheduling, document-request automation.",
+      "confidence": 80
+    },
+    {
+      "evidence_id": "E-0098",
+      "kind": "website",
+      "summary": "Website live (HTTP 200) at https://www.kazilawchamber.com/",
+      "confidence": 95
+    }
+  ],
+  "notes": "Live website verified. Full-service firm since 1995, international clientele (UK/USA/Canada etc). Booking is a raw WhatsApp wa.me link + enquiry form. High-value clients but manual intake. AI-agent fit: client intake triage, appointment scheduling, document-request automation."
+}

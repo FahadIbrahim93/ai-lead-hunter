@@ -11,7 +11,7 @@ import json
 import subprocess
 import sys
 import webbrowser
-from http.server import HTTPServer, BaseHTTPRequestHandler
+from http.server import ThreadingHTTPServer, BaseHTTPRequestHandler
 from pathlib import Path
 from urllib.parse import urlparse, parse_qs
 
@@ -56,27 +56,35 @@ def build_state() -> dict:
     outreach = read_json_dir(DATA / "outreach")
     demos = read_text_dir(ARTIFACTS / "demos", ".md")
 
-    qualified = sum(1 for l in leads if l.get("lifecycle_status") == "QUALIFIED")
-    tier_a = sum(1 for l in leads if l.get("tier") == "A")
+    clients = [l for l in leads if l.get("lead_type") != "internal_venture"]
+    ventures = [l for l in leads if l.get("lead_type") == "internal_venture"]
+    qualified = sum(1 for l in clients if l.get("lifecycle_status") == "QUALIFIED")
+    tier_a = sum(1 for l in clients if l.get("tier") == "A")
+    verified = sum(1 for l in clients if l.get("verified"))
     pending = sum(1 for o in outreach if o.get("status") == "pending_approval")
 
     # Sort leads by score desc
-    leads.sort(key=lambda l: l.get("score", 0), reverse=True)
+    clients.sort(key=lambda l: l.get("score", 0), reverse=True)
+    ventures.sort(key=lambda l: l.get("score", 0), reverse=True)
     # Sort activity newest first by activity_id desc
     activity.sort(key=lambda a: a.get("activity_id", ""), reverse=True)
 
     return {
         "stats": {
             "leads": len(leads),
+            "clients": len(clients),
+            "ventures": len(ventures),
             "qualified": qualified,
             "tier_a": tier_a,
+            "verified": verified,
             "evidence": len(evidence),
             "activity": len(activity),
             "outreach": len(outreach),
             "pending_approval": pending,
             "demos": len(demos),
         },
-        "leads": leads,
+        "leads": clients,
+        "ventures": ventures,
         "outreach": outreach,
         "activity": activity[:60],  # cap for UI speed
         "demos": demos,
@@ -156,6 +164,12 @@ class Handler(BaseHTTPRequestHandler):
             result = run_engine(["outreach", lead_id])
         elif action == "discover":
             result = run_engine(["discover"])
+        elif action == "ingest":
+            result = run_engine(["ingest"])
+        elif action == "verify-all":
+            result = run_engine(["verify-all"])
+        elif action == "verify":
+            result = run_engine(["verify", lead_id])
         elif action == "validate":
             result = run_engine(["validate"])
         elif action == "status":
@@ -179,7 +193,7 @@ def main():
     import threading
     threading.Timer(0.8, lambda: webbrowser.open(f"http://localhost:{PORT}")).start()
 
-    server = HTTPServer(("127.0.0.1", PORT), Handler)
+    server = ThreadingHTTPServer(("127.0.0.1", PORT), Handler)
     try:
         server.serve_forever()
     except KeyboardInterrupt:

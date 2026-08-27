@@ -1,0 +1,10 @@
+{
+  "evidence_id": "E-0123",
+  "lead_id": "LH-0014",
+  "kind": "operational",
+  "found_at": "2026-08-27T02:10:08.185764+00:00",
+  "source_url": "",
+  "summary": "7 Dhaka branches generate high admission-enquiry volume, handled via a single 'Enroll Now' form",
+  "confidence": 75,
+  "raw": ""
+}

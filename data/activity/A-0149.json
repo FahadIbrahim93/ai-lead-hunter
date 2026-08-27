@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-0149",
+  "lead_id": "LH-0010",
+  "occurred_at": "2026-08-27T02:08:26.965885+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0097.json",
+  "detail": "Evidence: website — Website live (HTTP 200) at https://www.rongininterior.com/"
+}

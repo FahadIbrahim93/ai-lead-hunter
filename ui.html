@@ -278,6 +278,28 @@
   .tab.active { color: var(--accent); border-bottom-color: var(--accent); }
   .tab-panel { display: none; }
   .tab-panel.active { display: block; }
+
+  /* Lead type filter */
+  .filter-row { display: flex; gap: 8px; margin-bottom: 16px; }
+  .filter-btn {
+    padding: 6px 14px;
+    font-size: 13px;
+    border-radius: 20px;
+  }
+  .filter-btn.active { background: var(--accent); border-color: var(--accent); color: #0d1117; }
+  .type-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-left: 8px;
+    vertical-align: middle;
+  }
+  .type-client { background: rgba(88,166,255,0.15); color: var(--accent); }
+  .type-internal { background: rgba(188,140,255,0.15); color: var(--purple); }
 </style>
 </head>
 <body>
@@ -288,6 +310,8 @@
   </h1>
   <div class="header-actions">
     <button class="big primary" onclick="runAction('discover', null, this)">🔎 Discover New Leads</button>
+    <button class="big" onclick="runAction('ingest', null, this)">📥 Ingest Research</button>
+    <button class="big" onclick="runAction('verify-all', null, this)">🌐 Verify Websites</button>
     <button class="big" onclick="runAction('validate', null, this)">✓ Validate Data</button>
   </div>
 </header>
@@ -302,6 +326,11 @@
 
 <div id="panel-leads" class="tab-panel active">
   <h2>Leads <span class="count" id="lead-count"></span></h2>
+  <div class="filter-row">
+    <button class="filter-btn active" data-filter="all" onclick="setFilter('all')">All</button>
+    <button class="filter-btn" data-filter="client" onclick="setFilter('client')">🏢 Client Leads</button>
+    <button class="filter-btn" data-filter="internal_venture" onclick="setFilter('internal_venture')">🏠 My Ventures</button>
+  </div>
   <div id="leads-list"><div class="loading">Loading leads…</div></div>
 </div>
 
@@ -325,6 +354,13 @@
 // escaping) before being placed into innerHTML templates below. No raw
 // user/server data reaches the DOM unescaped, so there is no XSS path.
 let STATE = null;
+let LEAD_FILTER = "all";
+
+function setFilter(f) {
+  LEAD_FILTER = f;
+  document.querySelectorAll(".filter-btn").forEach(b => b.classList.toggle("active", b.dataset.filter === f));
+  if (STATE) renderLeads();
+}
 
 function esc(s) {
   return String(s ?? "").replace(/[&<>"']/g, c => ({
@@ -367,23 +403,30 @@ async function loadState() {
 function renderStats() {
   const s = STATE.stats;
   document.getElementById("stats").innerHTML = `
-    <div class="stat blue"><div class="num">${s.leads}</div><div class="label">Total Leads</div></div>
+    <div class="stat blue"><div class="num">${s.clients}</div><div class="label">Client Leads</div></div>
     <div class="stat green"><div class="num">${s.qualified}</div><div class="label">Qualified</div></div>
     <div class="stat green"><div class="num">${s.tier_a}</div><div class="label">Tier A</div></div>
-    <div class="stat purple"><div class="num">${s.evidence}</div><div class="label">Evidence</div></div>
+    <div class="stat purple"><div class="num">${s.verified}</div><div class="label">✓ Verified Live</div></div>
     <div class="stat amber"><div class="num">${s.pending_approval}</div><div class="label">Awaiting Approval</div></div>
-    <div class="stat blue"><div class="num">${s.demos}</div><div class="label">Demo Specs</div></div>
+    <div class="stat blue"><div class="num">${s.ventures}</div><div class="label">My Ventures</div></div>
   `;
+}
+
+function allLeads() {
+  return (STATE.leads || []).concat(STATE.ventures || []);
 }
 
 function renderLeads() {
   const list = document.getElementById("leads-list");
-  document.getElementById("lead-count").textContent = `(${STATE.leads.length})`;
-  if (!STATE.leads.length) {
+  const combined = allLeads();
+  const filtered = LEAD_FILTER === "all" ? combined
+    : combined.filter(l => (l.lead_type || "client") === (LEAD_FILTER === "client" ? "client" : "internal_venture"));
+  document.getElementById("lead-count").textContent = `(${filtered.length})`;
+  if (!filtered.length) {
     list.innerHTML = '<div class="empty">No leads yet. Click "Discover New Leads" above.</div>';
     return;
   }
-  list.innerHTML = STATE.leads.map(l => {
+  list.innerHTML = filtered.map(l => {
     const pains = (l.pain_signals || []).map(p => `<div class="pain-item">${esc(p)}</div>`).join("");
     const contacts = (l.contact_paths || []).map(c => {
       const val = c.handle || c.value || "";
@@ -391,13 +434,25 @@ function renderLeads() {
     }).join("");
     const statusCls = ["QUALIFIED","DISCOVERED","CONTACTED"].includes(l.lifecycle_status)
       ? "status-" + l.lifecycle_status : "status-default";
+    const verifiedBadge = l.verified
+      ? `<span class="status-badge status-QUALIFIED" title="Website confirmed live">✓ VERIFIED</span>`
+      : (l.website ? `<span class="status-badge status-default">unverified</span>` : "");
+    const websiteLink = l.website
+      ? `<a href="${esc(l.website)}" target="_blank" rel="noopener" style="color:var(--accent);font-size:12px;text-decoration:none;">🌐 ${esc(l.website.replace(/^https?:\/\/(www\.)?/, "")).slice(0, 40)}</a>`
+      : "";
+    const verifyBtn = (l.website && !l.verified)
+      ? `<button onclick="runAction('verify','${esc(l.lead_id)}',this)">🌐 Verify Website</button>` : "";
     return `
     <div class="lead-card">
       <div class="lead-top">
         <div>
           <div class="lead-name">${esc(l.business_name)}</div>
           <div class="lead-meta">${esc(l.niche || "")} · ${esc(l.geography || "")} · <span class="lead-id">${esc(l.lead_id)}</span></div>
-          <div style="margin-top:8px;"><span class="status-badge ${statusCls}">${esc(l.lifecycle_status)}</span></div>
+          <div style="margin-top:8px;display:flex;gap:6px;align-items:center;flex-wrap:wrap;">
+            <span class="status-badge ${statusCls}">${esc(l.lifecycle_status)}</span>
+            ${verifiedBadge}
+            ${websiteLink}
+          </div>
         </div>
         <div class="score-block">
           <div class="score-num" style="color:${scoreColor(l.score)}">${l.score}</div>
@@ -408,6 +463,7 @@ function renderLeads() {
       ${pains ? `<div class="pain-list">${pains}</div>` : ""}
       ${contacts ? `<div class="contact-row">${contacts}</div>` : ""}
       <div class="lead-actions">
+        ${verifyBtn}
         <button onclick="runAction('audit','${esc(l.lead_id)}',this)">🔍 Re-Audit</button>
         <button onclick="runAction('demo','${esc(l.lead_id)}',this)">🎬 Build Demo Spec</button>
         <button onclick="runAction('outreach','${esc(l.lead_id)}',this)">✉️ Draft Outreach</button>

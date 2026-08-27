@@ -41,5 +41,6 @@
       "confidence": 70
     }
   ],
-  "notes": "Score 82/B. Trading/import-export is a strong automation niche but contact path confidence is lower than LH-0001/0002. Worth a deeper audit before demo."
+  "notes": "Score 82/B. Trading/import-export is a strong automation niche but contact path confidence is lower than LH-0001/0002. Worth a deeper audit before demo.",
+  "lead_type": "client"
 }

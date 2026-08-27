@@ -1,0 +1,10 @@
+{
+  "evidence_id": "E-0116",
+  "lead_id": "LH-0012",
+  "kind": "operational",
+  "found_at": "2026-08-27T02:10:07.776113+00:00",
+  "source_url": "",
+  "summary": "No automated report-delivery notification; patients must check a separate portal",
+  "confidence": 75,
+  "raw": ""
+}

@@ -1,0 +1,10 @@
+{
+  "evidence_id": "E-0124",
+  "lead_id": "LH-0014",
+  "kind": "operational",
+  "found_at": "2026-08-27T02:10:08.205050+00:00",
+  "source_url": "",
+  "summary": "No automated batch scheduling or free-class booking visible",
+  "confidence": 75,
+  "raw": ""
+}

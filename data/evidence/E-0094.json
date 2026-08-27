@@ -1,0 +1,10 @@
+{
+  "evidence_id": "E-0094",
+  "lead_id": "LH-0012",
+  "kind": "website",
+  "found_at": "2026-08-27T02:08:21.890338+00:00",
+  "source_url": "https://padma-bd.com/contact/onlineappointment/",
+  "summary": "Live website verified. Has an online appointment form but it is a basic 'Send Request' (no instant confirmation, no scheduling intelligence). Hotline 7am-11pm. AI-agent fit: appointment booking with real-time confirmation, report-delivery notifications, patient follow-up.",
+  "confidence": 80,
+  "raw": ""
+}

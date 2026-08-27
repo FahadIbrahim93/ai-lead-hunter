@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-0182",
+  "lead_id": "LH-0011",
+  "occurred_at": "2026-08-27T02:10:07.544054+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0111.json",
+  "detail": "Evidence: operational — Client intake routes through a raw WhatsApp wa.me link and a basic enquiry form "
+}

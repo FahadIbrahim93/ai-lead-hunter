@@ -1,0 +1,10 @@
+{
+  "evidence_id": "E-0117",
+  "lead_id": "LH-0012",
+  "kind": "operational",
+  "found_at": "2026-08-27T02:10:07.795218+00:00",
+  "source_url": "",
+  "summary": "Hotline runs 7am-11pm but booking outside those hours is unattended",
+  "confidence": 75,
+  "raw": ""
+}

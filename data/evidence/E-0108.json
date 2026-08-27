@@ -1,0 +1,10 @@
+{
+  "evidence_id": "E-0108",
+  "lead_id": "LH-0010",
+  "kind": "operational",
+  "found_at": "2026-08-27T02:10:07.315455+00:00",
+  "source_url": "",
+  "summary": "No visible CRM or lead-tracking; enquiries depend on a single phone line being answered",
+  "confidence": 75,
+  "raw": ""
+}
