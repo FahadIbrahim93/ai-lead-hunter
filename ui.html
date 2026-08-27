@@ -466,6 +466,7 @@ function renderLeads() {
         ${verifyBtn}
         <button onclick="runAction('audit','${esc(l.lead_id)}',this)">🔍 Re-Audit</button>
         <button onclick="runAction('demo','${esc(l.lead_id)}',this)">🎬 Build Demo Spec</button>
+        <button class="primary" onclick="runAction('demo-live','${esc(l.lead_id)}',this)">🚀 Generate Live Demo</button>
         <button onclick="runAction('outreach','${esc(l.lead_id)}',this)">✉️ Draft Outreach</button>
       </div>
     </div>`;

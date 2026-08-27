@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-0264",
+  "lead_id": "LH-0015",
+  "occurred_at": "2026-08-27T02:47:14.509144+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0127.json",
+  "detail": "Evidence: website — Website live (HTTP 200) at https://goldsgym.com.bd/"
+}

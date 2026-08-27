@@ -1,0 +1,32 @@
+{
+  "lead_id": "LH-0015",
+  "business_name": "Gold's Gym Bangladesh",
+  "discovered_at": "2026-08-27T02:47:03.975954+00:00",
+  "source": "research",
+  "lifecycle_status": "DISCOVERED",
+  "score": 60,
+  "tier": "C",
+  "website": "https://goldsgym.com.bd/",
+  "verified": true,
+  "verified_at": "2026-08-27T02:47:14.483935+00:00",
+  "lead_type": "client",
+  "niche": "Fitness and gym",
+  "geography": "Dhaka, Bangladesh",
+  "pain_signals": [
+    "Membership booking is phone-only (+8801969-900555) — no online class scheduling or membership management",
+    "No visible app or portal for members to book classes, track progress, or manage accounts",
+    "High-ticket packages (BDT35K-2.5L/year) with manual follow-up and no automated renewal reminders",
+    "Competitors with app-based booking capture leads that phone-only intake misses"
+  ],
+  "offer_surface": "Autonomous AI agent deployment for Fitness and gym — targeting: Membership booking is phone-only (+8801969-900555) — no online class scheduling or membership management; No visible app or portal for members to book classes, track progress, or manage accounts; High-ticket packages (BDT35K-2.5L/year) with manual follow-up and no automated renewal reminders",
+  "contact_paths": [],
+  "evidence": [
+    {
+      "evidence_id": "E-0127",
+      "kind": "website",
+      "summary": "Website live (HTTP 200) at https://goldsgym.com.bd/",
+      "confidence": 95
+    }
+  ],
+  "notes": ""
+}

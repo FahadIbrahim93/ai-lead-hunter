@@ -1099,6 +1099,125 @@ def cmd_verify_all() -> None:
             print()
 
 
+# ─── Live demo generator ───────────────────────────────────────────────────
+
+
+def build_demo_config(lead: dict) -> dict:
+    """Derive demo-agent config (services, budgets, timelines) from lead data."""
+    niche = lead.get("niche", "").lower()
+    name = lead["business_name"]
+
+    service_map = {
+        "interior": ["Full home interior", "Office interior", "Kitchen remodel", "Consultation only"],
+        "real estate": ["Buy a flat", "Sell a property", "Rent", "Site visit"],
+        "legal": ["Corporate/commercial", "Property matter", "Family law", "General consultation"],
+        "health": ["Book a test", "Health package", "Home collection", "Report status"],
+        "travel": ["Hajj/Umrah package", "Visa processing", "Air ticket", "Tour package"],
+        "ielts": ["IELTS course", "Spoken English", "Free class", "Batch schedule"],
+        "education": ["IELTS course", "Spoken English", "Free class", "Batch schedule"],
+        "jewelry": ["Bridal set", "Gold jewelry", "Custom order", "Repair"],
+        "diagnostic": ["Book a test", "Health package", "Home collection", "Report status"],
+    }
+    services = ["General enquiry", "Get a quote", "Book consultation"]
+    for key, opts in service_map.items():
+        if key in niche:
+            services = opts
+            break
+
+    return {
+        "business_name": name,
+        "niche": lead.get("niche", ""),
+        "website": lead.get("website", ""),
+        "score": lead.get("score", 0),
+        "services": services,
+        "budgets": ["Under BDT 50k", "BDT 50k – 2L", "BDT 2L – 5L", "BDT 5L+", "Not sure yet"],
+        "timelines": ["ASAP", "Within a month", "1–3 months", "Just researching"],
+        "pain_signals": lead.get("pain_signals", []),
+    }
+
+
+def cmd_demo_live(lead_id: str) -> None:
+    """Render a WORKING interactive demo agent (single HTML file) for a lead."""
+    lead = load_lead(lead_id)
+    tpl_path = REPO / "templates" / "demo_template.html"
+    if not tpl_path.exists():
+        print("Missing templates/demo_template.html", file=sys.stderr)
+        sys.exit(1)
+
+    tpl = tpl_path.read_text(encoding="utf-8")
+    config = build_demo_config(lead)
+    html = tpl.replace("__LEAD_DATA__", json.dumps(config, ensure_ascii=False))
+    html = html.replace("__BUSINESS_NAME__", lead["business_name"])
+
+    demo_dir = ARTIFACTS / "demos-live"
+    demo_dir.mkdir(parents=True, exist_ok=True)
+    out = demo_dir / f"{lead_id}-demo-live.html"
+    out.write_text(html, encoding="utf-8")
+
+    write_activity("demo_built", lead_id, "hermes", resource=str(out), detail=f"Interactive demo agent rendered: {out.name}")
+    print(f"✅ Interactive demo agent: {out}")
+    print(f"   Open it in a browser — it runs standalone, fully personalized for {lead['business_name']}.")
+
+
+# ─── Outreach lifecycle ────────────────────────────────────────────────────
+
+
+def cmd_mark_sent(outreach_id: str) -> None:
+    """Human marks an outreach as sent (they sent it themselves)."""
+    path = OUTREACH / f"{outreach_id}.json"
+    if not path.exists():
+        print(f"Unknown outreach: {outreach_id}", file=sys.stderr)
+        sys.exit(1)
+    rec = load_json(path)
+    if rec.get("status") not in ("pending_approval", "approved", "drafted"):
+        print(f"{outreach_id}: status is '{rec.get('status')}' — cannot mark sent again.")
+        return
+    rec["status"] = "sent"
+    rec["sent_at"] = now_iso()
+    write_json(path, rec)
+    write_activity("outreach_sent", rec["lead_id"], "human", resource=str(path), detail=f"{outreach_id} sent by owner")
+    set_status(rec["lead_id"], "CONTACTED")
+    print(f"✅ {outreach_id} marked sent — lead {rec['lead_id']} → CONTACTED")
+
+
+def cmd_mark_reply(outreach_id: str, reply: str) -> None:
+    """Log a reply to an outreach; updates lifecycle to IN_CONVERSATION."""
+    path = OUTREACH / f"{outreach_id}.json"
+    if not path.exists():
+        print(f"Unknown outreach: {outreach_id}", file=sys.stderr)
+        sys.exit(1)
+    rec = load_json(path)
+    rec["status"] = "replied"
+    rec["response_at"] = now_iso()
+    rec["response"] = reply
+    write_json(path, rec)
+    write_activity("reply_received", rec["lead_id"], "human", resource=str(path), detail=f"{outreach_id} reply: {reply[:80]}")
+    set_status(rec["lead_id"], "IN_CONVERSATION")
+    print(f"✅ {outreach_id} reply logged — lead {rec['lead_id']} → IN_CONVERSATION")
+
+
+def cmd_mark_won(outreach_id: str) -> None:
+    path = OUTREACH / f"{outreach_id}.json"
+    if not path.exists():
+        print(f"Unknown outreach: {outreach_id}", file=sys.stderr)
+        sys.exit(1)
+    rec = load_json(path)
+    write_activity("status_changed", rec["lead_id"], "human", resource=str(path), detail="WON 🎉")
+    set_status(rec["lead_id"], "WON")
+    print(f"🏆 {outreach_id} — lead {rec['lead_id']} WON")
+
+
+def cmd_mark_lost(outreach_id: str) -> None:
+    path = OUTREACH / f"{outreach_id}.json"
+    if not path.exists():
+        print(f"Unknown outreach: {outreach_id}", file=sys.stderr)
+        sys.exit(1)
+    rec = load_json(path)
+    write_activity("status_changed", rec["lead_id"], "human", resource=str(path), detail="LOST")
+    set_status(rec["lead_id"], "LOST")
+    print(f"📉 {outreach_id} — lead {rec['lead_id']} LOST")
+
+
 # ─── CLI ───────────────────────────────────────────────────────────────────
 
 CMD_MAP = {
@@ -1114,6 +1233,11 @@ CMD_MAP = {
     "score": cmd_score,
     "outreach": cmd_outreach,
     "demo": cmd_demo,
+    "demo-live": cmd_demo_live,
+    "sent": cmd_mark_sent,
+    "reply": cmd_mark_reply,
+    "won": cmd_mark_won,
+    "lost": cmd_mark_lost,
     "validate": cmd_validate,
 }
 
@@ -1129,6 +1253,11 @@ def main() -> None:
 
     cmd = sys.argv[1]
     arg = sys.argv[2] if len(sys.argv) > 2 else None
+    arg2 = sys.argv[3] if len(sys.argv) > 3 else None
+
+    if cmd == "reply" and not arg:
+        print("Usage: python engine.py reply <outreach_id> <reply_text>", file=sys.stderr)
+        sys.exit(1)
 
     if cmd == "audit" and not arg:
         print("Usage: python engine.py audit <lead_id>", file=sys.stderr)
@@ -1142,9 +1271,23 @@ def main() -> None:
     if cmd == "demo" and not arg:
         print("Usage: python engine.py demo <lead_id>", file=sys.stderr)
         sys.exit(1)
+    if cmd == "demo-live" and not arg:
+        print("Usage: python engine.py demo-live <lead_id>", file=sys.stderr)
+        sys.exit(1)
+    if cmd == "sent" and not arg:
+        print("Usage: python engine.py sent <outreach_id>", file=sys.stderr)
+        sys.exit(1)
+    if cmd == "won" and not arg:
+        print("Usage: python engine.py won <outreach_id>", file=sys.stderr)
+        sys.exit(1)
+    if cmd == "lost" and not arg:
+        print("Usage: python engine.py lost <outreach_id>", file=sys.stderr)
+        sys.exit(1)
 
     if cmd in ("status", "leads", "validate", "discover", "research", "ingest", "verify-all"):
         CMD_MAP[cmd]()
+    elif cmd == "reply":
+        CMD_MAP[cmd](arg, " ".join(sys.argv[3:]) if len(sys.argv) > 3 else "(no text)")
     else:
         if not arg:
             print(f"Usage: python engine.py {cmd} <lead_id>", file=sys.stderr)

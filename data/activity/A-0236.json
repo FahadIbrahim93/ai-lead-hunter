@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-0236",
+  "lead_id": "LH-0001",
+  "occurred_at": "2026-08-27T02:45:13.814498+00:00",
+  "actor": "human",
+  "action": "reply_received",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\outreach\\O-0001.json",
+  "detail": "O-0001 reply: Interested, let's schedule a call"
+}

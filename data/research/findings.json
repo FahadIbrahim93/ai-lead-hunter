@@ -7,7 +7,9 @@
       "niche": "Interior design and decoration",
       "geography": "Dhaka, Bangladesh",
       "source_url": "https://www.rongininterior.com/",
-      "contact_hints": ["phone 01677139529"],
+      "contact_hints": [
+        "phone 01677139529"
+      ],
       "notes": "Live website verified. One-stop interior firm (homes, offices, showrooms, restaurants). Site pushes 'Call now for free consultation' — intake is phone-based, no visible online booking/quote form or CRM. Strong AI-agent fit: enquiry intake + quote scheduling.",
       "found_at": "2026-08-27T00:00:00+06:00"
     },
@@ -17,7 +19,12 @@
       "niche": "Legal services / law firm",
       "geography": "Dhaka, Bangladesh",
       "source_url": "https://www.kazilawchamber.com/",
-      "contact_hints": ["phone +880 1748 848487", "phone +880 1711 540084", "email info@kazilawchamber.com", "whatsapp wa.me/message/B4F3CA7SMJRLI1"],
+      "contact_hints": [
+        "phone +880 1748 848487",
+        "phone +880 1711 540084",
+        "email info@kazilawchamber.com",
+        "whatsapp wa.me/message/B4F3CA7SMJRLI1"
+      ],
       "notes": "Live website verified. Full-service firm since 1995, international clientele (UK/USA/Canada etc). Booking is a raw WhatsApp wa.me link + enquiry form. High-value clients but manual intake. AI-agent fit: client intake triage, appointment scheduling, document-request automation.",
       "found_at": "2026-08-27T00:00:00+06:00"
     },
@@ -27,7 +34,10 @@
       "niche": "Healthcare / diagnostic centre",
       "geography": "Dhaka, Bangladesh",
       "source_url": "https://padma-bd.com/contact/onlineappointment/",
-      "contact_hints": ["phone 0961-1113355", "email info@padma-bd.com"],
+      "contact_hints": [
+        "phone 0961-1113355",
+        "email info@padma-bd.com"
+      ],
       "notes": "Live website verified. Has an online appointment form but it is a basic 'Send Request' (no instant confirmation, no scheduling intelligence). Hotline 7am-11pm. AI-agent fit: appointment booking with real-time confirmation, report-delivery notifications, patient follow-up.",
       "found_at": "2026-08-27T00:00:00+06:00"
     },
@@ -37,7 +47,9 @@
       "niche": "Travel agency / Hajj & Umrah / visa processing",
       "geography": "Dhaka, Bangladesh",
       "source_url": "https://www.obokash.com/",
-      "contact_hints": ["phone 88-09648700700"],
+      "contact_hints": [
+        "phone 88-09648700700"
+      ],
       "notes": "Live website verified. Hajj/Umrah + visa + tour operator. Large site with a tawk.to live-chat widget (manual staffing). Visa processing is document-heavy and status-quiry-driven. AI-agent fit: visa application status bot, document checklist automation, package quotation agent.",
       "found_at": "2026-08-27T00:00:00+06:00"
     },
@@ -50,6 +62,30 @@
       "contact_hints": [],
       "notes": "Live website verified. IELTS + spoken English coaching, 7 Dhaka branches, heavy on video testimonials. Admission funnel is 'Enroll Now' form. Multi-branch = high enquiry volume. AI-agent fit: admission enquiry bot, batch scheduling, free-class booking, lead nurturing.",
       "found_at": "2026-08-27T00:00:00+06:00"
+    },
+    {
+      "business_name": "Gold's Gym Bangladesh",
+      "website": "https://goldsgym.com.bd/",
+      "niche": "Fitness and gym",
+      "geography": "Dhaka, Bangladesh",
+      "research_notes": "Premium gym chain with2 locations (Bashundhara City + Residential). Membership-based model with high-ticket packages (BDT35K-2.5L/year). Phone-only booking via +8801969-900555. No visible online class scheduling or membership management portal. Competitors with app-based booking capture leads that phone-only intake misses.",
+      "source": "web_search"
+    },
+    {
+      "business_name": "Wedding Diary Bangladesh",
+      "website": "https://weddingdiary.com.bd/",
+      "niche": "Wedding photography and cinematography",
+      "geography": "Dhaka, Bangladesh",
+      "research_notes": "Professional wedding photography team with1500+ weddings shot. High-ticket packages (BDT50K-2.5L). Booking via phone/WhatsApp +8801975556633. No visible online booking system or package comparison tool. Instagram-heavy marketing but no owned lead capture. Competitors with online booking systems capture leads that DM-only intake misses.",
+      "source": "web_search"
+    },
+    {
+      "business_name": "Metro Weddings",
+      "website": "https://bdmetroweddings.com/",
+      "niche": "Wedding photography and films",
+      "geography": "Dhaka, Bangladesh",
+      "research_notes": "14 years experience,1500+ weddings. Currently booking2026-2027 season. Contact via WhatsApp +8801626474358. No visible online booking or availability calendar. High-ticket packages. Competitors with online booking systems capture leads that WhatsApp-only intake misses.",
+      "source": "web_search"
     }
   ]
 }

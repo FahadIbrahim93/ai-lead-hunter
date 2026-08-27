@@ -160,6 +160,8 @@ class Handler(BaseHTTPRequestHandler):
             result = run_engine(["audit", lead_id])
         elif action == "demo":
             result = run_engine(["demo", lead_id])
+        elif action == "demo-live":
+            result = run_engine(["demo-live", lead_id])
         elif action == "outreach":
             result = run_engine(["outreach", lead_id])
         elif action == "discover":

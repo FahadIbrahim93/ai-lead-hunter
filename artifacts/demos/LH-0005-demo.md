@@ -1,7 +1,7 @@
 # Demo Spec — BD INTERIOR
 
 **Lead:** LH-0005
-**Date:** 2026-08-27T01:25:39.034122+00:00
+**Date:** 2026-08-27T02:17:32.986312+00:00
 **Offer surface:** Autonomous AI agent deployment for Interior design and decor — targeting: Award-winning interior firm with 15+ years experience but no public online booking or enquiry flow; Portfolio is website-only — no WhatsApp Business integration, no automated lead qualification; High-ticket projects (BDT 500K+) with likely manual follow-up and no CRM
 **Score:** 100 / Tier A
 

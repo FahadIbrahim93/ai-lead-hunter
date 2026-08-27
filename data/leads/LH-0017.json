@@ -1,0 +1,43 @@
+{
+  "lead_id": "LH-0017",
+  "business_name": "Metro Weddings",
+  "discovered_at": "2026-08-27T02:47:03.992080+00:00",
+  "source": "research",
+  "lifecycle_status": "QUALIFIED",
+  "score": 85,
+  "tier": "A",
+  "website": "https://bdmetroweddings.com/",
+  "verified": true,
+  "verified_at": "2026-08-27T02:47:18.182279+00:00",
+  "lead_type": "client",
+  "niche": "Wedding photography and films",
+  "geography": "Dhaka, Bangladesh",
+  "pain_signals": [
+    "Booking is WhatsApp only (+8801626474358) — no online booking or availability calendar",
+    "Currently booking2026-2027 season but no automated waitlist or inquiry management",
+    "High-ticket packages with manual follow-up and no CRM",
+    "Competitors with online booking systems capture leads that WhatsApp-only intake misses"
+  ],
+  "offer_surface": "Autonomous AI agent deployment for Wedding photography and films — targeting: Booking is WhatsApp only (+8801626474358) — no online booking or availability calendar; Currently booking2026-2027 season but no automated waitlist or inquiry management; High-ticket packages with manual follow-up and no CRM",
+  "contact_paths": [
+    {
+      "channel": "email",
+      "value": "bdmetroweddings@gmail.com",
+      "confidence": 90
+    },
+    {
+      "channel": "phone",
+      "value": "+8801626474358",
+      "confidence": 85
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "E-0129",
+      "kind": "website",
+      "summary": "Website live (HTTP 200) at https://bdmetroweddings.com/",
+      "confidence": 95
+    }
+  ],
+  "notes": ""
+}

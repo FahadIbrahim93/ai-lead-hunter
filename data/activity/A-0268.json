@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-0268",
+  "lead_id": "LH-0017",
+  "occurred_at": "2026-08-27T02:47:18.205503+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0129.json",
+  "detail": "Evidence: website — Website live (HTTP 200) at https://bdmetroweddings.com/"
+}

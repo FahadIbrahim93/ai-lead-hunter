@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-0234",
+  "lead_id": "LH-0001",
+  "occurred_at": "2026-08-27T02:45:13.655616+00:00",
+  "actor": "human",
+  "action": "outreach_sent",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\outreach\\O-0001.json",
+  "detail": "O-0001 sent by owner"
+}

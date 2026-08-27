@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-0225",
+  "lead_id": "LH-0014",
+  "occurred_at": "2026-08-27T02:17:09.329968+00:00",
+  "actor": "hermes",
+  "action": "verified",
+  "resource": "https://mieenglishacademy.com/bangladesh/",
+  "detail": "Live HTTP 200 — website confirmed up"
+}
