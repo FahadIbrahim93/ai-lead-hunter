@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-0979",
+  "lead_id": "SYSTEM",
+  "occurred_at": "2026-08-27T05:58:12.704692+00:00",
+  "actor": "hermes",
+  "action": "duplicate_skipped",
+  "resource": "ingest",
+  "detail": "Duplicate skipped: Rongin Interior Solution"
+}
