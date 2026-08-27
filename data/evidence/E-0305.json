@@ -1,0 +1,10 @@
+{
+  "evidence_id": "E-0305",
+  "lead_id": "LH-0024",
+  "kind": "operational",
+  "found_at": "2026-08-27T08:25:42.646009+00:00",
+  "source_url": "",
+  "summary": "High-volume B2B orders — manual quote turnaround is slow, and every delayed quote risks losing the order to a faster competitor",
+  "confidence": 75,
+  "raw": ""
+}

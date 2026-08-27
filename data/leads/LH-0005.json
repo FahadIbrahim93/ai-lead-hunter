@@ -9,22 +9,28 @@
   "niche": "Interior design and decor",
   "geography": "Bangladesh",
   "pain_signals": [
-    "Award-winning interior firm with 15+ years experience but no public online booking or enquiry flow",
-    "Portfolio is website-only — no WhatsApp Business integration, no automated lead qualification",
-    "High-ticket projects (BDT 500K+) with likely manual follow-up and no CRM",
+    "Award-winning interior firm with 15+ years experience but no public online booking or enquiry flow — intake is a phone number (+8801711-208563) and a cost-calculator widget, not a qualified-lead pipeline",
+    "Portfolio is website-only — no WhatsApp Business integration, no automated lead qualification despite serving corporate giants (BRAC, BAT, Renata, BD Army)",
+    "High-ticket projects (BDT 500K+) with likely manual follow-up and no CRM — 700+ projects means a large past-client base that is never re-engaged or asked for referrals",
+    "The 'Calculate Interior Cost Free!' widget shows intent to capture leads digitally, but there's no agent to follow up on those calculations and book consultations",
     "Competitors with online consultation booking capture leads BD INTERIOR misses"
   ],
-  "offer_surface": "Autonomous AI agent deployment for Interior design and decor — targeting: Award-winning interior firm with 15+ years experience but no public online booking or enquiry flow; Portfolio is website-only — no WhatsApp Business integration, no automated lead qualification; High-ticket projects (BDT 500K+) with likely manual follow-up and no CRM",
+  "offer_surface": "Autonomous AI agent deployment for Interior design and decor — targeting: Award-winning interior firm with 15+ years experience but no public online booking or enquiry flow — intake is a phone number (+8801711-208563) and a cost-calculator widget, not a qualified-lead pipeline; Portfolio is website-only — no WhatsApp Business integration, no automated lead qualification despite serving corporate giants (BRAC, BAT, Renata, BD Army); High-ticket projects (BDT 500K+) with likely manual follow-up and no CRM — 700+ projects means a large past-client base that is never re-engaged or asked for referrals",
   "contact_paths": [
     {
-      "channel": "website",
-      "url": "https://bdinterior.com/",
-      "confidence": 90
+      "type": "phone",
+      "value": "+8801711-208563",
+      "source": "web_extract: bdinterior.com header"
     },
     {
-      "channel": "phone",
-      "value": "+880-1XXX-XXXXXX",
-      "confidence": 60
+      "type": "website",
+      "value": "https://bdinterior.com/",
+      "source": "verified LIVE (HTTP 200)"
+    },
+    {
+      "type": "website_tool",
+      "value": "Calculate Interior Cost Free! widget",
+      "source": "web_extract: bdinterior.com"
     }
   ],
   "evidence": [
@@ -42,5 +48,59 @@
     }
   ],
   "notes": "Auto-discovered from live market research + referral signals.",
-  "lead_type": "client"
+  "lead_type": "client",
+  "business_profile": {
+    "business_overview": "BD INTERIOR is Bangladesh's first ISO-certified interior design brand and one of the country's most established firms — 15+ years in operation, 700+ successful projects, 550+ satisfied clients, and a 2-year after-sales service commitment. Their client roster reads like a who's-who of Bangladeshi enterprise: Petro Bangla, BRAC, BD Army, President's Guard Regiment, BAT, Renata, Novo Nordisk, KSRM, Lab Aid, Nitol Niloy, and Bombay Sweets. They handle residential, office, restaurant, and commercial projects and already run a 'Calculate Interior Cost Free!' widget on their site — evidence they understand lead capture and want to qualify prospects digitally. Target audience: affluent homeowners and corporate/institutional buyers willing to pay premium for a certified, award-winning firm.",
+    "offer_surface": "Autonomous AI agent deployment for Interior design and decor — targeting: High-ticket projects (BDT 500K+) with manual follow-up and no CRM; Portfolio is website-only — no WhatsApp Business integration, no automated lead qualification; Award-winning firm with 15+ years experience but no public online booking or enquiry flow; Competitors with online consultation booking capture leads BD INTERIOR misses",
+    "website": "https://bdinterior.com/",
+    "verified": true,
+    "verified_at": "2026-08-27T08:25:38.019755+00:00",
+    "pain_signals": [
+      "Award-winning interior firm with 15+ years experience but no public online booking or enquiry flow — intake is a phone number (+8801711-208563) and a cost-calculator widget, not a qualified-lead pipeline",
+      "Portfolio is website-only — no WhatsApp Business integration, no automated lead qualification despite serving corporate giants (BRAC, BAT, Renata, BD Army)",
+      "High-ticket projects (BDT 500K+) with likely manual follow-up and no CRM — 700+ projects means a large past-client base that is never re-engaged or asked for referrals",
+      "The 'Calculate Interior Cost Free!' widget shows intent to capture leads digitally, but there's no agent to follow up on those calculations and book consultations",
+      "Competitors with online consultation booking capture leads BD INTERIOR misses"
+    ],
+    "contact_paths": [
+      {
+        "type": "phone",
+        "value": "+8801711-208563",
+        "source": "web_extract: bdinterior.com header"
+      },
+      {
+        "type": "website",
+        "value": "https://bdinterior.com/",
+        "source": "verified LIVE (HTTP 200)"
+      },
+      {
+        "type": "website_tool",
+        "value": "Calculate Interior Cost Free! widget",
+        "source": "web_extract: bdinterior.com"
+      }
+    ],
+    "pricing_knowledge": {
+      "model": "Project-based interior design & execution (residential, office, restaurant, commercial)",
+      "from_website": [
+        "Free interior cost calculator on site — self-serve price estimation",
+        "2-year after-sales service included",
+        "Full-service: design, planning, 3D views, execution, installation"
+      ],
+      "note": "High-ticket (BDT 500K+ typical). Even one extra closed project per month from recovered leads = BDT 6M+/yr. The cost-calculator widget already generates intent — an AI agent that follows up on every calculation and books a consultation is the highest-leverage automation."
+    },
+    "operational_gaps": [
+      "No online booking or consultation scheduling — intake is phone-only (+8801711-208563)",
+      "Cost-calculator widget captures interest but nothing follows up automatically",
+      "No CRM or lead tracking across 700+ historical projects — massive dormant referral base",
+      "No WhatsApp Business integration despite WhatsApp being the dominant BD messaging channel",
+      "Corporate/institutional enquiries (BRAC, BAT, etc.) likely handled manually with no SLA tracking"
+    ],
+    "competitive_position": "BD INTERIOR sits at the very top of the Bangladeshi interior market — ISO certification, a blue-chip corporate roster, and 15+ years of brand equity that most competitors can't match. Their vulnerability isn't quality or reputation; it's lead capture and follow-up. A firm this established gets constant inbound interest, but without an automated intake + qualification + booking flow, every enquiry that hits a busy phone line or lands after hours is at risk. Smaller, hungrier competitors with online booking and instant WhatsApp responses are quietly capturing the overflow — especially younger, tech-comfortable homeowners who won't call.",
+    "opportunity_size": "With 700+ projects and premium pricing (BDT 500K+), BD INTERIOR likely turns over BDT 350M+ in project value. If phone-only intake and zero automated follow-up lose even 5% of inbound enquiries, that's BDT 17.5M+ in missed project value per year. An AI agent that answers every enquiry instantly, qualifies budget/project type, follows up on every cost-calculator submission, and books consultations would directly recover this leakage — plus reactivate a 550+ client base for referrals and repeat/renovation work.",
+    "how_the_agent_helps": "1. AI enquiry agent on website + WhatsApp that replies to every prospect within seconds, qualifies project type (home/office/restaurant), budget range, and timeline, and books a design consultation — 24/7, no missed leads.\n2. Cost-calculator follow-up agent: every visitor who uses the 'Calculate Interior Cost' widget gets an instant personalized follow-up with next steps and a consultation booking link.\n3. Past-client reactivation agent that checks in with the 550+ historical clients, asks for referrals, and surfaces renovation/repeat opportunities.\n4. Corporate enquiry SLA tracker that ensures institutional leads (BRAC, BAT, etc.) get a response within a guaranteed window.",
+    "demo_scenario": "A homeowner in Gulshan uses BD INTERIOR's 'Calculate Interior Cost' widget at 11pm for a 2,200 SFT apartment. Within 10 seconds the AI agent replies: 'Thanks! For a 2,200 SFT home, most of our clients invest BDT 18–28 lakh depending on finishes. I can have a designer show you 3D concepts for your layout — here are 3 consultation slots this week.' The homeowner books Thursday 4pm. The next morning the BD INTERIOR team gets a structured brief: name, location, SFT, budget range, consultation time — before making a single call. Meanwhile the agent has also flagged 2 past clients in the same area who might want a renovation quote."
+  },
+  "verified": true,
+  "verified_at": "2026-08-27T08:25:38.019755+00:00",
+  "website": "https://bdinterior.com/"
 }

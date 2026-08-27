@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-1346",
+  "lead_id": "LH-0010",
+  "occurred_at": "2026-08-27T08:25:42.244965+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0299.json",
+  "detail": "Evidence: operational — Intake is phone-only ('Call now for free consultation' on 01677139529) — no onli"
+}

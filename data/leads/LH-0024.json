@@ -4,26 +4,37 @@
   "discovered_at": "2026-08-27T03:43:55.676257+00:00",
   "source": "research",
   "lifecycle_status": "QUALIFIED",
-  "score": 90,
+  "score": 100,
   "tier": "A",
   "website": "https://www.jobaidapack.com/",
   "verified": true,
-  "verified_at": "2026-08-27T08:19:09.996610+00:00",
+  "verified_at": "2026-08-27T08:25:38.019755+00:00",
   "lead_type": "client",
   "niche": "Packaging and corrugated box manufacturing",
   "geography": "Dhaka, Bangladesh",
   "pain_signals": [
-    "Leading packaging manufacturer (since 1996) — custom corrugated boxes, mailer boxes, rigid boxes, offset printing",
-    "Quote requests via phone/email only — no online quote form, no automated lead qualification for B2B inquiries",
-    "High-volume orders (BDT25K+ average) — manual quote process is slow, every delayed quote risks losing the order to a faster competitor",
-    "No automated order tracking or project status updates for B2B clients"
+    "Leading packaging manufacturer (since 1996) but quote requests still depend on phone (01568316131) and email (sales@jobaidapack.com) — the 'Get a Quote' page doesn't auto-qualify or respond",
+    "High-volume B2B orders — manual quote turnaround is slow, and every delayed quote risks losing the order to a faster competitor",
+    "No automated order-status communication for B2B clients beyond a basic 'Track Order' page — clients still call/email for updates",
+    "Already has JobaidaPackERP + Track Order + Get-a-Quote — clear automation appetite, but no AI layer tying enquiry→quote→order→status together",
+    "E-commerce and export clients expect instant, self-serve quote and tracking experiences that manual handling can't match"
   ],
-  "offer_surface": "Autonomous AI agent deployment for Packaging and corrugated box manufacturing — targeting: Leading packaging manufacturer (since 1996) — custom corrugated boxes, mailer boxes, rigid boxes, offset printing; Quote requests via phone/email only — no online quote form, no automated lead qualification for B2B inquiries; High-volume orders (BDT25K+ average) — manual quote process is slow, every delayed quote risks losing the order to a faster competitor",
+  "offer_surface": "Autonomous AI agent deployment for Packaging and corrugated box manufacturing — targeting: Leading packaging manufacturer (since 1996) but quote requests still depend on phone (01568316131) and email (sales@jobaidapack.com) — the 'Get a Quote' page doesn't auto-qualify or respond; High-volume B2B orders — manual quote turnaround is slow, and every delayed quote risks losing the order to a faster competitor; No automated order-status communication for B2B clients beyond a basic 'Track Order' page — clients still call/email for updates",
   "contact_paths": [
     {
-      "channel": "phone",
+      "type": "phone",
       "value": "+8801568316131",
-      "confidence": 85
+      "source": "web_extract: jobaidapack.com"
+    },
+    {
+      "type": "email",
+      "value": "sales@jobaidapack.com",
+      "source": "web_extract: jobaidapack.com"
+    },
+    {
+      "type": "website",
+      "value": "https://www.jobaidapack.com/",
+      "source": "verified LIVE (HTTP 200)"
     }
   ],
   "evidence": [
@@ -34,5 +45,56 @@
       "confidence": 95
     }
   ],
-  "notes": ""
+  "notes": "",
+  "business_profile": {
+    "business_overview": "JobaidaPack Packaging Ltd is a leading manufacturer of custom corrugated boxes and packaging materials in Bangladesh, operating since 1996. Their product range spans Regular Slotted Cartons (single/double/triple-wall for shipping and distribution), premium Mailer Boxes for e-commerce and branded unboxing, and ultra-premium Rigid Boxes for jewelry, cosmetics, and luxury branding. Notably, they already have a 'Get a Quote' page, a 'Track Order' feature, and reference a 'JobaidaPackERP' — evidence they've invested in digital tooling and are receptive to automation. Their sales line is 01568316131 with sales@jobaidapack.com. As a B2B manufacturer serving e-commerce brands and exporters, quote speed and order-status communication are their biggest service levers.",
+    "offer_surface": "Autonomous AI agent deployment for Packaging and corrugated box manufacturing — targeting: Quote requests via phone/email only — no automated lead qualification despite a 'Get a Quote' page; High-volume B2B orders — manual quote process is slow, every delayed quote risks losing the order; No automated order-status communication for B2B clients beyond a basic 'Track Order' page; Has JobaidaPackERP + Track Order — already automation-receptive, ripe for an AI layer",
+    "website": "https://www.jobaidapack.com/",
+    "verified": true,
+    "verified_at": "2026-08-27T08:25:38.019755+00:00",
+    "pain_signals": [
+      "Leading packaging manufacturer (since 1996) but quote requests still depend on phone (01568316131) and email (sales@jobaidapack.com) — the 'Get a Quote' page doesn't auto-qualify or respond",
+      "High-volume B2B orders — manual quote turnaround is slow, and every delayed quote risks losing the order to a faster competitor",
+      "No automated order-status communication for B2B clients beyond a basic 'Track Order' page — clients still call/email for updates",
+      "Already has JobaidaPackERP + Track Order + Get-a-Quote — clear automation appetite, but no AI layer tying enquiry→quote→order→status together",
+      "E-commerce and export clients expect instant, self-serve quote and tracking experiences that manual handling can't match"
+    ],
+    "contact_paths": [
+      {
+        "type": "phone",
+        "value": "+8801568316131",
+        "source": "web_extract: jobaidapack.com"
+      },
+      {
+        "type": "email",
+        "value": "sales@jobaidapack.com",
+        "source": "web_extract: jobaidapack.com"
+      },
+      {
+        "type": "website",
+        "value": "https://www.jobaidapack.com/",
+        "source": "verified LIVE (HTTP 200)"
+      }
+    ],
+    "pricing_knowledge": {
+      "model": "B2B custom packaging manufacturing — corrugated cartons, mailer boxes, rigid boxes",
+      "from_website": [
+        "Regular Slotted Cartons (single/double/triple-wall)",
+        "Mailer Boxes for e-commerce / subscription / branded unboxing",
+        "Rigid Boxes for jewelry, cosmetics, luxury branding",
+        "Get a Quote + Track Order + JobaidaPackERP already on site"
+      ],
+      "note": "B2B, repeat-order business. Quote speed wins orders; order-status transparency wins retention. They've already built ERP + tracking — an AI agent on top is a natural, low-friction upsell."
+    },
+    "operational_gaps": [
+      "Quote process is manual (phone/email) despite a 'Get a Quote' page — no instant ballpark or auto-qualification",
+      "No AI layer connecting enquiry → quote → order → status",
+      "Order-status queries still hit staff via phone/email despite a Track Order page",
+      "No automated re-order reminders for repeat B2B clients"
+    ],
+    "competitive_position": "JobaidaPack is an established, nearly 30-year-old manufacturer with a modern web presence and real digital investment (ERP, order tracking, quote page). That puts them ahead of most BD packaging suppliers operationally. The gap is the AI layer: instant quoting, automated status updates, and re-order nudges. Adding an agent would make them the most responsive packaging supplier in the market — a concrete differentiator for winning e-commerce and export accounts.",
+    "opportunity_size": "As a B2B manufacturer with repeat clients, quote turnaround directly drives order volume. If slow manual quoting loses even a few orders per month, and status-query handling consumes staff hours daily, an AI agent that delivers instant ballpark quotes, auto-answers 'where is my order', and prompts re-orders recovers revenue AND frees capacity. For a 30-year manufacturer, this is a retention + efficiency play worth lakhs per month.",
+    "how_the_agent_helps": "1. AI quote agent that captures specs (box type, size, quantity, print) from the 'Get a Quote' page or WhatsApp and returns an instant ballpark, routing serious B2B enquiries to sales.\n2. Order-status agent that answers 'where is my order?' automatically 24/7, pulling from the existing Track Order / ERP data.\n3. Re-order agent that tracks client order cycles and prompts repeat purchases before they run out.\n4. Lead-qualification agent that scores inbound enquiries by volume and urgency so sales focuses on the biggest accounts.",
+    "demo_scenario": "An e-commerce brand needs 5,000 custom mailer boxes and fills JobaidaPack's 'Get a Quote' form at 8pm. In seconds the AI replies: 'For 5,000 full-color mailer boxes (300x220x80mm), ballpark is ৳X–Y depending on board grade. I've logged your specs — a sales rep will confirm exact pricing by 10am. Want me to also set up a re-order reminder for next quarter?' The brand says yes. JobaidaPack wakes up to a qualified, spec-complete order they'd otherwise have quoted a day late — and a locked-in repeat customer."
+  }
 }

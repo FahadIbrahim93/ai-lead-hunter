@@ -53,7 +53,7 @@ class TestLeads:
         assert "A.K. Developments Ltd." in result.stdout
         assert "Mazada Group" in result.stdout
         assert "Hitech Inter Studio" in result.stdout
-        assert "91" in result.stdout
+        assert "100" in result.stdout
         assert "85" in result.stdout
         assert "82" in result.stdout
         assert "78" in result.stdout

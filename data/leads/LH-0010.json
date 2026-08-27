@@ -4,26 +4,32 @@
   "discovered_at": "2026-08-27T02:08:21.816354+00:00",
   "source": "research",
   "lifecycle_status": "QUALIFIED",
-  "score": 90,
+  "score": 100,
   "tier": "A",
   "website": "https://www.rongininterior.com/",
   "verified": true,
-  "verified_at": "2026-08-27T08:18:55.204616+00:00",
+  "verified_at": "2026-08-27T08:25:38.019755+00:00",
   "lead_type": "client",
   "niche": "Interior design and decoration",
   "geography": "Dhaka, Bangladesh",
   "pain_signals": [
-    "Intake is phone-only ('Call now for free consultation') — no online booking or quote-request form",
-    "No visible CRM or lead-tracking; enquiries depend on a single phone line being answered",
-    "Serves residential + commercial + hospitality across all of Bangladesh — high enquiry volume, manual triage",
+    "Intake is phone-only ('Call now for free consultation' on 01677139529) — no online booking or quote-request form",
+    "No visible CRM or lead-tracking; every enquiry depends on a single phone line being answered live",
+    "Serves residential + commercial + hospitality across all of Bangladesh (dozens of service-area pages) — high enquiry volume funneled through one phone number",
+    "Strong SEO footprint drives traffic from many locations, but there's no agent to capture and qualify that traffic after hours",
     "Competitors with online consultation booking capture leads that phone-only intake misses"
   ],
-  "offer_surface": "Autonomous AI agent deployment for Interior design and decoration — targeting: Intake is phone-only ('Call now for free consultation') — no online booking or quote-request form; No visible CRM or lead-tracking; enquiries depend on a single phone line being answered; Serves residential + commercial + hospitality across all of Bangladesh — high enquiry volume, manual triage",
+  "offer_surface": "Autonomous AI agent deployment for Interior design and decoration — targeting: Intake is phone-only ('Call now for free consultation' on 01677139529) — no online booking or quote-request form; No visible CRM or lead-tracking; every enquiry depends on a single phone line being answered live; Serves residential + commercial + hospitality across all of Bangladesh (dozens of service-area pages) — high enquiry volume funneled through one phone number",
   "contact_paths": [
     {
-      "channel": "phone",
+      "type": "phone",
       "value": "+8801677139529",
-      "confidence": 85
+      "source": "web_extract: rongininterior.com"
+    },
+    {
+      "type": "website",
+      "value": "https://www.rongininterior.com/",
+      "source": "verified LIVE (HTTP 200)"
     }
   ],
   "evidence": [
@@ -40,5 +46,50 @@
       "confidence": 95
     }
   ],
-  "notes": "Live website verified. One-stop interior firm (homes, offices, showrooms, restaurants). Site pushes 'Call now for free consultation' — intake is phone-based, no visible online booking/quote form or CRM. Strong AI-agent fit: enquiry intake + quote scheduling."
+  "notes": "Live website verified. One-stop interior firm (homes, offices, showrooms, restaurants). Site pushes 'Call now for free consultation' — intake is phone-based, no visible online booking/quote form or CRM. Strong AI-agent fit: enquiry intake + quote scheduling.",
+  "business_profile": {
+    "business_overview": "Rongin Interior Solution is a trusted interior design company in Dhaka serving homes, offices, showrooms, hotels, resorts, cafés, and restaurants across all of Bangladesh. They position around three pillars — workplaces that inspire success, hospitality spaces guests never forget, and homes that tell your story — and emphasize modern design, smart space planning, custom furniture, budget-friendly service, and timely handover. Their intake is a single phone line (01677139529) with a 'Call now for a free consultation' CTA, and they maintain an extensive SEO footprint with dedicated service-area pages for dozens of Bangladeshi locations (Sylhet, Tangail, Uttara, Wari, Tongi, and many more).",
+    "offer_surface": "Autonomous AI agent deployment for Interior design and decoration — targeting: Intake is phone-only ('Call now for free consultation') — no online booking or quote-request; No visible CRM or lead-tracking; enquiries depend on a single phone line being answered; Serves residential + commercial + hospitality across all of Bangladesh — high enquiry volume; Competitors with online consultation booking capture leads that phone-only intake misses",
+    "website": "https://www.rongininterior.com/",
+    "verified": true,
+    "verified_at": "2026-08-27T08:25:38.019755+00:00",
+    "pain_signals": [
+      "Intake is phone-only ('Call now for free consultation' on 01677139529) — no online booking or quote-request form",
+      "No visible CRM or lead-tracking; every enquiry depends on a single phone line being answered live",
+      "Serves residential + commercial + hospitality across all of Bangladesh (dozens of service-area pages) — high enquiry volume funneled through one phone number",
+      "Strong SEO footprint drives traffic from many locations, but there's no agent to capture and qualify that traffic after hours",
+      "Competitors with online consultation booking capture leads that phone-only intake misses"
+    ],
+    "contact_paths": [
+      {
+        "type": "phone",
+        "value": "+8801677139529",
+        "source": "web_extract: rongininterior.com"
+      },
+      {
+        "type": "website",
+        "value": "https://www.rongininterior.com/",
+        "source": "verified LIVE (HTTP 200)"
+      }
+    ],
+    "pricing_knowledge": {
+      "model": "Project-based interior design (residential, office, hospitality) — 'budget-friendly' positioning",
+      "from_website": [
+        "Free consultation via phone",
+        "Custom furniture included",
+        "Homes, offices, showrooms, hotels, resorts, cafés, restaurants"
+      ],
+      "note": "Broad geographic + segment coverage means constant inbound enquiries. A single phone line is a hard bottleneck — every missed call is a lost project."
+    },
+    "operational_gaps": [
+      "Phone-only intake (01677139529) — no online booking or quote form",
+      "No CRM or lead tracking",
+      "High enquiry volume from dozens of service-area pages funneled to one phone line",
+      "No after-hours capture — enquiries outside business hours are lost"
+    ],
+    "competitive_position": "Rongin competes with BD INTERIOR (ISO-certified, corporate roster) and many smaller Dhaka studios. Their strength is breadth — residential, commercial, and hospitality across the whole country with strong SEO. Their weakness is intake: one phone line. Competitors offering online booking and instant WhatsApp responses capture the enquiries Rongin misses, especially after hours.",
+    "opportunity_size": "With nationwide coverage and three high-value segments (home, office, hospitality), Rongin likely fields dozens of enquiries weekly. If phone-only intake misses even 20% (busy line, after hours, no callback), that's several lost projects per month at BDT 300K-1M each = BDT 5-10M+ in annual leakage. An AI agent answering every enquiry instantly and booking consultations recovers this directly.",
+    "how_the_agent_helps": "1. AI enquiry agent on website + WhatsApp that answers every prospect instantly, qualifies project type (home/office/hospitality), location, and budget, and books a free consultation.\n2. After-hours capture agent that logs and qualifies enquiries that arrive outside business hours, then schedules callbacks.\n3. Multi-location routing that tags each enquiry by service area so the right team follows up.\n4. Follow-up agent that nurtures prospects who enquire but don't book immediately.",
+    "demo_scenario": "A café owner in Sylhet finds Rongin's 'interior design in Sylhet' page at 9pm and wants a quote for a 1,200 SFT space. Instead of hitting a dead phone line, the AI agent replies in seconds: 'For a 1,200 SFT café, most clients invest BDT 8-15 lakh. I can have a designer call you — here are 3 slots tomorrow.' The owner books 11am. Rongin wakes up to a qualified, booked hospitality lead they would have otherwise lost to the night."
+  }
 }

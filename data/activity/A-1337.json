@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-1337",
+  "lead_id": "LH-0006",
+  "occurred_at": "2026-08-27T08:25:41.716266+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0294.json",
+  "detail": "Evidence: operational — High-value transactions with manual coordination risk leads falling through to f"
+}

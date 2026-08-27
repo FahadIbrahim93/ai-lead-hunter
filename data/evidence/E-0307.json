@@ -1,0 +1,10 @@
+{
+  "evidence_id": "E-0307",
+  "lead_id": "LH-0024",
+  "kind": "operational",
+  "found_at": "2026-08-27T08:25:42.718583+00:00",
+  "source_url": "",
+  "summary": "Already has JobaidaPackERP + Track Order + Get-a-Quote — clear automation appetite, but no AI layer tying enquiry→quote→order→status together",
+  "confidence": 75,
+  "raw": ""
+}

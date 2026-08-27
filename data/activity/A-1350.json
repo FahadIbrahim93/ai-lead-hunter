@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-1350",
+  "lead_id": "LH-0010",
+  "occurred_at": "2026-08-27T08:25:42.388619+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0303.json",
+  "detail": "Evidence: operational — Competitors with online consultation booking capture leads that phone-only intak"
+}

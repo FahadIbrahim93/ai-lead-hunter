@@ -1,0 +1,10 @@
+{
+  "evidence_id": "E-0306",
+  "lead_id": "LH-0024",
+  "kind": "operational",
+  "found_at": "2026-08-27T08:25:42.682521+00:00",
+  "source_url": "",
+  "summary": "No automated order-status communication for B2B clients beyond a basic 'Track Order' page — clients still call/email for updates",
+  "confidence": 75,
+  "raw": ""
+}

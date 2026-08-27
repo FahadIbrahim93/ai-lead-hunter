@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-1345",
+  "lead_id": "LH-0001",
+  "occurred_at": "2026-08-27T08:25:42.080796+00:00",
+  "actor": "hermes",
+  "action": "status_changed",
+  "resource": "lifecycle",
+  "detail": "WON → QUALIFIED"
+}

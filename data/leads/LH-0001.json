@@ -3,8 +3,8 @@
   "business_name": "Best Interior Design",
   "discovered_at": "2026-08-27T00:00:00+06:00",
   "source": "slack",
-  "lifecycle_status": "WON",
-  "score": 91,
+  "lifecycle_status": "QUALIFIED",
+  "score": 100,
   "tier": "A",
   "niche": "Interior design and decor",
   "geography": "Bangladesh",
@@ -17,14 +17,14 @@
   "offer_surface": "Autonomous AI agent deployment for Interior design and decor — targeting: No visible online booking or enquiry flow — customers can't request a quote digitally; Instagram-only presence means discovery depends on algorithmic reach, not owned pipeline; High-ticket service (BDT 500K+ projects) with likely manual follow-up and no CRM",
   "contact_paths": [
     {
-      "channel": "instagram",
-      "handle": "@bestinteriordesign",
-      "confidence": 85
+      "type": "instagram",
+      "value": "@bestinteriordesign",
+      "source": "web_search"
     },
     {
-      "channel": "whatsapp",
+      "type": "whatsapp",
       "value": "+880XXXXXXXXXX",
-      "confidence": 70
+      "source": "unverified — needs confirmation"
     }
   ],
   "evidence": [
@@ -48,5 +48,47 @@
     }
   ],
   "notes": "Top score (91/A). Strong fit: high-ticket, observable pain (no digital intake), clear AI agent offer (enquiry intake + CRM + consultation scheduler). Priority one for deep audit and demo.",
-  "lead_type": "client"
+  "lead_type": "client",
+  "business_profile": {
+    "business_overview": "Best Interior Design is a Dhaka-based interior design and decor studio serving residential clients with high-ticket projects (BDT 500K+). Their discovery and portfolio presentation is concentrated on Instagram, which means their lead flow depends on algorithmic reach rather than an owned, controllable pipeline. They have no visible online booking or digital quote request flow, and their portfolio is fragmented across social posts rather than a persuasive standalone site with a clear conversion path.",
+    "offer_surface": "Autonomous AI agent deployment for Interior design and decor — targeting: No visible online booking or enquiry flow — customers can't request a quote digitally; Instagram-only presence means discovery depends on algorithmic reach, not owned pipeline; High-ticket service (BDT 500K+ projects) with likely manual follow-up and no CRM; Portfolio presentation fragmented across social posts, not a persuasive standalone site",
+    "website": "",
+    "verified": false,
+    "verified_at": "",
+    "pain_signals": [
+      "No visible online booking or enquiry flow — customers can't request a quote digitally",
+      "Instagram-only presence means discovery depends on algorithmic reach, not owned pipeline",
+      "High-ticket service (BDT 500K+ projects) with likely manual follow-up and no CRM",
+      "Portfolio presentation fragmented across social posts, not a persuasive standalone site"
+    ],
+    "contact_paths": [
+      {
+        "type": "instagram",
+        "value": "@bestinteriordesign",
+        "source": "web_search"
+      },
+      {
+        "type": "whatsapp",
+        "value": "+880XXXXXXXXXX",
+        "source": "unverified — needs confirmation"
+      }
+    ],
+    "pricing_knowledge": {
+      "model": "Project-based interior design (residential)",
+      "from_website": [
+        "High-ticket projects, BDT 500K+ typical"
+      ],
+      "note": "Instagram-driven discovery with no owned capture channel. Every interested follower who DMs and doesn't get an instant reply is a lost BDT 500K+ project."
+    },
+    "operational_gaps": [
+      "No online booking or quote-request flow",
+      "Instagram DM is the only intake — slow replies lose leads",
+      "No CRM or lead tracking",
+      "No owned website/pipeline — algorithm-dependent discovery"
+    ],
+    "competitive_position": "Best Interior Design competes in a crowded Dhaka interior market against established firms like BD INTERIOR and Rongin that have websites and phone intake. Their Instagram-first approach gives them visual reach but no owned conversion path. An AI agent that answers every DM instantly and books consultations would turn their social reach into a reliable pipeline.",
+    "opportunity_size": "At BDT 500K+ per project, even 1-2 extra closed projects per month from recovered Instagram DMs = BDT 6-12M+ in additional annual revenue. An AI DM-response + booking agent is the highest-leverage fix for an Instagram-dependent studio.",
+    "how_the_agent_helps": "1. AI Instagram DM agent that replies to every enquiry instantly, qualifies project type and budget, and books a design consultation.\n2. Portfolio-to-lead agent that engages followers who like/comment on project posts.\n3. Follow-up agent that nurtures prospects who enquire but don't book immediately.",
+    "demo_scenario": "A follower sees Best Interior Design's latest living-room reveal on Instagram and DMs at midnight: 'How much for a 1500 SFT flat?' In seconds the AI replies with a ballpark range, asks 2 qualifying questions, and offers 3 consultation slots. The follower books one — a BDT 500K+ project captured while the studio slept."
+  }
 }

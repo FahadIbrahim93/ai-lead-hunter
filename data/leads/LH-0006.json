@@ -9,22 +9,28 @@
   "niche": "Real estate portal and development",
   "geography": "Bangladesh",
   "pain_signals": [
-    "Property portal connects buyers/sellers but likely lacks automated buyer status updates",
-    "No visible buyer payment milestone tracking or construction progress dashboard",
-    "High-value transactions with manual coordination risk leads falling through",
-    "Competitor BengalTech advertises real estate ERP — gap exists for buyer-facing automation"
+    "Property portal connects buyers/sellers but relies on a single WhatsApp line (+8801896280607) and phone for every enquiry — no automated buyer qualification or instant response",
+    "No visible buyer status updates or automated follow-up — serious buyers enquiring about BDT 70M listings get manual, slow coordination",
+    "Active on 6 channels (Facebook, X, Instagram, LinkedIn, YouTube, WhatsApp) but no unified agent to answer enquiries across them — leads scatter and go cold",
+    "Video property tours drive interest but there's no agent to capture and qualify viewers into booked viewings",
+    "High-value transactions with manual coordination risk leads falling through to faster-responding portals"
   ],
-  "offer_surface": "Autonomous AI agent deployment for Real estate portal and development — targeting: Property portal connects buyers/sellers but likely lacks automated buyer status updates; No visible buyer payment milestone tracking or construction progress dashboard; High-value transactions with manual coordination risk leads falling through",
+  "offer_surface": "Autonomous AI agent deployment for Real estate portal and development — targeting: Property portal connects buyers/sellers but relies on a single WhatsApp line (+8801896280607) and phone for every enquiry — no automated buyer qualification or instant response; No visible buyer status updates or automated follow-up — serious buyers enquiring about BDT 70M listings get manual, slow coordination; Active on 6 channels (Facebook, X, Instagram, LinkedIn, YouTube, WhatsApp) but no unified agent to answer enquiries across them — leads scatter and go cold",
   "contact_paths": [
     {
-      "channel": "website",
-      "url": "https://www.notunthikana.com/",
-      "confidence": 80
+      "type": "whatsapp",
+      "value": "+8801896280607",
+      "source": "web_extract: notunthikana.com footer (wa.me/+8801896280607)"
     },
     {
-      "channel": "linkedin",
-      "handle": "notun-thikana-properties",
-      "confidence": 65
+      "type": "website",
+      "value": "https://notunthikana.com/",
+      "source": "verified LIVE (HTTP 200)"
+    },
+    {
+      "type": "social",
+      "value": "FB/X/IG/LinkedIn/YouTube @NotunThikana",
+      "source": "web_extract: notunthikana.com footer"
     }
   ],
   "evidence": [
@@ -42,5 +48,60 @@
     }
   ],
   "notes": "Auto-discovered from live market research + referral signals.",
-  "lead_type": "client"
+  "lead_type": "client",
+  "business_profile": {
+    "business_overview": "Notun Thikana Properties Ltd. is a fast-growing real estate portal in Bangladesh that connects buyers, sellers, and renters across Dhaka (Bashundhara, Dhanmondi, Gulshan, and beyond). They list residential and commercial properties for sale and rent, with listing prices ranging from BDT 50,000/month rentals up to BDT 70M+ sales. They maintain an active multi-channel presence — Facebook, Twitter/X, Instagram, LinkedIn, YouTube, and a WhatsApp line (+8801896280607) — and produce video property tours. As a portal, their revenue depends on matching serious buyers/renters to listings fast, which makes lead response speed and buyer follow-up the single biggest driver of their success.",
+    "offer_surface": "Autonomous AI agent deployment for Real estate portal and development — targeting: Property portal connects buyers/sellers but lacks automated buyer status updates; No visible buyer payment milestone tracking or construction progress dashboard; High-value transactions with manual coordination risk leads falling through; Multi-channel presence (FB, IG, YouTube, WhatsApp) with no unified lead-response agent",
+    "website": "https://notunthikana.com/",
+    "verified": true,
+    "verified_at": "2026-08-27T08:25:38.019755+00:00",
+    "pain_signals": [
+      "Property portal connects buyers/sellers but relies on a single WhatsApp line (+8801896280607) and phone for every enquiry — no automated buyer qualification or instant response",
+      "No visible buyer status updates or automated follow-up — serious buyers enquiring about BDT 70M listings get manual, slow coordination",
+      "Active on 6 channels (Facebook, X, Instagram, LinkedIn, YouTube, WhatsApp) but no unified agent to answer enquiries across them — leads scatter and go cold",
+      "Video property tours drive interest but there's no agent to capture and qualify viewers into booked viewings",
+      "High-value transactions with manual coordination risk leads falling through to faster-responding portals"
+    ],
+    "contact_paths": [
+      {
+        "type": "whatsapp",
+        "value": "+8801896280607",
+        "source": "web_extract: notunthikana.com footer (wa.me/+8801896280607)"
+      },
+      {
+        "type": "website",
+        "value": "https://notunthikana.com/",
+        "source": "verified LIVE (HTTP 200)"
+      },
+      {
+        "type": "social",
+        "value": "FB/X/IG/LinkedIn/YouTube @NotunThikana",
+        "source": "web_extract: notunthikana.com footer"
+      }
+    ],
+    "pricing_knowledge": {
+      "model": "Real estate portal — listings for sale (up to BDT 70M) and rent (BDT 50K+/month), plus buyer/seller matching",
+      "from_website": [
+        "Sale listings up to BDT 70,000,000",
+        "Rent listings from BDT 50,000/month (e.g. 2600 SFT Bashundhara, 2850 SFT Dhanmondi furnished at 150K)",
+        "Residential + commercial property types",
+        "Video property tours on YouTube"
+      ],
+      "note": "High-value, low-frequency transactions. A single missed buyer enquiry on a BDT 2-7 crore listing is a massive lost commission. Response speed is everything — the portal that answers first and books the viewing first wins the deal."
+    },
+    "operational_gaps": [
+      "Single WhatsApp line + phone for all buyer/seller enquiries — no instant automated response",
+      "No buyer qualification (budget, location, timeline) before a human gets involved",
+      "No automated viewing scheduling — buyers must coordinate manually",
+      "6 social channels with no unified inbox or response agent — enquiries scatter",
+      "No buyer follow-up sequence for leads who enquire but don't immediately book a viewing"
+    ],
+    "competitive_position": "Notun Thikana competes with established portals (Bproperty, Bikroy, Lamudi) that have larger listing volumes and, in some cases, better lead tooling. Their edge is a curated, active, video-rich presence and personal service. But in a market where buyers message 3-4 portals at once, the one that responds in seconds and books the viewing wins. Without an AI agent answering every WhatsApp/social enquiry instantly and qualifying buyers, Notun Thikana loses the speed race on exactly the high-value listings where commission is biggest.",
+    "opportunity_size": "With listings up to BDT 70M and typical portal commissions of 1-2%, a single closed sale is worth BDT 70K-1.4M in commission. If slow/manual enquiry handling loses even 2-3 serious buyers per month to faster portals, that's BDT 2-4M+ in lost commission annually. An AI agent that answers every enquiry instantly, qualifies budget/location/timeline, and books viewings would directly recover this — and nurture the long tail of buyers who aren't ready today.",
+    "how_the_agent_helps": "1. AI buyer-response agent on WhatsApp + all social channels that replies to every enquiry in seconds, qualifies budget, preferred area, and timeline, and matches them to live listings.\n2. Viewing scheduler that offers available slots and books property viewings automatically, sending reminders to cut no-shows.\n3. Buyer follow-up agent that nurtures enquirers who don't book immediately — sends new matching listings, price-drop alerts, and video tours over time.\n4. Seller intake agent that captures new listing requests with photos, location, and price, feeding the portal pipeline without manual data entry.",
+    "demo_scenario": "A buyer watches Notun Thikana's YouTube tour of a 2850 SFT furnished Dhanmondi apartment (BDT 150K/month) and messages the WhatsApp line at 10pm: 'Is this still available?' In 8 seconds the AI replies: 'Yes! 2850 SFT, 3 bed, furnished, ৳150,000/month in Dhanmondi. Would you like a viewing? I have Saturday 11am or Sunday 3pm.' The buyer picks Saturday. The agent books it, sends a calendar invite + location pin, and logs a structured brief (budget, move-in timeline, family size) for the agent handling the viewing. Zero human effort, and the buyer never had a chance to message a competing portal."
+  },
+  "verified": true,
+  "verified_at": "2026-08-27T08:25:38.019755+00:00",
+  "website": "https://notunthikana.com/"
 }
