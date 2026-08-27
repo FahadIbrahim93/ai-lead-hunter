@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-1633",
+  "lead_id": "LH-0013",
+  "occurred_at": "2026-08-27T08:32:25.985549+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0410.json",
+  "detail": "Evidence: operational — After-hours enquiries go unanswered when the chat widget is unstaffed"
+}

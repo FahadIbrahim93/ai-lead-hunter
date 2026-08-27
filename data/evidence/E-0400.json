@@ -1,0 +1,10 @@
+{
+  "evidence_id": "E-0400",
+  "lead_id": "LH-0012",
+  "kind": "operational",
+  "found_at": "2026-08-27T08:32:25.206004+00:00",
+  "source_url": "",
+  "summary": "No patient follow-up or recall automation for repeat tests/checkups",
+  "confidence": 75,
+  "raw": ""
+}

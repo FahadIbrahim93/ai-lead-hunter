@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-1624",
+  "lead_id": "LH-0020",
+  "occurred_at": "2026-08-27T08:32:25.515735+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0403.json",
+  "detail": "Evidence: operational — No visible AI-driven lead qualification or automated project scoping"
+}

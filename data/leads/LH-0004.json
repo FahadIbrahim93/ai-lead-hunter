@@ -4,27 +4,22 @@
   "discovered_at": "2026-08-27T00:00:00+06:00",
   "source": "slack",
   "lifecycle_status": "QUALIFIED",
-  "score": 78,
+  "score": 75,
   "tier": "B",
   "niche": "IT and software services",
   "geography": "Bangladesh",
   "pain_signals": [
-    "Service business likely carries project intake friction — prospects request quotes, follow-ups get lost",
-    "No visible automated lead qualification or proposal generation from public presence",
-    "Reputational risk from inconsistent response quality across channels",
-    "Potential to productize service delivery with an AI agent front-end"
+    "IT/software leads arrive via website form + phone with no automated qualification",
+    "No automated discovery-call scheduling or reminders",
+    "Leads fall through without systematic follow-up",
+    "No project-scoping intake before sales spends time"
   ],
-  "offer_surface": "Autonomous AI agent deployment for IT and software services — targeting: Service business likely carries project intake friction — prospects request quotes, follow-ups get lost; No visible automated lead qualification or proposal generation from public presence; Reputational risk from inconsistent response quality across channels",
+  "offer_surface": "Autonomous AI agent deployment for IT and software services — targeting: IT/software leads arrive via website form + phone with no automated qualification; No automated discovery-call scheduling or reminders; Leads fall through without systematic follow-up",
   "contact_paths": [
     {
-      "channel": "website",
-      "url": "hitechinterstudio.com",
-      "confidence": 75
-    },
-    {
-      "channel": "linkedin",
-      "handle": "hitech-inter-studio",
-      "confidence": 70
+      "type": "website",
+      "value": "unverified — needs confirmation",
+      "source": "research"
     }
   ],
   "evidence": [
@@ -42,5 +37,42 @@
     }
   ],
   "notes": "Score 78/B — borderline. IT services is a natural fit for AI agent productization, but pain observability is lower than LH-0001/0002. Monitor and audit before investing demo effort.",
-  "lead_type": "client"
+  "lead_type": "client",
+  "business_profile": {
+    "business_overview": "Hitech Inter Studio is an IT and software services company in Bangladesh providing software and tech solutions. IT firms depend on inbound leads via website forms and phone, and the bottleneck is qualifying leads, scheduling discovery calls, and following up so nothing falls through the pipeline.",
+    "offer_surface": "Autonomous AI agent deployment for IT and software services — targeting: Lead qualification of inbound enquiries; Discovery-call scheduling with automated reminders; Automated follow-up so no lead falls through; Project scoping intake before sales engagement",
+    "website": "",
+    "verified": false,
+    "verified_at": "",
+    "pain_signals": [
+      "IT/software leads arrive via website form + phone with no automated qualification",
+      "No automated discovery-call scheduling or reminders",
+      "Leads fall through without systematic follow-up",
+      "No project-scoping intake before sales spends time"
+    ],
+    "contact_paths": [
+      {
+        "type": "website",
+        "value": "unverified — needs confirmation",
+        "source": "research"
+      }
+    ],
+    "pricing_knowledge": {
+      "model": "Project-based IT/software services",
+      "from_website": [
+        "inbound form + phone intake"
+      ],
+      "note": "IT projects are high-value. Qualifying leads and booking discovery calls faster wins projects. An AI intake agent is a natural fit for an IT firm."
+    },
+    "operational_gaps": [
+      "No lead qualification",
+      "No automated scheduling",
+      "No systematic follow-up",
+      "No scoping intake"
+    ],
+    "competitive_position": "IT firms win on responsiveness. An AI intake agent that qualifies and books discovery calls faster gives Hitech an edge over slower competitors.",
+    "opportunity_size": "High-value IT projects mean each lost lead is costly. An AI intake agent recovers leads that fall through and books more discovery calls.",
+    "how_the_agent_helps": "1. AI lead-qualification agent.\n2. Discovery-call scheduling + reminders.\n3. Automated follow-up.\n4. Project scoping intake.",
+    "demo_scenario": "A prospect submits a software enquiry at 9pm. The AI qualifies the project scope and books a discovery call for the next morning with a prep brief — Hitech responds before competitors."
+  }
 }

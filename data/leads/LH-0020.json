@@ -4,31 +4,31 @@
   "discovered_at": "2026-08-27T03:02:59.933376+00:00",
   "source": "research",
   "lifecycle_status": "QUALIFIED",
-  "score": 75,
-  "tier": "B",
+  "score": 85,
+  "tier": "A",
   "website": "https://faraitltd.com/",
   "verified": true,
-  "verified_at": "2026-08-27T08:19:07.072672+00:00",
+  "verified_at": "2026-08-27T08:32:20.272654+00:00",
   "lead_type": "client",
   "niche": "IT software and web development company",
   "geography": "Dhaka, Bangladesh",
   "pain_signals": [
-    "Inbound web development leads come via website form only — no AI-driven qualification or automated project scoping",
-    "High-value web/software projects require hand-crafted proposals — slow, inconsistent, resource-intensive",
-    "1200+ clients served indicates strong inbound pipeline but manual conversion bottleneck",
-    "Competitors with automated proposal routing and lead triage capture leads that manual intake misses"
+    "Web development and software company, 1200+ clients served — inbound leads via website form",
+    "No visible AI-driven lead qualification or automated project scoping",
+    "High-value projects depend on manual intake and proposal routing",
+    "1200+ past-client base never systematically re-engaged for repeat/upsell work"
   ],
-  "offer_surface": "Autonomous AI agent deployment for IT software and web development company — targeting: Inbound web development leads come via website form only — no AI-driven qualification or automated project scoping; High-value web/software projects require hand-crafted proposals — slow, inconsistent, resource-intensive; 1200+ clients served indicates strong inbound pipeline but manual conversion bottleneck",
+  "offer_surface": "Autonomous AI agent deployment for IT software and web development company — targeting: Web development and software company, 1200+ clients served — inbound leads via website form; No visible AI-driven lead qualification or automated project scoping; High-value projects depend on manual intake and proposal routing",
   "contact_paths": [
     {
-      "channel": "phone",
-      "value": "+8801762767322",
-      "confidence": 85
+      "type": "website_form",
+      "value": "faraitltd.com",
+      "source": "web_extract"
     },
     {
-      "channel": "email",
-      "value": "prioislam7@gmail.com",
-      "confidence": 90
+      "type": "website",
+      "value": "https://faraitltd.com/",
+      "source": "verified LIVE (HTTP 200)"
     }
   ],
   "evidence": [
@@ -39,5 +39,48 @@
       "confidence": 95
     }
   ],
-  "notes": ""
+  "notes": "",
+  "business_profile": {
+    "business_overview": "Fara IT Limited is a web development and software company in Bangladesh that has served 1200+ clients with custom web development and software solutions. Inbound leads arrive via a website form. There is no visible AI-driven lead qualification or automated project scoping, and high-value projects depend on manual intake and proposal routing.",
+    "offer_surface": "Autonomous AI agent deployment for IT software and web development — targeting: AI-driven lead qualification of inbound enquiries; Automated project scoping before sales engagement; Proposal routing and follow-up; Re-engagement of the 1200+ past-client base for repeat/upsell work",
+    "website": "https://faraitltd.com/",
+    "verified": true,
+    "verified_at": "2026-08-27T08:32:20.272654+00:00",
+    "pain_signals": [
+      "Web development and software company, 1200+ clients served — inbound leads via website form",
+      "No visible AI-driven lead qualification or automated project scoping",
+      "High-value projects depend on manual intake and proposal routing",
+      "1200+ past-client base never systematically re-engaged for repeat/upsell work"
+    ],
+    "contact_paths": [
+      {
+        "type": "website_form",
+        "value": "faraitltd.com",
+        "source": "web_extract"
+      },
+      {
+        "type": "website",
+        "value": "https://faraitltd.com/",
+        "source": "verified LIVE (HTTP 200)"
+      }
+    ],
+    "pricing_knowledge": {
+      "model": "Project-based web development + software",
+      "from_website": [
+        "1200+ clients",
+        "website form intake"
+      ],
+      "note": "High-value projects + a 1200+ client base. AI lead qualification + scoping + past-client re-engagement are high-leverage for a dev shop."
+    },
+    "operational_gaps": [
+      "No AI lead qualification",
+      "No automated project scoping",
+      "Manual proposal routing",
+      "No past-client re-engagement"
+    ],
+    "competitive_position": "Fara competes with other BD dev shops. An AI intake agent that qualifies and scopes projects faster — plus re-engages 1200+ past clients — gives a concrete edge.",
+    "opportunity_size": "High-value projects mean each lost lead is costly, and the 1200+ client base is a dormant repeat-revenue asset. An AI agent recovers lost leads and reactivates past clients.",
+    "how_the_agent_helps": "1. AI lead-qualification agent.\n2. Automated project scoping.\n3. Proposal routing + follow-up.\n4. Past-client re-engagement for upsells.",
+    "demo_scenario": "A prospect submits a web project enquiry at night. The AI scopes the project, qualifies budget, and books a discovery call with a prep brief. Separately, the agent re-engages a past client whose site is due for an upgrade — Fara wins new + repeat work."
+  }
 }

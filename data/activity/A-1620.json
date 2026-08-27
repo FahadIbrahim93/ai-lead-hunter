@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-1620",
+  "lead_id": "LH-0012",
+  "occurred_at": "2026-08-27T08:32:25.261017+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0401.json",
+  "detail": "Evidence: operational — High patient volume with manual appointment + report coordination"
+}

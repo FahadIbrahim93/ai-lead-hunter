@@ -1,0 +1,10 @@
+{
+  "evidence_id": "E-0397",
+  "lead_id": "LH-0012",
+  "kind": "operational",
+  "found_at": "2026-08-27T08:32:25.084737+00:00",
+  "source_url": "",
+  "summary": "Online appointment form is a basic 'Send Request' — no instant confirmation, no scheduling intelligence",
+  "confidence": 75,
+  "raw": ""
+}

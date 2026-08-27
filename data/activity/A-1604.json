@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-1604",
+  "lead_id": "LH-0003",
+  "occurred_at": "2026-08-27T08:32:24.390991+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0389.json",
+  "detail": "Evidence: operational — Import/export trading with shipment coordination handled manually across multipl"
+}

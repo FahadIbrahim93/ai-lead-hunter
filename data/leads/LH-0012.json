@@ -4,26 +4,37 @@
   "discovered_at": "2026-08-27T02:08:21.872150+00:00",
   "source": "research",
   "lifecycle_status": "QUALIFIED",
-  "score": 75,
-  "tier": "B",
+  "score": 85,
+  "tier": "A",
   "website": "https://padma-bd.com/",
   "verified": true,
-  "verified_at": "2026-08-27T08:18:56.961982+00:00",
+  "verified_at": "2026-08-27T08:32:20.272654+00:00",
   "lead_type": "client",
   "niche": "Healthcare / diagnostic centre",
   "geography": "Dhaka, Bangladesh",
   "pain_signals": [
-    "Online appointment form is a basic 'Send Request' — no instant confirmation or real-time slot selection",
-    "No automated report-delivery notification; patients must check a separate portal",
-    "Hotline runs 7am-11pm but booking outside those hours is unattended",
-    "No patient follow-up or recall automation for repeat tests"
+    "Online appointment form is a basic 'Send Request' — no instant confirmation, no scheduling intelligence",
+    "Hotline 7am-11pm but no 24/7 automated booking or enquiry handling",
+    "No automated report-delivery notifications — patients call to ask if results are ready",
+    "No patient follow-up or recall automation for repeat tests/checkups",
+    "High patient volume with manual appointment + report coordination"
   ],
-  "offer_surface": "Autonomous AI agent deployment for Healthcare / diagnostic centre — targeting: Online appointment form is a basic 'Send Request' — no instant confirmation or real-time slot selection; No automated report-delivery notification; patients must check a separate portal; Hotline runs 7am-11pm but booking outside those hours is unattended",
+  "offer_surface": "Autonomous AI agent deployment for Healthcare / diagnostic centre — targeting: Online appointment form is a basic 'Send Request' — no instant confirmation, no scheduling intelligence; Hotline 7am-11pm but no 24/7 automated booking or enquiry handling; No automated report-delivery notifications — patients call to ask if results are ready",
   "contact_paths": [
     {
-      "channel": "email",
+      "type": "phone",
+      "value": "0961-1113355",
+      "source": "web_extract"
+    },
+    {
+      "type": "email",
       "value": "info@padma-bd.com",
-      "confidence": 90
+      "source": "web_extract"
+    },
+    {
+      "type": "website",
+      "value": "https://padma-bd.com/",
+      "source": "verified LIVE (HTTP 200)"
     }
   ],
   "evidence": [
@@ -40,5 +51,54 @@
       "confidence": 95
     }
   ],
-  "notes": "Live website verified. Has an online appointment form but it is a basic 'Send Request' (no instant confirmation, no scheduling intelligence). Hotline 7am-11pm. AI-agent fit: appointment booking with real-time confirmation, report-delivery notifications, patient follow-up."
+  "notes": "Live website verified. Has an online appointment form but it is a basic 'Send Request' (no instant confirmation, no scheduling intelligence). Hotline 7am-11pm. AI-agent fit: appointment booking with real-time confirmation, report-delivery notifications, patient follow-up.",
+  "business_profile": {
+    "business_overview": "Padma Diagnostic Centre Ltd is a healthcare diagnostic centre in Dhaka offering lab tests and consultations. They have an online appointment form (a basic 'Send Request' with no instant confirmation or scheduling intelligence) and a hotline (7am-11pm). Diagnostic centres handle high patient volume with appointment booking, report delivery, and follow-up — all largely manual.",
+    "offer_surface": "Autonomous AI agent deployment for Healthcare / diagnostic centre — targeting: Appointment booking with real-time confirmation and scheduling intelligence; Report-ready notifications delivered automatically; Patient follow-up and recall automation; Test enquiry handling with price guidance",
+    "website": "https://padma-bd.com/",
+    "verified": true,
+    "verified_at": "2026-08-27T08:32:20.272654+00:00",
+    "pain_signals": [
+      "Online appointment form is a basic 'Send Request' — no instant confirmation, no scheduling intelligence",
+      "Hotline 7am-11pm but no 24/7 automated booking or enquiry handling",
+      "No automated report-delivery notifications — patients call to ask if results are ready",
+      "No patient follow-up or recall automation for repeat tests/checkups",
+      "High patient volume with manual appointment + report coordination"
+    ],
+    "contact_paths": [
+      {
+        "type": "phone",
+        "value": "0961-1113355",
+        "source": "web_extract"
+      },
+      {
+        "type": "email",
+        "value": "info@padma-bd.com",
+        "source": "web_extract"
+      },
+      {
+        "type": "website",
+        "value": "https://padma-bd.com/",
+        "source": "verified LIVE (HTTP 200)"
+      }
+    ],
+    "pricing_knowledge": {
+      "model": "Fee-for-service diagnostic tests + consultations",
+      "from_website": [
+        "online appointment form (basic)",
+        "hotline 7am-11pm"
+      ],
+      "note": "High patient volume. Real-time booking confirmation + automated report notifications + recall are the highest-leverage automations for a diagnostic centre."
+    },
+    "operational_gaps": [
+      "Basic 'Send Request' form, no instant confirmation",
+      "No 24/7 automated booking",
+      "No automated report notifications",
+      "No patient recall"
+    ],
+    "competitive_position": "Padma competes with other Dhaka diagnostic centres. An AI agent with real-time booking and automated report delivery would make them more responsive and reduce inbound status calls.",
+    "opportunity_size": "High patient volume means booking friction and report-status calls consume significant staff time. An AI booking + report-notification + recall agent recovers this and improves patient experience.",
+    "how_the_agent_helps": "1. AI booking agent with real-time confirmation.\n2. Automated report-ready notifications.\n3. Patient recall + follow-up.\n4. Test enquiry handling with price guidance.",
+    "demo_scenario": "A patient books a blood test at 10pm via the AI agent and gets instant confirmation with a slot. When results are ready, the agent auto-notifies them. A 6-month recall is scheduled. Padma handled booking, delivery, and recall with zero staff calls."
+  }
 }

@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-1618",
+  "lead_id": "LH-0012",
+  "occurred_at": "2026-08-27T08:32:25.184000+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0399.json",
+  "detail": "Evidence: operational — No automated report-delivery notifications — patients call to ask if results are"
+}

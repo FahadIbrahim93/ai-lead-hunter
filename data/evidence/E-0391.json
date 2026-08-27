@@ -1,0 +1,10 @@
+{
+  "evidence_id": "E-0391",
+  "lead_id": "LH-0003",
+  "kind": "operational",
+  "found_at": "2026-08-27T08:32:24.452512+00:00",
+  "source_url": "",
+  "summary": "No automated client status updates — every buyer/supplier update is manual",
+  "confidence": 75,
+  "raw": ""
+}

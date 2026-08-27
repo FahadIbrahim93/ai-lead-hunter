@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-1616",
+  "lead_id": "LH-0012",
+  "occurred_at": "2026-08-27T08:32:25.103813+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0397.json",
+  "detail": "Evidence: operational — Online appointment form is a basic 'Send Request' — no instant confirmation, no "
+}

@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-1617",
+  "lead_id": "LH-0012",
+  "occurred_at": "2026-08-27T08:32:25.141869+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0398.json",
+  "detail": "Evidence: operational — Hotline 7am-11pm but no 24/7 automated booking or enquiry handling"
+}

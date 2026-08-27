@@ -1,0 +1,10 @@
+{
+  "evidence_id": "E-0394",
+  "lead_id": "LH-0004",
+  "kind": "operational",
+  "found_at": "2026-08-27T08:32:24.769014+00:00",
+  "source_url": "",
+  "summary": "No automated discovery-call scheduling or reminders",
+  "confidence": 75,
+  "raw": ""
+}

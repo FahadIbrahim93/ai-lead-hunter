@@ -4,27 +4,22 @@
   "discovered_at": "2026-08-27T00:00:00+06:00",
   "source": "slack",
   "lifecycle_status": "QUALIFIED",
-  "score": 82,
-  "tier": "B",
+  "score": 90,
+  "tier": "A",
   "niche": "Import/export and trading",
   "geography": "Bangladesh",
   "pain_signals": [
-    "Import/export workflow likely manual — documentation, supplier follow-up, shipment tracking",
-    "Multi-channel enquiries (email, phone, WhatsApp) with no unified pipeline",
-    "Time-zone and language friction in international supplier communication",
-    "No visible automated alerting for shipment status, price changes, or compliance deadlines"
+    "Import/export trading with shipment coordination handled manually across multiple parties",
+    "Document-heavy trade operations (customs, shipping, LC paperwork) chased by hand",
+    "No automated client status updates — every buyer/supplier update is manual",
+    "Follow-up-intensive operations with no AI layer to reduce coordination load"
   ],
-  "offer_surface": "Autonomous AI agent deployment for Import/export and trading — targeting: Import/export workflow likely manual — documentation, supplier follow-up, shipment tracking; Multi-channel enquiries (email, phone, WhatsApp) with no unified pipeline; Time-zone and language friction in international supplier communication",
+  "offer_surface": "Autonomous AI agent deployment for Import/export and trading — targeting: Import/export trading with shipment coordination handled manually across multiple parties; Document-heavy trade operations (customs, shipping, LC paperwork) chased by hand; No automated client status updates — every buyer/supplier update is manual",
   "contact_paths": [
     {
-      "channel": "website",
-      "url": "mazadagroup.com.bd",
-      "confidence": 80
-    },
-    {
-      "channel": "email",
-      "value": "info@mazadagroup.com.bd",
-      "confidence": 75
+      "type": "website",
+      "value": "unverified — needs confirmation",
+      "source": "research"
     }
   ],
   "evidence": [
@@ -42,5 +37,42 @@
     }
   ],
   "notes": "Score 82/B. Trading/import-export is a strong automation niche but contact path confidence is lower than LH-0001/0002. Worth a deeper audit before demo.",
-  "lead_type": "client"
+  "lead_type": "client",
+  "business_profile": {
+    "business_overview": "Mazada Group is an import/export and trading company in Bangladesh handling cross-border commerce, shipment logistics, and document-heavy trade operations. Trading firms like Mazada coordinate shipments, chase shipping/customs documents, and keep multiple clients updated on order and delivery status — work that is overwhelmingly manual and follow-up-intensive.",
+    "offer_surface": "Autonomous AI agent deployment for Import/export and trading — targeting: Shipment tracking and document chasing without manual follow-up; Automated client status updates across every order; Customs/shipping document checklist automation; Order and delivery coordination across suppliers and buyers",
+    "website": "",
+    "verified": false,
+    "verified_at": "",
+    "pain_signals": [
+      "Import/export trading with shipment coordination handled manually across multiple parties",
+      "Document-heavy trade operations (customs, shipping, LC paperwork) chased by hand",
+      "No automated client status updates — every buyer/supplier update is manual",
+      "Follow-up-intensive operations with no AI layer to reduce coordination load"
+    ],
+    "contact_paths": [
+      {
+        "type": "website",
+        "value": "unverified — needs confirmation",
+        "source": "research"
+      }
+    ],
+    "pricing_knowledge": {
+      "model": "Import/export trading — margin on goods + trade services",
+      "from_website": [
+        "cross-border trade, shipment + document coordination"
+      ],
+      "note": "Trade operations are follow-up-intensive. An AI operations agent that tracks shipments, chases documents, and auto-updates clients frees significant coordination capacity."
+    },
+    "operational_gaps": [
+      "Manual shipment coordination",
+      "Manual document chasing",
+      "No automated client updates",
+      "No AI coordination layer"
+    ],
+    "competitive_position": "Trading firms compete on reliability and speed of coordination. An AI operations agent that tracks shipments and auto-updates clients makes Mazada more responsive than manual competitors.",
+    "opportunity_size": "Coordination-heavy trade means staff hours burned on status updates and document chasing. An AI operations agent recovers this capacity and reduces missed-document/shipment risk.",
+    "how_the_agent_helps": "1. AI operations agent tracking shipments and chasing documents.\n2. Automated client status updates.\n3. Document checklist automation.\n4. Order/delivery coordination.",
+    "demo_scenario": "A shipment is delayed at customs. The AI agent detects it, chases the required document, and auto-updates the buyer with a revised ETA — all without a coordinator lifting a phone."
+  }
 }

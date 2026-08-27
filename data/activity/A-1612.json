@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-1612",
+  "lead_id": "LH-0004",
+  "occurred_at": "2026-08-27T08:32:24.825026+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0395.json",
+  "detail": "Evidence: operational — Leads fall through without systematic follow-up"
+}

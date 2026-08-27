@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-1625",
+  "lead_id": "LH-0020",
+  "occurred_at": "2026-08-27T08:32:25.557874+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0404.json",
+  "detail": "Evidence: operational — High-value projects depend on manual intake and proposal routing"
+}

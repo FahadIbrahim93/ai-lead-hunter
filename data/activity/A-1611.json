@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-1611",
+  "lead_id": "LH-0004",
+  "occurred_at": "2026-08-27T08:32:24.787018+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0394.json",
+  "detail": "Evidence: operational — No automated discovery-call scheduling or reminders"
+}

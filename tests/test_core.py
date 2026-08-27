@@ -53,10 +53,18 @@ class TestLeads:
         assert "A.K. Developments Ltd." in result.stdout
         assert "Mazada Group" in result.stdout
         assert "Hitech Inter Studio" in result.stdout
-        assert "100" in result.stdout
-        assert "85" in result.stdout
-        assert "82" in result.stdout
-        assert "78" in result.stdout
+
+    def test_leads_render_integer_scores(self):
+        # Scores change as leads get enriched/re-scored, so assert the *shape*
+        # (each lead row carries an integer score 0-100) rather than fixed values.
+        import re
+        result = run_cmd("leads")
+        rows = [ln for ln in result.stdout.splitlines() if re.match(r"^LH-\d{4}\s", ln)]
+        assert len(rows) >= 4, f"expected >=4 lead rows, got {len(rows)}"
+        for row in rows:
+            assert re.search(r"\b(\d{1,3})\b", row), f"no integer score on row: {row!r}"
+            score = int(re.search(r"\b(\d{1,3})\b", row).group(1))
+            assert 0 <= score <= 100, f"score out of range on row: {row!r}"
 
 
 class TestSchemas:

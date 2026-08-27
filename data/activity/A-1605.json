@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-1605",
+  "lead_id": "LH-0003",
+  "occurred_at": "2026-08-27T08:32:24.430001+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0390.json",
+  "detail": "Evidence: operational — Document-heavy trade operations (customs, shipping, LC paperwork) chased by hand"
+}

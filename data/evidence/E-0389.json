@@ -1,0 +1,10 @@
+{
+  "evidence_id": "E-0389",
+  "lead_id": "LH-0003",
+  "kind": "operational",
+  "found_at": "2026-08-27T08:32:24.371987+00:00",
+  "source_url": "",
+  "summary": "Import/export trading with shipment coordination handled manually across multiple parties",
+  "confidence": 75,
+  "raw": ""
+}

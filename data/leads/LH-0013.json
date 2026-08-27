@@ -3,23 +3,35 @@
   "business_name": "Obokash Travel",
   "discovered_at": "2026-08-27T02:08:21.899493+00:00",
   "source": "research",
-  "lifecycle_status": "DISCOVERED",
-  "score": 60,
-  "tier": "C",
+  "lifecycle_status": "QUALIFIED",
+  "score": 85,
+  "tier": "A",
   "website": "https://www.obokash.com/",
   "verified": true,
-  "verified_at": "2026-08-27T08:18:57.317374+00:00",
+  "verified_at": "2026-08-27T08:32:20.272654+00:00",
   "lead_type": "client",
   "niche": "Travel agency / Hajj & Umrah / visa processing",
   "geography": "Dhaka, Bangladesh",
   "pain_signals": [
-    "Visa processing is document-heavy and status-query-driven — applicants repeatedly ask 'what's my status?'",
-    "Live chat is a manually staffed tawk.to widget — no 24/7 automated responses",
-    "Hajj/Umrah + tour packages require quotation back-and-forth that is not automated",
-    "Large site with many destinations but no self-service document checklist or status bot"
+    "Hajj/Umrah + visa + tour operator with a large site and a tawk.to live-chat widget that requires manual staffing",
+    "Visa processing is document-heavy and status-query-driven — applicants constantly ask 'where is my application?'",
+    "No automated document checklist per visa type — every application starts with manual back-and-forth",
+    "Package quotation for Hajj/Umrah/tours handled manually",
+    "After-hours enquiries go unanswered when the chat widget is unstaffed"
   ],
-  "offer_surface": "Autonomous AI agent deployment for Travel agency / Hajj & Umrah / visa processing — targeting: Visa processing is document-heavy and status-query-driven — applicants repeatedly ask 'what's my status?'; Live chat is a manually staffed tawk.to widget — no 24/7 automated responses; Hajj/Umrah + tour packages require quotation back-and-forth that is not automated",
-  "contact_paths": [],
+  "offer_surface": "Autonomous AI agent deployment for Travel agency / Hajj & Umrah / visa processing — targeting: Hajj/Umrah + visa + tour operator with a large site and a tawk.to live-chat widget that requires manual staffing; Visa processing is document-heavy and status-query-driven — applicants constantly ask 'where is my application?'; No automated document checklist per visa type — every application starts with manual back-and-forth",
+  "contact_paths": [
+    {
+      "type": "phone",
+      "value": "88-09648700700",
+      "source": "web_extract"
+    },
+    {
+      "type": "website",
+      "value": "https://www.obokash.com/",
+      "source": "verified LIVE (HTTP 200)"
+    }
+  ],
   "evidence": [
     {
       "evidence_id": "E-0095",
@@ -34,5 +46,49 @@
       "confidence": 95
     }
   ],
-  "notes": "Live website verified. Hajj/Umrah + visa + tour operator. Large site with a tawk.to live-chat widget (manual staffing). Visa processing is document-heavy and status-quiry-driven. AI-agent fit: visa application status bot, document checklist automation, package quotation agent."
+  "notes": "Live website verified. Hajj/Umrah + visa + tour operator. Large site with a tawk.to live-chat widget (manual staffing). Visa processing is document-heavy and status-quiry-driven. AI-agent fit: visa application status bot, document checklist automation, package quotation agent.",
+  "business_profile": {
+    "business_overview": "Obokash Travel is a travel agency in Dhaka handling Hajj & Umrah, visa processing, and tour operations. They run a large website with a tawk.to live-chat widget (manual staffing). Visa processing is document-heavy and status-query-driven. Contact via hotline 88-09648700700.",
+    "offer_surface": "Autonomous AI agent deployment for Travel agency / Hajj & Umrah / visa processing — targeting: Visa application status bot answering 'where is my application?' 24/7; Document checklist automation per visa type; Package quotation agent for Hajj/Umrah/tours; Replaces the manually-staffed tawk.to chat with an AI agent",
+    "website": "https://www.obokash.com/",
+    "verified": true,
+    "verified_at": "2026-08-27T08:32:20.272654+00:00",
+    "pain_signals": [
+      "Hajj/Umrah + visa + tour operator with a large site and a tawk.to live-chat widget that requires manual staffing",
+      "Visa processing is document-heavy and status-query-driven — applicants constantly ask 'where is my application?'",
+      "No automated document checklist per visa type — every application starts with manual back-and-forth",
+      "Package quotation for Hajj/Umrah/tours handled manually",
+      "After-hours enquiries go unanswered when the chat widget is unstaffed"
+    ],
+    "contact_paths": [
+      {
+        "type": "phone",
+        "value": "88-09648700700",
+        "source": "web_extract"
+      },
+      {
+        "type": "website",
+        "value": "https://www.obokash.com/",
+        "source": "verified LIVE (HTTP 200)"
+      }
+    ],
+    "pricing_knowledge": {
+      "model": "Travel packages (Hajj/Umrah/tours) + visa processing fees",
+      "from_website": [
+        "tawk.to live chat (manual)",
+        "visa + Hajj/Umrah + tours"
+      ],
+      "note": "Document-heavy, status-query-driven. A visa status bot + document checklist agent + package quoter replaces the manual chat widget and answers 24/7."
+    },
+    "operational_gaps": [
+      "Manually-staffed chat widget",
+      "No visa status bot",
+      "No automated document checklists",
+      "Manual package quotation"
+    ],
+    "competitive_position": "Obokash competes with other Dhaka travel/Hajj agencies. An AI visa-status + document + package agent that answers 24/7 would make them more responsive than agencies relying on manual chat.",
+    "opportunity_size": "Visa + Hajj/Umrah are high-value, document-intensive. Status queries and document back-and-forth consume heavy staff time. An AI agent recovers this and answers applicants 24/7.",
+    "how_the_agent_helps": "1. Visa application status bot (24/7).\n2. Document checklist automation per visa type.\n3. Package quotation agent.\n4. Replaces manual tawk.to chat.",
+    "demo_scenario": "An Umrah applicant asks at 11pm: 'What's my visa status?' The AI replies instantly with the status and the next required document. The applicant gets an answer overnight instead of waiting for the chat widget to be staffed."
+  }
 }
