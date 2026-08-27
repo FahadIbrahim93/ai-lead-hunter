@@ -3,7 +3,7 @@
   "business_name": "Mazada Group",
   "discovered_at": "2026-08-27T00:00:00+06:00",
   "source": "slack",
-  "lifecycle_status": "DISCOVERED",
+  "lifecycle_status": "QUALIFIED",
   "score": 82,
   "tier": "B",
   "niche": "Import/export and trading",
@@ -14,10 +14,18 @@
     "Time-zone and language friction in international supplier communication",
     "No visible automated alerting for shipment status, price changes, or compliance deadlines"
   ],
-  "offer_surface": "Autonomous AI agent that handles supplier communication, tracks shipment status, flags compliance and pricing deadlines, and consolidates enquiries into a single pipeline — reducing manual coordination overhead across international trade operations.",
+  "offer_surface": "Autonomous AI agent deployment for Import/export and trading — targeting: Import/export workflow likely manual — documentation, supplier follow-up, shipment tracking; Multi-channel enquiries (email, phone, WhatsApp) with no unified pipeline; Time-zone and language friction in international supplier communication",
   "contact_paths": [
-    { "channel": "website", "url": "mazadagroup.com.bd", "confidence": 80 },
-    { "channel": "email", "value": "info@mazadagroup.com.bd", "confidence": 75 }
+    {
+      "channel": "website",
+      "url": "mazadagroup.com.bd",
+      "confidence": 80
+    },
+    {
+      "channel": "email",
+      "value": "info@mazadagroup.com.bd",
+      "confidence": 75
+    }
   ],
   "evidence": [
     {

@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-0036",
+  "lead_id": "LH-0003",
+  "occurred_at": "2026-08-27T00:09:26.139546+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0031.json",
+  "detail": "Evidence: operational — Multi-channel enquiries (email, phone, WhatsApp) with no unified pipeline"
+}

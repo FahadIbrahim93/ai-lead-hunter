@@ -313,8 +313,14 @@ def add_evidence(
     path = EVIDENCE / f"{eid}.json"
     write_json(path, record)
 
-    # Append reference to the lead
+    # Append reference to the lead — skip if an evidence record with the
+    # same summary + kind already exists (idempotent re-runs).
     lead = load_lead(lead_id)
+    existing = {(e.get("kind"), e.get("summary")) for e in lead.get("evidence", [])}
+    if (kind, summary) in existing:
+        # Already recorded — don't create a duplicate evidence file or write
+        # a new activity entry for it.
+        return eid
     lead["evidence"] = lead.get("evidence", [])
     lead["evidence"].append({
         "evidence_id": eid,
@@ -323,7 +329,13 @@ def add_evidence(
         "confidence": confidence,
     })
     save_lead(lead)
-    write_activity("audited", lead_id, "hermes", resource=str(path), detail=f"Evidence: {kind} — {summary[:80]}")
+    write_activity(
+        "audited",
+        lead_id,
+        "hermes",
+        resource=str(path),
+        detail=f"Evidence: {kind} — {summary[:80]}",
+    )
     return eid
 
 

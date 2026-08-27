@@ -1,0 +1,10 @@
+{
+  "evidence_id": "E-0033",
+  "lead_id": "LH-0003",
+  "kind": "operational",
+  "found_at": "2026-08-27T00:09:26.153309+00:00",
+  "source_url": "",
+  "summary": "No visible automated alerting for shipment status, price changes, or compliance deadlines",
+  "confidence": 75,
+  "raw": ""
+}

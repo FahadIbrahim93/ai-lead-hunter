@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-0050",
+  "lead_id": "LH-0001",
+  "occurred_at": "2026-08-27T00:12:16.922504+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0039.json",
+  "detail": "Evidence: operational — Instagram-only presence means discovery depends on algorithmic reach, not owned "
+}

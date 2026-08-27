@@ -3,7 +3,7 @@
   "business_name": "Hitech Inter Studio",
   "discovered_at": "2026-08-27T00:00:00+06:00",
   "source": "slack",
-  "lifecycle_status": "DISCOVERED",
+  "lifecycle_status": "QUALIFIED",
   "score": 78,
   "tier": "B",
   "niche": "IT and software services",
@@ -14,10 +14,18 @@
     "Reputational risk from inconsistent response quality across channels",
     "Potential to productize service delivery with an AI agent front-end"
   ],
-  "offer_surface": "Autonomous AI agent that handles project intake, qualifies leads against capability and capacity, drafts initial proposals, and schedules discovery calls — productizing the front door of Hitech's service business.",
+  "offer_surface": "Autonomous AI agent deployment for IT and software services — targeting: Service business likely carries project intake friction — prospects request quotes, follow-ups get lost; No visible automated lead qualification or proposal generation from public presence; Reputational risk from inconsistent response quality across channels",
   "contact_paths": [
-    { "channel": "website", "url": "hitechinterstudio.com", "confidence": 75 },
-    { "channel": "linkedin", "handle": "hitech-inter-studio", "confidence": 70 }
+    {
+      "channel": "website",
+      "url": "hitechinterstudio.com",
+      "confidence": 75
+    },
+    {
+      "channel": "linkedin",
+      "handle": "hitech-inter-studio",
+      "confidence": 70
+    }
   ],
   "evidence": [
     {

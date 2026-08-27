@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-0037",
+  "lead_id": "LH-0003",
+  "occurred_at": "2026-08-27T00:09:26.151306+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0032.json",
+  "detail": "Evidence: operational — Time-zone and language friction in international supplier communication"
+}

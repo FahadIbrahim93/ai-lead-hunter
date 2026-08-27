@@ -1,0 +1,10 @@
+{
+  "evidence_id": "E-0030",
+  "lead_id": "LH-0003",
+  "kind": "operational",
+  "found_at": "2026-08-27T00:09:26.125109+00:00",
+  "source_url": "",
+  "summary": "Import/export workflow likely manual — documentation, supplier follow-up, shipment tracking",
+  "confidence": 75,
+  "raw": ""
+}

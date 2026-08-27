@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-0043",
+  "lead_id": "LH-0004",
+  "occurred_at": "2026-08-27T00:09:26.566270+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0035.json",
+  "detail": "Evidence: operational — No visible automated lead qualification or proposal generation from public prese"
+}

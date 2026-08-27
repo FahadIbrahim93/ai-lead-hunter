@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-0038",
+  "lead_id": "LH-0003",
+  "occurred_at": "2026-08-27T00:09:26.164336+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0033.json",
+  "detail": "Evidence: operational — No visible automated alerting for shipment status, price changes, or compliance "
+}

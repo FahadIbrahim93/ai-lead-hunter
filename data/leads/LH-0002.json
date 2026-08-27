@@ -3,7 +3,7 @@
   "business_name": "A.K. Developments Ltd.",
   "discovered_at": "2026-08-27T00:00:00+06:00",
   "source": "slack",
-  "lifecycle_status": "DISCOVERED",
+  "lifecycle_status": "QUALIFIED",
   "score": 85,
   "tier": "A",
   "niche": "Real estate development",
@@ -14,10 +14,18 @@
     "High-value transaction volume means every lost lead is a significant revenue miss",
     "No public project dashboard or digital buyer portal — opacity costs trust and repeat referrals"
   ],
-  "offer_surface": "Autonomous AI agent that manages buyer enquiries, delivers project status updates on schedule, tracks payment milestones, and maintains a client communication log — replacing fragmented manual updates with a systematic buyer-engagement engine.",
+  "offer_surface": "Autonomous AI agent deployment for Real estate development — targeting: Project updates likely manual — buyers and investors want status, photos, payment milestones; Sales enquiries across phone/visit/WhatsApp with no unified tracking; High-value transaction volume means every lost lead is a significant revenue miss",
   "contact_paths": [
-    { "channel": "website", "url": "akdevelopments.com.bd", "confidence": 80 },
-    { "channel": "phone", "value": "+880XXXXXXXXXX", "confidence": 70 }
+    {
+      "channel": "website",
+      "url": "akdevelopments.com.bd",
+      "confidence": 80
+    },
+    {
+      "channel": "phone",
+      "value": "+880XXXXXXXXXX",
+      "confidence": 70
+    }
   ],
   "evidence": [
     {
