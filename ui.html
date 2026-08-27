@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Lead Hunter — Dashboard</title>
+<style>
+  :root {
+    --bg: #0d1117;
+    --surface: #161b22;
+    --surface2: #1c2330;
+    --border: #2d333b;
+    --text: #e6edf3;
+    --muted: #8b949e;
+    --accent: #58a6ff;
+    --green: #3fb950;
+    --amber: #d29922;
+    --red: #f85149;
+    --purple: #bc8cff;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.5;
+    padding: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 24px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+  }
+  h1 { font-size: 22px; font-weight: 700; }
+  h1 .sub { display: block; font-size: 13px; font-weight: 400; color: var(--muted); margin-top: 2px; }
+  .header-actions { display: flex; gap: 10px; }
+
+  /* Stats row */
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 12px;
+    margin-bottom: 28px;
+  }
+  .stat {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px;
+    text-align: center;
+  }
+  .stat .num { font-size: 28px; font-weight: 700; }
+  .stat .label { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; margin-top: 2px; }
+  .stat.green .num { color: var(--green); }
+  .stat.blue .num { color: var(--accent); }
+  .stat.amber .num { color: var(--amber); }
+  .stat.purple .num { color: var(--purple); }
+
+  /* Section headers */
+  h2 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 28px 0 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  h2 .count { font-size: 12px; color: var(--muted); font-weight: 400; }
+
+  /* Lead cards */
+  .lead-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 14px;
+    transition: border-color 0.15s;
+  }
+  .lead-card:hover { border-color: var(--accent); }
+  .lead-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .lead-name { font-size: 17px; font-weight: 600; }
+  .lead-meta { font-size: 13px; color: var(--muted); margin-top: 3px; }
+  .lead-id { font-family: ui-monospace, monospace; font-size: 12px; color: var(--muted); }
+
+  .score-block { text-align: right; min-width: 110px; }
+  .score-num { font-size: 30px; font-weight: 700; line-height: 1; }
+  .tier-badge {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 4px;
+  }
+  .tier-A { background: rgba(63,185,80,0.15); color: var(--green); border: 1px solid var(--green); }
+  .tier-B { background: rgba(210,153,34,0.15); color: var(--amber); border: 1px solid var(--amber); }
+  .tier-C { background: rgba(139,148,158,0.15); color: var(--muted); border: 1px solid var(--muted); }
+
+  .status-badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .status-QUALIFIED { background: rgba(63,185,80,0.15); color: var(--green); }
+  .status-DISCOVERED { background: rgba(88,166,255,0.15); color: var(--accent); }
+  .status-CONTACTED { background: rgba(188,140,255,0.15); color: var(--purple); }
+  .status-default { background: rgba(139,148,158,0.15); color: var(--muted); }
+
+  .score-bar {
+    height: 6px;
+    background: var(--surface2);
+    border-radius: 3px;
+    margin: 14px 0;
+    overflow: hidden;
+  }
+  .score-fill { height: 100%; border-radius: 3px; transition: width 0.6s ease; }
+
+  .pain-list { margin: 12px 0; }
+  .pain-item {
+    font-size: 13px;
+    color: var(--text);
+    padding: 6px 0 6px 20px;
+    position: relative;
+    border-bottom: 1px dashed var(--border);
+  }
+  .pain-item:last-child { border-bottom: none; }
+  .pain-item::before { content: "⚡"; position: absolute; left: 0; }
+
+  .contact-row { display: flex; gap: 8px; flex-wrap: wrap; margin: 10px 0; }
+  .contact-chip {
+    font-size: 12px;
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    padding: 4px 10px;
+    border-radius: 6px;
+    color: var(--muted);
+  }
+  .contact-chip b { color: var(--text); }
+
+  .lead-actions { display: flex; gap: 8px; margin-top: 14px; flex-wrap: wrap; }
+
+  /* Buttons */
+  button {
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: var(--surface2);
+    color: var(--text);
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+  button:hover { border-color: var(--accent); background: var(--surface); }
+  button:disabled { opacity: 0.5; cursor: not-allowed; }
+  button.primary { background: var(--accent); border-color: var(--accent); color: #0d1117; }
+  button.primary:hover { filter: brightness(1.1); }
+  button.big { padding: 10px 20px; font-size: 14px; }
+
+  /* Outreach drafts */
+  .outreach-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 18px;
+    margin-bottom: 12px;
+  }
+  .outreach-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .outreach-draft {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 14px;
+    font-size: 13px;
+    white-space: pre-wrap;
+    color: var(--text);
+    max-height: 220px;
+    overflow-y: auto;
+  }
+  .outreach-actions { display: flex; gap: 8px; margin-top: 12px; }
+
+  /* Activity feed */
+  .activity-feed {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 8px 16px;
+    max-height: 340px;
+    overflow-y: auto;
+  }
+  .activity-item {
+    display: flex;
+    gap: 10px;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 13px;
+  }
+  .activity-item:last-child { border-bottom: none; }
+  .activity-action {
+    font-family: ui-monospace, monospace;
+    font-size: 11px;
+    background: var(--surface2);
+    padding: 2px 8px;
+    border-radius: 4px;
+    color: var(--accent);
+    white-space: nowrap;
+    height: fit-content;
+  }
+  .activity-detail { color: var(--muted); }
+  .activity-detail b { color: var(--text); }
+
+  /* Toast */
+  #toast {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    background: var(--surface);
+    border: 1px solid var(--accent);
+    border-radius: 10px;
+    padding: 14px 20px;
+    font-size: 14px;
+    max-width: 420px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.25s;
+    pointer-events: none;
+    z-index: 100;
+    white-space: pre-wrap;
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  #toast.show { opacity: 1; transform: translateY(0); }
+  #toast.error { border-color: var(--red); }
+
+  .loading { color: var(--muted); font-size: 13px; padding: 20px; text-align: center; }
+  .empty { color: var(--muted); font-size: 14px; padding: 20px; text-align: center; }
+
+  /* Tabs */
+  .tabs { display: flex; gap: 4px; margin-bottom: 20px; border-bottom: 1px solid var(--border); }
+  .tab {
+    padding: 10px 18px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--muted);
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    background: none;
+    border-top: none; border-left: none; border-right: none;
+    border-radius: 0;
+  }
+  .tab:hover { color: var(--text); background: none; }
+  .tab.active { color: var(--accent); border-bottom-color: var(--accent); }
+  .tab-panel { display: none; }
+  .tab-panel.active { display: block; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🎯 AI Lead Hunter
+    <span class="sub">Revenue Acquisition OS — Hope Theory · Bangladesh</span>
+  </h1>
+  <div class="header-actions">
+    <button class="big primary" onclick="runAction('discover', null, this)">🔎 Discover New Leads</button>
+    <button class="big" onclick="runAction('validate', null, this)">✓ Validate Data</button>
+  </div>
+</header>
+
+<div class="stats" id="stats"></div>
+
+<div class="tabs">
+  <button class="tab active" data-tab="leads" onclick="switchTab('leads')">📇 Leads</button>
+  <button class="tab" data-tab="outreach" onclick="switchTab('outreach')">✉️ Outreach Drafts</button>
+  <button class="tab" data-tab="activity" onclick="switchTab('activity')">📜 Activity Log</button>
+</div>
+
+<div id="panel-leads" class="tab-panel active">
+  <h2>Leads <span class="count" id="lead-count"></span></h2>
+  <div id="leads-list"><div class="loading">Loading leads…</div></div>
+</div>
+
+<div id="panel-outreach" class="tab-panel">
+  <h2>Outreach Drafts <span class="count" id="outreach-count"></span></h2>
+  <p style="font-size:13px;color:var(--muted);margin-bottom:14px;">
+    ⚠️ These are drafts. Nothing is sent until <b>you</b> approve and send it yourself.
+  </p>
+  <div id="outreach-list"><div class="loading">Loading drafts…</div></div>
+</div>
+
+<div id="panel-activity" class="tab-panel">
+  <h2>Recent Activity <span class="count" id="activity-count"></span></h2>
+  <div class="activity-feed" id="activity-list"><div class="loading">Loading activity…</div></div>
+</div>
+
+<div id="toast"></div>
+
+<script>
+// SECURITY NOTE: All dynamic values are passed through esc() (HTML entity
+// escaping) before being placed into innerHTML templates below. No raw
+// user/server data reaches the DOM unescaped, so there is no XSS path.
+let STATE = null;
+
+function esc(s) {
+  return String(s ?? "").replace(/[&<>"']/g, c => ({
+    "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+  }[c]));
+}
+
+function scoreColor(score) {
+  if (score >= 85) return "var(--green)";
+  if (score >= 70) return "var(--amber)";
+  return "var(--muted)";
+}
+
+function switchTab(name) {
+  document.querySelectorAll(".tab").forEach(t => t.classList.toggle("active", t.dataset.tab === name));
+  document.querySelectorAll(".tab-panel").forEach(p => p.classList.toggle("active", p.id === "panel-" + name));
+}
+
+function toast(msg, isError) {
+  const el = document.getElementById("toast");
+  el.textContent = msg;
+  el.className = "show" + (isError ? " error" : "");
+  clearTimeout(el._t);
+  el._t = setTimeout(() => el.className = "", 6000);
+}
+
+async function loadState() {
+  try {
+    const res = await fetch("/api/state");
+    STATE = await res.json();
+    renderStats();
+    renderLeads();
+    renderOutreach();
+    renderActivity();
+  } catch (e) {
+    document.getElementById("leads-list").innerHTML = '<div class="empty">Failed to load data. Is the server running?</div>';
+  }
+}
+
+function renderStats() {
+  const s = STATE.stats;
+  document.getElementById("stats").innerHTML = `
+    <div class="stat blue"><div class="num">${s.leads}</div><div class="label">Total Leads</div></div>
+    <div class="stat green"><div class="num">${s.qualified}</div><div class="label">Qualified</div></div>
+    <div class="stat green"><div class="num">${s.tier_a}</div><div class="label">Tier A</div></div>
+    <div class="stat purple"><div class="num">${s.evidence}</div><div class="label">Evidence</div></div>
+    <div class="stat amber"><div class="num">${s.pending_approval}</div><div class="label">Awaiting Approval</div></div>
+    <div class="stat blue"><div class="num">${s.demos}</div><div class="label">Demo Specs</div></div>
+  `;
+}
+
+function renderLeads() {
+  const list = document.getElementById("leads-list");
+  document.getElementById("lead-count").textContent = `(${STATE.leads.length})`;
+  if (!STATE.leads.length) {
+    list.innerHTML = '<div class="empty">No leads yet. Click "Discover New Leads" above.</div>';
+    return;
+  }
+  list.innerHTML = STATE.leads.map(l => {
+    const pains = (l.pain_signals || []).map(p => `<div class="pain-item">${esc(p)}</div>`).join("");
+    const contacts = (l.contact_paths || []).map(c => {
+      const val = c.handle || c.value || "";
+      return `<span class="contact-chip"><b>${esc(c.channel)}</b> ${esc(val)} · ${c.confidence ?? "?"}%</span>`;
+    }).join("");
+    const statusCls = ["QUALIFIED","DISCOVERED","CONTACTED"].includes(l.lifecycle_status)
+      ? "status-" + l.lifecycle_status : "status-default";
+    return `
+    <div class="lead-card">
+      <div class="lead-top">
+        <div>
+          <div class="lead-name">${esc(l.business_name)}</div>
+          <div class="lead-meta">${esc(l.niche || "")} · ${esc(l.geography || "")} · <span class="lead-id">${esc(l.lead_id)}</span></div>
+          <div style="margin-top:8px;"><span class="status-badge ${statusCls}">${esc(l.lifecycle_status)}</span></div>
+        </div>
+        <div class="score-block">
+          <div class="score-num" style="color:${scoreColor(l.score)}">${l.score}</div>
+          <span class="tier-badge tier-${esc(l.tier)}">Tier ${esc(l.tier)}</span>
+        </div>
+      </div>
+      <div class="score-bar"><div class="score-fill" style="width:${l.score}%;background:${scoreColor(l.score)}"></div></div>
+      ${pains ? `<div class="pain-list">${pains}</div>` : ""}
+      ${contacts ? `<div class="contact-row">${contacts}</div>` : ""}
+      <div class="lead-actions">
+        <button onclick="runAction('audit','${esc(l.lead_id)}',this)">🔍 Re-Audit</button>
+        <button onclick="runAction('demo','${esc(l.lead_id)}',this)">🎬 Build Demo Spec</button>
+        <button onclick="runAction('outreach','${esc(l.lead_id)}',this)">✉️ Draft Outreach</button>
+      </div>
+    </div>`;
+  }).join("");
+}
+
+function renderOutreach() {
+  const list = document.getElementById("outreach-list");
+  document.getElementById("outreach-count").textContent = `(${STATE.outreach.length})`;
+  if (!STATE.outreach.length) {
+    list.innerHTML = '<div class="empty">No outreach drafts yet.</div>';
+    return;
+  }
+  // newest first
+  const sorted = [...STATE.outreach].sort((a,b) => (b.outreach_id||"").localeCompare(a.outreach_id||""));
+  list.innerHTML = sorted.map(o => {
+    const lead = STATE.leads.find(l => l.lead_id === o.lead_id);
+    const leadName = lead ? lead.business_name : o.lead_id;
+    return `
+    <div class="outreach-card">
+      <div class="outreach-head">
+        <div>
+          <b>${esc(leadName)}</b>
+          <span class="lead-id"> · ${esc(o.outreach_id)} · via ${esc(o.channel)}</span>
+        </div>
+        <span class="status-badge ${o.status === 'pending_approval' ? 'status-DISCOVERED' : 'status-QUALIFIED'}">${esc(o.status).replace(/_/g," ")}</span>
+      </div>
+      <div class="outreach-draft">${esc(o.draft)}</div>
+      <div class="outreach-actions">
+        <button class="primary" onclick="copyDraft('${esc(o.outreach_id)}', this)">📋 Copy to Clipboard</button>
+      </div>
+    </div>`;
+  }).join("");
+}
+
+function renderActivity() {
+  const list = document.getElementById("activity-list");
+  document.getElementById("activity-count").textContent = `(${STATE.activity.length} recent)`;
+  if (!STATE.activity.length) {
+    list.innerHTML = '<div class="empty">No activity yet.</div>';
+    return;
+  }
+  list.innerHTML = STATE.activity.map(a => `
+    <div class="activity-item">
+      <span class="activity-action">${esc(a.action)}</span>
+      <span class="activity-detail"><b>${esc(a.lead_id)}</b> — ${esc(a.detail || "")}</span>
+    </div>
+  `).join("");
+}
+
+function copyDraft(oid, btn) {
+  const o = STATE.outreach.find(x => x.outreach_id === oid);
+  if (!o) return;
+  navigator.clipboard.writeText(o.draft).then(() => {
+    toast("✅ Draft copied! Paste it into WhatsApp / email and send when ready.");
+  }).catch(() => {
+    toast("Could not auto-copy — select the text manually.", true);
+  });
+}
+
+async function runAction(action, leadId, btn) {
+  const label = btn ? btn.textContent : action;
+  if (btn) { btn.disabled = true; btn.textContent = "⏳ Working…"; }
+  try {
+    const res = await fetch("/api/action", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ action, lead_id: leadId || "" }),
+    });
+    const result = await res.json();
+    if (result.ok) {
+      const tail = (result.stdout || "").trim().split("\n").slice(-4).join("\n");
+      toast(`✅ Done: ${action}${leadId ? " " + leadId : ""}\n${tail}`);
+      await loadState();
+    } else {
+      toast(`❌ ${action} failed:\n${(result.stderr || result.stdout || "unknown error").slice(0, 300)}`, true);
+    }
+  } catch (e) {
+    toast("❌ Could not reach the server: " + e.message, true);
+  } finally {
+    if (btn) { btn.disabled = false; btn.textContent = label; }
+  }
+}
+
+loadState();
+</script>
+</body>
+</html>
