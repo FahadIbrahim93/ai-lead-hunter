@@ -1,0 +1,37 @@
+{
+  "lead_id": "LH-0003",
+  "business_name": "Mazada Group",
+  "discovered_at": "2026-08-27T00:00:00+06:00",
+  "source": "slack",
+  "lifecycle_status": "DISCOVERED",
+  "score": 82,
+  "tier": "B",
+  "niche": "Import/export and trading",
+  "geography": "Bangladesh",
+  "pain_signals": [
+    "Import/export workflow likely manual — documentation, supplier follow-up, shipment tracking",
+    "Multi-channel enquiries (email, phone, WhatsApp) with no unified pipeline",
+    "Time-zone and language friction in international supplier communication",
+    "No visible automated alerting for shipment status, price changes, or compliance deadlines"
+  ],
+  "offer_surface": "Autonomous AI agent that handles supplier communication, tracks shipment status, flags compliance and pricing deadlines, and consolidates enquiries into a single pipeline — reducing manual coordination overhead across international trade operations.",
+  "contact_paths": [
+    { "channel": "website", "url": "mazadagroup.com.bd", "confidence": 80 },
+    { "channel": "email", "value": "info@mazadagroup.com.bd", "confidence": 75 }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "E-0006",
+      "kind": "operational",
+      "summary": "Import/export trading group — multi-step international workflow with manual coordination likely",
+      "confidence": 80
+    },
+    {
+      "evidence_id": "E-0007",
+      "kind": "competitive",
+      "summary": "Digital trade platforms automate documentation and tracking; trading firms without them carry higher operational drag",
+      "confidence": 70
+    }
+  ],
+  "notes": "Score 82/B. Trading/import-export is a strong automation niche but contact path confidence is lower than LH-0001/0002. Worth a deeper audit before demo."
+}

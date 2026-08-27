@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Lead",
+  "type": "object",
+  "required": ["lead_id", "business_name", "discovered_at", "source", "lifecycle_status", "score"],
+  "properties": {
+    "lead_id": {
+      "type": "string",
+      "pattern": "^LH-\\d{4}$",
+      "description": "Immutable lead identifier."
+    },
+    "business_name": { "type": "string" },
+    "discovered_at": { "type": "string", "format": "date-time" },
+    "source": { "type": "string", "enum": ["slack", "discovery", "referral", "platform", "research"] },
+    "lifecycle_status": {
+      "type": "string",
+      "enum": ["DISCOVERED", "AUDITED", "QUALIFIED", "OUTREACH_READY", "CONTACTED", "IN_CONVERSATION", "WON", "LOST", "DO_NOT_CONTACT"]
+    },
+    "score": { "type": "integer", "minimum": 0, "maximum": 100 },
+    "tier": { "type": "string", "enum": ["A", "B", "C"] },
+    "niche": { "type": "string" },
+    "geography": { "type": "string" },
+    "pain_signals": { "type": "array", "items": { "type": "string" } },
+    "offer_surface": { "type": "string" },
+    "contact_paths": { "type": "array", "items": { "type": "object" } },
+    "evidence": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/evidence_ref" }
+    },
+    "notes": { "type": "string" }
+  },
+  "definitions": {
+    "evidence_ref": {
+      "type": "object",
+      "required": ["evidence_id", "kind", "summary"],
+      "properties": {
+        "evidence_id": { "type": "string", "pattern": "^E-\\d{4}$" },
+        "kind": { "type": "string", "enum": ["website", "social", "review", "operational", "financial", "competitive", "other"] },
+        "found_at": { "type": "string", "format": "date-time" },
+        "source_url": { "type": "string" },
+        "summary": { "type": "string" },
+        "confidence": { "type": "integer", "minimum": 0, "maximum": 100 }
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "evidence_id": "E-0006",
+  "lead_id": "LH-0003",
+  "kind": "operational",
+  "found_at": "2026-08-27T00:00:00+06:00",
+  "source_url": "https://mazadagroup.com.bd",
+  "summary": "Import/export trading group — multi-step international workflow with manual coordination likely",
+  "confidence": 80,
+  "raw": "Mazada Group operates in import/export and trading. International trade involves supplier communication, documentation, shipment tracking, and compliance — a multi-step workflow where manual coordination is expensive."
+}

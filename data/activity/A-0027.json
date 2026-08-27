@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-0027",
+  "lead_id": "LH-0001",
+  "occurred_at": "2026-08-27T00:05:52.012656+00:00",
+  "actor": "hermes",
+  "action": "outreach_drafted",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\outreach\\O-0003.json",
+  "detail": "Outreach drafted — awaiting human approval"
+}

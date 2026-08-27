@@ -1,0 +1,10 @@
+{
+  "evidence_id": "E-0002",
+  "lead_id": "LH-0001",
+  "kind": "operational",
+  "found_at": "2026-08-27T00:00:00+06:00",
+  "source_url": "",
+  "summary": "High-ticket interior service (BDT 500K+) with no visible CRM or lead management",
+  "confidence": 80,
+  "raw": "Service price points in the BDT 500K+ range imply high-value deals. No CRM, no lead tracking, and no automated follow-up visible from public presence."
+}

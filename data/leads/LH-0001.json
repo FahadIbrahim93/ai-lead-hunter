@@ -1,0 +1,51 @@
+{
+  "lead_id": "LH-0001",
+  "business_name": "Best Interior Design",
+  "discovered_at": "2026-08-27T00:00:00+06:00",
+  "source": "slack",
+  "lifecycle_status": "QUALIFIED",
+  "score": 91,
+  "tier": "A",
+  "niche": "Interior design and decor",
+  "geography": "Bangladesh",
+  "pain_signals": [
+    "No visible online booking or enquiry flow — customers can't request a quote digitally",
+    "Instagram-only presence means discovery depends on algorithmic reach, not owned pipeline",
+    "High-ticket service (BDT 500K+ projects) with likely manual follow-up and no CRM",
+    "Portfolio presentation fragmented across social posts, not a persuasive standalone site"
+  ],
+  "offer_surface": "Autonomous AI agent deployment for Interior design and decor — targeting: No visible online booking or enquiry flow — customers can't request a quote digitally; Instagram-only presence means discovery depends on algorithmic reach, not owned pipeline; High-ticket service (BDT 500K+ projects) with likely manual follow-up and no CRM",
+  "contact_paths": [
+    {
+      "channel": "instagram",
+      "handle": "@bestinteriordesign",
+      "confidence": 85
+    },
+    {
+      "channel": "whatsapp",
+      "value": "+880XXXXXXXXXX",
+      "confidence": 70
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "E-0001",
+      "kind": "social",
+      "summary": "Instagram-only presence — no website, no booking flow, no digital enquiry path",
+      "confidence": 85
+    },
+    {
+      "evidence_id": "E-0002",
+      "kind": "operational",
+      "summary": "High-ticket interior service (BDT 500K+) with no visible CRM or lead management",
+      "confidence": 80
+    },
+    {
+      "evidence_id": "E-0003",
+      "kind": "competitive",
+      "summary": "Competitor interior firms with websites and online quote forms capture leads Best Interior Design misses",
+      "confidence": 75
+    }
+  ],
+  "notes": "Top score (91/A). Strong fit: high-ticket, observable pain (no digital intake), clear AI agent offer (enquiry intake + CRM + consultation scheduler). Priority one for deep audit and demo."
+}

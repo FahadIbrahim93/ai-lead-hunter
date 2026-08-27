@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-0016",
+  "lead_id": "LH-0001",
+  "occurred_at": "2026-08-26T23:44:05.994294+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0020.json",
+  "detail": "Evidence: operational — High-ticket service (BDT 500K+ projects) with likely manual follow-up and no CRM"
+}

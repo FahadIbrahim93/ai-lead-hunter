@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Evidence",
+  "type": "object",
+  "required": ["evidence_id", "lead_id", "kind", "found_at", "summary"],
+  "properties": {
+    "evidence_id": {
+      "type": "string",
+      "pattern": "^E-\\d{4}$",
+      "description": "Immutable evidence identifier."
+    },
+    "lead_id": { "type": "string", "pattern": "^LH-\\d{4}$" },
+    "kind": {
+      "type": "string",
+      "enum": ["website", "social", "review", "operational", "financial", "competitive", "other"]
+    },
+    "found_at": { "type": "string", "format": "date-time" },
+    "source_url": { "type": "string" },
+    "summary": { "type": "string" },
+    "confidence": { "type": "integer", "minimum": 0, "maximum": 100 },
+    "raw": { "type": "string" }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Activity",
+  "type": "object",
+  "required": ["activity_id", "lead_id", "occurred_at", "actor", "action", "resource"],
+  "properties": {
+    "activity_id": {
+      "type": "string",
+      "pattern": "^A-\\d{4}$",
+      "description": "Immutable activity identifier."
+    },
+    "lead_id": { "type": "string", "pattern": "^LH-\\d{4}$" },
+    "occurred_at": { "type": "string", "format": "date-time" },
+    "actor": { "type": "string", "enum": ["hermes", "human"] },
+    "action": {
+      "type": "string",
+      "enum": ["discovered", "audited", "scored", "qualified", "demo_built", "outreach_drafted", "outreach_approved", "outreach_sent", "reply_received", "status_changed", "retry_scheduled", "failed"]
+    },
+    "resource": { "type": "string" },
+    "detail": { "type": "string" },
+    "outcome": { "type": "string" }
+  }
+}

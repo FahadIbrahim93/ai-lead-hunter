@@ -1,0 +1,37 @@
+{
+  "lead_id": "LH-0004",
+  "business_name": "Hitech Inter Studio",
+  "discovered_at": "2026-08-27T00:00:00+06:00",
+  "source": "slack",
+  "lifecycle_status": "DISCOVERED",
+  "score": 78,
+  "tier": "B",
+  "niche": "IT and software services",
+  "geography": "Bangladesh",
+  "pain_signals": [
+    "Service business likely carries project intake friction — prospects request quotes, follow-ups get lost",
+    "No visible automated lead qualification or proposal generation from public presence",
+    "Reputational risk from inconsistent response quality across channels",
+    "Potential to productize service delivery with an AI agent front-end"
+  ],
+  "offer_surface": "Autonomous AI agent that handles project intake, qualifies leads against capability and capacity, drafts initial proposals, and schedules discovery calls — productizing the front door of Hitech's service business.",
+  "contact_paths": [
+    { "channel": "website", "url": "hitechinterstudio.com", "confidence": 75 },
+    { "channel": "linkedin", "handle": "hitech-inter-studio", "confidence": 70 }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "E-0008",
+      "kind": "operational",
+      "summary": "IT services studio — project intake and proposal workflow likely manual",
+      "confidence": 75
+    },
+    {
+      "evidence_id": "E-0009",
+      "kind": "competitive",
+      "summary": "IT service firms with automated intake and proposal drafting close leads faster and at higher conversion",
+      "confidence": 70
+    }
+  ],
+  "notes": "Score 78/B — borderline. IT services is a natural fit for AI agent productization, but pain observability is lower than LH-0001/0002. Monitor and audit before investing demo effort."
+}

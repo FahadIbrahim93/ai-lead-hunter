@@ -1,0 +1,10 @@
+{
+  "evidence_id": "E-0004",
+  "lead_id": "LH-0002",
+  "kind": "operational",
+  "found_at": "2026-08-27T00:00:00+06:00",
+  "source_url": "https://akdevelopments.com.bd",
+  "summary": "Real estate development firm with high transaction values and likely manual buyer communication",
+  "confidence": 80,
+  "raw": "A.K. Developments Ltd. is a real estate developer. High-value property transactions and multi-buyer communication suggest manual status updates and follow-ups."
+}

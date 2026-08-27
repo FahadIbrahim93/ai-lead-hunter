@@ -1,0 +1,10 @@
+{
+  "evidence_id": "E-0008",
+  "lead_id": "LH-0004",
+  "kind": "operational",
+  "found_at": "2026-08-27T00:00:00+06:00",
+  "source_url": "https://hitechinterstudio.com",
+  "summary": "IT services studio — project intake and proposal workflow likely manual",
+  "confidence": 75,
+  "raw": "Hitech Inter Studio provides IT and software services. Service businesses in this segment typically handle project intake, quote drafting, and proposal generation manually across email and phone."
+}

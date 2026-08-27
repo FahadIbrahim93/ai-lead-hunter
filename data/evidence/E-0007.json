@@ -1,0 +1,10 @@
+{
+  "evidence_id": "E-0007",
+  "lead_id": "LH-0003",
+  "kind": "competitive",
+  "found_at": "2026-08-27T00:00:00+06:00",
+  "source_url": "",
+  "summary": "Digital trade platforms automate documentation and tracking; trading firms without them carry higher operational drag",
+  "confidence": 70,
+  "raw": "Digital trade platforms and AI-assisted document processing reduce manual coordination overhead in import/export. Firms without these tools carry higher operational drag and slower turnaround."
+}

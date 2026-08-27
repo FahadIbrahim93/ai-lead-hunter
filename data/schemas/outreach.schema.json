@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Outreach",
+  "type": "object",
+  "required": ["outreach_id", "lead_id", "channel", "draft", "status", "human_approved_at"],
+  "properties": {
+    "outreach_id": {
+      "type": "string",
+      "pattern": "^O-\\d{4}$",
+      "description": "Immutable outreach identifier."
+    },
+    "lead_id": { "type": "string", "pattern": "^LH-\\d{4}$" },
+    "channel": { "type": "string", "enum": ["email", "whatsapp", "linkedin", "x", "phone", "slack", "in_person"] },
+    "draft": { "type": "string" },
+    "status": {
+      "type": "string",
+      "enum": ["drafted", "pending_approval", "approved", "sent", "delivered", "replied", "no_reply", "failed"]
+    },
+    "human_approved_at": { "type": "string", "format": "date-time" },
+    "sent_at": { "type": "string", "format": "date-time" },
+    "response_at": { "type": "string", "format": "date-time" },
+    "response": { "type": "string" }
+  }
+}

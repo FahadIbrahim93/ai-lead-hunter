@@ -1,0 +1,10 @@
+{
+  "evidence_id": "E-0001",
+  "lead_id": "LH-0001",
+  "kind": "social",
+  "found_at": "2026-08-27T00:00:00+06:00",
+  "source_url": "https://instagram.com/bestinteriordesign",
+  "summary": "Instagram-only presence — no website, no booking flow, no digital enquiry path",
+  "confidence": 85,
+  "raw": "Public Instagram profile @bestinteriordesign serves as the sole digital touchpoint. No linked website, no WhatsApp Business link, no quote request form."
+}

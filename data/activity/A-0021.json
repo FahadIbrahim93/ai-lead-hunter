@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-0021",
+  "lead_id": "LH-0001",
+  "occurred_at": "2026-08-27T00:05:51.705319+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0022.json",
+  "detail": "Evidence: operational — No visible online booking or enquiry flow — customers can't request a quote digi"
+}
