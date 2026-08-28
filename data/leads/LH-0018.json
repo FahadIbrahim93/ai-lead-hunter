@@ -8,7 +8,7 @@
   "tier": "A",
   "website": "https://ngital.com/",
   "verified": true,
-  "verified_at": "2026-08-27T08:30:02.215222+00:00",
+  "verified_at": "2026-08-28T00:10:22.624226+00:00",
   "lead_type": "client",
   "niche": "Digital marketing agency",
   "geography": "Dhaka, Bangladesh",
@@ -30,6 +30,16 @@
       "type": "website",
       "value": "https://ngital.com/",
       "source": "verified LIVE (HTTP 200)"
+    },
+    {
+      "channel": "email",
+      "value": "enquiry@ngital.com",
+      "confidence": 90
+    },
+    {
+      "channel": "phone",
+      "value": "+8801601654800",
+      "confidence": 85
     }
   ],
   "evidence": [

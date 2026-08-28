@@ -8,7 +8,7 @@
   "tier": "A",
   "website": "https://fastexpressbd.com/",
   "verified": true,
-  "verified_at": "2026-08-27T08:30:02.215222+00:00",
+  "verified_at": "2026-08-28T00:10:28.173787+00:00",
   "lead_type": "client",
   "niche": "Courier and logistics",
   "geography": "Dhaka, Bangladesh",
@@ -35,6 +35,16 @@
       "type": "website",
       "value": "https://fastexpressbd.com/",
       "source": "verified LIVE (HTTP 200)"
+    },
+    {
+      "channel": "email",
+      "value": "nazrul_islam7178@yahoo.com",
+      "confidence": 90
+    },
+    {
+      "channel": "phone",
+      "value": "+8801715408293",
+      "confidence": 85
     }
   ],
   "evidence": [

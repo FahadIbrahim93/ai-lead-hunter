@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-1903",
+  "lead_id": "LH-0026",
+  "occurred_at": "2026-08-28T00:10:28.635977+00:00",
+  "actor": "hermes",
+  "action": "verified",
+  "resource": "https://techdentalcare.com/",
+  "detail": "Live HTTP 200 — website confirmed up"
+}

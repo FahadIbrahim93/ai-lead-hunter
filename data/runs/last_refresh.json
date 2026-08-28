@@ -1,0 +1,11 @@
+{
+  "started_at": "2026-08-28T00:10:00.871815+00:00",
+  "completed_at": "2026-08-28T00:10:52.283116+00:00",
+  "status": "issues",
+  "verified": 25,
+  "stale_flagged": 0,
+  "queue_size": 25,
+  "consistency_issues": 2,
+  "errors": [],
+  "verify_failed": 0
+}

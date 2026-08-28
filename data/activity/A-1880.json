@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-1880",
+  "lead_id": "LH-0030",
+  "occurred_at": "2026-08-28T00:09:06.207093+00:00",
+  "actor": "hermes",
+  "action": "verified",
+  "resource": "https://laserdentalbd.com/",
+  "detail": "Live HTTP 200 — website confirmed up"
+}

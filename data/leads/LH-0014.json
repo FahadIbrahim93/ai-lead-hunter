@@ -8,7 +8,7 @@
   "tier": "A",
   "website": "https://mieenglishacademy.com/bangladesh/",
   "verified": true,
-  "verified_at": "2026-08-27T08:31:16.845777+00:00",
+  "verified_at": "2026-08-28T00:10:15.690265+00:00",
   "lead_type": "client",
   "niche": "Education / IELTS & English coaching",
   "geography": "Dhaka, Bangladesh (7 branches)",
@@ -30,6 +30,26 @@
       "type": "website",
       "value": "https://mieenglishacademy.com/bangladesh/",
       "source": "verified LIVE (HTTP 200)"
+    },
+    {
+      "channel": "email",
+      "value": "info@mieenglishacademy.com",
+      "confidence": 90
+    },
+    {
+      "channel": "email",
+      "value": "sales@mieenglishacademy.com",
+      "confidence": 90
+    },
+    {
+      "channel": "phone",
+      "value": "+8801329668459",
+      "confidence": 85
+    },
+    {
+      "channel": "phone",
+      "value": "+8801332505927",
+      "confidence": 85
     }
   ],
   "evidence": [

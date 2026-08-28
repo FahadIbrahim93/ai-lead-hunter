@@ -45,6 +45,12 @@
       "kind": "competitive",
       "summary": "Competitors with online consultation booking outperform website-only firms",
       "confidence": 75
+    },
+    {
+      "evidence_id": "E-0412",
+      "kind": "website",
+      "summary": "Website live (HTTP 200) at https://bdinterior.com/",
+      "confidence": 95
     }
   ],
   "notes": "Auto-discovered from live market research + referral signals.",
@@ -101,6 +107,6 @@
     "demo_scenario": "A homeowner in Gulshan uses BD INTERIOR's 'Calculate Interior Cost' widget at 11pm for a 2,200 SFT apartment. Within 10 seconds the AI agent replies: 'Thanks! For a 2,200 SFT home, most of our clients invest BDT 18–28 lakh depending on finishes. I can have a designer show you 3D concepts for your layout — here are 3 consultation slots this week.' The homeowner books Thursday 4pm. The next morning the BD INTERIOR team gets a structured brief: name, location, SFT, budget range, consultation time — before making a single call. Meanwhile the agent has also flagged 2 past clients in the same area who might want a renovation quote."
   },
   "verified": true,
-  "verified_at": "2026-08-27T08:25:38.019755+00:00",
+  "verified_at": "2026-08-28T00:10:04.525519+00:00",
   "website": "https://bdinterior.com/"
 }

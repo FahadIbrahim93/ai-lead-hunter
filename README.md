@@ -116,17 +116,18 @@ tests/test_v2.py     v2 architecture tests (research inbox, dedup, verify, idemp
 | Metric | Count |
 |---|---|
 | Leads | 31 (28 clients + 3 internal ventures) |
-| Verified live | 22 |
+| Verified live | 25 |
 | Qualified | 31 |
-| Tier A | 26 |
-| Tier B | 4 |
-| Tier C | 1 |
-| Evidence | 276 |
-| Activity log | 1202 |
+| Tier A | 30 |
+| Tier B | 1 |
+| Tier C | 0 |
+| A+ business profiles | 28 (all external clients) |
+| Evidence | 410 |
+| Activity log | 1701 |
 | Outreach drafts | 31 (all pending_approval) |
 | Interactive demos | 31 |
 | ROI calculators | 31 |
-| Tests | 27/27 passing |
+| Tests | 28/28 passing |
 
 ## Repositories
 

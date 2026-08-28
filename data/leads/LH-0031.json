@@ -8,7 +8,7 @@
   "tier": "A",
   "website": "https://littlearabia.com.bd/",
   "verified": true,
-  "verified_at": "2026-08-27T08:31:16.845777+00:00",
+  "verified_at": "2026-08-28T00:10:37.539348+00:00",
   "lead_type": "client",
   "niche": "Restaurant and food delivery",
   "geography": "Dhaka, Bangladesh (Shantinagar)",
@@ -35,6 +35,36 @@
       "type": "website",
       "value": "https://littlearabia.com.bd/",
       "source": "verified LIVE (HTTP 200)"
+    },
+    {
+      "channel": "email",
+      "value": "support@gmail.com",
+      "confidence": 90
+    },
+    {
+      "channel": "email",
+      "value": "mostafiz31@live.com",
+      "confidence": 90
+    },
+    {
+      "channel": "phone",
+      "value": "+8801713222677",
+      "confidence": 85
+    },
+    {
+      "channel": "phone",
+      "value": "+8801626113676",
+      "confidence": 85
+    },
+    {
+      "channel": "phone",
+      "value": "+8801713222688",
+      "confidence": 85
+    },
+    {
+      "channel": "phone",
+      "value": "+8801745760675",
+      "confidence": 85
     }
   ],
   "evidence": [

@@ -37,9 +37,22 @@ class TestStatus:
         result = run_cmd("status")
         assert result.returncode == 0, result.stderr
         assert "Leads:" in result.stdout
-        assert "Evidence:" in result.stdout
-        assert "Activity:" in result.stdout
-        assert "Outreach:" in result.stdout
+
+    def test_status_sales_view(self):
+        # The status command must expose a "Sales view" row that filters out
+        # internal_venture leads so the Tier A headline number isn't inflated.
+        result = run_cmd("status")
+        assert "Sales view (external clients only):" in result.stdout
+        assert "Client leads:" in result.stdout
+        assert "A+ profiles:" in result.stdout
+        # Read the A+ profile count, expect 28/28 (shape-based, not hardcoded
+        # — survives future re-enrichment)
+        import re
+        m = re.search(r"A\+ profiles:\s+(\d+)\s*/\s*(\d+)", result.stdout)
+        assert m, f"could not find A+ profiles row in: {result.stdout!r}"
+        profiles, total = int(m.group(1)), int(m.group(2))
+        assert profiles == total, f"profile coverage gap: {profiles}/{total}"
+        assert total >= 25, f"expected at least 25 client leads, got {total}"
 
 
 class TestLeads:

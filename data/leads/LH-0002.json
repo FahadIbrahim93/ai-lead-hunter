@@ -31,6 +31,11 @@
       "type": "website",
       "value": "https://akdevelopmentsltd.com/",
       "source": "verified LIVE (HTTP 200)"
+    },
+    {
+      "channel": "email",
+      "value": "akdevelopmentsltd@gmail.com",
+      "confidence": 90
     }
   ],
   "evidence": [
@@ -45,6 +50,12 @@
       "kind": "competitive",
       "summary": "Developed-market developers offer digital project portals; Bangladeshi peers lag — A.K. could differentiate",
       "confidence": 75
+    },
+    {
+      "evidence_id": "E-0411",
+      "kind": "website",
+      "summary": "Website live (HTTP 200) at https://akdevelopmentsltd.com/",
+      "confidence": 95
     }
   ],
   "notes": "Score 85/A. Real estate is high-value niche. Pain: manual communication and no digital buyer engagement. Offer: autonomous buyer-engagement agent. Second priority for audit + demo.",
@@ -102,6 +113,6 @@
     "demo_scenario": "An NRB engineer in Dubai sees A.K. Developments' Palm Jumeirah-founder story and messages the WhatsApp line at 2am Gulf time: 'Is AK Red Rose still available? What's the payment plan?' In seconds the AI replies: 'Yes — 2850 SFT, 4-bed, single unit per floor. 30% down, then flexible milestones. Here's the current construction progress [photos]. Want a video walkthrough or a site visit when you're in Dhaka?' The buyer books a video call. A.K. wakes up to a qualified international buyer they'd have missed overnight — on a multi-crore unit."
   },
   "verified": true,
-  "verified_at": "2026-08-27T08:28:17.710606+00:00",
+  "verified_at": "2026-08-28T00:10:04.120154+00:00",
   "website": "https://akdevelopmentsltd.com/"
 }

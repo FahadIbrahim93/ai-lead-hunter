@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-1791",
+  "lead_id": "LH-0001",
+  "occurred_at": "2026-08-28T00:05:26.684712+00:00",
+  "actor": "hermes",
+  "action": "outreach_drafted",
+  "resource": "data/outreach/O-0001.json (regenerated draft)",
+  "detail": "Re-drafting niche-specific outreach for LH-0001. Old draft (generic) preserved as append-only record. New draft will use niche offer: 'an AI enquiry agent that replies to WhatsApp/Instagram messages instantly, qualifies each client's budget and style, and books consultations straight into your calendar'."
+}

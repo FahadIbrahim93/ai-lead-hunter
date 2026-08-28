@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-1790",
+  "lead_id": "LH-0001",
+  "occurred_at": "2026-08-28T00:05:26.510825+00:00",
+  "actor": "hermes",
+  "action": "data_conflict_flagged",
+  "resource": "data/outreach/O-0001.json + data/leads/LH-0001.json",
+  "detail": "Conflict: O-0001 status=pending_approval but sent_at+response filled; lead status=QUALIFIED but activity log A-0234..A-0239 + A-1345 shows sent -> replied -> WON -> reset to QUALIFIED. Source of truth (activity log) says LH-0001 was sent and WON at 02:45 UTC and then reset. NOT auto-resolved -- needs human decision. See scripts/audit_outreach_consistency.py."
+}

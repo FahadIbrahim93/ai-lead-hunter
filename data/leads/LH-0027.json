@@ -8,7 +8,7 @@
   "tier": "A",
   "website": "https://enhanceenglishbd.com/",
   "verified": true,
-  "verified_at": "2026-08-27T08:28:17.710606+00:00",
+  "verified_at": "2026-08-28T00:10:29.037693+00:00",
   "lead_type": "client",
   "niche": "Education / IELTS & PTE coaching",
   "geography": "Dhaka, Bangladesh (3 centers: Dhanmondi 27, Banani 11, Chattogram)",
@@ -30,6 +30,16 @@
       "type": "website",
       "value": "https://enhanceenglishbd.com/",
       "source": "verified LIVE (HTTP 200)"
+    },
+    {
+      "channel": "phone",
+      "value": "+8801958665618",
+      "confidence": 85
+    },
+    {
+      "channel": "phone",
+      "value": "+8801542921712",
+      "confidence": 85
     }
   ],
   "evidence": [

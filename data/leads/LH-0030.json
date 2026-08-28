@@ -8,7 +8,7 @@
   "tier": "A",
   "website": "https://laserdentalbd.com/",
   "verified": true,
-  "verified_at": "2026-08-27T08:31:16.845777+00:00",
+  "verified_at": "2026-08-28T00:10:35.533340+00:00",
   "lead_type": "client",
   "niche": "Dental clinic",
   "geography": "Dhaka, Bangladesh (Banani & Uttara)",
@@ -35,6 +35,16 @@
       "type": "website",
       "value": "https://laserdentalbd.com/",
       "source": "verified LIVE (HTTP 200)"
+    },
+    {
+      "channel": "phone",
+      "value": "+8801787660055",
+      "confidence": 85
+    },
+    {
+      "channel": "phone",
+      "value": "+8801770000007",
+      "confidence": 85
     }
   ],
   "evidence": [

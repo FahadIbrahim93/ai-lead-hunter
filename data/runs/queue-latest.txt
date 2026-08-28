@@ -1,0 +1,790 @@
+HUMAN APPROVAL QUEUE — top 25 (sorted by score, then freshness)
+================================================================================
+Send each one yourself (WhatsApp / email / DM). Then mark sent:
+  python engine.py sent O-####
+================================================================================
+
+#1  LH-0001  Best Interior Design
+     Score 100/Tier A  |  Niche: Interior design and decor
+     Verified: · (—)  |  Contact: instagram → @bestinteriordesign
+     Outreach: O-0032  |  Channel: whatsapp  |  Status: pending_approval
+     Top pains:
+       • No visible online booking or enquiry flow — customers can't request a quote digitally
+       • Instagram-only presence means discovery depends on algorithmic reach, not owned pipeline
+     Demo:    C:\Users\fhdib\ai-lead-hunter\artifacts\demos-live\LH-0001-demo-live.html
+     Calc:    C:\Users\fhdib\ai-lead-hunter\artifacts\calculators-live\LH-0001-calculator-live.html
+
+     ── DRAFT (copy below the line) ──
+     | Hi, this is Fahad from Hope Theory.
+     | 
+     | While researching Best Interior Design, a few things stood out to me:
+     | • No visible online booking or enquiry flow — customers can't request a quote digitally
+     | • Instagram-only presence means discovery depends on algorithmic reach, not owned pipeline
+     | 
+     | I build AI agents that fix exactly this. For a business like yours, I'd start with an AI enquiry agent that replies to WhatsApp/Instagram messages instantly, qualifies each client's budget and style, and books consultations straight into your calendar.
+     | 
+     | I've already built a working demo — happy to show you in 15 minutes. No commitment, just want to show you what it does.
+     | 
+     | Best,
+     | Fahad
+     ── END DRAFT ──
+
+--------------------------------------------------------------------------------
+
+#2  LH-0002  A.K. Developments Ltd.
+     Score 100/Tier A  |  Niche: Real estate development
+     Verified: ✓ (33s ago)  |  Contact: phone → +8801979600600
+     Outreach: O-0033  |  Channel: whatsapp  |  Status: pending_approval
+     Top pains:
+       • High-ticket luxury apartments (2850 SFT, 4-bed, 30% down payment) sold via a single phone/WhatsApp line (01979-600600) — no automated buyer 
+       • No visible buyer payment-milestone tracking or construction-progress dashboard — off-plan purchasers get manual updates on the biggest purch
+     Demo:    C:\Users\fhdib\ai-lead-hunter\artifacts\demos-live\LH-0002-demo-live.html
+     Calc:    C:\Users\fhdib\ai-lead-hunter\artifacts\calculators-live\LH-0002-calculator-live.html
+
+     ── DRAFT (copy below the line) ──
+     | Hi, this is Fahad from Hope Theory.
+     | 
+     | While researching A.K. Developments Ltd., a few things stood out to me:
+     | • High-ticket luxury apartments (2850 SFT, 4-bed, 30% down payment) sold via a single phone/WhatsApp line (01979-600600) — no automated buyer qualification or instant response
+     | • No visible buyer payment-milestone tracking or construction-progress dashboard — off-plan purchasers get manual updates on the biggest purchase of their lives
+     | 
+     | I build AI agents that fix exactly this. For a business like yours, I'd start with an AI buyer-follow-up agent that answers listing questions, tracks every buyer's status, and sends payment-milestone and construction updates automatically.
+     | 
+     | I've already built a working demo — happy to show you in 15 minutes. No commitment, just want to show you what it does.
+     | 
+     | Best,
+     | Fahad
+     ── END DRAFT ──
+
+--------------------------------------------------------------------------------
+
+#3  LH-0005  BD INTERIOR
+     Score 100/Tier A  |  Niche: Interior design and decor
+     Verified: ✓ (33s ago)  |  Contact: phone → +8801711-208563
+     Outreach: O-0036  |  Channel: whatsapp  |  Status: pending_approval
+     Top pains:
+       • Award-winning interior firm with 15+ years experience but no public online booking or enquiry flow — intake is a phone number (+8801711-2085
+       • Portfolio is website-only — no WhatsApp Business integration, no automated lead qualification despite serving corporate giants (BRAC, BAT, R
+     Demo:    C:\Users\fhdib\ai-lead-hunter\artifacts\demos-live\LH-0005-demo-live.html
+     Calc:    C:\Users\fhdib\ai-lead-hunter\artifacts\calculators-live\LH-0005-calculator-live.html
+
+     ── DRAFT (copy below the line) ──
+     | Hi, this is Fahad from Hope Theory.
+     | 
+     | While researching BD INTERIOR, a few things stood out to me:
+     | • Award-winning interior firm with 15+ years experience but no public online booking or enquiry flow — intake is a phone number (+8801711-208563) and a cost-calculator widget, not a qualified-lead pipeline
+     | • Portfolio is website-only — no WhatsApp Business integration, no automated lead qualification despite serving corporate giants (BRAC, BAT, Renata, BD Army)
+     | 
+     | I build AI agents that fix exactly this. For a business like yours, I'd start with an AI enquiry agent that replies to WhatsApp/Instagram messages instantly, qualifies each client's budget and style, and books consultations straight into your calendar.
+     | 
+     | I've already built a working demo — happy to show you in 15 minutes. No commitment, just want to show you what it does.
+     | 
+     | Best,
+     | Fahad
+     ── END DRAFT ──
+
+--------------------------------------------------------------------------------
+
+#4  LH-0006  Notun Thikana Properties Ltd.
+     Score 100/Tier A  |  Niche: Real estate portal and development
+     Verified: ✓ (27s ago)  |  Contact: phone → +8801682777229
+     Outreach: O-0006  |  Channel: whatsapp  |  Status: pending_approval
+     Top pains:
+       • Property portal connects buyers/sellers but relies on a single WhatsApp line (+8801896280607) and phone for every enquiry — no automated buy
+       • No visible buyer status updates or automated follow-up — serious buyers enquiring about BDT 70M listings get manual, slow coordination
+     Demo:    C:\Users\fhdib\ai-lead-hunter\artifacts\demos-live\LH-0006-demo-live.html
+     Calc:    C:\Users\fhdib\ai-lead-hunter\artifacts\calculators-live\LH-0006-calculator-live.html
+
+     ── DRAFT (copy below the line) ──
+     | Hi, this is Fahad from Hope Theory.
+     | 
+     | While researching Notun Thikana Properties Ltd., a few things stood out to me:
+     | • Property portal connects buyers/sellers but likely lacks automated buyer status updates
+     | • No visible buyer payment milestone tracking or construction progress dashboard
+     | 
+     | I build AI agents that fix exactly this. For a business like yours, I'd start with an AI buyer-follow-up agent that answers listing questions, tracks every buyer's status, and sends payment-milestone and construction updates automatically.
+     | 
+     | I've already built a working demo — happy to show you in 15 minutes. No commitment, just want to show you what it does.
+     | 
+     | 
+     | You can also try the quick ROI calculator - open artifacts/calculators-live/LH-0006-calculator-live.html and drag the sliders.
+     | 
+     | I've also built a quick interactive demo for you - just open artifacts/demos-live/LH-0006-demo-live.html and click through it.
+     | Best,
+     | Fahad
+     ── END DRAFT ──
+
+--------------------------------------------------------------------------------
+
+#5  LH-0010  Rongin Interior Solution
+     Score 100/Tier A  |  Niche: Interior design and decoration
+     Verified: ✓ (25s ago)  |  Contact: phone → +8801677139529
+     Outreach: O-0010  |  Channel: whatsapp  |  Status: pending_approval
+     Top pains:
+       • Intake is phone-only ('Call now for free consultation' on 01677139529) — no online booking or quote-request form
+       • No visible CRM or lead-tracking; every enquiry depends on a single phone line being answered live
+     Demo:    C:\Users\fhdib\ai-lead-hunter\artifacts\demos-live\LH-0010-demo-live.html
+     Calc:    C:\Users\fhdib\ai-lead-hunter\artifacts\calculators-live\LH-0010-calculator-live.html
+
+     ── DRAFT (copy below the line) ──
+     | Hi, this is Fahad from Hope Theory.
+     | 
+     | While researching Rongin Interior Solution, a few things stood out to me:
+     | • Intake is phone-only ('Call now for free consultation') — no online booking or quote-request form
+     | • No visible CRM or lead-tracking; enquiries depend on a single phone line being answered
+     | 
+     | I build AI agents that fix exactly this. For a business like yours, I'd start with an AI enquiry agent that replies to WhatsApp/Instagram messages instantly, qualifies each client's budget and style, and books consultations straight into your calendar.
+     | 
+     | I've already built a working demo — happy to show you in 15 minutes. No commitment, just want to show you what it does.
+     | 
+     | 
+     | I've built a 60-second interactive demo specifically for LH-0010 — open artifacts/demos-live/LH-0010-demo-live.html to show it. No installation, just double-click.
+     | 
+     | You can also try the quick ROI calculator — open artifacts/calculators-live/LH-0010-calculator-live.html and drag the sliders to see what you're losing each month.
+     | 
+     | Best,
+     | Fahad
+     ── END DRAFT ──
+
+--------------------------------------------------------------------------------
+
+#6  LH-0024  JobaidaPack Packaging Ltd
+     Score 100/Tier A  |  Niche: Packaging and corrugated box manufacturing
+     Verified: ✓ (10s ago)  |  Contact: phone → +8801568316131
+     Outreach: O-0011  |  Channel: whatsapp  |  Status: pending_approval
+     Top pains:
+       • Leading packaging manufacturer (since 1996) but quote requests still depend on phone (01568316131) and email (sales@jobaidapack.com) — the '
+       • High-volume B2B orders — manual quote turnaround is slow, and every delayed quote risks losing the order to a faster competitor
+     Demo:    C:\Users\fhdib\ai-lead-hunter\artifacts\demos-live\LH-0024-demo-live.html
+     Calc:    C:\Users\fhdib\ai-lead-hunter\artifacts\calculators-live\LH-0024-calculator-live.html
+
+     ── DRAFT (copy below the line) ──
+     | Hi, this is Fahad from Hope Theory.
+     | 
+     | While researching JobaidaPack Packaging Ltd, a few things stood out to me:
+     | • Leading packaging manufacturer (since 1996) — custom corrugated boxes, mailer boxes, rigid boxes, offset printing
+     | • Quote requests via phone/email only — no online quote form, no automated lead qualification for B2B inquiries
+     | 
+     | I build AI agents that fix exactly this. For a business like yours, I'd start with an AI quote agent that captures spec requirements (size, quantity, material), generates instant ballpark quotes, and routes serious B2B enquiries straight to your sales team.
+     | 
+     | I've already built a working demo — happy to show you in 15 minutes. No commitment, just want to show you what it does.
+     | 
+     | 
+     | I've built a 60-second interactive demo specifically for LH-0024 — open artifacts/demos-live/LH-0024-demo-live.html to show it. No installation, just double-click.
+     | 
+     | You can also try the quick ROI calculator — open artifacts/calculators-live/LH-0024-calculator-live.html and drag the sliders to see what you're losing each month.
+     | 
+     | Best,
+     | Fahad
+     ── END DRAFT ──
+
+--------------------------------------------------------------------------------
+
+#7  LH-0003  Mazada Group
+     Score 90/Tier A  |  Niche: Import/export and trading
+     Verified: · (—)  |  Contact: none → (none)
+     Outreach: O-0034  |  Channel: whatsapp  |  Status: pending_approval
+     Top pains:
+       • Import/export trading with shipment coordination handled manually across multiple parties
+       • Document-heavy trade operations (customs, shipping, LC paperwork) chased by hand
+     Demo:    C:\Users\fhdib\ai-lead-hunter\artifacts\demos-live\LH-0003-demo-live.html
+     Calc:    C:\Users\fhdib\ai-lead-hunter\artifacts\calculators-live\LH-0003-calculator-live.html
+
+     ── DRAFT (copy below the line) ──
+     | Hi, this is Fahad from Hope Theory.
+     | 
+     | While researching Mazada Group, a few things stood out to me:
+     | • Import/export trading with shipment coordination handled manually across multiple parties
+     | • Document-heavy trade operations (customs, shipping, LC paperwork) chased by hand
+     | 
+     | I build AI agents that fix exactly this. For a business like yours, I'd start with an AI operations agent that tracks shipments, chases documents, and keeps every client updated without any manual follow-up.
+     | 
+     | I've already built a working demo — happy to show you in 15 minutes. No commitment, just want to show you what it does.
+     | 
+     | Best,
+     | Fahad
+     ── END DRAFT ──
+
+--------------------------------------------------------------------------------
+
+#8  LH-0011  Kazi Law Chamber
+     Score 85/Tier A  |  Niche: Legal services / law firm
+     Verified: ✓ (24s ago)  |  Contact: phone → +880 1748 848487
+     Outreach: O-0012  |  Channel: whatsapp  |  Status: pending_approval
+     Top pains:
+       • Booking is a raw WhatsApp wa.me link + basic enquiry form — no client intake triage, no case-type qualification before a lawyer's time is sp
+       • International clientele across UK/USA/Canada/China/EU/ASEAN enquires across timezones — manual response means overseas clients wait and may 
+     Demo:    C:\Users\fhdib\ai-lead-hunter\artifacts\demos-live\LH-0011-demo-live.html
+     Calc:    C:\Users\fhdib\ai-lead-hunter\artifacts\calculators-live\LH-0011-calculator-live.html
+
+     ── DRAFT (copy below the line) ──
+     | Hi, this is Fahad from Hope Theory.
+     | 
+     | While researching Kazi Law Chamber, a few things stood out to me:
+     | • Client intake routes through a raw WhatsApp wa.me link and a basic enquiry form — no triage or scheduling intelligence
+     | • International clientele (UK/USA/Canada/etc) across time zones, but no automated after-hours intake
+     | 
+     | I build AI agents that fix exactly this. For a business like yours, I'd start with an AI intake agent that triages every case enquiry, collects the documents you need before the first meeting, and schedules consultations with automated reminders.
+     | 
+     | I've already built a working demo — happy to show you in 15 minutes. No commitment, just want to show you what it does.
+     | 
+     | 
+     | I've built a 60-second interactive demo specifically for LH-0011 — open artifacts/demos-live/LH-0011-demo-live.html to show it. No installation, just double-click.
+     | 
+     | You can also try the quick ROI calculator — open artifacts/calculators-live/LH-0011-calculator-live.html and drag the sliders to see what you're losing each month.
+     | 
+     | Best,
+     | Fahad
+     ── END DRAFT ──
+
+--------------------------------------------------------------------------------
+
+#9  LH-0012  Padma Diagnostic Centre Ltd
+     Score 85/Tier A  |  Niche: Healthcare / diagnostic centre
+     Verified: ✓ (24s ago)  |  Contact: phone → 0961-1113355
+     Outreach: O-0023  |  Channel: whatsapp  |  Status: pending_approval
+     Top pains:
+       • Online appointment form is a basic 'Send Request' — no instant confirmation, no scheduling intelligence
+       • Hotline 7am-11pm but no 24/7 automated booking or enquiry handling
+     Demo:    C:\Users\fhdib\ai-lead-hunter\artifacts\demos-live\LH-0012-demo-live.html
+     Calc:    C:\Users\fhdib\ai-lead-hunter\artifacts\calculators-live\LH-0012-calculator-live.html
+
+     ── DRAFT (copy below the line) ──
+     | Hi, this is Fahad from Hope Theory.
+     | 
+     | While researching Padma Diagnostic Centre Ltd, a few things stood out to me:
+     | • Online appointment form is a basic 'Send Request' — no instant confirmation or real-time slot selection
+     | • No automated report-delivery notification; patients must check a separate portal
+     | 
+     | I build AI agents that fix exactly this. For a business like yours, I'd start with an AI appointment agent that books tests and consultations with instant confirmation, delivers report-ready notifications, and follows up with patients automatically.
+     | 
+     | I've already built a working demo — happy to show you in 15 minutes. No commitment, just want to show you what it does.
+     | 
+     | 
+     | I've built a 60-second interactive demo specifically for LH-0012 — open artifacts/demos-live/LH-0012-demo-live.html to show it. No installation, just double-click.
+     | 
+     | You can also try the quick ROI calculator — open artifacts/calculators-live/LH-0012-calculator-live.html and drag the sliders to see what you're losing each month.
+     | 
+     | Best,
+     | Fahad
+     ── END DRAFT ──
+
+--------------------------------------------------------------------------------
+
+#10  LH-0013  Obokash Travel
+     Score 85/Tier A  |  Niche: Travel agency / Hajj & Umrah / visa processing
+     Verified: ✓ (23s ago)  |  Contact: phone → 88-09648700700
+     Outreach: O-0025  |  Channel: whatsapp  |  Status: pending_approval
+     Top pains:
+       • Hajj/Umrah + visa + tour operator with a large site and a tawk.to live-chat widget that requires manual staffing
+       • Visa processing is document-heavy and status-query-driven — applicants constantly ask 'where is my application?'
+     Demo:    C:\Users\fhdib\ai-lead-hunter\artifacts\demos-live\LH-0013-demo-live.html
+     Calc:    C:\Users\fhdib\ai-lead-hunter\artifacts\calculators-live\LH-0013-calculator-live.html
+
+     ── DRAFT (copy below the line) ──
+     | Hi, this is Fahad from Hope Theory.
+     | 
+     | While researching Obokash Travel, a few things stood out to me:
+     | • Visa processing is document-heavy and status-query-driven — applicants repeatedly ask 'what's my status?'
+     | • Live chat is a manually staffed tawk.to widget — no 24/7 automated responses
+     | 
+     | I build AI agents that fix exactly this. For a business like yours, I'd start with an AI enquiry agent that answers package and visa questions instantly, tracks every application's status, and sends document checklists and deadline reminders automatically.
+     | 
+     | I've already built a working demo — happy to show you in 15 minutes. No commitment, just want to show you what it does.
+     | 
+     | 
+     | I've built a 60-second interactive demo specifically for LH-0013 — open artifacts/demos-live/LH-0013-demo-live.html to show it. No installation, just double-click.
+     | 
+     | You can also try the quick ROI calculator — open artifacts/calculators-live/LH-0013-calculator-live.html and drag the sliders to see what you're losing each month.
+     | 
+     | Best,
+     | Fahad
+     ── END DRAFT ──
+
+--------------------------------------------------------------------------------
+
+#11  LH-0014  MIE English Academy Bangladesh
+     Score 85/Tier A  |  Niche: Education / IELTS & English coaching
+     Verified: ✓ (22s ago)  |  Contact: phone → +8801329668459
+     Outreach: O-0013  |  Channel: whatsapp  |  Status: pending_approval
+     Top pains:
+       • IELTS + spoken English coaching across 7 Dhaka branches — high enquiry volume funneled through an 'Enroll Now' form with no instant response
+       • No AI qualification of student level, target score, or timeline before admission staff engage
+     Demo:    C:\Users\fhdib\ai-lead-hunter\artifacts\demos-live\LH-0014-demo-live.html
+     Calc:    C:\Users\fhdib\ai-lead-hunter\artifacts\calculators-live\LH-0014-calculator-live.html
+
+     ── DRAFT (copy below the line) ──
+     | Hi, this is Fahad from Hope Theory.
+     | 
+     | While researching MIE English Academy Bangladesh, a few things stood out to me:
+     | • 7 Dhaka branches generate high admission-enquiry volume, handled via a single 'Enroll Now' form
+     | • No automated batch scheduling or free-class booking visible
+     | 
+     | I build AI agents that fix exactly this. For a business like yours, I'd start with an AI admission agent that answers course enquiries instantly, recommends the right course from each student's target score, and books free trial classes with automated reminders.
+     | 
+     | I've already built a working demo — happy to show you in 15 minutes. No commitment, just want to show you what it does.
+     | 
+     | 
+     | I've built a 60-second interactive demo specifically for LH-0014 — open artifacts/demos-live/LH-0014-demo-live.html to show it. No installation, just double-click.
+     | 
+     | You can also try the quick ROI calculator — open artifacts/calculators-live/LH-0014-calculator-live.html and drag the sliders to see what you're losing each month.
+     | 
+     | Best,
+     | Fahad
+     ── END DRAFT ──
+
+--------------------------------------------------------------------------------
+
+#12  LH-0015  Gold's Gym Bangladesh
+     Score 85/Tier A  |  Niche: Fitness and gym
+     Verified: ✓ (20s ago)  |  Contact: phone → +8801713399399
+     Outreach: O-0014  |  Channel: whatsapp  |  Status: pending_approval
+     Top pains:
+       • Membership booking is phone-only (+8801713-399399) — no online class scheduling or membership management
+       • No visible app or portal for members to book classes, track progress, or manage accounts
+     Demo:    C:\Users\fhdib\ai-lead-hunter\artifacts\demos-live\LH-0015-demo-live.html
+     Calc:    C:\Users\fhdib\ai-lead-hunter\artifacts\calculators-live\LH-0015-calculator-live.html
+
+     ── DRAFT (copy below the line) ──
+     | Hi, this is Fahad from Hope Theory.
+     | 
+     | While researching Gold's Gym Bangladesh, a few things stood out to me:
+     | • Membership booking is phone-only (+8801969-900555) — no online class scheduling or membership management
+     | • No visible app or portal for members to book classes, track progress, or manage accounts
+     | 
+     | I build AI agents that fix exactly this. For a business like yours, I'd start with an AI membership agent that answers pricing and class enquiries instantly, books trial sessions, and sends renewal reminders so members never lapse unnoticed.
+     | 
+     | I've already built a working demo — happy to show you in 15 minutes. No commitment, just want to show you what it does.
+     | 
+     | 
+     | I've built a 60-second interactive demo specifically for LH-0015 — open artifacts/demos-live/LH-0015-demo-live.html to show it. No installation, just double-click.
+     | 
+     | You can also try the quick ROI calculator — open artifacts/calculators-live/LH-0015-calculator-live.html and drag the sliders to see what you're losing each month.
+     | 
+     | Best,
+     | Fahad
+     ── END DRAFT ──
+
+--------------------------------------------------------------------------------
+
+#13  LH-0016  Wedding Diary Bangladesh
+     Score 85/Tier A  |  Niche: Wedding photography and cinematography
+     Verified: ✓ (16s ago)  |  Contact: phone → +8801975556633
+     Outreach: O-0015  |  Channel: whatsapp  |  Status: pending_approval
+     Top pains:
+       • Booking is phone/WhatsApp only (+8801975556633, +8801711293153) — no online booking system or package comparison tool
+       • Instagram-heavy marketing but no owned lead capture — discovery depends on algorithmic reach
+     Demo:    C:\Users\fhdib\ai-lead-hunter\artifacts\demos-live\LH-0016-demo-live.html
+     Calc:    C:\Users\fhdib\ai-lead-hunter\artifacts\calculators-live\LH-0016-calculator-live.html
+
+     ── DRAFT (copy below the line) ──
+     | Hi, this is Fahad from Hope Theory.
+     | 
+     | While researching Wedding Diary Bangladesh, a few things stood out to me:
+     | • Booking is phone/WhatsApp only (+8801975556633) — no online booking system or package comparison tool
+     | • Instagram-heavy marketing but no owned lead capture — discovery depends on algorithmic reach
+     | 
+     | I build AI agents that fix exactly this. For a business like yours, I'd start with an AI enquiry agent that acknowledges every event request within seconds, qualifies the event type and budget, and sends tailored proposals while your team is still on site.
+     | 
+     | I've already built a working demo — happy to show you in 15 minutes. No commitment, just want to show you what it does.
+     | 
+     | 
+     | I've built a 60-second interactive demo specifically for LH-0016 — open artifacts/demos-live/LH-0016-demo-live.html to show it. No installation, just double-click.
+     | 
+     | You can also try the quick ROI calculator — open artifacts/calculators-live/LH-0016-calculator-live.html and drag the sliders to see what you're losing each month.
+     | 
+     | Best,
+     | Fahad
+     ── END DRAFT ──
+
+--------------------------------------------------------------------------------
+
+#14  LH-0017  Metro Weddings
+     Score 85/Tier A  |  Niche: Wedding photography and films
+     Verified: ✓ (16s ago)  |  Contact: whatsapp → +8801626474358
+     Outreach: O-0016  |  Channel: whatsapp  |  Status: pending_approval
+     Top pains:
+       • Booking via WhatsApp (+8801626474358) and email with an explicit 'we'll write back within a day' promise — couples get no instant availabili
+       • No online booking or availability calendar for the 2026-2027 season — couples can't check if their date is free without messaging
+     Demo:    C:\Users\fhdib\ai-lead-hunter\artifacts\demos-live\LH-0017-demo-live.html
+     Calc:    C:\Users\fhdib\ai-lead-hunter\artifacts\calculators-live\LH-0017-calculator-live.html
+
+     ── DRAFT (copy below the line) ──
+     | Hi, this is Fahad from Hope Theory.
+     | 
+     | While researching Metro Weddings, a few things stood out to me:
+     | • Booking is WhatsApp only (+8801626474358) — no online booking or availability calendar
+     | • Currently booking2026-2027 season but no automated waitlist or inquiry management
+     | 
+     | I build AI agents that fix exactly this. For a business like yours, I'd start with an AI enquiry agent that acknowledges every event request within seconds, qualifies the event type and budget, and sends tailored proposals while your team is still on site.
+     | 
+     | I've already built a working demo — happy to show you in 15 minutes. No commitment, just want to show you what it does.
+     | 
+     | 
+     | I've built a 60-second interactive demo specifically for LH-0017 — open artifacts/demos-live/LH-0017-demo-live.html to show it. No installation, just double-click.
+     | 
+     | You can also try the quick ROI calculator — open artifacts/calculators-live/LH-0017-calculator-live.html and drag the sliders to see what you're losing each month.
+     | 
+     | Best,
+     | Fahad
+     ── END DRAFT ──
+
+--------------------------------------------------------------------------------
+
+#15  LH-0018  Ngital Digital Marketing
+     Score 85/Tier A  |  Niche: Digital marketing agency
+     Verified: ✓ (15s ago)  |  Contact: phone → +8801601654800
+     Outreach: O-0017  |  Channel: whatsapp  |  Status: pending_approval
+     Top pains:
+       • Lead generation depends on inbound forms + a 'Free 30-Min Strategy Audit' offer with a 'reply within 1 business day' promise — no instant qu
+       • Senior strategists spend time on unqualified audit calls that don't convert — no pre-call qualification filter
+     Demo:    C:\Users\fhdib\ai-lead-hunter\artifacts\demos-live\LH-0018-demo-live.html
+     Calc:    C:\Users\fhdib\ai-lead-hunter\artifacts\calculators-live\LH-0018-calculator-live.html
+
+     ── DRAFT (copy below the line) ──
+     | Hi, this is Fahad from Hope Theory.
+     | 
+     | While researching Ngital Digital Marketing, a few things stood out to me:
+     | • Inbound lead intake is manual — web form submissions + phone calls with no automated qualification or routing
+     | • Proposals and retainer onboarding (BDT50K/month+) are hand-crafted — slow close, inconsistent pricing
+     | 
+     | I build AI agents that fix exactly this. For a business like yours, I'd start with an AI lead-qualification agent that answers inbound enquiries, scores each prospect, and books discovery calls so your team only talks to serious clients.
+     | 
+     | I've already built a working demo — happy to show you in 15 minutes. No commitment, just want to show you what it does.
+     | 
+     | 
+     | I've built a 60-second interactive demo specifically for LH-0018 — open artifacts/demos-live/LH-0018-demo-live.html to show it. No installation, just double-click.
+     | 
+     | You can also try the quick ROI calculator — open artifacts/calculators-live/LH-0018-calculator-live.html and drag the sliders to see what you're losing each month.
+     | 
+     | Best,
+     | Fahad
+     ── END DRAFT ──
+
+--------------------------------------------------------------------------------
+
+#16  LH-0019  Ananta Events and Entertainment
+     Score 85/Tier A  |  Niche: Event management company
+     Verified: ✓ (13s ago)  |  Contact: phone → via anantabd.net
+     Outreach: O-0018  |  Channel: whatsapp  |  Status: pending_approval
+     Top pains:
+       • Award-winning event management company, 16 years experience — corporate events, conferences, weddings, brand activations
+       • High-ticket packages booked via phone/email — no online inquiry management or automated follow-up
+     Demo:    C:\Users\fhdib\ai-lead-hunter\artifacts\demos-live\LH-0019-demo-live.html
+     Calc:    C:\Users\fhdib\ai-lead-hunter\artifacts\calculators-live\LH-0019-calculator-live.html
+
+     ── DRAFT (copy below the line) ──
+     | Hi, this is Fahad from Hope Theory.
+     | 
+     | While researching Ananta Events and Entertainment, a few things stood out to me:
+     | • Inquiry intake is phone/email only — no online inquiry form, no automated follow-up, no inquiry management system
+     | • High-ticket event packages, seasonal demand spikes — manual coordination during peaks, lost inquiries
+     | 
+     | I build AI agents that fix exactly this. For a business like yours, I'd start with an AI enquiry agent that acknowledges every event request within seconds, qualifies the event type and budget, and sends tailored proposals while your team is still on site.
+     | 
+     | I've already built a working demo — happy to show you in 15 minutes. No commitment, just want to show you what it does.
+     | 
+     | 
+     | I've built a 60-second interactive demo specifically for LH-0019 — open artifacts/demos-live/LH-0019-demo-live.html to show it. No installation, just double-click.
+     | 
+     | You can also try the quick ROI calculator — open artifacts/calculators-live/LH-0019-calculator-live.html and drag the sliders to see what you're losing each month.
+     | 
+     | Best,
+     | Fahad
+     ── END DRAFT ──
+
+--------------------------------------------------------------------------------
+
+#17  LH-0020  Fara IT Limited
+     Score 85/Tier A  |  Niche: IT software and web development company
+     Verified: ✓ (13s ago)  |  Contact: phone → +8801762767322
+     Outreach: O-0024  |  Channel: whatsapp  |  Status: pending_approval
+     Top pains:
+       • Web development and software company, 1200+ clients served — inbound leads via website form
+       • No visible AI-driven lead qualification or automated project scoping
+     Demo:    C:\Users\fhdib\ai-lead-hunter\artifacts\demos-live\LH-0020-demo-live.html
+     Calc:    C:\Users\fhdib\ai-lead-hunter\artifacts\calculators-live\LH-0020-calculator-live.html
+
+     ── DRAFT (copy below the line) ──
+     | Hi, this is Fahad from Hope Theory.
+     | 
+     | While researching Fara IT Limited, a few things stood out to me:
+     | • Inbound web development leads come via website form only — no AI-driven qualification or automated project scoping
+     | • High-value web/software projects require hand-crafted proposals — slow, inconsistent, resource-intensive
+     | 
+     | I build AI agents that fix exactly this. For a business like yours, I'd start with an AI intake agent that qualifies leads, schedules discovery calls, and follows up automatically so nothing falls through.
+     | 
+     | I've already built a working demo — happy to show you in 15 minutes. No commitment, just want to show you what it does.
+     | 
+     | 
+     | I've built a 60-second interactive demo specifically for LH-0020 — open artifacts/demos-live/LH-0020-demo-live.html to show it. No installation, just double-click.
+     | 
+     | You can also try the quick ROI calculator — open artifacts/calculators-live/LH-0020-calculator-live.html and drag the sliders to see what you're losing each month.
+     | 
+     | Best,
+     | Fahad
+     ── END DRAFT ──
+
+--------------------------------------------------------------------------------
+
+#18  LH-0021  Look N Feel Event Solutions
+     Score 85/Tier A  |  Niche: Event management and wedding planning
+     Verified: ✓ (12s ago)  |  Contact: phone → via looknfeelevent.com
+     Outreach: O-0019  |  Channel: whatsapp  |  Status: pending_approval
+     Top pains:
+       • Event management + wedding planning, 800+ events since 2016 — weddings (Gaye Holud, Nikah, Reception, Walima) + corporate events
+       • High-ticket packages booked via phone/WhatsApp — no online booking or inquiry management system
+     Demo:    C:\Users\fhdib\ai-lead-hunter\artifacts\demos-live\LH-0021-demo-live.html
+     Calc:    C:\Users\fhdib\ai-lead-hunter\artifacts\calculators-live\LH-0021-calculator-live.html
+
+     ── DRAFT (copy below the line) ──
+     | Hi, this is Fahad from Hope Theory.
+     | 
+     | While researching Look N Feel Event Solutions, a few things stood out to me:
+     | • Booking is phone/WhatsApp only — no online inquiry form, no package comparison tool, no automated follow-up
+     | • 800+ events since 2016 — strong pipeline but inquiry handling is entirely manual
+     | 
+     | I build AI agents that fix exactly this. For a business like yours, I'd start with an AI enquiry agent that acknowledges every event request within seconds, qualifies the event type and budget, and sends tailored proposals while your team is still on site.
+     | 
+     | I've already built a working demo — happy to show you in 15 minutes. No commitment, just want to show you what it does.
+     | 
+     | 
+     | I've built a 60-second interactive demo specifically for LH-0021 — open artifacts/demos-live/LH-0021-demo-live.html to show it. No installation, just double-click.
+     | 
+     | You can also try the quick ROI calculator — open artifacts/calculators-live/LH-0021-calculator-live.html and drag the sliders to see what you're losing each month.
+     | 
+     | Best,
+     | Fahad
+     ── END DRAFT ──
+
+--------------------------------------------------------------------------------
+
+#19  LH-0022  Cooper's Bakery Bangladesh
+     Score 85/Tier A  |  Niche: Bakery and custom cakes
+     Verified: ✓ (11s ago)  |  Contact: phone → +880-2-5566 (Old Airport Road)
+     Outreach: O-0020  |  Channel: whatsapp  |  Status: pending_approval
+     Top pains:
+       • Custom wedding cakes and pastries — high-ticket, seasonal demand spikes (wedding season +150%)
+       • Orders come via phone/Instagram/WhatsApp — no online order form to capture custom cake requests automatically
+     Demo:    C:\Users\fhdib\ai-lead-hunter\artifacts\demos-live\LH-0022-demo-live.html
+     Calc:    C:\Users\fhdib\ai-lead-hunter\artifacts\calculators-live\LH-0022-calculator-live.html
+
+     ── DRAFT (copy below the line) ──
+     | Hi, this is Fahad from Hope Theory.
+     | 
+     | While researching Cooper's Bakery Bangladesh, a few things stood out to me:
+     | • Custom wedding cakes and pastries — high-ticket, seasonal demand spikes (wedding season +150%)
+     | • Orders come via phone/Instagram/WhatsApp — no online order form to capture custom cake requests automatically
+     | 
+     | I build AI agents that fix exactly this. For a business like yours, I'd start with an AI order agent that captures custom cake requests with design details and delivery dates over WhatsApp, confirms pricing instantly, and sends order-status updates automatically.
+     | 
+     | I've already built a working demo — happy to show you in 15 minutes. No commitment, just want to show you what it does.
+     | 
+     | 
+     | I've built a 60-second interactive demo specifically for LH-0022 — open artifacts/demos-live/LH-0022-demo-live.html to show it. No installation, just double-click.
+     | 
+     | You can also try the quick ROI calculator — open artifacts/calculators-live/LH-0022-calculator-live.html and drag the sliders to see what you're losing each month.
+     | 
+     | Best,
+     | Fahad
+     ── END DRAFT ──
+
+--------------------------------------------------------------------------------
+
+#20  LH-0023  Rejuvenate Salon & Spa
+     Score 85/Tier A  |  Niche: Luxury salon and spa
+     Verified: ✓ (11s ago)  |  Contact: phone → +880 1886-123770
+     Outreach: O-0021  |  Channel: whatsapp  |  Status: pending_approval
+     Top pains:
+       • Bangladesh premier luxury salon, 3+ branches, 4.9 star rating — high-ticket, appointment-driven
+       • Book via phone only — no online booking system, so appointments depend on a staffed phone line
+     Demo:    C:\Users\fhdib\ai-lead-hunter\artifacts\demos-live\LH-0023-demo-live.html
+     Calc:    C:\Users\fhdib\ai-lead-hunter\artifacts\calculators-live\LH-0023-calculator-live.html
+
+     ── DRAFT (copy below the line) ──
+     | Hi, this is Fahad from Hope Theory.
+     | 
+     | While researching Rejuvenate Salon & Spa, a few things stood out to me:
+     | • Bangladesh premier luxury salon (3+ branches, 4.9 rating) — appointment-driven, high-ticket services
+     | • Booking is phone-only — no online booking system, no automated appointment reminders
+     | 
+     | I build AI agents that fix exactly this. For a business like yours, I'd start with an AI booking agent that answers service and pricing enquiries, books appointments into your stylists' real-time availability, and sends pre-visit reminders to cut no-shows.
+     | 
+     | I've already built a working demo — happy to show you in 15 minutes. No commitment, just want to show you what it does.
+     | 
+     | 
+     | I've built a 60-second interactive demo specifically for LH-0023 — open artifacts/demos-live/LH-0023-demo-live.html to show it. No installation, just double-click.
+     | 
+     | You can also try the quick ROI calculator — open artifacts/calculators-live/LH-0023-calculator-live.html and drag the sliders to see what you're losing each month.
+     | 
+     | Best,
+     | Fahad
+     ── END DRAFT ──
+
+--------------------------------------------------------------------------------
+
+#21  LH-0025  Fastexpress BD
+     Score 85/Tier A  |  Niche: Courier and logistics
+     Verified: ✓ (9s ago)  |  Contact: phone → +88 01680-030830-1
+     Outreach: O-0022  |  Channel: whatsapp  |  Status: pending_approval
+     Top pains:
+       • Courier service with shipment tracking on website — but customers still call/email for status instead of self-serving
+       • Booking via phone/email or walk-in — no automated shipment booking form or WhatsApp booking
+     Demo:    C:\Users\fhdib\ai-lead-hunter\artifacts\demos-live\LH-0025-demo-live.html
+     Calc:    C:\Users\fhdib\ai-lead-hunter\artifacts\calculators-live\LH-0025-calculator-live.html
+
+     ── DRAFT (copy below the line) ──
+     | Hi, this is Fahad from Hope Theory.
+     | 
+     | While researching Fastexpress BD, a few things stood out to me:
+     | • Courier and logistics service with shipment tracking on website — but no automated booking form
+     | • Booking via phone/email/walk-in — no AI-powered booking assistant to handle volume spikes
+     | 
+     | I build AI agents that fix exactly this. For a business like yours, I'd start with an AI tracking agent that answers 'where is my parcel?' queries automatically 24/7, books new shipments over WhatsApp, and sends delivery confirmations without staff touching a keyboard.
+     | 
+     | I've already built a working demo — happy to show you in 15 minutes. No commitment, just want to show you what it does.
+     | 
+     | 
+     | I've built a 60-second interactive demo specifically for LH-0025 — open artifacts/demos-live/LH-0025-demo-live.html to show it. No installation, just double-click.
+     | 
+     | You can also try the quick ROI calculator — open artifacts/calculators-live/LH-0025-calculator-live.html and drag the sliders to see what you're losing each month.
+     | 
+     | Best,
+     | Fahad
+     ── END DRAFT ──
+
+--------------------------------------------------------------------------------
+
+#22  LH-0026  Tech Dental Care
+     Score 85/Tier A  |  Niche: Dental clinic chain
+     Verified: ✓ (9s ago)  |  Contact: phone → 09638-000505
+     Outreach: O-0026  |  Channel: whatsapp  |  Status: pending_approval
+     Top pains:
+       • Bangladesh's largest dental chain with 4 branches (Mirpur, Uttara, Badda, Jatrabari) — high patient volume across locations with no unified 
+       • Appointment intake is 'Request a Free Callback' form + phone (09638-000505) — no real-time slot confirmation, patients wait for callback
+     Demo:    C:\Users\fhdib\ai-lead-hunter\artifacts\demos-live\LH-0026-demo-live.html
+     Calc:    C:\Users\fhdib\ai-lead-hunter\artifacts\calculators-live\LH-0026-calculator-live.html
+
+     ── DRAFT (copy below the line) ──
+     | Hi, this is Fahad from Hope Theory.
+     | 
+     | While researching Tech Dental Care, a few things stood out to me:
+     | • Bangladesh's largest dental chain with 4 branches (Mirpur, Uttara, Badda, Jatrabari) — high patient volume across locations with no unified booking system
+     | • Appointment intake is 'Request a Free Callback' form + phone (09638-000505) — no real-time slot confirmation, patients wait for callback
+     | 
+     | I build AI agents that fix exactly this. For a business like yours, I'd start with an AI appointment agent that answers treatment enquiries with instant price guidance, books patients into real-time slots at the right branch, and sends recall reminders so no patient is lost.
+     | 
+     | I've already built a working demo — happy to show you in 15 minutes. No commitment, just want to show you what it does.
+     | 
+     | 
+     | I've built a 60-second interactive demo specifically for LH-0026 — open artifacts/demos-live/LH-0026-demo-live.html to show it. No installation, just double-click.
+     | 
+     | You can also try the quick ROI calculator — open artifacts/calculators-live/LH-0026-calculator-live.html and drag the sliders to see what you're losing each month.
+     | 
+     | Best,
+     | Fahad
+     ── END DRAFT ──
+
+--------------------------------------------------------------------------------
+
+#23  LH-0027  Enhance English BD
+     Score 85/Tier A  |  Niche: Education / IELTS & PTE coaching
+     Verified: ✓ (8s ago)  |  Contact: phone → +8801958665618
+     Outreach: O-0027  |  Channel: whatsapp  |  Status: pending_approval
+     Top pains:
+       • British Council & Pearson certified institute with 5000+ students — high enquiry volume across 3 centers (Dhanmondi, Banani, Chattogram)
+       • Registration is a web form with course selection — no instant response, no AI qualification of student level or goals
+     Demo:    C:\Users\fhdib\ai-lead-hunter\artifacts\demos-live\LH-0027-demo-live.html
+     Calc:    C:\Users\fhdib\ai-lead-hunter\artifacts\calculators-live\LH-0027-calculator-live.html
+
+     ── DRAFT (copy below the line) ──
+     | Hi, this is Fahad from Hope Theory.
+     | 
+     | While researching Enhance English BD, a few things stood out to me:
+     | • British Council & Pearson certified institute with 5000+ students — high enquiry volume across 3 centers (Dhanmondi, Banani, Chattogram)
+     | • Registration is a web form with course selection — no instant response, no AI qualification of student level or goals
+     | 
+     | I build AI agents that fix exactly this. For a business like yours, I'd start with an AI admission agent that answers course enquiries instantly, recommends the right course from each student's target score, and books free trial classes with automated reminders.
+     | 
+     | I've already built a working demo — happy to show you in 15 minutes. No commitment, just want to show you what it does.
+     | 
+     | 
+     | I've built a 60-second interactive demo specifically for LH-0027 — open artifacts/demos-live/LH-0027-demo-live.html to show it. No installation, just double-click.
+     | 
+     | You can also try the quick ROI calculator — open artifacts/calculators-live/LH-0027-calculator-live.html and drag the sliders to see what you're losing each month.
+     | 
+     | Best,
+     | Fahad
+     ── END DRAFT ──
+
+--------------------------------------------------------------------------------
+
+#24  LH-0028  Dhaka Event Planner
+     Score 85/Tier A  |  Niche: Event management and production
+     Verified: ✓ (5s ago)  |  Contact: phone → +8801777044241
+     Outreach: O-0028  |  Channel: whatsapp  |  Status: pending_approval
+     Top pains:
+       • Premier event production company serving corporate giants (Robi, Unilever, bKash, Grameenphone, BRAC, Walton) — high-ticket B2B enquiries
+       • Quote request form on site but no instant response — corporate clients expect same-day acknowledgement
+     Demo:    C:\Users\fhdib\ai-lead-hunter\artifacts\demos-live\LH-0028-demo-live.html
+     Calc:    C:\Users\fhdib\ai-lead-hunter\artifacts\calculators-live\LH-0028-calculator-live.html
+
+     ── DRAFT (copy below the line) ──
+     | Hi, this is Fahad from Hope Theory.
+     | 
+     | While researching Dhaka Event Planner, a few things stood out to me:
+     | • Premier event production company serving corporate giants (Robi, Unilever, bKash, Grameenphone, BRAC, Walton) — high-ticket B2B enquiries
+     | • Quote request form on site but no instant response — corporate clients expect same-day acknowledgement
+     | 
+     | I build AI agents that fix exactly this. For a business like yours, I'd start with an AI enquiry agent that acknowledges every event request within seconds, qualifies the event type and budget, and sends tailored proposals while your team is still on site.
+     | 
+     | I've already built a working demo — happy to show you in 15 minutes. No commitment, just want to show you what it does.
+     | 
+     | 
+     | I've built a 60-second interactive demo specifically for LH-0028 — open artifacts/demos-live/LH-0028-demo-live.html to show it. No installation, just double-click.
+     | 
+     | You can also try the quick ROI calculator — open artifacts/calculators-live/LH-0028-calculator-live.html and drag the sliders to see what you're losing each month.
+     | 
+     | Best,
+     | Fahad
+     ── END DRAFT ──
+
+--------------------------------------------------------------------------------
+
+#25  LH-0029  Manchester English Academy
+     Score 85/Tier A  |  Niche: Education / English & IELTS coaching
+     Verified: ✓ (3s ago)  |  Contact: phone → +8801582706670
+     Outreach: O-0029  |  Channel: whatsapp  |  Status: pending_approval
+     Top pains:
+       • English academy with online course platform (LMS) — courses priced BDT 12,000-15,000 with visible enrollment
+       • Enquiry form on website but no instant response — prospective students get no immediate course guidance
+     Demo:    C:\Users\fhdib\ai-lead-hunter\artifacts\demos-live\LH-0029-demo-live.html
+     Calc:    C:\Users\fhdib\ai-lead-hunter\artifacts\calculators-live\LH-0029-calculator-live.html
+
+     ── DRAFT (copy below the line) ──
+     | Hi, this is Fahad from Hope Theory.
+     | 
+     | While researching Manchester English Academy, a few things stood out to me:
+     | • English academy with online course platform (LMS) — courses priced BDT 12,000-15,000 with visible enrollment
+     | • Enquiry form on website but no instant response — prospective students get no immediate course guidance
+     | 
+     | I build AI agents that fix exactly this. For a business like yours, I'd start with an AI admission agent that answers course enquiries instantly, recommends the right course from each student's target score, and books free trial classes with automated reminders.
+     | 
+     | I've already built a working demo — happy to show you in 15 minutes. No commitment, just want to show you what it does.
+     | 
+     | 
+     | I've built a 60-second interactive demo specifically for LH-0029 — open artifacts/demos-live/LH-0029-demo-live.html to show it. No installation, just double-click.
+     | 
+     | You can also try the quick ROI calculator — open artifacts/calculators-live/LH-0029-calculator-live.html and drag the sliders to see what you're losing each month.
+     | 
+     | Best,
+     | Fahad
+     ── END DRAFT ──
+
+--------------------------------------------------------------------------------
+
+Action legend:
+  python engine.py sent   O-####         # after you send it
+  python engine.py reply  O-#### '...'   # when they reply
+  python engine.py won    O-####         # when deal closes
+  python engine.py lost   O-####         # when they pass

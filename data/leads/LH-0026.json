@@ -8,7 +8,7 @@
   "tier": "A",
   "website": "https://techdentalcare.com/",
   "verified": true,
-  "verified_at": "2026-08-27T08:28:17.710606+00:00",
+  "verified_at": "2026-08-28T00:10:28.615620+00:00",
   "lead_type": "client",
   "niche": "Dental clinic chain",
   "geography": "Dhaka, Bangladesh (4 branches: Mirpur, Uttara, Badda, Jatrabari)",
@@ -35,6 +35,21 @@
       "type": "website",
       "value": "https://techdentalcare.com/",
       "source": "verified LIVE (HTTP 200)"
+    },
+    {
+      "channel": "phone",
+      "value": "+8801961501791",
+      "confidence": 85
+    },
+    {
+      "channel": "phone",
+      "value": "+8801961502121",
+      "confidence": 85
+    },
+    {
+      "channel": "phone",
+      "value": "+8801678291968",
+      "confidence": 85
     }
   ],
   "evidence": [

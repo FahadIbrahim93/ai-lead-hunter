@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-1892",
+  "lead_id": "LH-0015",
+  "occurred_at": "2026-08-28T00:10:17.387243+00:00",
+  "actor": "hermes",
+  "action": "verified",
+  "resource": "https://goldsgym.com.bd/",
+  "detail": "Live HTTP 200 — website confirmed up"
+}

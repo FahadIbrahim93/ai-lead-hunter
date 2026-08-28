@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-1705",
+  "lead_id": "SYSTEM",
+  "occurred_at": "2026-08-27T08:33:43.840551+00:00",
+  "actor": "hermes",
+  "action": "duplicate_skipped",
+  "resource": "ingest",
+  "detail": "Duplicate skipped: Obokash Travel"
+}

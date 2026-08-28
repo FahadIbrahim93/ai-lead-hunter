@@ -8,7 +8,7 @@
   "tier": "A",
   "website": "https://looknfeelevent.com/",
   "verified": true,
-  "verified_at": "2026-08-27T08:31:16.845777+00:00",
+  "verified_at": "2026-08-28T00:10:25.908180+00:00",
   "lead_type": "client",
   "niche": "Event management and wedding planning",
   "geography": "Dhaka, Bangladesh",
@@ -30,6 +30,16 @@
       "type": "website",
       "value": "https://looknfeelevent.com/",
       "source": "verified LIVE (HTTP 200)"
+    },
+    {
+      "channel": "email",
+      "value": "looknfeelevent@gmail.com",
+      "confidence": 90
+    },
+    {
+      "channel": "phone",
+      "value": "+8801674851180",
+      "confidence": 85
     }
   ],
   "evidence": [

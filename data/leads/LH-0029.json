@@ -8,7 +8,7 @@
   "tier": "A",
   "website": "https://manchesterenglishacademy.com/",
   "verified": true,
-  "verified_at": "2026-08-27T08:31:16.845777+00:00",
+  "verified_at": "2026-08-28T00:10:34.466450+00:00",
   "lead_type": "client",
   "niche": "Education / English & IELTS coaching",
   "geography": "Dhaka, Bangladesh",
@@ -30,6 +30,16 @@
       "type": "website",
       "value": "https://manchesterenglishacademy.com/",
       "source": "verified LIVE (HTTP 200)"
+    },
+    {
+      "channel": "phone",
+      "value": "+8801582706670",
+      "confidence": 85
+    },
+    {
+      "channel": "phone",
+      "value": "+8801773744422",
+      "confidence": 85
     }
   ],
   "evidence": [

@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-1842",
+  "lead_id": "LH-0002",
+  "occurred_at": "2026-08-28T00:08:25.328929+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0411.json",
+  "detail": "Evidence: website — Website live (HTTP 200) at https://akdevelopmentsltd.com/"
+}

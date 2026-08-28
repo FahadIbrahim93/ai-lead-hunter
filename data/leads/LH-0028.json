@@ -8,7 +8,7 @@
   "tier": "A",
   "website": "https://dhakaeventplanner.com/",
   "verified": true,
-  "verified_at": "2026-08-27T08:28:17.710606+00:00",
+  "verified_at": "2026-08-28T00:10:32.187616+00:00",
   "lead_type": "client",
   "niche": "Event management and production",
   "geography": "Dhaka, Bangladesh",
@@ -35,6 +35,26 @@
       "type": "website",
       "value": "https://dhakaeventplanner.com/",
       "source": "verified LIVE (HTTP 200)"
+    },
+    {
+      "channel": "email",
+      "value": "hello@dhakaeventplanner.com",
+      "confidence": 90
+    },
+    {
+      "channel": "phone",
+      "value": "+8801961501791",
+      "confidence": 85
+    },
+    {
+      "channel": "phone",
+      "value": "+8801961502121",
+      "confidence": 85
+    },
+    {
+      "channel": "phone",
+      "value": "+8801678291968",
+      "confidence": 85
     }
   ],
   "evidence": [

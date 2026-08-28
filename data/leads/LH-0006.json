@@ -31,6 +31,16 @@
       "type": "social",
       "value": "FB/X/IG/LinkedIn/YouTube @NotunThikana",
       "source": "web_extract: notunthikana.com footer"
+    },
+    {
+      "channel": "email",
+      "value": "sweetalert2@11.js",
+      "confidence": 90
+    },
+    {
+      "channel": "phone",
+      "value": "+8801682777229",
+      "confidence": 85
     }
   ],
   "evidence": [
@@ -45,6 +55,12 @@
       "kind": "competitive",
       "summary": "BengalTech and E-Hishabi offer real estate ERP with buyer portals — Bangladeshi developers lag",
       "confidence": 75
+    },
+    {
+      "evidence_id": "E-0413",
+      "kind": "website",
+      "summary": "Website live (HTTP 200) at https://notunthikana.com/",
+      "confidence": 95
     }
   ],
   "notes": "Auto-discovered from live market research + referral signals.",
@@ -102,6 +118,6 @@
     "demo_scenario": "A buyer watches Notun Thikana's YouTube tour of a 2850 SFT furnished Dhanmondi apartment (BDT 150K/month) and messages the WhatsApp line at 10pm: 'Is this still available?' In 8 seconds the AI replies: 'Yes! 2850 SFT, 3 bed, furnished, ৳150,000/month in Dhanmondi. Would you like a viewing? I have Saturday 11am or Sunday 3pm.' The buyer picks Saturday. The agent books it, sends a calendar invite + location pin, and logs a structured brief (budget, move-in timeline, family size) for the agent handling the viewing. Zero human effort, and the buyer never had a chance to message a competing portal."
   },
   "verified": true,
-  "verified_at": "2026-08-27T08:25:38.019755+00:00",
+  "verified_at": "2026-08-28T00:10:09.969219+00:00",
   "website": "https://notunthikana.com/"
 }

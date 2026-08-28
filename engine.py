@@ -5,6 +5,7 @@ ai-lead-hunter — Hermes Control Plane v2 (local implementation)
 Usage:
   python engine.py status
   python engine.py leads
+  python engine.py queue [N]         # top N leads ready to send (default 10)
   python engine.py research          # show the research inbox
   python engine.py ingest            # ingest findings -> leads (dedup-safe)
   python engine.py verify LH-0010    # live HTTP check + contact extraction
@@ -14,6 +15,10 @@ Usage:
   python engine.py score LH-0010
   python engine.py demo LH-0010
   python engine.py outreach LH-0010
+  python engine.py sent O-####       # mark a draft as sent (after YOU send it)
+  python engine.py reply O-#### '..' # log a prospect reply
+  python engine.py won O-####        # mark deal won
+  python engine.py lost O-####       # mark deal lost
   python engine.py validate
 """
 
@@ -163,6 +168,33 @@ def cmd_status() -> None:
     print(f"Evidence:  {counts['evidence']}")
     print(f"Activity:  {counts['activity']}")
     print(f"Outreach:  {counts['outreach']}")
+
+    # Sales view: external clients only (excludes internal_venture leads).
+    # Internal ventures inflate Tier A counts; for sales reporting use this row.
+    if LEADS.exists():
+        client_leads = [
+            d for d in (load_json(f) for f in LEADS.glob("*.json"))
+            if d.get("lead_type") == "client"
+        ]
+        client_tiers = {"A": 0, "B": 0, "C": 0}
+        for d in client_leads:
+            t = d.get("tier")
+            if t in client_tiers:
+                client_tiers[t] += 1
+        qualified = sum(
+            1 for d in client_leads
+            if d.get("lifecycle_status") in {"QUALIFIED", "OUTREACH_READY", "CONTACTED", "IN_CONVERSATION", "WON"}
+        )
+        verified = sum(1 for d in client_leads if d.get("verified"))
+        profiles = sum(1 for d in client_leads if d.get("business_profile"))
+        print()
+        print("Sales view (external clients only):")
+        print(f"  Client leads:     {len(client_leads)}")
+        print(f"  Verified live:    {verified}")
+        print(f"  Qualified:        {qualified}")
+        print(f"  Tier A / B / C:   {client_tiers['A']} / {client_tiers['B']} / {client_tiers['C']}")
+        print(f"  A+ profiles:      {profiles} / {len(client_leads)}")
+
     errs = all_errors()
     if errs:
         print(f"\nValidation errors: {len(errs)}")
@@ -1320,6 +1352,198 @@ def cmd_calculator_live(lead_id: str) -> None:
     print(f"   Open in browser — sliders let the lead see their own savings.")
 
 
+# ─── Human approval queue ──────────────────────────────────────────────────
+
+
+def _primary_contact(lead: dict) -> tuple[str, str]:
+    """Return (channel, value) for the best contact path on a lead.
+
+    Priority: phone (real number) > whatsapp (real number) > website (non-empty)
+    > email > linkedin > instagram > owner placeholder.
+
+    We avoid placeholder values like '+880XXXXXXXXXX' and the
+    'unverified — needs confirmation' source label.
+    """
+    paths = lead.get("contact_paths") or []
+    placeholders = ("xxx", "xxxx", "unverified", "needs confirmation", "****")
+    # rank: real phone/whatsapp first
+    rank = {"phone": 0, "whatsapp": 1, "email": 2, "website": 3,
+            "linkedin": 4, "instagram": 5, "owner": 6, "other": 7}
+    best = None
+    for c in paths:
+        val = str(c.get("value", "")).strip()
+        ch = str(c.get("channel", c.get("type", "other"))).lower()
+        if not val:
+            continue
+        if any(p in val.lower() for p in placeholders):
+            continue
+        if best is None or rank.get(ch, 99) < rank.get(best[0], 99):
+            best = (ch, val)
+    if best is None:
+        return ("none", "")
+    return best
+
+
+def _outreach_draft_for(lead_id: str) -> tuple[str, str, str]:
+    """Return (outreach_id, channel, draft_text) for the most recent draft
+    outreach on this lead that is still pending_approval. Returns ('','','')
+    if no pending draft exists."""
+    if not OUTREACH.exists():
+        return ("", "", "")
+    candidates = []
+    for f in sorted(OUTREACH.glob("*.json")):
+        try:
+            rec = load_json(f)
+        except Exception:
+            continue
+        if rec.get("lead_id") != lead_id:
+            continue
+        if rec.get("status") != "pending_approval":
+            continue
+        candidates.append(rec)
+    if not candidates:
+        return ("", "", "")
+    # most recent first
+    candidates.sort(key=lambda r: r.get("outreach_id", ""), reverse=True)
+    rec = candidates[0]
+    return (rec.get("outreach_id", ""), rec.get("channel", "whatsapp"),
+            rec.get("draft", ""))
+
+
+def _artifact_paths(lead_id: str) -> tuple[str, str, str]:
+    """Return (demo_live_path, calculator_live_path, demo_spec_path)
+    if they exist. Empty string when missing."""
+    demo_live = ARTIFACTS / "demos-live" / f"{lead_id}-demo-live.html"
+    calc_live = ARTIFACTS / "calculators-live" / f"{lead_id}-calculator-live.html"
+    demo_spec = ARTIFACTS / "demos" / f"{lead_id}-demo.md"
+    return (
+        str(demo_live) if demo_live.exists() else "",
+        str(calc_live) if calc_live.exists() else "",
+        str(demo_spec) if demo_spec.exists() else "",
+    )
+
+
+def _humanize_age(iso_ts: str) -> str:
+    """Pretty-print how long ago an ISO timestamp is, e.g. '3d ago'."""
+    if not iso_ts:
+        return "—"
+    try:
+        dt = datetime.fromisoformat(iso_ts.replace("Z", "+00:00"))
+    except Exception:
+        return iso_ts
+    now = datetime.now(timezone.utc)
+    delta = now - dt
+    s = int(delta.total_seconds())
+    if s < 0:
+        return "just now"
+    if s < 60:
+        return f"{s}s ago"
+    if s < 3600:
+        return f"{s // 60}m ago"
+    if s < 86400:
+        return f"{s // 3600}h ago"
+    if s < 30 * 86400:
+        return f"{s // 86400}d ago"
+    return f"{s // (30 * 86400)}mo ago"
+
+
+def cmd_queue(limit: str = "10", only: str = "client") -> None:
+    """Print the human-approval queue: top leads ready to send outreach.
+
+    Default: top 10 client leads (excludes internal ventures), Tier A/B,
+    QUALIFIED, with a pending_approval outreach draft, sorted by score
+    desc then verified-recency desc.
+    """
+    try:
+        n = int(limit)
+    except ValueError:
+        n = 10
+    n = max(1, min(n, 50))
+
+    if not LEADS.exists():
+        print("No leads yet.")
+        return
+    rows = []
+    for f in sorted(LEADS.glob("*.json")):
+        try:
+            d = load_json(f)
+        except Exception:
+            continue
+        if only == "client" and d.get("lead_type") != "client":
+            continue
+        if only == "external" and d.get("lead_type") == "internal_venture":
+            continue
+        if d.get("tier") not in ("A", "B"):
+            continue
+        if d.get("lifecycle_status") not in ("QUALIFIED", "OUTREACH_READY"):
+            continue
+        oid, _, _ = _outreach_draft_for(d["lead_id"])
+        if not oid:
+            continue
+        rows.append(d)
+
+    # Sort: score desc, then verified_at desc, then lead_id asc
+    rows.sort(
+        key=lambda r: (-(r.get("score", 0) or 0),
+                       r.get("verified_at") or "",
+                       r.get("lead_id", "")),
+    )
+    rows = rows[:n]
+
+    if not rows:
+        print("Queue is empty. No qualified client leads with pending outreach.")
+        return
+
+    print(f"HUMAN APPROVAL QUEUE — top {len(rows)} (sorted by score, then freshness)")
+    print("=" * 80)
+    print("Send each one yourself (WhatsApp / email / DM). Then mark sent:")
+    print("  python engine.py sent O-####")
+    print("=" * 80)
+    print()
+
+    for i, lead in enumerate(rows, 1):
+        oid, channel, draft = _outreach_draft_for(lead["lead_id"])
+        contact_ch, contact_val = _primary_contact(lead)
+        demo_live, calc_live, demo_spec = _artifact_paths(lead["lead_id"])
+        niche = lead.get("niche", "")
+        score = lead.get("score", 0)
+        tier = lead.get("tier", "")
+        verified = "✓" if lead.get("verified") else "·"
+        v_age = _humanize_age(lead.get("verified_at", ""))
+        pains = lead.get("pain_signals", [])[:2]
+
+        print(f"#{i}  {lead['lead_id']}  {lead['business_name']}")
+        print(f"     Score {score}/Tier {tier}  |  Niche: {niche}")
+        print(f"     Verified: {verified} ({v_age})  |  Contact: {contact_ch} → {contact_val or '(none)'}")
+        print(f"     Outreach: {oid}  |  Channel: {channel}  |  Status: pending_approval")
+        if pains:
+            print("     Top pains:")
+            for p in pains:
+                print(f"       • {p[:140]}")
+        if demo_live:
+            print(f"     Demo:    {demo_live}")
+        if calc_live:
+            print(f"     Calc:    {calc_live}")
+        print()
+        print("     ── DRAFT (copy below the line) ──")
+        if draft:
+            for line in draft.splitlines():
+                print(f"     | {line}")
+        else:
+            print("     | (no draft text)")
+        print("     ── END DRAFT ──")
+        print()
+        print("-" * 80)
+        print()
+
+    # Footer summary
+    print("Action legend:")
+    print("  python engine.py sent   O-####         # after you send it")
+    print("  python engine.py reply  O-#### '...'   # when they reply")
+    print("  python engine.py won    O-####         # when deal closes")
+    print("  python engine.py lost   O-####         # when they pass")
+
+
 # ─── CLI ───────────────────────────────────────────────────────────────────
 
 CMD_MAP = {
@@ -1337,6 +1561,7 @@ CMD_MAP = {
     "demo": cmd_demo,
     "demo-live": cmd_demo_live,
     "calculator-live": cmd_calculator_live,
+    "queue": cmd_queue,
     "sent": cmd_mark_sent,
     "reply": cmd_mark_reply,
     "won": cmd_mark_won,
@@ -1389,6 +1614,8 @@ def main() -> None:
 
     if cmd in ("status", "leads", "validate", "discover", "research", "ingest", "verify-all"):
         CMD_MAP[cmd]()
+    elif cmd == "queue":
+        CMD_MAP[cmd](arg or "10")
     elif cmd == "reply":
         CMD_MAP[cmd](arg, " ".join(sys.argv[3:]) if len(sys.argv) > 3 else "(no text)")
     else:

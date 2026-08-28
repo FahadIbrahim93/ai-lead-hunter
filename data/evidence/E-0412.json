@@ -1,0 +1,10 @@
+{
+  "evidence_id": "E-0412",
+  "lead_id": "LH-0005",
+  "kind": "website",
+  "found_at": "2026-08-28T00:08:25.821720+00:00",
+  "source_url": "https://bdinterior.com/",
+  "summary": "Website live (HTTP 200) at https://bdinterior.com/",
+  "confidence": 95,
+  "raw": ""
+}

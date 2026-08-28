@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-1845",
+  "lead_id": "LH-0005",
+  "occurred_at": "2026-08-28T00:08:25.845968+00:00",
+  "actor": "hermes",
+  "action": "audited",
+  "resource": "C:\\Users\\fhdib\\ai-lead-hunter\\data\\evidence\\E-0412.json",
+  "detail": "Evidence: website — Website live (HTTP 200) at https://bdinterior.com/"
+}
