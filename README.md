@@ -42,12 +42,19 @@ python engine.py lost O-0001           # mark deal lost
 
 ### Dashboard
 
+**Public (read-only):** https://fahadibrahim93.github.io/ai-lead-hunter/
+Auto-deployed on every push to main via GitHub Pages. Shows all leads,
+scores, outreach drafts, and activity — no server needed.
+
+**Local (full control):**
 ```bash
 python dashboard.py          # opens http://localhost:8765
 # Or double-click START-DASHBOARD.bat (Windows)
 ```
 
-The dashboard has tabs: **Leads** (with Re-Audit/Demo/Calculator/Outreach buttons), **Outreach Drafts**, **Activity Log**, and **Pipeline Board** (Kanban by lifecycle stage).
+The local dashboard has action buttons (Re-Audit, Demo, Calculator,
+Outreach) that the public view does not. Use the local version when
+running the pipeline; share the public URL for demos/portfolio.
 
 ## Architecture
 
@@ -168,7 +175,8 @@ These six have been hand-personalized. Copy from the dashboard or
 ## Repositories
 
 - Code: https://github.com/FahadIbrahim93/ai-lead-hunter
-- Live dashboard: http://localhost:8765 (when server running)
+- **Live dashboard:** https://fahadibrahim93.github.io/ai-lead-hunter/
+- Local dashboard: http://localhost:8765 (when server running)
 
 ## Rules
 

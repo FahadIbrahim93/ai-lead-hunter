@@ -147,9 +147,13 @@ ai-lead-hunter/
 │   └── calculators-live/       ← 31 standalone HTML calculators
 ├── templates/                  ← demo + calculator HTML templates
 ├── tests/                      ← 29 tests (test_core, test_v2)
-├── scripts/                    ← one-off scripts (enrich, inject, rewrite)
+├── scripts/                    ← one-off scripts (enrich, inject, rewrite, export_static)
 ├── docs/                       ← this file + HOW_TO_ADD_A_LEAD + DECISIONS
-└── .github/workflows/ci.yml    ← status + tests on push
+├── dist/                       ← built by export_static.py (git-ignored, deployed to Pages)
+├── .github/workflows/
+│   ├── ci.yml                  ← status + tests on push
+│   └── pages.yml               ← GitHub Pages deployment
+└── tests/                      ← 41 tests (test_core, test_v2, test_v3_sprint)
 ```
 
 ## The 3 outputs that actually close deals
@@ -186,6 +190,51 @@ The only commands that move the lifecycle forward are:
 
 If you find an agent or a script that does any of these without your
 explicit invocation, that's a bug — file it.
+
+## Deployment (GitHub Pages)
+
+The public dashboard is a **static snapshot** — no Python, no server, no
+API keys. It's built by `scripts/export_static.py` and deployed to GitHub
+Pages on every push to main.
+
+```
+scripts/export_static.py
+  reads: data/leads, data/outreach, data/activity, data/evidence, artifacts/
+  writes: dist/index.html (self-contained, data inlined as JS)
+          dist/data-snapshot.json (raw JSON for programmatic access)
+          dist/demos/ (31 interactive demo HTML files)
+          dist/calcs/ (31 ROI calculator HTML files)
+          dist/.nojekyll (prevents Jekyll processing)
+```
+
+**Workflow:** `.github/workflows/pages.yml` triggers on push to main,
+runs `python scripts/export_static.py`, and deploys `dist/` to GitHub
+Pages. The live URL is:
+**https://fahadibrahim93.github.io/ai-lead-hunter/**
+
+**What's public vs. local:**
+
+| Feature | Public (GitHub Pages) | Local (dashboard.py) |
+|---|---|---|
+| View leads, scores, tiers | ✅ | ✅ |
+| View outreach drafts | ✅ | ✅ |
+| View activity log | ✅ | ✅ |
+| View pipeline board | ✅ | ✅ |
+| Download raw JSON | ✅ | N/A |
+| Re-Audit / Demo / Outreach buttons | ❌ (disabled) | ✅ |
+| Run engine.py commands | ❌ | ✅ |
+| Data freshness | Snapshot at last push | Real-time |
+
+**To rebuild locally:**
+```bash
+python scripts/export_static.py   # writes to dist/
+# Open dist/index.html in a browser to preview
+```
+
+**To add the GitHub Pages environment:**
+1. Go to repo Settings → Pages
+2. Source: "GitHub Actions" (not "Deploy from a branch")
+3. The workflow handles the rest
 
 ## How to extend
 

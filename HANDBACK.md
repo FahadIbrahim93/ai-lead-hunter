@@ -5,7 +5,7 @@ A local-first lead machine that turns Bangladesh business research into
 send-ready outreach packages. Nothing leaves the system without your
 approval — you copy, paste, and send.
 
-Last updated: 2026-08-28 (v3-sprint: queue + audit + daily refresh)
+Last updated: 2026-08-29 (GitHub Pages deployment)
 
 ## Current state (verified end of session)
 
@@ -24,6 +24,8 @@ Last updated: 2026-08-28 (v3-sprint: queue + audit + daily refresh)
 | Tests | **40 / 40 passing** (was 28 — added 11 v3 tests + 1 consistency audit) |
 | Schema validation | clean |
 | Daily refresh cron | scheduled at 08:00 BD (job id 6217eb838d38 — needs `hermes gateway start`) |
+| **Live dashboard** | **https://fahadibrahim93.github.io/ai-lead-hunter/** |
+| Deployment | GitHub Pages via `.github/workflows/pages.yml` (auto on push to main) |
 
 ## What this session built (v3-sprint, autonomous manager mode)
 
@@ -198,10 +200,14 @@ python scripts\audit_outreach_consistency.py  # check data integrity
 | `scripts/audit_outreach_consistency.py` | read-only integrity check |
 | `scripts/daily_refresh.py` | daily unattended pass |
 | `scripts/daily_refresh_status.py` | CLI to see last refresh |
+| `scripts/export_static.py` | **builds static dashboard for GitHub Pages** |
+| `.github/workflows/pages.yml` | **GitHub Pages deployment workflow** |
+| `.github/workflows/ci.yml` | CI: status + tests on push |
 | `data/runs/README.md` | cron wiring + exit codes |
 
 ## Repositories
 - Code: https://github.com/FahadIbrahim93/ai-lead-hunter
+- **Live dashboard:** https://fahadibrahim93.github.io/ai-lead-hunter/
 
 ## Rules (unchanged — by design)
 - Nothing sent automatically — only drafts, you pull the trigger
