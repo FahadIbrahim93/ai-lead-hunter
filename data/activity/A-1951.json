@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-1951",
+  "lead_id": "SYSTEM",
+  "occurred_at": "2026-08-29T00:10:43.201009+00:00",
+  "actor": "hermes",
+  "action": "duplicate_skipped",
+  "resource": "ingest",
+  "detail": "Duplicate skipped: Laser Dental BD"
+}

@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-1972",
+  "lead_id": "SYSTEM",
+  "occurred_at": "2026-08-29T00:14:17.387191+00:00",
+  "actor": "hermes",
+  "action": "duplicate_skipped",
+  "resource": "ingest",
+  "detail": "Duplicate skipped: Manchester English Academy"
+}

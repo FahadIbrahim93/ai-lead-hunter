@@ -2,10 +2,12 @@
   "outreach_id": "O-0015",
   "lead_id": "LH-0016",
   "channel": "whatsapp",
-  "draft": "Hi, this is Fahad from Hope Theory.\n\nWhile researching Wedding Diary Bangladesh, a few things stood out to me:\n• Booking is phone/WhatsApp only (+8801975556633) — no online booking system or package comparison tool\n• Instagram-heavy marketing but no owned lead capture — discovery depends on algorithmic reach\n\nI build AI agents that fix exactly this. For a business like yours, I'd start with an AI enquiry agent that acknowledges every event request within seconds, qualifies the event type and budget, and sends tailored proposals while your team is still on site.\n\nI've already built a working demo — happy to show you in 15 minutes. No commitment, just want to show you what it does.\n\n\nI've built a 60-second interactive demo specifically for LH-0016 — open artifacts/demos-live/LH-0016-demo-live.html to show it. No installation, just double-click.\n\nYou can also try the quick ROI calculator — open artifacts/calculators-live/LH-0016-calculator-live.html and drag the sliders to see what you're losing each month.\n\nBest,\nFahad",
+  "draft": "Hi — Fahad here, AI engineer in Dhaka.\n\nI watched the recent Wedding Diary showreels and the cinematic style is exactly the kind of work that converts Instagram viewers into BDT 50K-2.5L bookings — for 1500+ weddings that portfolio is undeniable.\n\nThe gap I see: every enquiry still routes to a phone/WhatsApp number, and the couple comparing you to 3-4 other studios is going to book the one that confirms availability fastest. With 2026-2027 season dates filling up, even a 6-hour reply lag loses a date to a faster studio — and that's unrecoverable, because the date is the inventory.\n\nI built an AI booking agent that lives on your Instagram DMs + your site + WhatsApp. The couple types \"is Dec 14 available?\" and gets a real answer in seconds, with a deposit link to lock the date. If the date is taken, the agent offers the 3 nearest alternatives from your calendar. You wake up to confirmed bookings, not a queue of DMs.\n\nI've built a working demo using your actual portfolio style — happy to show you in 15 minutes. No commitment.\n\nBest,\nFahad",
   "status": "pending_approval",
   "human_approved_at": "",
   "sent_at": "",
   "response_at": "",
-  "response": ""
+  "response": "",
+  "personalized_at": "2026-08-29T00:16:29.237478+00:00",
+  "personalized_by": "human"
 }

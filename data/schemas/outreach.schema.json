@@ -14,7 +14,7 @@
     "draft": { "type": "string" },
     "status": {
       "type": "string",
-      "enum": ["drafted", "pending_approval", "approved", "sent", "delivered", "replied", "no_reply", "failed"]
+      "enum": ["drafted", "pending_approval", "approved", "sent", "delivered", "replied", "no_reply", "failed", "superseded"]
     },
     "human_approved_at": { "type": "string", "format": "date-time" },
     "sent_at": { "type": "string", "format": "date-time" },

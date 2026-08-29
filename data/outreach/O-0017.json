@@ -2,10 +2,12 @@
   "outreach_id": "O-0017",
   "lead_id": "LH-0018",
   "channel": "whatsapp",
-  "draft": "Hi, this is Fahad from Hope Theory.\n\nWhile researching Ngital Digital Marketing, a few things stood out to me:\n• Inbound lead intake is manual — web form submissions + phone calls with no automated qualification or routing\n• Proposals and retainer onboarding (BDT50K/month+) are hand-crafted — slow close, inconsistent pricing\n\nI build AI agents that fix exactly this. For a business like yours, I'd start with an AI lead-qualification agent that answers inbound enquiries, scores each prospect, and books discovery calls so your team only talks to serious clients.\n\nI've already built a working demo — happy to show you in 15 minutes. No commitment, just want to show you what it does.\n\n\nI've built a 60-second interactive demo specifically for LH-0018 — open artifacts/demos-live/LH-0018-demo-live.html to show it. No installation, just double-click.\n\nYou can also try the quick ROI calculator — open artifacts/calculators-live/LH-0018-calculator-live.html and drag the sliders to see what you're losing each month.\n\nBest,\nFahad",
+  "draft": "Hi Tajul — Fahad here, AI engineer in Dhaka (and a fan of the Ngital brand — the Free 30-Min Strategy Audit positioning is sharp).\n\nI noticed your own intake is a web form + a 'reply within 1 business day' promise. That's the exact pattern I help service-business clients fix — and it's a bit ironic for a digital agency to run manual inquiry handling when you sell performance marketing to clients. There's a credibility play here too: showing clients that your own funnel is AI-powered becomes a case study you can resell.\n\nI built an AI lead-qualification agent for your Free Audit funnel. It asks the 3 questions that actually predict fit (monthly ad budget, primary goal, current funnel), scores the lead, books qualified ones into a senior strategist's calendar with a prep brief, and auto-disqualifies tyre-kickers. Your senior strategists stop spending 30 minutes on calls that were never going to close.\n\nI've built a working demo using Ngital's actual audit flow — happy to show you in 15 minutes. No commitment, and if you like it we can talk about you reselling the same agent to your own clients.\n\nBest,\nFahad",
   "status": "pending_approval",
   "human_approved_at": "",
   "sent_at": "",
   "response_at": "",
-  "response": ""
+  "response": "",
+  "personalized_at": "2026-08-29T00:16:29.237478+00:00",
+  "personalized_by": "human"
 }

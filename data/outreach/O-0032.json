@@ -2,10 +2,12 @@
   "outreach_id": "O-0032",
   "lead_id": "LH-0001",
   "channel": "whatsapp",
-  "draft": "Hi, this is Fahad from Hope Theory.\n\nWhile researching Best Interior Design, a few things stood out to me:\n• No visible online booking or enquiry flow — customers can't request a quote digitally\n• Instagram-only presence means discovery depends on algorithmic reach, not owned pipeline\n\nI build AI agents that fix exactly this. For a business like yours, I'd start with an AI enquiry agent that replies to WhatsApp/Instagram messages instantly, qualifies each client's budget and style, and books consultations straight into your calendar.\n\nI've already built a working demo — happy to show you in 15 minutes. No commitment, just want to show you what it does.\n\nBest,\nFahad",
+  "draft": "Hi — Fahad here, AI engineer in Dhaka.\n\nI was looking at Best Interior Design on Instagram last night — the gulshan-3-brd project walkthrough is genuinely strong, and the before/after reels are clearly doing the heavy lifting for inbound interest.\n\nBut that same reel audience can't book you. They DM, you reply when you're not on a site visit, half go cold, and there's no calendar slot for them to grab. With 500+ DMs a month I'd estimate 20-30% of serious enquiries (people already in the 5-15 lakh budget range) are lost in the lag.\n\nI built an AI intake agent that plugs into your Instagram DMs and your WhatsApp — it qualifies budget, sqft, timeline in 2-3 questions, shows you only the serious ones, and books the consultation slot directly into your calendar. You'd wake up to a list of qualified leads, not a graveyard of unanswered DMs.\n\nI built a working demo using your actual project types — happy to show you in 15 minutes. No commitment, just want you to see what it does.\n\nBest,\nFahad",
   "status": "pending_approval",
   "human_approved_at": "",
   "sent_at": "",
   "response_at": "",
-  "response": ""
+  "response": "",
+  "personalized_at": "2026-08-29T00:16:29.237478+00:00",
+  "personalized_by": "human"
 }

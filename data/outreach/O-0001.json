@@ -3,9 +3,11 @@
   "lead_id": "LH-0001",
   "channel": "whatsapp",
   "draft": "Hi, this is Fahad from Hope Theory.\n\nI was researching Best Interior Design and noticed something that caught my attention: no visible online booking or enquiry flow — customers can't request a quote digitally.\n\nI build AI agents that solve exactly this kind of problem — automated intake, instant responses, and zero missed leads. For a business like yours in Interior design and decor, this typically means:\n• 24/7 enquiry handling (no more missed calls)\n• Automatic lead qualification (saves your team hours)\n• Instant booking/consultation scheduling\n\nI've built a quick interactive demo specifically for Best Interior Design so you can see exactly how it would work for your clients. It takes 2 minutes to try:\n\nI've built a 60-second interactive demo specifically for LH-0001 — open artifacts/demos-live/LH-0001-demo-live.html to show it. No installation, just double-click.\n\nWould you be open to a 15-minute call this week to walk through it? I can show you the demo live and answer any questions.\n\n\nYou can also try the quick ROI calculator - open artifacts/calculators-live/LH-0001-calculator-live.html and drag the sliders.\nBest,\nFahad Ibrahim\nHope Theory",
-  "status": "pending_approval",
+  "status": "superseded",
   "human_approved_at": "",
   "sent_at": "2026-08-27T02:45:13.649494+00:00",
   "response_at": "2026-08-27T02:45:13.808407+00:00",
-  "response": "Interested, let's schedule a call"
+  "response": "Interested, let's schedule a call",
+  "superseded_at": "2026-08-27T00:00:00+06:00",
+  "superseded_by": "O-0032"
 }

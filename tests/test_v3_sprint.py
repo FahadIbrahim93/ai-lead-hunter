@@ -199,6 +199,26 @@ class TestAppendOnly:
         )
 
 
+# ─── Outreach uniqueness (one pending draft per lead) ──────────────────────
+
+
+class TestOutreachUniqueness:
+    """A lead should have at most one `pending_approval` outreach. Older
+    duplicates must be marked `superseded` (not deleted, not left pending)
+    so the queue and dashboard show the right draft.
+    """
+
+    def test_at_most_one_pending_outreach_per_lead(self):
+        out_dir = REPO / "data" / "outreach"
+        by_lead: dict[str, list[str]] = {}
+        for f in out_dir.glob("O-*.json"):
+            r = json.loads(f.read_text(encoding="utf-8"))
+            if r.get("status") == "pending_approval":
+                by_lead.setdefault(r.get("lead_id", ""), []).append(r["outreach_id"])
+        dupes = {lid: oids for lid, oids in by_lead.items() if len(oids) > 1}
+        assert not dupes, f"leads with multiple pending outreach: {dupes}"
+
+
 if __name__ == "__main__":
     import pytest
     sys.exit(pytest.main([__file__, "-v"]))

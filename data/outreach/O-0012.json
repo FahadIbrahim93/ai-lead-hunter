@@ -2,10 +2,12 @@
   "outreach_id": "O-0012",
   "lead_id": "LH-0011",
   "channel": "whatsapp",
-  "draft": "Hi, this is Fahad from Hope Theory.\n\nWhile researching Kazi Law Chamber, a few things stood out to me:\n• Client intake routes through a raw WhatsApp wa.me link and a basic enquiry form — no triage or scheduling intelligence\n• International clientele (UK/USA/Canada/etc) across time zones, but no automated after-hours intake\n\nI build AI agents that fix exactly this. For a business like yours, I'd start with an AI intake agent that triages every case enquiry, collects the documents you need before the first meeting, and schedules consultations with automated reminders.\n\nI've already built a working demo — happy to show you in 15 minutes. No commitment, just want to show you what it does.\n\n\nI've built a 60-second interactive demo specifically for LH-0011 — open artifacts/demos-live/LH-0011-demo-live.html to show it. No installation, just double-click.\n\nYou can also try the quick ROI calculator — open artifacts/calculators-live/LH-0011-calculator-live.html and drag the sliders to see what you're losing each month.\n\nBest,\nFahad",
+  "draft": "Hi — Fahad here, AI engineer in Dhaka.\n\nI've been reading about Kazi Law Chamber — the 30-year track record and the international client roster (UK, USA, Canada, EU, ASEAN) is genuinely impressive, and the Barrister Bodruddoza YouTube presence is strong.\n\nBut the intake is a single wa.me link plus a basic form. For an international clientele browsing at 11pm their time (your 3am), that means the lead is comparing your firm to two London/US firms in real time — and you don't reply until the next BD business day. For high-value cross-border matters (corporate, immigration, commercial), response speed is the conversion lever.\n\nI built an AI intake agent that lives on your website and WhatsApp — it triages every matter type (corporate vs civil vs immigration), sends the right document checklist before the first meeting, and books a consultation that fits the client's timezone. Your lawyers walk into the first meeting with a structured brief — not a 2-line WhatsApp message.\n\nI've built a working demo using your firm's actual matter types — happy to show you in 15 minutes. No commitment.\n\nBest,\nFahad",
   "status": "pending_approval",
   "human_approved_at": "",
   "sent_at": "",
   "response_at": "",
-  "response": ""
+  "response": "",
+  "personalized_at": "2026-08-29T00:16:29.237478+00:00",
+  "personalized_by": "human"
 }

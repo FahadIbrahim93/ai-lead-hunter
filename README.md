@@ -115,19 +115,55 @@ tests/test_v2.py     v2 architecture tests (research inbox, dedup, verify, idemp
 
 | Metric | Count |
 |---|---|
-| Leads | 31 (28 clients + 3 internal ventures) |
+| Total leads | 31 (28 clients + 3 internal ventures) |
 | Verified live | 25 |
 | Qualified | 31 |
-| Tier A | 30 |
-| Tier B | 1 |
-| Tier C | 0 |
+| Tier A (sales view, external clients) | 27 |
+| Tier B (sales view) | 1 |
+| Tier C (sales view) | 0 |
 | A+ business profiles | 28 (all external clients) |
-| Evidence | 410 |
-| Activity log | 1701 |
-| Outreach drafts | 31 (all pending_approval) |
+| Evidence | 413 |
+| Activity log | 2018 |
+| Outreach drafts | 36 (31 pending, 0 sent, 5 superseded) |
 | Interactive demos | 31 |
 | ROI calculators | 31 |
-| Tests | 28/28 passing |
+| Tests | 41/41 passing |
+| Schema validation | clean |
+
+> **Note on the Tier counts:** the headline `30 Tier A` from earlier sessions
+> includes 3 internal-venture leads (LH-0007/8/9 = MARJAHANS, SNAPTRAP, JG
+> Mart). For sales reporting, the *Sales view* row in `python engine.py status`
+> reports the honest counts: 27 Tier A + 1 Tier B external client leads.
+
+## Top leads to send first (highest revenue probability)
+
+These six have been hand-personalized. Copy from the dashboard or
+`data/outreach/O-####.json` and send yourself:
+
+1. **LH-0002 A.K. Developments Ltd.** — Luxury developer, multi-crore units,
+   Palm Jumeirah founder. `O-0033` (hand-personalized for Jolshiri NRB buyers).
+2. **LH-0011 Kazi Law Chamber** — 30-yr international law firm. `O-0012`
+   (hand-personalized for cross-border intake).
+3. **LH-0015 Gold's Gym Bangladesh** — Premium gym, Bashundhara Group backing.
+   `O-0014` (hand-personalized for BDT 99K-2.5L packages).
+4. **LH-0016 Wedding Diary Bangladesh** — 1500+ weddings, BDT 50K-2.5L.
+   `O-0015` (hand-personalized for date-inventory booking).
+5. **LH-0001 Best Interior Design** — Instagram-first, gulshan-3-brd walkthroughs.
+   `O-0032` (hand-personalized for DM-to-booking flow).
+6. **LH-0018 Ngital Digital Marketing** — 200+ brand agency. `O-0017`
+   (hand-personalized for AI-as-case-study positioning).
+
+## Documentation
+
+- [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) — 5-min tour of the data
+  flow, lifecycle, source-of-truth hierarchy, and design principles.
+- [`docs/HOW_TO_ADD_A_LEAD.md`](docs/HOW_TO_ADD_A_LEAD.md) — manual for
+  adding a new lead, including the A+ business profile template and the
+  outreach personalization checklist.
+- [`docs/DECISIONS.md`](docs/DECISIONS.md) — decision log + postmortem on
+  what didn't work this session (path bug, cached scores, test hardcoding,
+  stale docs) and the principles we carry forward.
+- [`HANDBACK.md`](HANDBACK.md) — end-of-session state snapshot.
 
 ## Repositories
 
