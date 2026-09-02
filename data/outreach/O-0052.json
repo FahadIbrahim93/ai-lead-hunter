@@ -1,0 +1,14 @@
+{
+  "outreach_id": "O-0052",
+  "lead_id": "LH-0021",
+  "channel": "whatsapp",
+  "draft": "Hi — Fahad here, AI engineer in Dhaka.\n\nI've been researching event management companies in Bangladesh, and Look N Feel Event Solutions came up as a player in the corporate and wedding event space. The biggest leak in event businesses is usually in enquiry response time — couples and corporate clients message multiple event planners simultaneously, and the one who replies fastest with the most relevant package wins.\n\nHere's what I see: booking is phone/WhatsApp-only, and every enquiry requires manual back-and-forth about event type, guest count, venue, and budget. During peak season, your team is drowning in enquiries, and leads go cold when replies take more than a few hours.\n\nI built an AI event consultant agent that handles WhatsApp/Instagram enquiries 24/7 — it asks about event type, guest count, preferred dates, and budget range, then provides instant package recommendations and books a consultation with your planning team. It also sends automated follow-ups to clients who enquired but didn't book.\n\nHappy to show you a working demo in 15 minutes. No commitment.\n\nBest,\nFahad",
+  "status": "pending_approval",
+  "human_approved_at": null,
+  "sent_at": null,
+  "response_at": null,
+  "response": null,
+  "created_at": "2026-09-02T19:01:40.444769+00:00",
+  "personalized": true,
+  "source_research": "pain signal analysis + industry research 2026-08-28"
+}

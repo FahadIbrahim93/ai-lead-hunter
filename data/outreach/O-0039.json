@@ -1,0 +1,14 @@
+{
+  "outreach_id": "O-0039",
+  "lead_id": "LH-0023",
+  "channel": "whatsapp",
+  "draft": "Hi — Fahad here, AI engineer in Dhaka.\n\nI visited rejuvenatebd.com and was impressed — 4.9★ rating, 3+ branches (Gulshan 2 basement + ladies-only Level 1, Dhanmondi, Uttara), and the 'Private female-only styling chambers' positioning is genuinely smart for the Dhaka market. The Hair Revival package at ৳4,500 and Premium Grooming at ৳4,500 are premium-tier pricing.\n\nBut here's what I noticed: booking is phone-only (+880 1406-699612). For a salon with 3 branches and a 4.9★ reputation, that means your front desk is spending time on scheduling instead of client experience. And with ladies-only and unisex branches, the booking logic isn't simple — you need to route clients to the right branch and the right wing automatically.\n\nI built an AI booking agent that handles WhatsApp/Instagram DM enquiries 24/7 — it asks what service they want, recommends the right branch (ladies-only vs unisex), shows available slots, and confirms the booking. It also sends appointment reminders and follow-up review requests, which is how you turn that 4.9★ into 5.0★.\n\nHappy to show you a working demo in 15 minutes. No commitment.\n\nBest,\nFahad",
+  "status": "pending_approval",
+  "human_approved_at": null,
+  "sent_at": null,
+  "response_at": null,
+  "response": null,
+  "created_at": "2026-09-02T18:59:56.889695+00:00",
+  "personalized": true,
+  "source_research": "live website extraction 2026-08-28"
+}

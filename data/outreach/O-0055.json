@@ -1,0 +1,14 @@
+{
+  "outreach_id": "O-0055",
+  "lead_id": "LH-0027",
+  "channel": "whatsapp",
+  "draft": "Hi — Fahad here, AI engineer in Dhaka.\n\nI've been researching English training centres in Bangladesh, and Enhance English BD with British Council & Pearson certification is a strong positioning. The biggest leak in education businesses is usually in lead conversion — students enquire about courses via phone or Facebook, but there's no automated way to qualify them (what's their current level? what's their target? when do they need it?) before a counsellor spends time on a call.\n\nHere's the pattern I see: a student messages your Facebook page asking about IELTS or spoken English courses. Right now, someone manually replies, asks about their goals and current level, schedules a placement test, and follows up. That's a lot of manual coordination, and leads go cold when replies are delayed by even a few hours.\n\nI built an AI education consultant agent that handles enquiries 24/7 — it asks about learning goals, current level, preferred schedule, and budget, then recommends the right course, schedules a placement test, and sends automated reminders. It also follows up with students who enquired but didn't enrol.\n\nHappy to show you a working demo in 15 minutes. No commitment.\n\nBest,\nFahad",
+  "status": "pending_approval",
+  "human_approved_at": null,
+  "sent_at": null,
+  "response_at": null,
+  "response": null,
+  "created_at": "2026-09-02T19:01:40.468774+00:00",
+  "personalized": true,
+  "source_research": "pain signal analysis + industry research 2026-08-28"
+}

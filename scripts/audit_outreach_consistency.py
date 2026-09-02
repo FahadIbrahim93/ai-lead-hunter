@@ -128,6 +128,8 @@ def main() -> int:
     print("=" * 70)
     if not issues:
         print("✓ All outreach and lead records are consistent with the activity log.")
+        print()
+        print("This script is read-only. It does not modify any data.")
         return 0
 
     print(f"Found {len(issues)} inconsistency(ies):\n")

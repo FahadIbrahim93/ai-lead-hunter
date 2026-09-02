@@ -1,0 +1,14 @@
+{
+  "outreach_id": "O-0048",
+  "lead_id": "LH-0013",
+  "channel": "whatsapp",
+  "draft": "Hi — Fahad here, AI engineer in Dhaka.\n\nI've been researching travel and visa processing agencies in Bangladesh, and Obokash Travel came up as a established player. Visa processing is one of the most document-heavy, status-query-intensive businesses in Bangladesh — every applicant wants to know 'is my visa approved?' every day, and your team spends hours answering the same status questions.\n\nHere's what I see: a typical visa application involves 15-20 documents (passport copies, bank statements, invitation letters, hotel bookings, flight itineraries), and every missing document means a back-and-forth WhatsApp conversation. For Hajj/Umrah packages, the volume multiplies during season, and your team is manually tracking hundreds of applications simultaneously.\n\nI built an AI visa assistant agent that handles applicant enquiries 24/7 — it collects required documents via WhatsApp, checks for completeness, sends automated status updates, and answers common questions (processing time, required documents, embassy appointments). Your team stops answering 'where is my visa?' calls and focuses on closing new applications.\n\nHappy to show you a working demo in 15 minutes. No commitment.\n\nBest,\nFahad",
+  "status": "pending_approval",
+  "human_approved_at": null,
+  "sent_at": null,
+  "response_at": null,
+  "response": null,
+  "created_at": "2026-09-02T19:01:40.410251+00:00",
+  "personalized": true,
+  "source_research": "pain signal analysis + industry research 2026-08-28"
+}

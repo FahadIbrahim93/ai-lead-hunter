@@ -1,0 +1,14 @@
+{
+  "outreach_id": "O-0054",
+  "lead_id": "LH-0026",
+  "channel": "whatsapp",
+  "draft": "Hi — Fahad here, AI engineer in Dhaka.\n\nI've been researching dental chains in Bangladesh, and Tech Dental Care with 4 branches is a serious operation. The biggest leak in multi-branch dental practices is usually in appointment booking — patients call the hotline, get put on hold, and then need to be routed to the right branch based on their service needs.\n\nHere's what I see: with 4 branches, you need to handle appointment booking, branch routing, and patient follow-up across multiple locations. Right now, that's phone-based, which means your front desk is spending time on scheduling instead of patient experience. And with services ranging from general dentistry to cosmetic procedures, the booking logic isn't simple.\n\nI built an AI dental booking agent that handles WhatsApp enquiries 24/7 — it asks what service they need, recommends the right branch and doctor, shows available slots, and confirms the appointment. It also sends pre-appointment preparation instructions and post-treatment follow-up reminders.\n\nHappy to show you a working demo in 15 minutes. No commitment.\n\nBest,\nFahad",
+  "status": "pending_approval",
+  "human_approved_at": null,
+  "sent_at": null,
+  "response_at": null,
+  "response": null,
+  "created_at": "2026-09-02T19:01:40.460772+00:00",
+  "personalized": true,
+  "source_research": "pain signal analysis + industry research 2026-08-28"
+}

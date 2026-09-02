@@ -1,0 +1,14 @@
+{
+  "outreach_id": "O-0053",
+  "lead_id": "LH-0022",
+  "channel": "whatsapp",
+  "draft": "Hi — Fahad here, AI engineer in Dhaka.\n\nI've been researching premium bakeries in Bangladesh, and Cooper's Bakery caught my attention — custom wedding cakes, pastries, and the kind of artisan positioning that commands premium pricing. In the custom cake business, the biggest leak is usually in enquiry handling — every wedding cake order requires a consultation about design, flavour, servings, and delivery, and right now that's all manual.\n\nHere's what I see: a customer messages your Facebook/Instagram page asking about a wedding cake. Right now, someone manually replies, asks about design preferences, guest count (for serving size), flavour, and delivery date, then provides a quote. During wedding season, that's a lot of manual back-and-forth, and leads go cold when replies are delayed.\n\nI built an AI bakery consultant agent that handles social media enquiries 24/7 — it asks about cake type, servings, flavour preference, design inspiration, and delivery date, then provides instant price ranges and books a consultation with your cake designer. It also handles repeat orders from past customers with automated birthday/anniversary reminders.\n\nHappy to show you a working demo in 15 minutes. No commitment.\n\nBest,\nFahad",
+  "status": "pending_approval",
+  "human_approved_at": null,
+  "sent_at": null,
+  "response_at": null,
+  "response": null,
+  "created_at": "2026-09-02T19:01:40.452770+00:00",
+  "personalized": true,
+  "source_research": "pain signal analysis + industry research 2026-08-28"
+}

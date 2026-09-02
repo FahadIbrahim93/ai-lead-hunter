@@ -1,0 +1,15 @@
+{
+  "outreach_id": "O-0037",
+  "lead_id": "LH-0001",
+  "channel": "instagram",
+  "draft": "Hi — Fahad here again. Thanks for getting back to me, really glad the project caught your eye.\n\nI'd love to walk you through the demo. Here are a few times that work on my end:\n\n• Tomorrow (Saturday) — 11am or 4pm\n• Sunday — 10am or 3pm\n• Monday — anytime after 2pm\n\nPick whichever suits you, or suggest a slot and I'll make it work. The demo takes about 15 minutes and I'll show you exactly how the intake agent would handle your Instagram DMs and WhatsApp enquiries — using your actual project types as examples.\n\nLooking forward to it.\n\nBest,\nFahad",
+  "status": "pending_approval",
+  "human_approved_at": "",
+  "sent_at": "",
+  "response_at": "",
+  "response": "",
+  "follow_up_of": "O-0001",
+  "context": "Lead replied 'Interested, let's schedule a call' (A-0236). This is a follow-up proposing specific time slots.",
+  "personalized_at": "2026-08-29T10:35:05.862238+00:00",
+  "personalized_by": "hermes"
+}

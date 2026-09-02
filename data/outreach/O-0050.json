@@ -1,0 +1,14 @@
+{
+  "outreach_id": "O-0050",
+  "lead_id": "LH-0017",
+  "channel": "whatsapp",
+  "draft": "Hi — Fahad here, AI engineer in Dhaka.\n\nI've been researching wedding planning companies in Bangladesh, and Metro Weddings came up as a premium player. The wedding industry in Dhaka is booming, but the enquiry-to-booking conversion is brutal — couples message 5-10 wedding planners on Instagram, and the one who replies fastest with the most relevant package wins.\n\nHere's what I see: booking is WhatsApp-only (+880****4358), and every enquiry requires manual back-and-forth about dates, guest count, venue preference, and budget. During peak wedding season (Nov-Feb), your team is drowning in enquiries, and leads go cold when replies take more than 2-3 hours.\n\nI built an AI wedding consultant agent that handles Instagram/WhatsApp enquiries 24/7 — it asks about wedding date, guest count, venue preference, and budget range, then provides instant package recommendations and books a consultation with your planning team. It also sends automated follow-ups to couples who enquired but didn't book.\n\nHappy to show you a working demo in 15 minutes. No commitment.\n\nBest,\nFahad",
+  "status": "pending_approval",
+  "human_approved_at": null,
+  "sent_at": null,
+  "response_at": null,
+  "response": null,
+  "created_at": "2026-09-02T19:01:40.428259+00:00",
+  "personalized": true,
+  "source_research": "pain signal analysis + industry research 2026-08-28"
+}

@@ -1,0 +1,14 @@
+{
+  "outreach_id": "O-0046",
+  "lead_id": "LH-0003",
+  "channel": "whatsapp",
+  "draft": "Hi — Fahad here, AI engineer in Dhaka.\n\nI've been researching import/export businesses in Bangladesh, and Mazada Group came up as a established player in the trading space. The kind of work you do — coordinating shipments across multiple parties, managing customs documentation, LC paperwork, and keeping buyers updated on shipment status — is exactly the kind of operation that loses money through manual delays.\n\nHere's what I see: every shipment involves 5-10 parties (buyer, seller, shipping line, customs broker, freight forwarder, bank), and right now every status update is a phone call or email. When a container is delayed at Chittagong port, your team manually notifies the buyer, the warehouse, and the finance team. That's 3 calls per delay, and delays happen on 30-40% of shipments.\n\nI built an AI operations agent that automates shipment status updates — it pulls tracking data, sends automatic notifications to all parties when status changes, handles document requests (invoices, packing lists, certificates of origin), and answers buyer enquiries about delivery timelines 24/7. Your team stops making status-update calls and focuses on closing new deals.\n\nHappy to show you a working demo in 15 minutes. No commitment.\n\nBest,\nFahad",
+  "status": "pending_approval",
+  "human_approved_at": null,
+  "sent_at": null,
+  "response_at": null,
+  "response": null,
+  "created_at": "2026-09-02T19:01:40.392742+00:00",
+  "personalized": true,
+  "source_research": "pain signal analysis + industry research 2026-08-28"
+}

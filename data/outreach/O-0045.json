@@ -1,0 +1,14 @@
+{
+  "outreach_id": "O-0045",
+  "lead_id": "LH-0031",
+  "channel": "whatsapp",
+  "draft": "Hi Mostafiz bhai — Fahad here, AI engineer in Dhaka.\n\nI was looking at littlearabia.com.bd — 'First Ever Arabian Restaurant in Bangladesh' since 2012, and the Google reviews are fantastic. Sabique Islam's review about the mutton kabsa ('very soft and tasty') and Debashis Ray's review about the Arabian Kabsa Rice ('absolutely delicious, perfectly cooked') are the kind of organic praise that most restaurants pay for. The Sultan Platter for 10 people and the Traditional Platter for 3 are smart tiering.\n\nBut here's what I noticed: ordering is phone-only (+8801713222677) with free home delivery in the city. For a restaurant with this kind of loyal following and premium positioning, you're missing orders from people who don't want to call — they want to WhatsApp their order at 11pm and have it confirmed instantly. And with platters ranging from 3-person to 10-person, the order logic isn't simple — you need to handle customization, delivery timing, and area-based delivery fees automatically.\n\nI built an AI ordering agent that handles WhatsApp orders 24/7 — it shows the menu, takes orders with customizations, confirms delivery time and area, and sends order updates. It also re-engages past customers with automated offers for weekends, Eid, and special occasions.\n\nHappy to show you a working demo in 15 minutes. No commitment.\n\nBest,\nFahad",
+  "status": "pending_approval",
+  "human_approved_at": null,
+  "sent_at": null,
+  "response_at": null,
+  "response": null,
+  "created_at": "2026-09-02T18:59:56.936705+00:00",
+  "personalized": true,
+  "source_research": "live website extraction 2026-08-28"
+}

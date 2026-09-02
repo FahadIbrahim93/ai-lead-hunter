@@ -1,0 +1,14 @@
+{
+  "outreach_id": "O-0042",
+  "lead_id": "LH-0019",
+  "channel": "whatsapp",
+  "draft": "Hi — Fahad here, AI engineer in Dhaka.\n\nI was looking at anantaevents.com — 16 years in the game, 5,000+ projects, 300+ happy clients, covering weddings, corporate events, product launches, concerts, and more. The 'Book Now' button on your homepage is the right idea, but it links to a generic anchor — not an actual booking form.\n\nHere's the gap: with 5,000+ projects and 400+ locations covered, you're clearly handling high enquiry volume. But every enquiry goes through phone (+880 1813340400) or email (info@anantabd.net) — no automated qualification, no instant package pricing, no calendar booking for consultations. For a wedding or corporate event, the client wants to know availability and ballpark pricing immediately, not after a 24-hour email reply.\n\nI built an AI event consultant agent that handles WhatsApp/Instagram enquiries 24/7 — it asks what type of event, guest count, preferred dates, and budget range, then provides instant package recommendations and books a consultation with your team. It also sends follow-up reminders to convert warm leads.\n\nHappy to show you a working demo in 15 minutes. No commitment.\n\nBest,\nFahad",
+  "status": "pending_approval",
+  "human_approved_at": null,
+  "sent_at": null,
+  "response_at": null,
+  "response": null,
+  "created_at": "2026-09-02T18:59:56.916701+00:00",
+  "personalized": true,
+  "source_research": "live website extraction 2026-08-28"
+}

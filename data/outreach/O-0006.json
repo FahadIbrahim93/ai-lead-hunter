@@ -2,10 +2,12 @@
   "outreach_id": "O-0006",
   "lead_id": "LH-0006",
   "channel": "whatsapp",
-  "draft": "Hi, this is Fahad from Hope Theory.\n\nWhile researching Notun Thikana Properties Ltd., a few things stood out to me:\n• Property portal connects buyers/sellers but likely lacks automated buyer status updates\n• No visible buyer payment milestone tracking or construction progress dashboard\n\nI build AI agents that fix exactly this. For a business like yours, I'd start with an AI buyer-follow-up agent that answers listing questions, tracks every buyer's status, and sends payment-milestone and construction updates automatically.\n\nI've already built a working demo — happy to show you in 15 minutes. No commitment, just want to show you what it does.\n\n\nYou can also try the quick ROI calculator - open artifacts/calculators-live/LH-0006-calculator-live.html and drag the sliders.\n\nI've also built a quick interactive demo for you - just open artifacts/demos-live/LH-0006-demo-live.html and click through it.\nBest,\nFahad",
+  "draft": "Hi — Fahad here, AI engineer in Dhaka.\n\nI was browsing notunthikana.com and noticed something interesting — you're active on Facebook, Instagram, LinkedIn, YouTube, X, and WhatsApp, which is impressive reach. But all six of those channels funnel into one WhatsApp number (+880****0607) that a human has to manually respond to.\n\nFor a property portal listing BDT 70M+ apartments, that's a serious bottleneck. A buyer who messages at 11pm about a Gulshan or Bashundhara listing is going to get a reply 12 hours later — by which time they've already contacted the competing portal. And with multiple listings and multiple buyers, the coordination between who asked about what, who's been shown a property, who's ready to make an offer — that's all manual memory work.\n\nI built an AI property agent that handles this. It answers listing questions 24/7 across your WhatsApp and social channels, qualifies each buyer (budget, location, size preference), schedules viewings, and tracks every buyer's status so nothing falls through the cracks. It can even send construction-progress updates to buyers who've already reserved.\n\nI've built a working demo using your actual listings and property types — happy to show you in 15 minutes. No commitment, just want you to see it.\n\nBest,\nFahad",
   "status": "pending_approval",
   "human_approved_at": "",
   "sent_at": "",
   "response_at": "",
-  "response": ""
+  "response": "",
+  "personalized_at": "2026-08-29T10:36:11.028104+00:00",
+  "personalized_by": "hermes"
 }

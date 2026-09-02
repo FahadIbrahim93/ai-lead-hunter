@@ -1,0 +1,14 @@
+{
+  "outreach_id": "O-0041",
+  "lead_id": "LH-0025",
+  "channel": "whatsapp",
+  "draft": "Hi — Fahad here, AI engineer in Dhaka.\n\nI was looking at fastexpressbd.com — 20+ years in the courier business, 32+ employees, 4 branches, handling 10 tons/month and 1,500 consignments. That's a serious operation. Your international express, document express, and parcel express services cover the full range.\n\nBut here's what I noticed: shipment tracking is a phone call (+880171 540 8293) or visiting your Motijheel office. For a company handling 1,500 consignments a month, that's a lot of 'where is my package?' calls eating your team's time. And your customer intake is phone/email only — no instant quote for international shipping rates.\n\nI built an AI customer service agent that handles WhatsApp enquiries 24/7 — it provides instant shipment status updates, gives shipping rate estimates for international routes, and books pickup requests. Your team stops answering repetitive tracking calls and focuses on operations.\n\nHappy to show you a working demo in 15 minutes. No commitment.\n\nBest,\nFahad",
+  "status": "pending_approval",
+  "human_approved_at": null,
+  "sent_at": null,
+  "response_at": null,
+  "response": null,
+  "created_at": "2026-09-02T18:59:56.908699+00:00",
+  "personalized": true,
+  "source_research": "live website extraction 2026-08-28"
+}

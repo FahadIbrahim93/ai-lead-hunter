@@ -1,0 +1,14 @@
+{
+  "outreach_id": "O-0038",
+  "lead_id": "LH-0012",
+  "channel": "whatsapp",
+  "draft": "Hi — Fahad here, AI engineer in Dhaka.\n\nI was looking at padma-bd.com and noticed you have a patient portal for report downloads (patient.padma-bd.com) and an online appointment form — that's ahead of most diagnostic centres in Bangladesh. But I also noticed the appointment form is a basic 'Send Request' with no instant confirmation, and your hotline (0961-1113355) runs 7am-11pm — meaning late-night and early-morning enquiries go unanswered.\n\nWith clients like Bangladesh Bank, MetLife, ACI, and Pathao on your roster, you're handling high-volume corporate health checkups. The Primary Health Checkup at ৳4,800 and the Major Health Checkup at ৳13,600 are the kind of packages that corporate HR teams want to book instantly — not wait for a callback.\n\nI built an AI booking agent that handles appointment requests 24/7, confirms slots instantly, sends preparation instructions automatically, and notifies patients when reports are ready — so they stop calling your hotline to ask 'is my report done?'. For your corporate clients, it can bulk-book employee checkups and send automated reminders.\n\nHappy to show you a working demo in 15 minutes. No commitment.\n\nBest,\nFahad",
+  "status": "pending_approval",
+  "human_approved_at": null,
+  "sent_at": null,
+  "response_at": null,
+  "response": null,
+  "created_at": "2026-09-02T18:59:56.854178+00:00",
+  "personalized": true,
+  "source_research": "live website extraction 2026-08-28"
+}

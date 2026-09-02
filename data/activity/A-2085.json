@@ -1,0 +1,10 @@
+{
+  "activity_id": "A-2085",
+  "action": "status_changed",
+  "lead_id": "LH-0001",
+  "actor": "hermes",
+  "resource": "lead",
+  "timestamp": "2026-08-29T10:34:42.405820+00:00",
+  "detail": "QUALIFIED → IN_CONVERSATION. Reason: O-0001 was previously sent (A-0234), reply received 'Interested, let's schedule a call' (A-0236). Batch re-audit at A-1345 incorrectly overwrote lifecycle to QUALIFIED. Restoring to IN_CONVERSATION to reflect actual sales state. Next action: schedule the call with Best Interior Design.",
+  "occurred_at": "2026-08-29T10:34:42.405820+00:00"
+}

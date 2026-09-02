@@ -3,7 +3,7 @@
   "lead_id": "LH-0030",
   "channel": "whatsapp",
   "draft": "Hi, this is Fahad from Hope Theory.\n\nWhile researching Laser Dental BD, a few things stood out to me:\n• Premium dental clinic in Banani & Uttara specializing in cosmetic dentistry, Invisalign, and laser treatments — high-value procedures (BDT 50K-1.8L)\n• Mobile-first 'Tap to Call' CTA — no online appointment booking system, patients must call during office hours\n\nI build AI agents that fix exactly this. For a business like yours, I'd start with an AI appointment agent that answers treatment enquiries with instant price guidance, books patients into real-time slots at the right branch, and sends recall reminders so no patient is lost.\n\nI've already built a working demo — happy to show you in 15 minutes. No commitment, just want to show you what it does.\n\n\nI've built a 60-second interactive demo specifically for LH-0030 — open artifacts/demos-live/LH-0030-demo-live.html to show it. No installation, just double-click.\n\nYou can also try the quick ROI calculator — open artifacts/calculators-live/LH-0030-calculator-live.html and drag the sliders to see what you're losing each month.\n\nBest,\nFahad",
-  "status": "pending_approval",
+  "status": "superseded",
   "human_approved_at": "",
   "sent_at": "",
   "response_at": "",

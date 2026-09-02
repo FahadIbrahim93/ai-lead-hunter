@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-2117",
+  "lead_id": "SYSTEM",
+  "occurred_at": "2026-09-02T19:03:00.878822+00:00",
+  "actor": "hermes",
+  "action": "duplicate_skipped",
+  "resource": "ingest",
+  "detail": "Duplicate skipped: Metro Weddings"
+}

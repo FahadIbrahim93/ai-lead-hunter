@@ -1,0 +1,14 @@
+{
+  "outreach_id": "O-0051",
+  "lead_id": "LH-0020",
+  "channel": "whatsapp",
+  "draft": "Hi — Fahad here, AI engineer in Dhaka.\n\nI've been looking at IT services companies in Bangladesh, and Fara IT Limited caught my attention. In the web development and IT services space, the biggest leak is in lead qualification — enquiries come through your website form, but there's no automated way to filter serious buyers from tyre-kickers before your senior developers spend time on calls.\n\nHere's the pattern I see: a potential client fills out your contact form asking about 'website development' or 'mobile app'. Right now, someone on your team reads that form, manually replies, schedules a call, and then discovers the client's budget is ৳30,000 for a project that should cost ৳3,00,000. That's an hour of senior time wasted on an unqualified lead.\n\nI built an AI lead qualification agent that handles incoming enquiries 24/7 — it asks about project scope, budget range, timeline, and technical requirements, then scores the lead and books a discovery call only for qualified prospects. Your senior team spends time closing deals, not filtering enquiries.\n\nHappy to show you a working demo in 15 minutes. No commitment.\n\nBest,\nFahad",
+  "status": "pending_approval",
+  "human_approved_at": null,
+  "sent_at": null,
+  "response_at": null,
+  "response": null,
+  "created_at": "2026-09-02T19:01:40.435767+00:00",
+  "personalized": true,
+  "source_research": "pain signal analysis + industry research 2026-08-28"
+}

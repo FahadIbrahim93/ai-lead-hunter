@@ -3,7 +3,7 @@
   "lead_id": "LH-0013",
   "channel": "whatsapp",
   "draft": "Hi, this is Fahad from Hope Theory.\n\nWhile researching Obokash Travel, a few things stood out to me:\n• Visa processing is document-heavy and status-query-driven — applicants repeatedly ask 'what's my status?'\n• Live chat is a manually staffed tawk.to widget — no 24/7 automated responses\n\nI build AI agents that fix exactly this. For a business like yours, I'd start with an AI enquiry agent that answers package and visa questions instantly, tracks every application's status, and sends document checklists and deadline reminders automatically.\n\nI've already built a working demo — happy to show you in 15 minutes. No commitment, just want to show you what it does.\n\n\nI've built a 60-second interactive demo specifically for LH-0013 — open artifacts/demos-live/LH-0013-demo-live.html to show it. No installation, just double-click.\n\nYou can also try the quick ROI calculator — open artifacts/calculators-live/LH-0013-calculator-live.html and drag the sliders to see what you're losing each month.\n\nBest,\nFahad",
-  "status": "pending_approval",
+  "status": "superseded",
   "human_approved_at": "",
   "sent_at": "",
   "response_at": "",

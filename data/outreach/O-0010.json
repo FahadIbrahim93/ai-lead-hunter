@@ -2,10 +2,12 @@
   "outreach_id": "O-0010",
   "lead_id": "LH-0010",
   "channel": "whatsapp",
-  "draft": "Hi, this is Fahad from Hope Theory.\n\nWhile researching Rongin Interior Solution, a few things stood out to me:\n• Intake is phone-only ('Call now for free consultation') — no online booking or quote-request form\n• No visible CRM or lead-tracking; enquiries depend on a single phone line being answered\n\nI build AI agents that fix exactly this. For a business like yours, I'd start with an AI enquiry agent that replies to WhatsApp/Instagram messages instantly, qualifies each client's budget and style, and books consultations straight into your calendar.\n\nI've already built a working demo — happy to show you in 15 minutes. No commitment, just want to show you what it does.\n\n\nI've built a 60-second interactive demo specifically for LH-0010 — open artifacts/demos-live/LH-0010-demo-live.html to show it. No installation, just double-click.\n\nYou can also try the quick ROI calculator — open artifacts/calculators-live/LH-0010-calculator-live.html and drag the sliders to see what you're losing each month.\n\nBest,\nFahad",
+  "draft": "Hi — Fahad here, AI engineer in Dhaka.\n\nI found rongininterior.com through a Google search and noticed something that's actually a compliment — your SEO is strong. You're ranking for interior-related searches across dozens of locations in Bangladesh, from Dhaka to Chittagong to Sylhet. That takes real effort.\n\nBut here's the gap: all that traffic lands on a page that says 'Call now for free consultation' with one phone number (01677139529). Someone searching at midnight for a Rajshahi apartment renovation — they're not going to call. They'll bounce, and you'll never know they were there.\n\nWith residential, commercial, and hospitality clients across the whole country, you're already doing high-volume work. But every missed call from a location-qualified lead is revenue you're leaving on the table.\n\nI built an AI enquiry agent that captures those visitors — it qualifies their project type, budget, and location in3 questions via WhatsApp or web chat, then books the consultation directly into your calendar. No missed calls, no cold leads, no manual scheduling.\n\nI've built a working demo specifically for interior firms with multi-location coverage — happy to show you in 15 minutes. No commitment, just want you to see it.\n\nBest,\nFahad",
   "status": "pending_approval",
   "human_approved_at": "",
   "sent_at": "",
   "response_at": "",
-  "response": ""
+  "response": "",
+  "personalized_at": "2026-08-29T10:36:11.029103+00:00",
+  "personalized_by": "hermes"
 }

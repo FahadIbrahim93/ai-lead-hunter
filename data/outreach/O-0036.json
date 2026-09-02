@@ -2,10 +2,12 @@
   "outreach_id": "O-0036",
   "lead_id": "LH-0005",
   "channel": "whatsapp",
-  "draft": "Hi, this is Fahad from Hope Theory.\n\nWhile researching BD INTERIOR, a few things stood out to me:\n• Award-winning interior firm with 15+ years experience but no public online booking or enquiry flow — intake is a phone number (+8801711-208563) and a cost-calculator widget, not a qualified-lead pipeline\n• Portfolio is website-only — no WhatsApp Business integration, no automated lead qualification despite serving corporate giants (BRAC, BAT, Renata, BD Army)\n\nI build AI agents that fix exactly this. For a business like yours, I'd start with an AI enquiry agent that replies to WhatsApp/Instagram messages instantly, qualifies each client's budget and style, and books consultations straight into your calendar.\n\nI've already built a working demo — happy to show you in 15 minutes. No commitment, just want to show you what it does.\n\nBest,\nFahad",
+  "draft": "Hi — Fahad here, AI engineer in Dhaka.\n\nI was looking at your website — bdinterior.com — and the 700+ project count with clients like BRAC, BAT, and the BD Army is a serious portfolio. Most interior firms in Dhaka can't touch that track record.\n\nBut here's what caught my eye: you have that 'Calculate Interior Cost Free!' widget on the site, which tells me you're already thinking about capturing leads digitally. The problem is — someone fills it out, gets a number, and then what? There's no follow-up, no booking, no WhatsApp confirmation. They close the tab and you never even know they existed.\n\nFor a firm doing BDT 500K+ projects, that's a lot of warm leads walking away.\n\nI built an AI intake agent that would plug right into that calculator flow — when someone gets their estimate, the agent immediately qualifies them (budget, sqft, timeline), books the consultation, and sends you a summary. You'd wake up to a list of qualified prospects, not a cold calculator submission.\n\nI've built a working demo specifically for BD Interior's type of projects — happy to show you in 15 minutes. No commitment, just want you to see it.\n\nBest,\nFahad",
   "status": "pending_approval",
   "human_approved_at": "",
   "sent_at": "",
   "response_at": "",
-  "response": ""
+  "response": "",
+  "personalized_at": "2026-08-29T10:36:11.028104+00:00",
+  "personalized_by": "hermes"
 }

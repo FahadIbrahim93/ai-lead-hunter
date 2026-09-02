@@ -1,0 +1,14 @@
+{
+  "outreach_id": "O-0044",
+  "lead_id": "LH-0030",
+  "channel": "whatsapp",
+  "draft": "Hi — Fahad here, AI engineer in Dhaka.\n\nI was looking at laserdentalbd.com — Dr. Shihabur Rahman's clinic is genuinely impressive. The 3Shape TRIOS scanner, painless injection technology, Invisalign certification, and Digital Smile Design are international-standard offerings. Two premium locations in Banani and Uttara, and the patient reviews are glowing — Sarah Ahmed's 'I used to be terrified of dentists, but Laser Dental changed everything' is the kind of testimonial that converts.\n\nBut here's the gap: booking is phone-only (Uttara 01787-660055, Banani 0177-0000007) with a WhatsApp link. For a clinic offering premium services like dental implants and smile design, patients want to book consultations instantly — not wait for a callback. And with two locations, you need to route patients to the right branch based on their service needs (Banani for cosmetic, Uttara for general, etc.).\n\nI built an AI dental booking agent that handles WhatsApp enquiries 24/7 — it asks what service they need, recommends the right branch and doctor, shows available slots, and confirms the appointment. It also sends pre-appointment preparation instructions and post-treatment follow-up reminders.\n\nHappy to show you a working demo in 15 minutes. No commitment.\n\nBest,\nFahad",
+  "status": "pending_approval",
+  "human_approved_at": null,
+  "sent_at": null,
+  "response_at": null,
+  "response": null,
+  "created_at": "2026-09-02T18:59:56.930703+00:00",
+  "personalized": true,
+  "source_research": "live website extraction 2026-08-28"
+}

@@ -3,7 +3,7 @@
   "lead_id": "LH-0025",
   "channel": "whatsapp",
   "draft": "Hi, this is Fahad from Hope Theory.\n\nWhile researching Fastexpress BD, a few things stood out to me:\n• Courier and logistics service with shipment tracking on website — but no automated booking form\n• Booking via phone/email/walk-in — no AI-powered booking assistant to handle volume spikes\n\nI build AI agents that fix exactly this. For a business like yours, I'd start with an AI tracking agent that answers 'where is my parcel?' queries automatically 24/7, books new shipments over WhatsApp, and sends delivery confirmations without staff touching a keyboard.\n\nI've already built a working demo — happy to show you in 15 minutes. No commitment, just want to show you what it does.\n\n\nI've built a 60-second interactive demo specifically for LH-0025 — open artifacts/demos-live/LH-0025-demo-live.html to show it. No installation, just double-click.\n\nYou can also try the quick ROI calculator — open artifacts/calculators-live/LH-0025-calculator-live.html and drag the sliders to see what you're losing each month.\n\nBest,\nFahad",
-  "status": "pending_approval",
+  "status": "superseded",
   "human_approved_at": "",
   "sent_at": "",
   "response_at": "",

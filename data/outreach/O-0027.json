@@ -3,7 +3,7 @@
   "lead_id": "LH-0027",
   "channel": "whatsapp",
   "draft": "Hi, this is Fahad from Hope Theory.\n\nWhile researching Enhance English BD, a few things stood out to me:\n• British Council & Pearson certified institute with 5000+ students — high enquiry volume across 3 centers (Dhanmondi, Banani, Chattogram)\n• Registration is a web form with course selection — no instant response, no AI qualification of student level or goals\n\nI build AI agents that fix exactly this. For a business like yours, I'd start with an AI admission agent that answers course enquiries instantly, recommends the right course from each student's target score, and books free trial classes with automated reminders.\n\nI've already built a working demo — happy to show you in 15 minutes. No commitment, just want to show you what it does.\n\n\nI've built a 60-second interactive demo specifically for LH-0027 — open artifacts/demos-live/LH-0027-demo-live.html to show it. No installation, just double-click.\n\nYou can also try the quick ROI calculator — open artifacts/calculators-live/LH-0027-calculator-live.html and drag the sliders to see what you're losing each month.\n\nBest,\nFahad",
-  "status": "pending_approval",
+  "status": "superseded",
   "human_approved_at": "",
   "sent_at": "",
   "response_at": "",

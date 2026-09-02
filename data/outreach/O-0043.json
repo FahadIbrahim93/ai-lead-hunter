@@ -1,0 +1,14 @@
+{
+  "outreach_id": "O-0043",
+  "lead_id": "LH-0028",
+  "channel": "whatsapp",
+  "draft": "Hi — Fahad here, AI engineer in Dhaka.\n\nI was looking at dhakaeventplanner.com — 8,500 events managed, 2,600 happy clients, 45+ cities, and a 4.9/5 satisfaction score. The client roster is impressive: Robi, Square Group, Unilever, University of Dhaka, Walton, bKash, BRAC, Grameenphone. You're clearly the go-to for corporate event production in Bangladesh.\n\nBut here's what I noticed: your 'Request a Quote' form is a standard contact form — no instant pricing, no event-type wizard, no automated follow-up. For corporate clients booking LED video wall rentals or brand activations, they want ballpark pricing now, not after a manual callback. And with 8,500 events under your belt, you have a massive past-client database that's probably never getting re-engaged for repeat bookings.\n\nI built an AI event consultant agent that qualifies incoming quote requests automatically — asks for event type, guest count, AV requirements, and timeline, then provides instant package recommendations and books a consultation. It also re-engages past clients with automated follow-ups for annual events, product launches, and seasonal campaigns.\n\nHappy to show you a working demo in 15 minutes. No commitment.\n\nBest,\nFahad",
+  "status": "pending_approval",
+  "human_approved_at": null,
+  "sent_at": null,
+  "response_at": null,
+  "response": null,
+  "created_at": "2026-09-02T18:59:56.923703+00:00",
+  "personalized": true,
+  "source_research": "live website extraction 2026-08-28"
+}

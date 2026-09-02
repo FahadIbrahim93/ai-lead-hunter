@@ -1,0 +1,9 @@
+{
+  "activity_id": "A-2148",
+  "lead_id": "SYSTEM",
+  "occurred_at": "2026-09-02T19:06:05.350526+00:00",
+  "actor": "hermes",
+  "action": "duplicate_skipped",
+  "resource": "ingest",
+  "detail": "Duplicate skipped: Tech Dental Care"
+}

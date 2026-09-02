@@ -3,7 +3,7 @@
   "business_name": "Best Interior Design",
   "discovered_at": "2026-08-27T00:00:00+06:00",
   "source": "slack",
-  "lifecycle_status": "QUALIFIED",
+  "lifecycle_status": "IN_CONVERSATION",
   "score": 100,
   "tier": "A",
   "niche": "Interior design and decor",

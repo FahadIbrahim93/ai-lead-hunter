@@ -1,0 +1,14 @@
+{
+  "outreach_id": "O-0040",
+  "lead_id": "LH-0024",
+  "channel": "whatsapp",
+  "draft": "Hi — Fahad here, AI engineer in Dhaka.\n\nI was looking at jobaidapack.com — the product range is solid: corrugated cartons, mailer boxes, rigid boxes, and you have a 'Get a Quote' flow and order tracking. That's more digital infrastructure than most packaging manufacturers in Bangladesh.\n\nBut here's the gap I see: your 'Get a Quote' form is a standard contact form — no instant pricing, no specification wizard, no automated follow-up. For e-commerce brands ordering custom mailer boxes, they want to know 'how much for 500 boxes with full-color printing?' right now, not after a manual callback. And your 'Track Order' feature requires a phone call (+8801568316131) — no self-service tracking.\n\nI built an AI sales agent that qualifies incoming quote requests automatically — asks for box type, dimensions, quantity, printing specs, and delivery timeline, then generates a preliminary quote range and books a call with your sales team. For existing orders, it provides self-service tracking via WhatsApp. Your sales team stops spending time on unqualified enquiries and focuses on closing.\n\nHappy to show you a working demo in 15 minutes. No commitment.\n\nBest,\nFahad",
+  "status": "pending_approval",
+  "human_approved_at": null,
+  "sent_at": null,
+  "response_at": null,
+  "response": null,
+  "created_at": "2026-09-02T18:59:56.898696+00:00",
+  "personalized": true,
+  "source_research": "live website extraction 2026-08-28"
+}
