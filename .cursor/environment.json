@@ -1,0 +1,17 @@
+{
+  "name": "AI Lead Hunter",
+  "install": "python3 -m pip install --user --upgrade pytest",
+  "terminals": [
+    {
+      "name": "dashboard",
+      "command": "python3 dashboard.py",
+      "description": "Local Revenue Acquisition OS dashboard (zero-dependency stdlib HTTP server) on http://localhost:8765. Serves ui.html, exposes GET /api/state and POST /api/action which shells out to engine.py."
+    }
+  ],
+  "ports": [
+    {
+      "name": "dashboard",
+      "port": 8765
+    }
+  ]
+}
