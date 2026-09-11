@@ -89,11 +89,32 @@ def build_static_html(snapshot: dict) -> str:
     """Read ui.html, inject snapshot data, replace loadState() to use
     inline data instead of fetching /api/state."""
     html = UI_SRC.read_text(encoding="utf-8")
+    html = html.replace("\r\n", "\n")  # normalize for patch matching
     snapshot_json = json.dumps(snapshot, ensure_ascii=False)
 
     # 1. Inject snapshot data before </head>
     data_script = f'<script>window.__SNAPSHOT__ = {snapshot_json};</script>'
     html = html.replace("</head>", f"{data_script}\n</head>", 1)
+
+    # 1b. Style artifact open-links like buttons (public Pages view)
+    artifact_css = (
+        "  a.artifact-link {\n"
+        "    display: inline-block; font-family: inherit; font-size: 13px; font-weight: 600;\n"
+        "    padding: 8px 16px; border-radius: 8px; border: 1px solid var(--border);\n"
+        "    background: var(--surface2); color: var(--text); text-decoration: none;\n"
+        "    transition: all 0.15s;\n"
+        "  }\n"
+        "  a.artifact-link:hover { border-color: var(--accent); background: var(--surface); }\n"
+        "  a.artifact-link.primary { background: var(--accent); border-color: var(--accent); color: #0d1117; }\n"
+        "  a.artifact-link.primary:hover { filter: brightness(1.1); }\n"
+    )
+    html = html.replace(
+        "  .type-internal { background: rgba(188,140,255,0.15); color: var(--purple); }\n"
+        "</style>",
+        "  .type-internal { background: rgba(188,140,255,0.15); color: var(--purple); }\n"
+        f"{artifact_css}</style>",
+        1,
+    )
 
     # 2. Replace the loadState() function to use inline data
     old_load = (
@@ -128,7 +149,7 @@ def build_static_html(snapshot: dict) -> str:
     )
     html = html.replace(old_load, new_load)
 
-    # 3. Replace the runAction() to be a no-op in public view
+    # 3. Keep runAction as a no-op defense-in-depth (buttons are removed below)
     old_action = 'async function runAction(action, leadId, btn) {'
     new_action = (
         'async function runAction(action, leadId, btn) {\n'
@@ -139,13 +160,64 @@ def build_static_html(snapshot: dict) -> str:
     )
     html = html.replace(old_action, new_action)
 
-    # 4. Add public snapshot banner after <body>
+    # 4. Hide Discover/Ingest/Verify/Validate header pipeline buttons
+    old_header_actions = (
+        '  <div class="header-actions">\n'
+        '    <button class="big primary" onclick="runAction(\'discover\', null, this)">🔎 Discover New Leads</button>\n'
+        '    <button class="big" onclick="runAction(\'ingest\', null, this)">📥 Ingest Research</button>\n'
+        '    <button class="big" onclick="runAction(\'verify-all\', null, this)">🌐 Verify Websites</button>\n'
+        '    <button class="big" onclick="runAction(\'validate\', null, this)">✓ Validate Data</button>\n'
+        '  </div>'
+    )
+    new_header_actions = (
+        '  <div class="header-actions">\n'
+        '    <span style="font-size:13px;color:var(--muted);">Read-only public view — '
+        'pipeline actions run locally</span>\n'
+        '  </div>'
+    )
+    if old_header_actions not in html:
+        raise RuntimeError("header-actions block not found for public-view patch")
+    html = html.replace(old_header_actions, new_header_actions, 1)
+
+    # 5. Replace per-lead Generate*/Re-Audit/etc. with Open demo / Open calculator links.
+    # Relative paths work under GitHub Pages project site /ai-lead-hunter/.
+    old_lead_actions = (
+        '      <div class="lead-actions">\n'
+        '        ${verifyBtn}\n'
+        '        <button onclick="runAction(\'audit\',\'${esc(l.lead_id)}\',this)">🔍 Re-Audit</button>\n'
+        '        <button onclick="runAction(\'demo\',\'${esc(l.lead_id)}\',this)">🎬 Build Demo Spec</button>\n'
+        '        <button class="primary" onclick="runAction(\'demo-live\',\'${esc(l.lead_id)}\',this)">🚀 Generate Live Demo</button>\n'
+        '        <button class="primary" onclick="runAction(\'calculator-live\',\'${esc(l.lead_id)}\',this)">🧮 Generate ROI Calculator</button>\n'
+        '        <button onclick="runAction(\'outreach\',\'${esc(l.lead_id)}\',this)">✉️ Draft Outreach</button>\n'
+        '      </div>'
+    )
+    new_lead_actions = (
+        '      <div class="lead-actions">\n'
+        '        <a class="artifact-link primary" href="demos/${esc(l.lead_id)}-demo-live.html" '
+        'target="_blank" rel="noopener">🚀 Open demo</a>\n'
+        '        <a class="artifact-link" href="calcs/${esc(l.lead_id)}-calculator-live.html" '
+        'target="_blank" rel="noopener">🧮 Open calculator</a>\n'
+        '      </div>'
+    )
+    if old_lead_actions not in html:
+        raise RuntimeError("lead-actions block not found for public-view patch")
+    html = html.replace(old_lead_actions, new_lead_actions, 1)
+
+    # 6. Soften empty-state copy that referenced Discover
+    html = html.replace(
+        'No leads yet. Click "Discover New Leads" above.',
+        "No leads in this snapshot.",
+        1,
+    )
+
+    # 7. Add public snapshot banner after <body>
     banner = (
         '<div style="background:linear-gradient(90deg,#1f6feb,#388bfd);color:#fff;'
         'padding:14px 20px;border-radius:8px;margin-bottom:20px;font-size:14px;'
         'line-height:1.6;">'
         '<strong>📊 AI Lead Hunter — Public Dashboard</strong><br>'
         'Read-only snapshot of the Revenue Acquisition OS pipeline. '
+        'Open each lead&apos;s demo or ROI calculator below. '
         'The live Python pipeline (audit, scoring, outreach) runs locally. '
         '<a href="https://github.com/FahadIbrahim93/ai-lead-hunter" '
         'style="color:#fff;text-decoration:underline;font-weight:600;">'
@@ -156,7 +228,6 @@ def build_static_html(snapshot: dict) -> str:
         '</div>'
     )
     html = html.replace("<body>", f"<body>\n{banner}", 1)
-
     return html
 
 

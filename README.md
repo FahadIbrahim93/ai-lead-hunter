@@ -120,27 +120,35 @@ tests/test_v2.py     v2 architecture tests (research inbox, dedup, verify, idemp
 
 ## Current state
 
+Snapshot aligned with the live public dashboard
+(`data-snapshot.json` / `python scripts/export_static.py` on `main`) as of 2026-09-12:
+
 | Metric | Count |
 |---|---|
 | Total leads | 31 (28 clients + 3 internal ventures) |
 | Verified live | 25 |
-| Qualified | 31 |
+| Qualified | 27 (lifecycle `QUALIFIED`; +1 `IN_CONVERSATION` = LH-0001) |
 | Tier A (sales view, external clients) | 27 |
 | Tier B (sales view) | 1 |
 | Tier C (sales view) | 0 |
 | A+ business profiles | 28 (all external clients) |
 | Evidence | 413 |
-| Activity log | 2018 |
-| Outreach drafts | 36 (31 pending, 0 sent, 5 superseded) |
+| Activity log | 2153 |
+| Outreach drafts | 56 (31 pending_approval, 0 `sent`, 25 superseded) |
 | Interactive demos | 31 |
 | ROI calculators | 31 |
 | Tests | 41/41 passing |
 | Schema validation | clean |
 
-> **Note on the Tier counts:** the headline `30 Tier A` from earlier sessions
-> includes 3 internal-venture leads (LH-0007/8/9 = MARJAHANS, SNAPTRAP, JG
-> Mart). For sales reporting, the *Sales view* row in `python engine.py status`
-> reports the honest counts: 27 Tier A + 1 Tier B external client leads.
+> **Note on `0 sent` vs O-0001 / LH-0001:** the stats counter only counts
+> outreach records with `status == "sent"`. `O-0001` was historically sent
+> (has `sent_at` + a reply) and then **superseded** by `O-0032`, so it does
+> not appear in the `sent` count. LH-0001 is correctly `IN_CONVERSATION`.
+> Public Pages still shows `sent: 0` until a current draft is marked sent.
+
+> **Note on the Tier counts:** earlier sessions' headline `30 Tier A` included
+> 3 internal-venture leads (LH-0007/8/9 = MARJAHANS, SNAPTRAP, JG Mart). For
+> sales reporting, use external clients only: 27 Tier A + 1 Tier B.
 
 ## Top leads to send first (highest revenue probability)
 
