@@ -1,8 +1,10 @@
-# AI Lead Hunter — Revenue Acquisition OS
+# AI Lead Hunter — Revenue Acquisition OS (experimental)
 
 A local-first lead machine that discovers real Bangladesh businesses, verifies them live,
 audits their pain, scores them, builds interactive demos and ROI calculators, and
 generates personalized outreach drafts — all auditable, all local, nothing sent automatically.
+
+> **Review flag:** This README and the public GitHub Pages dashboard list real prospect names (e.g. A.K. Developments Ltd., Kazi Law Chamber, Gold's Gym Bangladesh, Wedding Diary Bangladesh, Best Interior Design, Ngital Digital Marketing) and operational outreach records (O- IDs, draft statuses). This is described as **experimental lead tooling**, not production agent engineering. Confirm which names and outreach details you want to remain public before relying on this README.
 
 ## What it does
 
